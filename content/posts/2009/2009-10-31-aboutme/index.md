@@ -11,10 +11,12 @@ url: "/aboutme/"
  
 
 <a href="images/me-2019.jpg"><img src="images/me-2019-795x1024.jpg" width="265" style="float: left; margin: 0 1.5rem 1rem 0;"></a>
-I have specialised in distributed data technologies for the last twenty years, covering hands-on engineering, architecture, and senior management. 
+I have specialised in distributed data technologies for the last twenty years, covering hands-on engineering, architecture, and senior management.
 Most recently, I led Technical Strategy at [Confluent](http://www.confluent.io/). I also worked on Kafka, writing the most recent major version of Kafka’s replication protocol.
+
 Before Confluent, I led the central data platform team at RBS where we built the event-driven database: ODC. I also worked at Thoughtworks and a few financial institutions. I live near London.
 
+<div style="clear:both;"></div>
 
 ### Conferences & Lecture
 
