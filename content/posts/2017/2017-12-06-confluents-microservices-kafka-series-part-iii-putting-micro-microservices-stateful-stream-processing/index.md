@@ -8,4 +8,4 @@ slug: "confluents-microservices-kafka-series-part-iii-putting-micro-microservice
 
 Slides: [HERE](https://www.slideshare.net/benstopford/putting-the-micro-into-microservices-with-stateful-stream-processing-75458395)
 
-\[embed\]https://vimeo.com/214730078/d2c85c9227\[/embed\]
+<div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;max-width:100%;"><iframe src="https://player.vimeo.com/video/214730078?h=d2c85c9227" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allowfullscreen></iframe></div>

@@ -77,11 +77,7 @@ We find it beneficial to segregate skills we needed to transfer into two types: 
 
 The practices here mostly focus on Structural Skills.
 
-\[caption id="attachment\_2006" align="alignright" width="243" caption="Figure 1: Description of the three phases in the Shuhari learning model."\]
-
 <div style="text-align: center;"><img src="images/shuhari2.png" alt=""></div>
-
-\[/caption\]
 
 We found different practices more appropriate at different stages – focused mentoring followed by more collaborative and structured practices. The transition between phases is achieved by continuous learning.
 
