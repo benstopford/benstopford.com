@@ -1,20 +1,20 @@
 <div class="index-block">
   <h3 class="index-block-title">
-    {{- if .titleUrl }}<a href="{{ .titleUrl }}">{{ .title }}</a>{{- else }}{{ .title }}{{- end }}
+    {{- if .titleUrl }}<a href="{{ .titleUrl | absURL }}">{{ .title }}</a>{{- else }}{{ .title }}{{- end }}
     {{- if .linkUrl }}
-    <a class="index-block-link" href="{{ .linkUrl }}">({{ .linkText }})</a>
+    <a class="index-block-link" href="{{ .linkUrl | absURL }}">({{ .linkText }})</a>
     {{- end }}
   </h3>
   {{- if .isAbout }}
   <p class="about-links">
     {{- range $i, $l := .socialLinks }}
-    {{- if $i }}, {{ end }}<a href="{{ $l.url }}">{{ $l.text }}</a>
+    {{- if $i }}, {{ end }}<a href="{{ $l.url | absURL }}">{{ $l.text }}</a>
     {{- end }}.
   </p>
   {{- else if .items }}
   <ul class="index-list">
     {{- range .items }}
-    <li><a href="{{ .url }}">{{ .text }}</a>{{ if .year }} <span class="index-year">({{ .year }})</span>{{ end }}</li>
+    <li><a href="{{ .url | absURL }}">{{ .text }}</a>{{ if .year }} <span class="index-year">({{ .year }})</span>{{ end }}</li>
     {{- end }}
   </ul>
   {{- end }}
