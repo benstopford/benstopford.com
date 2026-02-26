@@ -10,11 +10,11 @@ url: "/aboutme/"
 
  
 
-<a href="images/me-2019.jpg"><img src="images/me-2019-795x1024.jpg" width="265" style="float: left; margin: 0 1.5rem 1rem 0;"></a>I work as an architect and engineer with most of my experience focussed on distributed data technologies. I manage teams and work with larger organisational issues too.
+<a href="images/me-2019.jpg"><img src="images/me-2019-795x1024.jpg" width="265" style="float: left; margin: 0 1.5rem 1rem 0;"></a>
+I have specialised in distributed data technologies for the last twenty years, covering hands-on engineering, architecture, and senior management. 
+Most recently, I led Technical Strategy at [Confluent](http://www.confluent.io/). I also worked on Kafka, writing the most recent major version of Kafka’s replication protocol.
+Before Confluent, I led the central data platform team at RBS where we built the event-driven database: ODC. I also worked at Thoughtworks and a few financial institutions. I live near London.
 
-I'm currently at [Confluent](http://www.confluent.io/) leading the Office of the CTO (a research function) although my role has spanned most departments at one point or other over a range of projects from developing a [strategy](https://www.confluent.io/blog/data-dichotomy-rethinking-the-way-we-treat-data-and-services/) for streaming system design through to engineering a new version of Kafka's [replication protocol](https://cwiki.apache.org/confluence/display/KAFKA/KIP-101+-+Alter+Replication+Protocol+to+use+Leader+Epoch+rather+than+High+Watermark+for+Truncation).
-
-Previously I led the central data platform team at RBS where we built the event-driven database: [ODC](/uploads/ODC-Single-Slide-Summary.pdf). I also worked at Thoughtworks and a few financial institutions. I live in London.
 
 ### Conferences & Lecture
 
