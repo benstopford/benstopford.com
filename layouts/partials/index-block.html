@@ -1,6 +1,6 @@
 <div class="index-block">
   <h3 class="index-block-title">
-    {{- .title }}
+    {{- if .titleUrl }}<a href="{{ .titleUrl }}">{{ .title }}</a>{{- else }}{{ .title }}{{- end }}
     {{- if .linkUrl }}
     <a class="index-block-link" href="{{ .linkUrl }}">({{ .linkText }})</a>
     {{- end }}

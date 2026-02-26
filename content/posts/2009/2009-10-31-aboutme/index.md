@@ -10,7 +10,7 @@ url: "/aboutme/"
 
  
 
-[![](images/me-2019-795x1024.jpg)](images/me-2019.jpg)I work as an architect and engineer with most of my experience focussed on distributed data technologies. I manage teams and work with larger organisational issues too.
+<a href="images/me-2019.jpg"><img src="images/me-2019-795x1024.jpg" width="265" style="float: left; margin: 0 1.5rem 1rem 0;"></a>I work as an architect and engineer with most of my experience focussed on distributed data technologies. I manage teams and work with larger organisational issues too.
 
 I'm currently at [Confluent](http://www.confluent.io/) leading the Office of the CTO (a research function) although my role has spanned most departments at one point or other over a range of projects from developing a [strategy](https://www.confluent.io/blog/data-dichotomy-rethinking-the-way-we-treat-data-and-services/) for streaming system design through to engineering a new version of Kafka's [replication protocol](https://cwiki.apache.org/confluence/display/KAFKA/KIP-101+-+Alter+Replication+Protocol+to+use+Leader+Epoch+rather+than+High+Watermark+for+Truncation).
 

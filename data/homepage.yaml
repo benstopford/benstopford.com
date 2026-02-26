@@ -146,6 +146,7 @@ sections:
 
   - title: "About"
     column: 3
+    titleUrl: "/aboutme/"
     isAbout: true
     socialLinks:
       - text: "Twitter"
