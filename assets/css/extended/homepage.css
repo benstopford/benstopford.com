@@ -34,8 +34,9 @@
   line-height: 1.5;
 }
 
-.top-post-card time {
+.top-post-year {
   font-size: 0.8rem;
+  font-weight: 400;
   color: var(--secondary);
 }
 

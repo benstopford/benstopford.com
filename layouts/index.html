@@ -6,9 +6,8 @@
 <section class="top-posts">
   {{- range $top4 }}
   <article class="top-post-card">
-    <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
-    <p>{{ .Summary | plainify | htmlUnescape | truncate 160 }}</p>
-    <time>{{ .Date.Format "Jan 2006" }}</time>
+    <h2><a href="{{ .Permalink }}">{{ .Title }}</a> <span class="top-post-year">{{ .Date.Format "2006" }}</span></h2>
+    <p>{{ with .Description }}{{ . }}{{ else }}{{ .Summary | plainify | htmlUnescape | truncate 160 }}{{ end }}</p>
   </article>
   {{- end }}
 </section>

@@ -8,6 +8,7 @@ categories:
   - "top4"
 coverImage: "image1.png"
 slug: "log-structured-merge-trees"
+description: "A detailed look at the interesting LSM file organisation seen in BigTable, Cassandra and most recently MongoDB."
 ---
 
 It's nearly a decade since Google released its 'Big Table' paper. One of the many cool aspects of that paper was the file organisation it uses. The approach is more generally known as the Log Structured Merge Tree, after [this](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.44.2782&rep=rep1&type=pdf) 1996 paper, although the algorithm described there differs quite significantly from most real-world implementations.

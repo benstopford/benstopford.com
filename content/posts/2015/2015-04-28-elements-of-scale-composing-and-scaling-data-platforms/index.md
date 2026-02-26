@@ -8,6 +8,7 @@ categories:
   - "top4"
 coverImage: "Slide1.jpg"
 slug: "elements-of-scale-composing-and-scaling-data-platforms"
+description: "This transcribed talk explores a range of data platforms through a lens of basic hardware and software tradeoffs."
 ---
 
 _This post is the transcript from a talk, of the same name, given at Progscon & JAX Finance 2015._

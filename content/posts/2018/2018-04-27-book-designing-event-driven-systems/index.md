@@ -4,6 +4,7 @@ date: 2018-04-27
 categories: 
   - "blogroll"
   - "top4"
+description: "A free O'Reilly book covering the concepts and patterns behind event-driven architecture using Apache Kafka."
 slug: "book-designing-event-driven-systems"
 ---
 
