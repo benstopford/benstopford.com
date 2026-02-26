@@ -3,25 +3,25 @@
 <html>
 <head>
 	<title>BenStopford.com - Ben Stopford's site for technical essays and blogs</title>
-	<link rel=stylesheet type="text/css" href="/style.css">
+	<link rel=stylesheet type="text/css" href="../../style.css">
 </head>
 
-<body bottommargin="0" leftmargin="0" rightmargin="0" topmargin="0" background="/old/common/img/background.jpg">
+<body bottommargin="0" leftmargin="0" rightmargin="0" topmargin="0" background="../common/img/background.jpg">
 
 
 
 <table height="123" width="100%" cellpadding="0" cellspacing="0" border="0">
 <tr valign="top">
 <!----- insert logo below ------------------------------------------>
-<td><img src="/old/common/img/benbanner.jpg" width="587" height="123" border="0" alt=""></td>
+<td><img src="../common/img/benbanner.jpg" width="587" height="123" border="0" alt=""></td>
 <!------------------------------------------------------------------>
-<td width="100%" background="/old/common/img/topbg.jpg">&nbsp;</td>
+<td width="100%" background="../common/img/topbg.jpg">&nbsp;</td>
 </tr>
 </table>
 
 <table height="40" width="100%" cellpadding="0" cellspacing="0" border="0">
 <tr valign="top">
-<td width="100%" background="/old/common/img/topbar.jpg">&nbsp;</td>
+<td width="100%" background="../common/img/topbar.jpg">&nbsp;</td>
 </tr>
 </table>
 
@@ -30,26 +30,26 @@
 
 <td width="201"><BR>
 <!----- menu, insert links below ------------------------------------------>
-&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/index.shtml">Home and Blogs</a><BR>
-<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
-&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/Articles.shtml">Essays</a><BR>
-<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
-&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/Software.shtml">Software</a><BR>
-<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
-&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/PrimeBrokerage.shtml">Prime Brokerage</a><BR>
-<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
-&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/columns/WebPageOptimiseStub.shtml">Web Page Optimisation</a><BR>
-<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
-&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/TechnicalInterviewingStub.shtml">Interviewing</a><BR>
-<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
-&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/devsim/devsim.shtml">Publications</a><BR>
-<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
-&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/resources/index.shtml">Resources</a><BR>
-<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
-&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/bookreviews/index.shtml">Book Reviews</a><BR>
-<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
-&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/AboutMe.shtml">About Me</a><BR>
-<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="../index.shtml">Home and Blogs</a><BR>
+<img src="../common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="../Articles.shtml">Essays</a><BR>
+<img src="../common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="../Software.shtml">Software</a><BR>
+<img src="../common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="../PrimeBrokerage.shtml">Prime Brokerage</a><BR>
+<img src="../common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="../columns/WebPageOptimiseStub.shtml">Web Page Optimisation</a><BR>
+<img src="../common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="../TechnicalInterviewingStub.shtml">Interviewing</a><BR>
+<img src="../common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="../devsim/devsim.shtml">Publications</a><BR>
+<img src="../common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="../resources/index.shtml">Resources</a><BR>
+<img src="../common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="../bookreviews/index.shtml">Book Reviews</a><BR>
+<img src="../common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="../AboutMe.shtml">About Me</a><BR>
+<img src="../common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
 
 
 
@@ -78,7 +78,7 @@ curobj.q.value="site:"+domainroot+" "+curobj.qfront.value
 <input name="qfront" type="text" style="width: 180px" /><p>
 ..<input STYLE="color: #FFFFFF; font-family: Verdana; font-weight: bold; font-size: 12px; background-color: #003F80;"
 type="submit" value="Search" />
-<img src="/common/img/menubar.jpg" width="201" height="11" border="0" alt="">
+<img src="../common/img/menubar.jpg" width="201" height="11" border="0" alt="">
 </form>
 
 <!-------------------------------------------------------------------------->

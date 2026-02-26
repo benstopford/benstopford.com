@@ -3,25 +3,25 @@
 <html>
 <head>
 	<title>BenStopford.com - Ben Stopford's site for technical essays and blogs</title>
-	<link rel=stylesheet type="text/css" href="/style.css">
+	<link rel=stylesheet type="text/css" href="../../style.css">
 </head>
 
-<body bottommargin="0" leftmargin="0" rightmargin="0" topmargin="0" background="/old/common/img/background.jpg">
+<body bottommargin="0" leftmargin="0" rightmargin="0" topmargin="0" background="../common/img/background.jpg">
 
 
 
 <table height="123" width="100%" cellpadding="0" cellspacing="0" border="0">
 <tr valign="top">
 <!----- insert logo below ------------------------------------------>
-<td><img src="/old/common/img/benbanner.jpg" width="587" height="123" border="0" alt=""></td>
+<td><img src="../common/img/benbanner.jpg" width="587" height="123" border="0" alt=""></td>
 <!------------------------------------------------------------------>
-<td width="100%" background="/old/common/img/topbg.jpg">&nbsp;</td>
+<td width="100%" background="../common/img/topbg.jpg">&nbsp;</td>
 </tr>
 </table>
 
 <table height="40" width="100%" cellpadding="0" cellspacing="0" border="0">
 <tr valign="top">
-<td width="100%" background="/old/common/img/topbar.jpg">&nbsp;</td>
+<td width="100%" background="../common/img/topbar.jpg">&nbsp;</td>
 </tr>
 </table>
 
@@ -30,26 +30,26 @@
 
 <td width="201"><BR>
 <!----- menu, insert links below ------------------------------------------>
-&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/index.shtml">Home and Blogs</a><BR>
-<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
-&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/Articles.shtml">Essays</a><BR>
-<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
-&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/Software.shtml">Software</a><BR>
-<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
-&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/PrimeBrokerage.shtml">Prime Brokerage</a><BR>
-<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
-&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/columns/WebPageOptimiseStub.shtml">Web Page Optimisation</a><BR>
-<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
-&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/TechnicalInterviewingStub.shtml">Interviewing</a><BR>
-<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
-&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/devsim/devsim.shtml">Publications</a><BR>
-<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
-&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/resources/index.shtml">Resources</a><BR>
-<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
-&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/bookreviews/index.shtml">Book Reviews</a><BR>
-<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
-&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/AboutMe.shtml">About Me</a><BR>
-<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="../index.shtml">Home and Blogs</a><BR>
+<img src="../common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="../Articles.shtml">Essays</a><BR>
+<img src="../common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="../Software.shtml">Software</a><BR>
+<img src="../common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="../PrimeBrokerage.shtml">Prime Brokerage</a><BR>
+<img src="../common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="../columns/WebPageOptimiseStub.shtml">Web Page Optimisation</a><BR>
+<img src="../common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="../TechnicalInterviewingStub.shtml">Interviewing</a><BR>
+<img src="../common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="../devsim/devsim.shtml">Publications</a><BR>
+<img src="../common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="../resources/index.shtml">Resources</a><BR>
+<img src="../common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="../bookreviews/index.shtml">Book Reviews</a><BR>
+<img src="../common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="../AboutMe.shtml">About Me</a><BR>
+<img src="../common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
 
 
 
@@ -78,7 +78,7 @@ curobj.q.value="site:"+domainroot+" "+curobj.qfront.value
 <input name="qfront" type="text" style="width: 180px" /><p>
 ..<input STYLE="color: #FFFFFF; font-family: Verdana; font-weight: bold; font-size: 12px; background-color: #003F80;"
 type="submit" value="Search" />
-<img src="/common/img/menubar.jpg" width="201" height="11" border="0" alt="">
+<img src="../common/img/menubar.jpg" width="201" height="11" border="0" alt="">
 </form>
 
 <!-------------------------------------------------------------------------->
@@ -161,7 +161,7 @@ div.Section1
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal><span lang=EN-GB style='font-size:12.0pt;font-family:Tahoma;
   color:teal'>The Aspect
-  Problem                                                                      </span><span
+  Problemï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ </span><span
   lang=EN-GB style='font-family:Tahoma;color:teal'><a href="aspectmain.htm">Printer
   Friendly Version</a></span></p>
   </td>
@@ -244,14 +244,14 @@ div.Section1
       <td width=632 valign=top style='width:474.05pt;padding:0in 5.4pt 0in 5.4pt'>
       <p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>I believe
       the solution lies in moderating or marshalling the boarder between an
-      application’s concerns. This increases the visibility of data changes made
+      applicationï¿½s concerns. This increases the visibility of data changes made
       across concerns by reducing the means by which data changes can occur.
       This in turn increases the encapsulation of the concern making it easier
       to make changes without having to retest others. </span></p>
       <p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
       <p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>Complete
       encapsulation of a concern is not possible as no two concerns are ever
-      really orthogonal.  There is always a need for interaction between them.
+      really orthogonal.ï¿½ There is always a need for interaction between them.
       However providing too much control to the programmer implies the
       maintenance and encapsulation issues mentioned above. Also most notably
       there seems little good argument for one concern to be able to affect
@@ -265,11 +265,11 @@ div.Section1
       <p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
       <p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>What is
       required is:-</span></p>
-      <p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>    * A
+      <p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>ï¿½ï¿½ï¿½ * A
       method for specifying join points within an application</span></p>
-      <p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>    * A
+      <p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>ï¿½ï¿½ï¿½ * A
       method for adding functionality at join points</span></p>
-      <p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>    * A
+      <p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>ï¿½ï¿½ï¿½ * A
       marshalling methodology that prevents one concern from altering another
       without that concern specifically knowing about it.</span></p>
       <p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
@@ -277,7 +277,7 @@ div.Section1
       view that one concern is considered dominant and tertiary concerns bolt
       into it. Tertiary code is coded into a set of classes as if the coding
       was being performed in that class itself except that all interactions are
-      passed by value. HyperJ comes closest currently to this aim.   </span></p>
+      passed by value. HyperJ comes closest currently to this aim.ï¿½ï¿½ </span></p>
       <p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
       </td>
      </tr>
@@ -302,7 +302,7 @@ div.Section1
   <h2><span lang=EN-GB style='font-size:12.0pt;font-family:Tahoma;color:teal;
   font-weight:normal;font-style:normal'>Related Articles</span><span
   lang=EN-GB style='font-family:Tahoma;color:teal;font-weight:normal;
-  font-style:normal'>                                   </span></h2>
+  font-style:normal'>ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ </span></h2>
   </td>
  </tr>
  <tr>
@@ -332,7 +332,7 @@ div.Section1
     <td width=329 valign=top style='width:246.4pt;padding:0in 5.4pt 0in 5.4pt;
     height:32.75pt'>
     <p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>Java Dynamic
-    Proxies: One Step from Aspect-oriented Programming – DevX.com</span></p>
+    Proxies: One Step from Aspect-oriented Programming ï¿½ DevX.com</span></p>
     </td>
    </tr>
    <tr style='height:32.75pt'>

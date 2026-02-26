@@ -4,25 +4,25 @@
 <html>
 <head>
 	<title>BenStopford.com - Ben Stopford's site for technical essays and blogs</title>
-	<link rel=stylesheet type="text/css" href="/style.css">
+	<link rel=stylesheet type="text/css" href="../../style.css">
 </head>
 
-<body bottommargin="0" leftmargin="0" rightmargin="0" topmargin="0" background="/old/common/img/background.jpg">
+<body bottommargin="0" leftmargin="0" rightmargin="0" topmargin="0" background="../common/img/background.jpg">
 
 
 
 <table height="123" width="100%" cellpadding="0" cellspacing="0" border="0">
 <tr valign="top">
 <!----- insert logo below ------------------------------------------>
-<td><img src="/old/common/img/benbanner.jpg" width="587" height="123" border="0" alt=""></td>
+<td><img src="../common/img/benbanner.jpg" width="587" height="123" border="0" alt=""></td>
 <!------------------------------------------------------------------>
-<td width="100%" background="/old/common/img/topbg.jpg">&nbsp;</td>
+<td width="100%" background="../common/img/topbg.jpg">&nbsp;</td>
 </tr>
 </table>
 
 <table height="40" width="100%" cellpadding="0" cellspacing="0" border="0">
 <tr valign="top">
-<td width="100%" background="/old/common/img/topbar.jpg">&nbsp;</td>
+<td width="100%" background="../common/img/topbar.jpg">&nbsp;</td>
 </tr>
 </table>
 
@@ -31,26 +31,26 @@
 
 <td width="201"><BR>
 <!----- menu, insert links below ------------------------------------------>
-&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/index.shtml">Home and Blogs</a><BR>
-<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
-&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/Articles.shtml">Essays</a><BR>
-<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
-&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/Software.shtml">Software</a><BR>
-<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
-&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/PrimeBrokerage.shtml">Prime Brokerage</a><BR>
-<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
-&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/columns/WebPageOptimiseStub.shtml">Web Page Optimisation</a><BR>
-<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
-&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/TechnicalInterviewingStub.shtml">Interviewing</a><BR>
-<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
-&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/devsim/devsim.shtml">Publications</a><BR>
-<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
-&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/resources/index.shtml">Resources</a><BR>
-<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
-&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/bookreviews/index.shtml">Book Reviews</a><BR>
-<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
-&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/AboutMe.shtml">About Me</a><BR>
-<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="../index.shtml">Home and Blogs</a><BR>
+<img src="../common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="../Articles.shtml">Essays</a><BR>
+<img src="../common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="../Software.shtml">Software</a><BR>
+<img src="../common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="../PrimeBrokerage.shtml">Prime Brokerage</a><BR>
+<img src="../common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="../columns/WebPageOptimiseStub.shtml">Web Page Optimisation</a><BR>
+<img src="../common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="../TechnicalInterviewingStub.shtml">Interviewing</a><BR>
+<img src="../common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="../devsim/devsim.shtml">Publications</a><BR>
+<img src="../common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="../resources/index.shtml">Resources</a><BR>
+<img src="../common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="../bookreviews/index.shtml">Book Reviews</a><BR>
+<img src="../common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="../AboutMe.shtml">About Me</a><BR>
+<img src="../common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
 
 
 
@@ -79,7 +79,7 @@ curobj.q.value="site:"+domainroot+" "+curobj.qfront.value
 <input name="qfront" type="text" style="width: 180px" /><p>
 ..<input STYLE="color: #FFFFFF; font-family: Verdana; font-weight: bold; font-size: 12px; background-color: #003F80;"
 type="submit" value="Search" />
-<img src="/common/img/menubar.jpg" width="201" height="11" border="0" alt="">
+<img src="../common/img/menubar.jpg" width="201" height="11" border="0" alt="">
 </form>
 
 <!-------------------------------------------------------------------------->
@@ -259,7 +259,7 @@ table.MsoTableGrid
     author meant? Sometimes this pause is followed by the feeling that the
     effort put in to understand the text far outweighed the complexity of the
     concept it implied. I had one of these moments when reading the book
-    ‘Software Development Failures’ by <i style='mso-bidi-font-style:normal'>Kwek
+    ï¿½Software Development Failuresï¿½ by <i style='mso-bidi-font-style:normal'>Kwek
     Ewusi-Mensah. </i>The piece that caught my mind was: <o:p></o:p></span></p>
     <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
     auto'><span lang=EN-GB style='font-family:Tahoma'><o:p>&nbsp;</o:p></span></p>
@@ -298,14 +298,14 @@ table.MsoTableGrid
     auto'><i style='mso-bidi-font-style:normal'><span lang=EN-GB
     style='font-family:Tahoma'><o:p>&nbsp;</o:p></span></i></p>
     <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
-    auto'><span lang=EN-GB style='font-family:Tahoma'>I know it’s not a world
+    auto'><span lang=EN-GB style='font-family:Tahoma'>I know itï¿½s not a world
     away from the original but I think it is an improvement, even if only
     through the extra full stop. Which do you prefer?? <o:p></o:p></span></p>
     <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
     auto'><span lang=EN-GB style='font-family:Tahoma'><o:p>&nbsp;</o:p></span></p>
     <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
-    auto'><span lang=EN-GB style='font-family:Tahoma'>However Kwek’s passage is
-    not ‘bad’ as such, even though it is a bit long and dense and hence a
+    auto'><span lang=EN-GB style='font-family:Tahoma'>However Kwekï¿½s passage is
+    not ï¿½badï¿½ as such, even though it is a bit long and dense and hence a
     little hard to digest in one read. The problem is more fundamental. It just
     seems pretentious as well as a bit pointless. You find yourself asking the
     question; if you were writing a book aimed at helping someone learn, why
@@ -346,10 +346,10 @@ table.MsoTableGrid
     auto'><span lang=EN-GB style='font-family:Tahoma'><o:p>&nbsp;</o:p></span></p>
     <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
     auto'><span class=GramE><span lang=EN-GB style='font-family:Tahoma'>So<span
-    style='mso-spacerun:yes'>  </span>in</span></span><span lang=EN-GB
+    style='mso-spacerun:yes'>ï¿½ </span>in</span></span><span lang=EN-GB
     style='font-family:Tahoma'> conclusion, if you are writing a book, think
     about the reader rather than your ego. If you are talking to your boss,
-    keep it simple and don’t geek them out. They are much more likely to be
+    keep it simple and donï¿½t geek them out. They are much more likely to be
     impressed by a concise and comprehensible comment at a level that they
     understand than an impressive sounding, if somewhat useless, stream of
     techno-babble!<o:p></o:p></span></p>

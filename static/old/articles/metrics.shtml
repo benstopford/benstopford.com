@@ -3,25 +3,25 @@
 <html>
 <head>
 	<title>BenStopford.com - Ben Stopford's site for technical essays and blogs</title>
-	<link rel=stylesheet type="text/css" href="/style.css">
+	<link rel=stylesheet type="text/css" href="../../style.css">
 </head>
 
-<body bottommargin="0" leftmargin="0" rightmargin="0" topmargin="0" background="/old/common/img/background.jpg">
+<body bottommargin="0" leftmargin="0" rightmargin="0" topmargin="0" background="../common/img/background.jpg">
 
 
 
 <table height="123" width="100%" cellpadding="0" cellspacing="0" border="0">
 <tr valign="top">
 <!----- insert logo below ------------------------------------------>
-<td><img src="/old/common/img/benbanner.jpg" width="587" height="123" border="0" alt=""></td>
+<td><img src="../common/img/benbanner.jpg" width="587" height="123" border="0" alt=""></td>
 <!------------------------------------------------------------------>
-<td width="100%" background="/old/common/img/topbg.jpg">&nbsp;</td>
+<td width="100%" background="../common/img/topbg.jpg">&nbsp;</td>
 </tr>
 </table>
 
 <table height="40" width="100%" cellpadding="0" cellspacing="0" border="0">
 <tr valign="top">
-<td width="100%" background="/old/common/img/topbar.jpg">&nbsp;</td>
+<td width="100%" background="../common/img/topbar.jpg">&nbsp;</td>
 </tr>
 </table>
 
@@ -30,26 +30,26 @@
 
 <td width="201"><BR>
 <!----- menu, insert links below ------------------------------------------>
-&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/index.shtml">Home and Blogs</a><BR>
-<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
-&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/Articles.shtml">Essays</a><BR>
-<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
-&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/Software.shtml">Software</a><BR>
-<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
-&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/PrimeBrokerage.shtml">Prime Brokerage</a><BR>
-<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
-&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/columns/WebPageOptimiseStub.shtml">Web Page Optimisation</a><BR>
-<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
-&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/TechnicalInterviewingStub.shtml">Interviewing</a><BR>
-<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
-&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/devsim/devsim.shtml">Publications</a><BR>
-<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
-&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/resources/index.shtml">Resources</a><BR>
-<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
-&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/bookreviews/index.shtml">Book Reviews</a><BR>
-<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
-&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/AboutMe.shtml">About Me</a><BR>
-<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="../index.shtml">Home and Blogs</a><BR>
+<img src="../common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="../Articles.shtml">Essays</a><BR>
+<img src="../common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="../Software.shtml">Software</a><BR>
+<img src="../common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="../PrimeBrokerage.shtml">Prime Brokerage</a><BR>
+<img src="../common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="../columns/WebPageOptimiseStub.shtml">Web Page Optimisation</a><BR>
+<img src="../common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="../TechnicalInterviewingStub.shtml">Interviewing</a><BR>
+<img src="../common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="../devsim/devsim.shtml">Publications</a><BR>
+<img src="../common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="../resources/index.shtml">Resources</a><BR>
+<img src="../common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="../bookreviews/index.shtml">Book Reviews</a><BR>
+<img src="../common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="../AboutMe.shtml">About Me</a><BR>
+<img src="../common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
 
 
 
@@ -78,7 +78,7 @@ curobj.q.value="site:"+domainroot+" "+curobj.qfront.value
 <input name="qfront" type="text" style="width: 180px" /><p>
 ..<input STYLE="color: #FFFFFF; font-family: Verdana; font-weight: bold; font-size: 12px; background-color: #003F80;"
 type="submit" value="Search" />
-<img src="/common/img/menubar.jpg" width="201" height="11" border="0" alt="">
+<img src="../common/img/menubar.jpg" width="201" height="11" border="0" alt="">
 </form>
 
 <!-------------------------------------------------------------------------->
@@ -168,7 +168,7 @@ div.Section1
 <p class=MsoNormal style='margin-left:4.0in;text-align:justify;text-indent:
 .5in'><span lang=EN-GB style='font-size:10.0pt'><a
 href="Are%20Metrics%20Any%20Use.pdf"><span style='font-family:Tahoma'>View pdf</span></a>
-              <span style='color:teal'><a href="Are%20Metrics%20Any%20Use.htm"><span
+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ <span style='color:teal'><a href="Are%20Metrics%20Any%20Use.htm"><span
 style='font-family:Tahoma'>Printer Friendly Version</span></a></span></span></p>
 
 <p class=MsoNormal style='text-align:justify'><span lang=EN-GB
@@ -236,7 +236,7 @@ style='font-size:10.0pt;font-family:Tahoma'>&nbsp;</span></p>
         applied to software engineering, reflects harshly upon the software
         engineer that believes themselves to really be a computer scientist.
         The fundamentals of any science lie in its ability to prove or refute
-        theory through observation.  Software engineering is no exception to
+        theory through observation.ï¿½ Software engineering is no exception to
         this yet, to date, we have failed to provide satisfactory empirical
         evaluations of many of the theories we hold as truths.</span></p>
         <p class=MsoNormal style='text-align:justify'><span lang=EN-GB
@@ -309,7 +309,7 @@ style='font-size:10.0pt;font-family:Tahoma'>&nbsp;</span></p>
         <td width=632 valign=top style='width:474.05pt;padding:0in 5.4pt 0in 5.4pt'>
         <p class=MsoNormal style='text-align:justify'><span lang=EN-GB
         style='font-size:10.0pt;font-family:Tahoma'>Software measurement since
-        its conception in the late 1960’s has striven to provide measures on
+        its conception in the late 1960ï¿½s has striven to provide measures on
         which engineers may develop the subject of Software Engineering. One of
         the earliest papers on software metrics was published by Akiyama in
         1971 [8]. </span></p>
@@ -353,10 +353,10 @@ style='font-size:10.0pt;font-family:Tahoma'>&nbsp;</span></p>
         software resulting from the number of distinct routes through a
         program.</span></p>
         <p class=MsoNormal style='text-align:justify'><span lang=EN-GB
-        style='font-size:10.0pt;font-family:Tahoma'> </span></p>
+        style='font-size:10.0pt;font-family:Tahoma'>ï¿½</span></p>
         <p class=MsoNormal style='text-align:justify'><span lang=EN-GB
         style='font-size:10.0pt;font-family:Tahoma'>The advent of Object
-        Orientation in the 1990’s saw a resurgence of interest as researches attempted
+        Orientation in the 1990ï¿½s saw a resurgence of interest as researches attempted
         to measure and understand the issues of this new programming paradigm.
         This was most notably pioneered by Chidamber and Kemerer [2] who
         wrapped the basic principals of Object Orientated software construction
@@ -398,17 +398,17 @@ style='font-size:10.0pt;font-family:Tahoma'>&nbsp;</span></p>
         almost all individual metrics for measuring software has been motivated
         by one of the two activities: -</span></p>
         <p class=MsoNormal style='text-align:justify'><span lang=EN-GB
-        style='font-size:10.0pt;font-family:Tahoma'>1.         The desire to
+        style='font-size:10.0pt;font-family:Tahoma'>1.ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ The desire to
         assess or predict the effort/cost of development processes.</span></p>
         <p class=MsoNormal style='text-align:justify'><span lang=EN-GB
-        style='font-size:10.0pt;font-family:Tahoma'>2.         The desire to
+        style='font-size:10.0pt;font-family:Tahoma'>2.ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ The desire to
         assess or predict quality of software products.</span></p>
         <p class=MsoNormal style='text-align:justify'><span lang=EN-GB
         style='font-size:10.0pt;font-family:Tahoma'>&nbsp;</span></p>
         <p class=MsoNormal style='text-align:justify'><span lang=EN-GB
         style='font-size:10.0pt;font-family:Tahoma'>When considering the
         development of proper systems, systems that are fit for purpose, the
-        quality aspects in Fenton’s second criteria, in my opinion, outweigh
+        quality aspects in Fentonï¿½s second criteria, in my opinion, outweigh
         those of cost or effort prediction. Software quality is a multivariate
         quantity and its assessment cannot be made by any single metric [12].
         However one concept that undoubtedly contributes to software quality is
@@ -490,13 +490,13 @@ style='font-size:10.0pt;font-family:Tahoma'>&nbsp;</span></p>
         <p class=MsoNormal style='text-align:justify'><span lang=EN-GB
         style='font-size:10.0pt;font-family:Tahoma'>&nbsp;</span></p>
         <p class=MsoNormal style='text-align:justify'><span lang=EN-GB
-        style='font-size:10.0pt;font-family:Tahoma'>-           Logical
+        style='font-size:10.0pt;font-family:Tahoma'>-ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Logical
         Complexity e.g. McCabes Complexity Metric</span></p>
         <p class=MsoNormal style='text-align:justify'><span lang=EN-GB
-        style='font-size:10.0pt;font-family:Tahoma'>-           Structural
+        style='font-size:10.0pt;font-family:Tahoma'>-ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Structural
         Complexity e.g. Coupling, Cohesion etc.. </span></p>
         <p class=MsoNormal style='text-align:justify'><span lang=EN-GB
-        style='font-size:10.0pt;font-family:Tahoma'>-           Psychological/Cognitive/Contextual
+        style='font-size:10.0pt;font-family:Tahoma'>-ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Psychological/Cognitive/Contextual
         Complexity e.g. comments, complexity of control flow. </span></p>
         <p class=MsoNormal style='text-align:justify'><span lang=EN-GB
         style='font-size:10.0pt;font-family:Tahoma'>&nbsp;</span></p>
@@ -544,7 +544,7 @@ style='font-size:10.0pt;font-family:Tahoma'>&nbsp;</span></p>
         dimensions of software complexity but they do so often only under
         limited conditions and there are almost always exceptions to each. The
         complex relationships between the dimensions, and the lack of
-        conceptual understanding of them, adds additional complication.  George
+        conceptual understanding of them, adds additional complication.ï¿½ George
         Statks illustrates this point well when he likens Software Complexity
         to the study of the weather. </span></p>
         <p class=MsoNormal style='text-align:justify'><span lang=EN-GB
@@ -727,7 +727,7 @@ style='font-size:10.0pt;font-family:Tahoma'>&nbsp;</span></p>
         relationships within software measurement. They can be broadly split
         into two categories:</span></p>
         <p class=MsoNormal style='text-align:justify'><span lang=EN-GB
-        style='font-size:10.0pt;font-family:Tahoma'>1.         The first
+        style='font-size:10.0pt;font-family:Tahoma'>1.ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ The first
         approach notes that it is the dependencies between metrics that form
         the basis for complexity. Thus examination of these relationships
         provides analysis that is deeper than that created with singular
@@ -735,11 +735,11 @@ style='font-size:10.0pt;font-family:Tahoma'>&nbsp;</span></p>
         theory of software science [2] is probably the best-known and most
         thoroughly studied example of this.</span></p>
         <p class=MsoNormal style='text-align:justify'><span lang=EN-GB
-        style='font-size:10.0pt;font-family:Tahoma'>2.         The second set
+        style='font-size:10.0pt;font-family:Tahoma'>2.ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ The second set
         is more pragmatic about the issue. They accept that there is a limit to
         what we can measure in terms of physical metrics and they suggest
         methods by which those metrics available can be combined in a way that
-        maximizes benefit. Fenton’s Bayesian Nets [4] are a good example of
+        maximizes benefit. Fentonï¿½s Bayesian Nets [4] are a good example of
         this although their motivation is more heavily focused on the
         prediction of software cost than the evaluation of its quality.</span></p>
         </td>
@@ -805,7 +805,7 @@ style='font-size:10.0pt;font-family:Tahoma'>&nbsp;</span></p>
         style='font-size:10.0pt;font-family:Tahoma'>Models like that produced
         by Stark and Lacovara [15] use factor analysis with standard metrics as
         observables. The drawback of these methods is that the resulting models
-        can be difficult to interpret due to their “black box” analysis
+        can be difficult to interpret due to their ï¿½black boxï¿½ analysis
         methodologies. Put another way; the methods by which they analyze
         cannot be attributed to a causal relationship and hence their
         interpretation is more difficult.</span></p>
@@ -887,7 +887,7 @@ style='font-size:10.0pt;font-family:Tahoma'>&nbsp;</span></p>
         mainstream software industry. What has been taken up also tends to be
         based on the many of the older metrics such as Lines of code,
         Cyclometric Complexity and Function points which where all developed in
-        or before the 1970’s.</span></p>
+        or before the 1970ï¿½s.</span></p>
         <p class=MsoNormal style='text-align:justify'><span lang=EN-GB
         style='font-size:10.0pt;font-family:Tahoma'>&nbsp;</span></p>
         <p class=MsoNormal style='text-align:justify'><span lang=EN-GB
@@ -955,7 +955,7 @@ style='font-size:10.0pt;font-family:Tahoma'>&nbsp;</span></p>
         style='font-size:10.0pt;font-family:Tahoma'>&nbsp;</span></p>
         <p class=MsoNormal style='text-align:justify'><span lang=EN-GB
         style='font-size:10.0pt;font-family:Tahoma'>In a perfect word this
-        would be easy to achieve. You would simply take your “complexity ruler”
+        would be easy to achieve. You would simply take your ï¿½complexity rulerï¿½
         and measure the complexity of your system. If it was too complex you
         might spend some time improving the design.</span></p>
         <p class=MsoNormal style='text-align:justify'><span lang=EN-GB
@@ -971,7 +971,7 @@ style='font-size:10.0pt;font-family:Tahoma'>&nbsp;</span></p>
         style='font-size:10.0pt;font-family:Tahoma'>But nonetheless, the
         metrics we have discussed give useful indicators for software
         complexity and as such are a valuable tool within the development and
-        refactoring process.  Like the barometer example they give an indicator
+        refactoring process.ï¿½ Like the barometer example they give an indicator
         of the state of the system. </span></p>
         <p class=MsoNormal style='text-align:justify'><span lang=EN-GB
         style='font-size:10.0pt;font-family:Tahoma'>&nbsp;</span></p>
@@ -1058,10 +1058,10 @@ style='font-size:10.0pt;font-family:Tahoma'>&nbsp;</span></p>
         <p class=MsoNormal style='text-align:justify'><span lang=EN-GB
         style='font-size:10.0pt;font-family:Tahoma'>&nbsp;</span></p>
         <p class=MsoNormal style='text-align:justify'><span lang=EN-GB
-        style='font-size:10.0pt;font-family:Tahoma'>“A major difference between
-        a “well developed” science such as physics and some other less “well
-        developed” sciences such as psychology or sociology is the degree to
-        which they are measured.”</span></p>
+        style='font-size:10.0pt;font-family:Tahoma'>ï¿½A major difference between
+        a ï¿½well developedï¿½ science such as physics and some other less ï¿½well
+        developedï¿½ sciences such as psychology or sociology is the degree to
+        which they are measured.ï¿½</span></p>
         <p class=MsoNormal style='text-align:justify'><span lang=EN-GB
         style='font-size:10.0pt;font-family:Tahoma'>&nbsp;</span></p>
         <p class=MsoNormal style='text-align:justify'><span lang=EN-GB

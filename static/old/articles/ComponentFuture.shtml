@@ -3,25 +3,25 @@
 <html>
 <head>
 	<title>BenStopford.com - Ben Stopford's site for technical essays and blogs</title>
-	<link rel=stylesheet type="text/css" href="/style.css">
+	<link rel=stylesheet type="text/css" href="../../style.css">
 </head>
 
-<body bottommargin="0" leftmargin="0" rightmargin="0" topmargin="0" background="/old/common/img/background.jpg">
+<body bottommargin="0" leftmargin="0" rightmargin="0" topmargin="0" background="../common/img/background.jpg">
 
 
 
 <table height="123" width="100%" cellpadding="0" cellspacing="0" border="0">
 <tr valign="top">
 <!----- insert logo below ------------------------------------------>
-<td><img src="/old/common/img/benbanner.jpg" width="587" height="123" border="0" alt=""></td>
+<td><img src="../common/img/benbanner.jpg" width="587" height="123" border="0" alt=""></td>
 <!------------------------------------------------------------------>
-<td width="100%" background="/old/common/img/topbg.jpg">&nbsp;</td>
+<td width="100%" background="../common/img/topbg.jpg">&nbsp;</td>
 </tr>
 </table>
 
 <table height="40" width="100%" cellpadding="0" cellspacing="0" border="0">
 <tr valign="top">
-<td width="100%" background="/old/common/img/topbar.jpg">&nbsp;</td>
+<td width="100%" background="../common/img/topbar.jpg">&nbsp;</td>
 </tr>
 </table>
 
@@ -30,26 +30,26 @@
 
 <td width="201"><BR>
 <!----- menu, insert links below ------------------------------------------>
-&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/index.shtml">Home and Blogs</a><BR>
-<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
-&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/Articles.shtml">Essays</a><BR>
-<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
-&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/Software.shtml">Software</a><BR>
-<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
-&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/PrimeBrokerage.shtml">Prime Brokerage</a><BR>
-<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
-&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/columns/WebPageOptimiseStub.shtml">Web Page Optimisation</a><BR>
-<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
-&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/TechnicalInterviewingStub.shtml">Interviewing</a><BR>
-<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
-&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/devsim/devsim.shtml">Publications</a><BR>
-<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
-&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/resources/index.shtml">Resources</a><BR>
-<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
-&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/bookreviews/index.shtml">Book Reviews</a><BR>
-<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
-&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/AboutMe.shtml">About Me</a><BR>
-<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="../index.shtml">Home and Blogs</a><BR>
+<img src="../common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="../Articles.shtml">Essays</a><BR>
+<img src="../common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="../Software.shtml">Software</a><BR>
+<img src="../common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="../PrimeBrokerage.shtml">Prime Brokerage</a><BR>
+<img src="../common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="../columns/WebPageOptimiseStub.shtml">Web Page Optimisation</a><BR>
+<img src="../common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="../TechnicalInterviewingStub.shtml">Interviewing</a><BR>
+<img src="../common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="../devsim/devsim.shtml">Publications</a><BR>
+<img src="../common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="../resources/index.shtml">Resources</a><BR>
+<img src="../common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="../bookreviews/index.shtml">Book Reviews</a><BR>
+<img src="../common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="../AboutMe.shtml">About Me</a><BR>
+<img src="../common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
 
 
 
@@ -78,7 +78,7 @@ curobj.q.value="site:"+domainroot+" "+curobj.qfront.value
 <input name="qfront" type="text" style="width: 180px" /><p>
 ..<input STYLE="color: #FFFFFF; font-family: Verdana; font-weight: bold; font-size: 12px; background-color: #003F80;"
 type="submit" value="Search" />
-<img src="/common/img/menubar.jpg" width="201" height="11" border="0" alt="">
+<img src="../common/img/menubar.jpg" width="201" height="11" border="0" alt="">
 </form>
 
 <!-------------------------------------------------------------------------->
@@ -182,7 +182,7 @@ ul
 
 <p class=MsoNormal style='margin-left:288.0pt;text-indent:36.0pt'><span
 style='font-size:10.0pt;font-family:Tahoma'><a href="FutureOfComponents.pdf">View
-in pdf</a>        <span style='color:teal'><a
+in pdf</a> ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ <span style='color:teal'><a
 href="The%20Future%20Of%20Component%20Software%20-%20Ben%20Stopford.htm">Printer
 Friendly Version</a></span></span></p>
 
@@ -236,8 +236,8 @@ Friendly Version</a></span></span></p>
         <td width=632 valign=top style='width:474.05pt;padding:0cm 5.4pt 0cm 5.4pt'>
         <p class=MsoNormal style='text-align:justify'><span style='font-size:
         10.0pt;font-family:Tahoma'>In 1949 when forecasting the relentless
-        march of science the magazine Popular Mechanics quoted: “Computers in
-        the future may weigh not more than 1.5 tons.” This statement seems
+        march of science the magazine Popular Mechanics quoted: ï¿½Computers in
+        the future may weigh not more than 1.5 tons.ï¿½ This statement seems
         quite humorous when quoted in the context of today, not because it is incorrect,
         but because the amount is so far fetched by current standards. </span></p>
         <p class=MsoNormal style='text-align:justify'><span style='font-size:
@@ -252,8 +252,8 @@ Friendly Version</a></span></span></p>
         <p class=MsoNormal style='text-align:justify'><span style='font-size:
         10.0pt;font-family:Tahoma'>Similarly, in this essay I shall examine the
         trends of today, and then reflect on how they can be used to predict
-        the trends of the future. Sudipto Ghosh [Ghosh02] stated that “all
-        future software systems will be developed from components”. I will look
+        the trends of the future. Sudipto Ghosh [Ghosh02] stated that ï¿½all
+        future software systems will be developed from componentsï¿½. I will look
         at this and other opinions on the future of component systems. Finally
         I will reflect on the cost efficiency of component software in its
         different incarnations.</span></p>
@@ -300,7 +300,7 @@ Friendly Version</a></span></span></p>
         is so commonplace in engineering that makes it, for them, an
         uncontroversial topic.</span></p>
         <p class=MsoNormal style='text-align:justify'><span style='font-size:
-        10.0pt;font-family:Tahoma'> </span></p>
+        10.0pt;font-family:Tahoma'>ï¿½</span></p>
         <p class=MsoNormal style='text-align:justify'><span style='font-size:
         10.0pt;font-family:Tahoma'>Engineers are taught, from their very first
         lectures, the art of balancing the trade-offs of different components
@@ -310,7 +310,7 @@ Friendly Version</a></span></span></p>
         <p class=MsoNormal style='text-align:justify'><span style='font-size:
         10.0pt;font-family:Tahoma'>Software engineers on the other hand are
         generally not so good at reuse. Software engineering is still in a
-        “craftsmanship” phase that leads more naturally to rewrite rather than
+        ï¿½craftsmanshipï¿½ phase that leads more naturally to rewrite rather than
         reuse. </span></p>
         <p class=MsoNormal style='text-align:justify'><span style='font-size:
         10.0pt;font-family:Tahoma'>&nbsp;</span></p>
@@ -318,7 +318,7 @@ Friendly Version</a></span></span></p>
         10.0pt;font-family:Tahoma'>The problem is that software is a soft and
         malleable product that can be moulded into whatever exact shape suits.
         The question then arises as to whether this perceived advantage of the
-        “softness of software” is really a liability? </span></p>
+        ï¿½softness of softwareï¿½ is really a liability? </span></p>
         <p class=MsoNormal style='text-align:justify'><span style='font-size:
         10.0pt;font-family:Tahoma'>&nbsp;</span></p>
         <p class=MsoNormal style='text-align:justify'><span style='font-size:
@@ -332,7 +332,7 @@ Friendly Version</a></span></span></p>
         <p class=MsoNormal style='text-align:justify'><span style='font-size:
         10.0pt;font-family:Tahoma'>&nbsp;</span></p>
         <p class=MsoNormal style='text-align:justify'><span style='font-size:
-        10.0pt;font-family:Tahoma'>Ruben’s findings still bear much relevance
+        10.0pt;font-family:Tahoma'>Rubenï¿½s findings still bear much relevance
         to the evolution and progression of component software today. This
         issue of the softness of software is still pertinent and, as we shall
         see, many future developments are geared to restricting the directions
@@ -340,7 +340,7 @@ Friendly Version</a></span></span></p>
         <p class=MsoNormal style='text-align:justify'><span style='font-size:
         10.0pt;font-family:Tahoma'>&nbsp;</span></p>
         <p class=MsoNormal style='text-align:justify'><span style='font-size:
-        10.0pt;font-family:Tahoma'>Ruben’s foresight was not only limited to
+        10.0pt;font-family:Tahoma'>Rubenï¿½s foresight was not only limited to
         the need for increased structure and standards. He also observed that
         it is complexity that promotes reuse. His principal states that the
         more complex a software component the greater the motivation for
@@ -380,7 +380,7 @@ Friendly Version</a></span></span></p>
         <td width=632 valign=top style='width:474.05pt;padding:0cm 5.4pt 0cm 5.4pt'>
         <p class=MsoNormal style='text-align:justify'><span style='font-size:
         10.0pt;font-family:Tahoma'>A different and slightly later view to
-        Ruben’s was put forward by Bennet [Benn00] who considered not only
+        Rubenï¿½s was put forward by Bennet [Benn00] who considered not only
         reuse but also the aspect of composition, which is a fundamental
         contributory element of component software. He notes that over the last
         half-century software processes have been dominated by managing the
@@ -389,7 +389,7 @@ Friendly Version</a></span></span></p>
         <p class=MsoNormal style='text-align:justify'><span style='font-size:
         10.0pt;font-family:Tahoma'>&nbsp;</span></p>
         <p class=MsoNormal style='text-align:justify'><span style='font-size:
-        10.0pt;font-family:Tahoma'>Bennett’s view is that there needs to be a
+        10.0pt;font-family:Tahoma'>Bennettï¿½s view is that there needs to be a
         shift in the focus of software towards users rather than developers. He
         states that software development needs to be more demand-centric so as
         to allow it to be delivered as a service within the framework of an
@@ -404,7 +404,7 @@ Friendly Version</a></span></span></p>
         desired car from a series of options and only then is the final product
         assembled. The comparable process in software is to allow users to
         create, compose and assemble a service, dynamically bringing together a
-        number of different suppliers to meet the consumer’s needs. </span></p>
+        number of different suppliers to meet the consumerï¿½s needs. </span></p>
         <p class=MsoNormal style='text-align:justify'><span style='font-size:
         10.0pt;font-family:Tahoma'>&nbsp;</span></p>
         <p class=MsoNormal style='text-align:justify'><span style='font-size:
@@ -428,7 +428,7 @@ Friendly Version</a></span></span></p>
         slightly disparate roles and the runtime would be able to dynamically
         determine the most appropriate component for a certain task.</span></p>
         <p class=MsoNormal style='text-align:justify'><span style='font-size:
-        10.0pt;font-family:Tahoma'> </span></p>
+        10.0pt;font-family:Tahoma'>ï¿½</span></p>
         <p class=MsoNormal style='text-align:justify'><span style='font-size:
         10.0pt;font-family:Tahoma'>In particular he comments on the
         long-standing wider research aims to develop tools and methodologies
@@ -462,13 +462,13 @@ Friendly Version</a></span></span></p>
              alternative components to use in the event of failure.</span></li>
         </ul>
         <p class=MsoNormal style='text-align:justify'><span style='font-size:
-        10.0pt;font-family:Tahoma'> </span></p>
+        10.0pt;font-family:Tahoma'>ï¿½</span></p>
         <p class=MsoNormal style='text-align:justify'><span style='font-size:
         10.0pt;font-family:Tahoma'>Such systems will need to be, in some ways,
         self-aware and goal directed. Shobe also foresees the interactions
         between developers and the system taking the form of a dialogue rather
         than coding. The developer would offer advice to the system at certain
-        critical points to aid its’ judgement in how to deal with different
+        critical points to aid itsï¿½ judgement in how to deal with different
         situations. </span></p>
         <p class=MsoNormal style='text-align:justify'><span style='font-size:
         10.0pt;font-family:Tahoma'>&nbsp;</span></p>
@@ -503,7 +503,7 @@ Friendly Version</a></span></span></p>
         <td width=632 valign=top style='width:474.05pt;padding:0cm 5.4pt 0cm 5.4pt'>
         <p class=MsoNormal style='text-align:justify'><span style='font-size:
         10.0pt;font-family:Tahoma'>The views of both Bennet and Shrobe are
-        fairly far reaching. Shrobe’s in particular represents a quite extreme
+        fairly far reaching. Shrobeï¿½s in particular represents a quite extreme
         vision. However all the ideas so far are grounded in the fundamentals
         of how component software (and software in general) is developed today.
         </span></p>
@@ -549,10 +549,10 @@ Friendly Version</a></span></span></p>
         3: Deployment Composition </span></h3>
         <p class=MsoNormal style='text-align:justify'><span style='font-size:
         10.0pt;font-family:Tahoma'>In this tier components are integrated as
-        part of the product’s deployment (not at build time). An example of
+        part of the productï¿½s deployment (not at build time). An example of
         deployment composition is the web browser, which is deployed then
         subsequently updated with downloaded components that enable specialist
-        functionality on certain web pages. Sun’s J2EE also supports partial
+        functionality on certain web pages. Sunï¿½s J2EE also supports partial
         composition at deployment time through the use of a deployment
         descriptor and hence also falls into this category.</span></p>
         <p class=MsoNormal style='text-align:justify'><span style='font-size:
@@ -567,7 +567,7 @@ Friendly Version</a></span></span></p>
         <p class=MsoNormal style='text-align:justify'><span style='font-size:
         10.0pt;font-family:Tahoma'>&nbsp;</span></p>
         <p class=MsoNormal style='text-align:justify'><span style='font-size:
-        10.0pt;font-family:Tahoma'>What is notable about Szyperski’s tiers is
+        10.0pt;font-family:Tahoma'>What is notable about Szyperskiï¿½s tiers is
         that they are all motivated by financial drivers. Tier1 arises from the
         competitive advantage gained through reusing prefabricated components
         over developing them in house. Tier2 results from the forces of an
@@ -595,7 +595,7 @@ Friendly Version</a></span></span></p>
         10.0pt'>&nbsp;</span></p>
         <p class=MsoNormal style='text-align:justify'><span style='font-size:
         10.0pt;font-family:Tahoma'>The fourth tier supports dynamic upgradeable
-        and extensible structures and represents Syperski’s view on the future
+        and extensible structures and represents Syperskiï¿½s view on the future
         of component software. Research into applications in this tier provides
         an extremely challenging set of problems for researchers, such as
         validation of correctness, robustness and efficiency. </span></p>
@@ -625,8 +625,8 @@ Friendly Version</a></span></span></p>
         the domain of static component assembly. Garlan noted problems with
         low-level interoperability and architectural mismatch resulting from
         incompatibilities between the components he studied. Issues such as
-        “which components hold responsibility for execution” or “what
-        supporting services are required” are examples of problems arising from
+        ï¿½which components hold responsibility for executionï¿½ or ï¿½what
+        supporting services are requiredï¿½ are examples of problems arising from
         discrepancies in the assumptions made by component vendors. </span></p>
         <p class=MsoBodyText style='text-align:justify'><span style='font-family:
         Tahoma'>&nbsp;</span></p>
@@ -637,22 +637,22 @@ Friendly Version</a></span></span></p>
         <p class=MsoBodyText style='text-align:justify'><span style='font-family:
         Tahoma'>&nbsp;</span></p>
         <p class=MsoNormal style='margin-left:18.0pt;text-align:justify;
-        text-indent:-18.0pt'><span style='font-size:10.0pt;font-family:Symbol'>·<span
+        text-indent:-18.0pt'><span style='font-size:10.0pt;font-family:Symbol'>ï¿½<span
         style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         </span></span><span style='font-size:10.0pt;font-family:Tahoma'>Make
         architectural assumptions explicit.</span></p>
         <p class=MsoNormal style='margin-left:18.0pt;text-align:justify;
-        text-indent:-18.0pt'><span style='font-size:10.0pt;font-family:Symbol'>·<span
+        text-indent:-18.0pt'><span style='font-size:10.0pt;font-family:Symbol'>ï¿½<span
         style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         </span></span><span style='font-size:10.0pt;font-family:Tahoma'>Construct
         large pieces of software using orthogonal sub-components. </span></p>
         <p class=MsoNormal style='margin-left:18.0pt;text-align:justify;
-        text-indent:-18.0pt'><span style='font-size:10.0pt;font-family:Symbol'>·<span
+        text-indent:-18.0pt'><span style='font-size:10.0pt;font-family:Symbol'>ï¿½<span
         style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         </span></span><span style='font-size:10.0pt;font-family:Tahoma'>Provide
         techniques for bridging mismatches</span></p>
         <p class=MsoNormal style='margin-left:18.0pt;text-align:justify;
-        text-indent:-18.0pt'><span style='font-size:10.0pt;font-family:Symbol'>·<span
+        text-indent:-18.0pt'><span style='font-size:10.0pt;font-family:Symbol'>ï¿½<span
         style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         </span></span><span style='font-size:10.0pt;font-family:Tahoma'>Develop
         sources of architectural design guidance.</span></p>
@@ -660,7 +660,7 @@ Friendly Version</a></span></span></p>
         10.0pt;font-family:Tahoma'>&nbsp;</span></p>
         <p class=MsoNormal style='text-align:justify'><span style='font-size:
         10.0pt;font-family:Tahoma'>Whilst these issues were observed when
-        considering static composition (i.e. within Szyperski’s first Tier) the
+        considering static composition (i.e. within Szyperskiï¿½s first Tier) the
         same issues are applicable to higher tiers too. Approaches to remedying
         these issues have been suggested on many levels. One approach is to
         provide certification of components so that consumers have some
@@ -688,9 +688,9 @@ Friendly Version</a></span></span></p>
         <p class=MsoNormal style='text-align:justify'><span style='font-size:
         10.0pt;font-family:Tahoma'>&nbsp;</span></p>
         <p class=MsoNormal style='text-align:justify'><span style='font-size:
-        10.0pt;font-family:Tahoma'> “Specifications need to be grounded in
+        10.0pt;font-family:Tahoma'>ï¿½ï¿½Specifications need to be grounded in
         framework of common understanding. At the root is a common ontology
-        ensuring agreed upon terminology and domain concepts.” [Szyper02]. </span></p>
+        ensuring agreed upon terminology and domain concepts.ï¿½ [Szyper02]. </span></p>
         <p class=MsoNormal style='text-align:justify'><span style='font-size:
         10.0pt;font-family:Tahoma'>&nbsp;</span></p>
         <p class=MsoNormal style='text-align:justify'><span style='font-size:
@@ -707,10 +707,10 @@ Friendly Version</a></span></span></p>
         <p class=MsoNormal style='text-align:justify'><span style='font-size:
         10.0pt;font-family:Tahoma'>&nbsp;</span></p>
         <p class=MsoNormal style='text-align:justify'><span style='font-size:
-        10.0pt;font-family:Tahoma'>AsmL has been applied on top of Microsoft’s
+        10.0pt;font-family:Tahoma'>AsmL has been applied on top of Microsoftï¿½s
         .NET CLR by Mike Barnet et al. [Barn03] with some successes made in
         specifying and verifying correctness of composed component systems. In
-        Barnet’s implementation the framework is able to provide notification
+        Barnetï¿½s implementation the framework is able to provide notification
         that components do not meet the required specification (along similar
         lines to that suggested by Shrobe) but is as yet unable to provide
         automated support or actually pinpoint the reason for the failure. </span></p>
@@ -719,7 +719,7 @@ Friendly Version</a></span></span></p>
         <p class=MsoBodyText style='text-align:justify'><span style='font-family:
         Tahoma'>Keshava Reddy Kottapally [Web3] presents a near and far future
         view of component software as being influenced by the development of
-        Architectural Description Languages (ADL’s). These ADL’s focus on the
+        Architectural Description Languages (ADLï¿½s). These ADLï¿½s focus on the
         high level structure of the overall application rather then
         implementation details and again arise from similar concepts to those
         suggested by Szyperski. Physically they provide specification of a
@@ -728,9 +728,9 @@ Friendly Version</a></span></span></p>
         <p class=MsoBodyText style='text-align:justify'><span style='font-family:
         Tahoma'>&nbsp;</span></p>
         <p class=MsoBodyText style='text-align:justify'><span style='font-family:
-        Tahoma'>Kottapally’s near future view revolves around adaptation of the
+        Tahoma'>Kottapallyï¿½s near future view revolves around adaptation of the
         currently prominent component architectures (.NET, J2EE, CORBA) to
-        incorporate ADL’s. He gives the example that ADL files would be built
+        incorporate ADLï¿½s. He gives the example that ADL files would be built
         with Builder tools designed specifically for ADL specification. Then
         interfaces such as CORBA IDL could be generated automatically once the
         ADL file is in place. The purpose being to facilitate connection
@@ -836,13 +836,13 @@ Friendly Version</a></span></span></p>
         10.0pt;font-family:Tahoma'>&nbsp;</span></p>
         <ol style='margin-top:0cm' start=1 type=1>
          <li class=MsoNormal style='text-align:justify'><span style='font-size:
-             10.0pt;font-family:Tahoma'>“Building families of similar but
+             10.0pt;font-family:Tahoma'>ï¿½Building families of similar but
              distinct software products to enable a more systematic approach to
-             reuse”.</span></li>
+             reuseï¿½.</span></li>
          <li class=MsoNormal style='text-align:justify'><span style='font-size:
-             10.0pt;font-family:Tahoma'>“Assembling self-describing service
+             10.0pt;font-family:Tahoma'>ï¿½Assembling self-describing service
              components using new encapsulation, packaging, and orchestration
-             technologies”.</span></li>
+             technologiesï¿½.</span></li>
         </ol>
         <p class=MsoNormal style='margin-left:18.0pt;text-align:justify'><span
         style='font-size:10.0pt;font-family:Tahoma'>&nbsp;</span></p>
@@ -874,7 +874,7 @@ Friendly Version</a></span></span></p>
         10.0pt;font-family:Tahoma'>&nbsp;</span></p>
         <p class=MsoNormal style='text-align:justify'><span style='font-size:
           10.0pt;font-family:Tahoma'>Greenfield</span><span style='font-size:
-        10.0pt;font-family:Tahoma'>’s second point, listed above, refers to the
+        10.0pt;font-family:Tahoma'>ï¿½s second point, listed above, refers to the
         concept of Self-Description. Self-Description allows components to
         describe the assumptions, dependencies and behaviour that are intrinsic
         to their execution, thus providing operational as well as contractual
@@ -898,9 +898,9 @@ Friendly Version</a></span></span></p>
         <p class=MsoNormal style='text-align:justify'><span style='font-size:
         10.0pt;font-family:Tahoma'>&nbsp;</span></p>
         <p class=MsoNormal style='text-align:justify'><span style='font-size:
-        10.0pt;font-family:Tahoma'>“Together these lead to the prospect of an
+        10.0pt;font-family:Tahoma'>ï¿½Together these lead to the prospect of an
         architecturally-driven approach to model-driven development of product
-        families”. ([SoftFact] p452)</span></p>
+        familiesï¿½. ([SoftFact] p452)</span></p>
         <p class=MsoNormal style='text-align:justify'><span style='font-size:
         10.0pt;font-family:Tahoma'>&nbsp;</span></p>
         <p class=MsoNormal style='text-align:justify'><span style='font-size:
@@ -947,7 +947,7 @@ Friendly Version</a></span></span></p>
         issues with static composition raised over a decade ago [Gar95] and the
         same issues are pointed out time and time again ([Szyp02], [GSCK04],
         [Voas97], [Web3], [SzypCS]). We have seen solutions suggested including
-        self-description and ADL’s. However one of the main aims is to produce
+        self-description and ADLï¿½s. However one of the main aims is to produce
         agile software constructions and this includes the ability to compose
         systems dynamically, even at runtime. </span></p>
         <p class=MsoNormal style='text-align:justify'><span style='font-size:
@@ -992,7 +992,7 @@ Friendly Version</a></span></span></p>
        <tr>
         <td width=632 valign=top style='width:474.05pt;padding:0cm 5.4pt 0cm 5.4pt'>
         <p class=MsoNormal style='text-align:justify'><span style='font-size:
-        10.0pt;font-family:Tahoma'>Szyperski’s four motivational tiers that
+        10.0pt;font-family:Tahoma'>Szyperskiï¿½s four motivational tiers that
         were introduced earlier coupled with the fact that each increasing tier
         requires more refined competencies leads to the concept of a Component
         Maturity Model [Szyp02]. The levels are distinguished as:</span></p>
@@ -1008,10 +1008,10 @@ Friendly Version</a></span></span></p>
         text-indent:-18.0pt'><span style='font-size:10.0pt;font-family:Tahoma'>3a.
          Closed Composition: make and buy from a closed pool of organisations</span></p>
         <p class=MsoNormal style='margin-left:36.0pt;text-align:justify;
-        text-indent:-18.0pt'><span style='font-size:10.0pt;font-family:Tahoma'>3b.  Open
+        text-indent:-18.0pt'><span style='font-size:10.0pt;font-family:Tahoma'>3b.ï¿½ Open
         Composition: make and buy from open markets</span></p>
         <p class=MsoNormal style='text-align:justify;text-indent:18.0pt'><span
-        style='font-size:10.0pt;font-family:Tahoma'>4.   Dynamic Upgrade</span></p>
+        style='font-size:10.0pt;font-family:Tahoma'>4.ï¿½ï¿½ Dynamic Upgrade</span></p>
         <ol style='margin-top:0cm' start=5 type=1>
          <li class=MsoNormal style='text-align:justify'><span style='font-size:
              10.0pt;font-family:Tahoma'>Open and Dynamic</span></li>
@@ -1030,7 +1030,7 @@ Friendly Version</a></span></span></p>
         10.0pt;font-family:Tahoma'>At this level components are produced in
         house and reused within a project. The aim from an economic standpoint
         is to reduce costs by promoting reuse. From a development position the
-        “rule of thumb” is that a component becomes cost effective once it has
+        ï¿½rule of thumbï¿½ is that a component becomes cost effective once it has
         been reused three times [SzypCS]. This property emerges from the trade
         off between the cost of redeveloping a component when it is needed
         against the increased initial cost of an encapsulated and reusable
@@ -1083,12 +1083,12 @@ Friendly Version</a></span></span></p>
         <p class=MsoNormal style='text-align:justify'><span style='font-size:
         10.0pt;font-family:Tahoma'>&nbsp;</span></p>
         <p class=MsoNormal style='text-align:justify'><span style='font-size:
-        10.0pt;font-family:Tahoma'>“As long as solutions to problems are
+        10.0pt;font-family:Tahoma'>ï¿½As long as solutions to problems are
         created from scratch [i.e. regular development], growth can be at most
         linear. As components act as multipliers in a market, growth can become
         exponential. In other words, a product that utilises components
         benefits from the combined productivity and innovation of all component
-        vendors”.</span></p>
+        vendorsï¿½.</span></p>
         <p class=MsoNormal style='text-align:justify'><span style='font-size:
         10.0pt;font-family:Tahoma'>&nbsp;</span></p>
         <p class=MsoNormal style='text-align:justify'><span style='font-size:
@@ -1099,7 +1099,7 @@ Friendly Version</a></span></span></p>
         10.0pt;font-family:Tahoma'>The use of prefabricated components offers
         the potential to compose hugely complex software constructions at a
         fraction of their development cost simply by purchasing the constituent
-        parts and assembling them to form the desired product.  It is this
+        parts and assembling them to form the desired product.ï¿½ It is this
         promise of instant competitive advantage, which makes the use of
         components so compulsive, and it is this that makes them truly cost
         effective. </span></p>
@@ -1110,12 +1110,12 @@ Friendly Version</a></span></span></p>
         fundamentally changes when components are introduced. When a certain
         domain becomes large enough to support a component market of sufficient
         size, quality and liquidity the creation of that market becomes
-        inevitable.  The adoption of components by software developers then
+        inevitable.ï¿½ The adoption of components by software developers then
         becomes a necessity. Standard solutions are forced to utilise these
         components in order to keep up with competitors. At this point
         competitive advantage can then only be achieved by adding additional
         functionality to that offered by the composition of available
-        components within the software market.  </span></p>
+        components within the software market.ï¿½ </span></p>
         <p class=MsoNormal style='text-align:justify'><span style='font-size:
         10.0pt;font-family:Tahoma'>&nbsp;</span></p>
         <p class=MsoNormal style='text-align:justify'><span style='font-size:
@@ -1148,12 +1148,12 @@ Friendly Version</a></span></span></p>
         little of the predicted revolution in component utilisation actually
         taking place.</span></p>
         <p class=MsoNormal style='text-align:justify'><span style='font-size:
-        10.0pt;font-family:Tahoma'> </span></p>
+        10.0pt;font-family:Tahoma'>ï¿½</span></p>
         <p class=MsoNormal style='text-align:justify'><span style='font-size:
         10.0pt;font-family:Tahoma'>This slowness in take up can be attributed
         to a number of factors:</span></p>
         <p class=MsoNormal style='text-align:justify'><span style='font-size:
-        10.0pt;font-family:Tahoma'> </span></p>
+        10.0pt;font-family:Tahoma'>ï¿½</span></p>
         <ol style='margin-top:0cm' start=1 type=1>
          <li class=MsoNormal style='text-align:justify'><span style='font-size:
              10.0pt;font-family:Tahoma'>Lack of liquidity in component markets:
@@ -1174,7 +1174,7 @@ Friendly Version</a></span></span></p>
              impossible to fix. Raising issues back to the vendor is rarely a
              practical solution.</span></li>
          <li class=MsoNormal style='text-align:justify'><span style='font-size:
-             10.0pt;font-family:Tahoma'>The “not invented here” syndrome.
+             10.0pt;font-family:Tahoma'>The ï¿½not invented hereï¿½ syndrome.
              Suspicion of vendor components leads to the dominance of in-house
              construction. In addition components that are used are often only
              applied in opportunistic manners rather than as an integrated part
@@ -1193,7 +1193,7 @@ Friendly Version</a></span></span></p>
         <p class=MsoNormal style='text-align:justify'><span style='font-size:
         10.0pt;font-family:Tahoma'>&nbsp;</span></p>
         <p class=MsoNormal style='text-align:justify'><span style='font-size:
-        10.0pt;font-family:Tahoma'>Level 4+5.  Open and Dynamic Upgrade</span></p>
+        10.0pt;font-family:Tahoma'>Level 4+5.ï¿½ Open and Dynamic Upgrade</span></p>
         <p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'>The
         efficiency of dynamic upgrade is easy to judge as what technology is
         currently implelmentable is of too unreliable a form to be efficient.
@@ -1202,7 +1202,7 @@ Friendly Version</a></span></span></p>
         the extra flexibility offered. Applications such as mobile phone
         routing are potential candidates where the opportunity to dynamically
         switch in and out encapsulated components in a hot system is highly
-        valued due to the avoidance of down time.  </span></p>
+        valued due to the avoidance of down time.ï¿½ </span></p>
         </td>
        </tr>
       </table>
@@ -1312,7 +1312,7 @@ Friendly Version</a></span></span></p>
         <p class=MsoNormal style='text-align:justify'><span style='font-size:
         10.0pt;font-family:Tahoma'>&nbsp;</span></p>
         <p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'>[Barn03]
-        Barnet et al:  Serious Specification for Composing Components 6th ICSE
+        Barnet et al:ï¿½ Serious Specification for Composing Components 6th ICSE
         Workshop on Component-Based Software Engineering</span></p>
         <p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'>&nbsp;</span></p>
         <p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'>[Benn00]
@@ -1331,7 +1331,7 @@ Friendly Version</a></span></span></p>
         <a href="http://www.sei.cmu.edu/cbs/overview.html">http://www.sei.cmu.edu/cbs/overview.html</a></span></p>
         <p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'>&nbsp;</span></p>
         <p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'>[Gar95]
-        David Garlan: Architectural Mismatch of Why it’s hard to build a system
+        David Garlan: Architectural Mismatch of Why itï¿½s hard to build a system
         out of existing parts.</span></p>
         <p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'>&nbsp;</span></p>
         <p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'>[Ghosh02]
@@ -1360,10 +1360,10 @@ Friendly Version</a></span></span></p>
         1999 IEEE Symposium on Security and Privacy</span></p>
         <p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'>&nbsp;</span></p>
         <p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'>[Szyp02]
-        Clemens Szyperski: Component Technology – What, Where and How?</span></p>
+        Clemens Szyperski: Component Technology ï¿½ What, Where and How?</span></p>
         <p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'>&nbsp;</span></p>
         <p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'>[SzypCS]
-        Clemens Szyperski: Component Software – Beyond Object-Orientated
+        Clemens Szyperski: Component Software ï¿½ Beyond Object-Orientated
         Programming. Second Edition Addison-Wesley</span></p>
         <p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'>&nbsp;</span></p>
         <p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'>[Voas97]

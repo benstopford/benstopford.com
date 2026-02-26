@@ -3,25 +3,25 @@
 <html>
 <head>
 	<title>BenStopford.com - Ben Stopford's site for technical essays and blogs</title>
-	<link rel=stylesheet type="text/css" href="/style.css">
+	<link rel=stylesheet type="text/css" href="../../style.css">
 </head>
 
-<body bottommargin="0" leftmargin="0" rightmargin="0" topmargin="0" background="/old/common/img/background.jpg">
+<body bottommargin="0" leftmargin="0" rightmargin="0" topmargin="0" background="../common/img/background.jpg">
 
 
 
 <table height="123" width="100%" cellpadding="0" cellspacing="0" border="0">
 <tr valign="top">
 <!----- insert logo below ------------------------------------------>
-<td><img src="/old/common/img/benbanner.jpg" width="587" height="123" border="0" alt=""></td>
+<td><img src="../common/img/benbanner.jpg" width="587" height="123" border="0" alt=""></td>
 <!------------------------------------------------------------------>
-<td width="100%" background="/old/common/img/topbg.jpg">&nbsp;</td>
+<td width="100%" background="../common/img/topbg.jpg">&nbsp;</td>
 </tr>
 </table>
 
 <table height="40" width="100%" cellpadding="0" cellspacing="0" border="0">
 <tr valign="top">
-<td width="100%" background="/old/common/img/topbar.jpg">&nbsp;</td>
+<td width="100%" background="../common/img/topbar.jpg">&nbsp;</td>
 </tr>
 </table>
 
@@ -30,26 +30,26 @@
 
 <td width="201"><BR>
 <!----- menu, insert links below ------------------------------------------>
-&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/index.shtml">Home and Blogs</a><BR>
-<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
-&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/Articles.shtml">Essays</a><BR>
-<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
-&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/Software.shtml">Software</a><BR>
-<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
-&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/PrimeBrokerage.shtml">Prime Brokerage</a><BR>
-<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
-&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/columns/WebPageOptimiseStub.shtml">Web Page Optimisation</a><BR>
-<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
-&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/TechnicalInterviewingStub.shtml">Interviewing</a><BR>
-<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
-&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/devsim/devsim.shtml">Publications</a><BR>
-<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
-&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/resources/index.shtml">Resources</a><BR>
-<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
-&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/bookreviews/index.shtml">Book Reviews</a><BR>
-<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
-&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/AboutMe.shtml">About Me</a><BR>
-<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="../index.shtml">Home and Blogs</a><BR>
+<img src="../common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="../Articles.shtml">Essays</a><BR>
+<img src="../common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="../Software.shtml">Software</a><BR>
+<img src="../common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="../PrimeBrokerage.shtml">Prime Brokerage</a><BR>
+<img src="../common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="../columns/WebPageOptimiseStub.shtml">Web Page Optimisation</a><BR>
+<img src="../common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="../TechnicalInterviewingStub.shtml">Interviewing</a><BR>
+<img src="../common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="../devsim/devsim.shtml">Publications</a><BR>
+<img src="../common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="../resources/index.shtml">Resources</a><BR>
+<img src="../common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="../bookreviews/index.shtml">Book Reviews</a><BR>
+<img src="../common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="../AboutMe.shtml">About Me</a><BR>
+<img src="../common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
 
 
 
@@ -78,7 +78,7 @@ curobj.q.value="site:"+domainroot+" "+curobj.qfront.value
 <input name="qfront" type="text" style="width: 180px" /><p>
 ..<input STYLE="color: #FFFFFF; font-family: Verdana; font-weight: bold; font-size: 12px; background-color: #003F80;"
 type="submit" value="Search" />
-<img src="/common/img/menubar.jpg" width="201" height="11" border="0" alt="">
+<img src="../common/img/menubar.jpg" width="201" height="11" border="0" alt="">
 </form>
 
 <!-------------------------------------------------------------------------->
@@ -101,7 +101,6 @@ xmlns="http://www.w3.org/TR/REC-html40">
 <meta name=ProgId content=Word.Document>
 <meta name=Generator content="Microsoft Word 11">
 <meta name=Originator content="Microsoft Word 11">
-<base target="_blank">
 <link rel=File-List href="bookreview_files/filelist.xml">
 <link rel=Edit-Time-Data href="bookreview_files/editdata.mso">
 <!--[if !mso]>
@@ -209,7 +208,7 @@ Tahoma;mso-ansi-language:EN-GB'>&nbsp;</span></b></p>
   <br clear=all style='page-break-before:always'>
   </span>
   <p class=MsoNormal><span lang=EN-GB style='font-size:12.0pt;font-family:Tahoma;
-  color:teal;mso-ansi-language:EN-GB'>Crystal Clear – A Human-Powered
+  color:teal;mso-ansi-language:EN-GB'>Crystal Clear ï¿½ A Human-Powered
   Methodology for Small Teams </span></p>
   <p class=MsoNormal><span lang=EN-GB style='font-size:12.0pt;font-family:Tahoma;
   color:teal;mso-ansi-language:EN-GB'>by Alistair Cockburn</span></p>
@@ -235,7 +234,7 @@ Tahoma;mso-ansi-language:EN-GB'>&nbsp;</span></b></p>
     <td width=617 rowspan=2 valign=top style='width:462.8pt;padding:0cm 5.4pt 0cm 5.4pt'>
     <p class=MsoNormal style='text-align:justify'><span lang=EN-GB
     style='font-family:Tahoma;mso-ansi-language:EN-GB'>There are a number of
-    books out there on development process. Crystal Clear presents Cockburn’s
+    books out there on development process. Crystal Clear presents Cockburnï¿½s
     agile methodology for small teams (With orange, for larger teams, just
     being published now). Crystal clear is a lighter methodology. For me this
     has the advantage that, unlike XP, adoption of the entire suite of
@@ -247,7 +246,7 @@ Tahoma;mso-ansi-language:EN-GB'>&nbsp;</span></b></p>
     style='font-family:Tahoma;mso-ansi-language:EN-GB'>&nbsp;</span></p>
     <p class=MsoNormal style='text-align:justify'><span lang=EN-GB
     style='font-family:Tahoma;mso-ansi-language:EN-GB'>Looking at it cynically,
-    few of the practices are new, instead they are taken from Cockburn’s
+    few of the practices are new, instead they are taken from Cockburnï¿½s
     experience watching agile teams using Scrum, XP and others. However the
     treatment, presented as part of his human methodology, along with the way
     Cockburn structures them into a methodology make a thought provoking read. </span></p>
@@ -266,7 +265,7 @@ Tahoma;mso-ansi-language:EN-GB'>&nbsp;</span></b></p>
    <tr style='mso-yfti-irow:3;mso-yfti-lastrow:yes'>
     <td width=617 valign=top style='width:462.8pt;padding:0cm 5.4pt 0cm 5.4pt'>
     <p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma;mso-ansi-language:
-    EN-GB'>»&nbsp;<a
+    EN-GB'>ï¿½&nbsp;<a
     href="http://www.amazon.co.uk/exec/obidos/ASIN/0201699478/qid=1148676476/sr=8-1/ref=pd_ka_1/026-2661973-9906051">View
     on Amazon</a></span></p>
     </td>
@@ -341,7 +340,7 @@ EN-GB'>&nbsp;</span></p>
     <p class=MsoNormal style='text-align:justify'><span lang=EN-GB
     style='font-family:Tahoma;mso-ansi-language:EN-GB'>&nbsp;</span></p>
     <p class=MsoNormal style='text-align:justify'><span lang=EN-GB
-    style='font-family:Tahoma;mso-ansi-language:EN-GB'>Syperski’s command of
+    style='font-family:Tahoma;mso-ansi-language:EN-GB'>Syperskiï¿½s command of
     the subject matter is clear and his writing concise. This is an academic
     text and as such it is not the most accessible book ever written
     (colleagues have complained about its inaccessibility which is to some
@@ -358,11 +357,11 @@ EN-GB'>&nbsp;</span></p>
     <p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma;mso-ansi-language:
     EN-GB'>Related Books:</span></p>
     <p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma;mso-ansi-language:
-    EN-GB'>»&nbsp;<a
+    EN-GB'>ï¿½&nbsp;<a
     href="http://www.amazon.co.uk/exec/obidos/ASIN/020167520X/qid=1131829962/sr=8-2/ref=sr_8_xs_ap_i2_xgl/202-9714558-4782224">Realizing
     E-business with Components by Paul Allen</a></span></p>
     <p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma;mso-ansi-language:
-    EN-GB'>»&nbsp;<a
+    EN-GB'>ï¿½&nbsp;<a
     href="http://www.amazon.co.uk/exec/obidos/ASIN/0471202843/qid=1131830001/sr=1-1/ref=sr_1_2_1/202-9714558-4782224">Software
     Factories: Assembling Applications with Patterns, Models, Frameworks, and
     Tools</a> </span></p>
@@ -383,7 +382,7 @@ EN-GB'>&nbsp;</span></p>
    <tr style='mso-yfti-irow:3;mso-yfti-lastrow:yes'>
     <td width=617 valign=top style='width:462.8pt;padding:0cm 5.4pt 0cm 5.4pt'>
     <p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma;mso-ansi-language:
-    EN-GB'>»&nbsp;<a
+    EN-GB'>ï¿½&nbsp;<a
     href="http://www.amazon.co.uk/exec/obidos/ASIN/0201745720/qid=1131829772/sr=8-1/ref=sr_8_xs_ap_i1_xgl/202-9714558-4782224">View
     on Amazon</a></span></p>
     </td>
@@ -441,7 +440,7 @@ Tahoma;mso-ansi-language:EN-GB'>&nbsp;</span></b></p>
     <td width=617 rowspan=2 valign=top style='width:462.8pt;padding:0cm 5.4pt 0cm 5.4pt'>
     <p class=MsoNormal style='text-align:justify'><span lang=EN-GB
     style='font-family:Tahoma;mso-ansi-language:EN-GB'>Every once in a while
-    you read something that is truly fundamental that you can’t believe you’ve
+    you read something that is truly fundamental that you canï¿½t believe youï¿½ve
     never come across it before. This book contains many of those moments. In
     essence it imparts most of the truly fundamental principals that you need
     to understand to program effectively in java. </span></p>
@@ -452,7 +451,7 @@ Tahoma;mso-ansi-language:EN-GB'>&nbsp;</span></b></p>
     sections covering different aspects of java programming. Bloch starts with
     an in depth look at some of the idiosyncrasies of the language that can
     lead to the creation of strange and nasty bugs. For example a surprising
-    number of developers don’t realize that you have to override hashCode()
+    number of developers donï¿½t realize that you have to override hashCode()
     when you override equals. Bloch goes into why. He also covers many design
     issues and good practices such as favouring static inner classes, favouring
     composition over inheritance and minimizing scope. In each case his
@@ -488,7 +487,7 @@ Tahoma;mso-ansi-language:EN-GB'>&nbsp;</span></b></p>
    <tr style='mso-yfti-irow:3;mso-yfti-lastrow:yes'>
     <td width=617 valign=top style='width:462.8pt;padding:0cm 5.4pt 0cm 5.4pt'>
     <p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma;mso-ansi-language:
-    EN-GB'>»&nbsp;<a
+    EN-GB'>ï¿½&nbsp;<a
     href="http://www.amazon.co.uk/exec/obidos/ASIN/0201310058/qid=1134927981/sr=8-1/ref=sr_8_xs_ap_i1_xgl/202-9714558-4782224">View
     on Amazon</a></span></p>
     </td>
@@ -547,7 +546,7 @@ Tahoma;mso-ansi-language:EN-GB'>&nbsp;</span></b></p>
     <td width=293 valign=top style='width:219.8pt;padding:0cm 5.4pt 0cm 5.4pt;
     height:24.75pt'>
     <p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma;mso-ansi-language:
-    EN-GB'>»&nbsp;<a href="http://www.wwisa.org/wwisamain/books.htm">Reviews of
+    EN-GB'>ï¿½&nbsp;<a href="http://www.wwisa.org/wwisamain/books.htm">Reviews of
     Software Architecture Books</a> </span></p>
     <p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma;mso-ansi-language:
     EN-GB'>&nbsp;</span></p>
@@ -555,7 +554,7 @@ Tahoma;mso-ansi-language:EN-GB'>&nbsp;</span></b></p>
     <td width=468 valign=top style='width:350.75pt;padding:0cm 5.4pt 0cm 5.4pt;
     height:24.75pt'>
     <p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma;mso-ansi-language:
-    EN-GB'>&nbsp;Reviews on the “Worldwide Institute of Software Architects”
+    EN-GB'>&nbsp;Reviews on the ï¿½Worldwide Institute of Software Architectsï¿½
     site.</span></p>
     </td>
    </tr>

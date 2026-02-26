@@ -3,25 +3,25 @@
 <html>
 <head>
 	<title>BenStopford.com - Ben Stopford's site for technical essays and blogs</title>
-	<link rel=stylesheet type="text/css" href="/style.css">
+	<link rel=stylesheet type="text/css" href="../../style.css">
 </head>
 
-<body bottommargin="0" leftmargin="0" rightmargin="0" topmargin="0" background="/old/common/img/background.jpg">
+<body bottommargin="0" leftmargin="0" rightmargin="0" topmargin="0" background="../common/img/background.jpg">
 
 
 
 <table height="123" width="100%" cellpadding="0" cellspacing="0" border="0">
 <tr valign="top">
 <!----- insert logo below ------------------------------------------>
-<td><img src="/old/common/img/benbanner.jpg" width="587" height="123" border="0" alt=""></td>
+<td><img src="../common/img/benbanner.jpg" width="587" height="123" border="0" alt=""></td>
 <!------------------------------------------------------------------>
-<td width="100%" background="/old/common/img/topbg.jpg">&nbsp;</td>
+<td width="100%" background="../common/img/topbg.jpg">&nbsp;</td>
 </tr>
 </table>
 
 <table height="40" width="100%" cellpadding="0" cellspacing="0" border="0">
 <tr valign="top">
-<td width="100%" background="/old/common/img/topbar.jpg">&nbsp;</td>
+<td width="100%" background="../common/img/topbar.jpg">&nbsp;</td>
 </tr>
 </table>
 
@@ -30,26 +30,26 @@
 
 <td width="201"><BR>
 <!----- menu, insert links below ------------------------------------------>
-&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/index.shtml">Home and Blogs</a><BR>
-<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
-&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/Articles.shtml">Essays</a><BR>
-<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
-&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/Software.shtml">Software</a><BR>
-<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
-&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/PrimeBrokerage.shtml">Prime Brokerage</a><BR>
-<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
-&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/columns/WebPageOptimiseStub.shtml">Web Page Optimisation</a><BR>
-<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
-&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/TechnicalInterviewingStub.shtml">Interviewing</a><BR>
-<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
-&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/devsim/devsim.shtml">Publications</a><BR>
-<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
-&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/resources/index.shtml">Resources</a><BR>
-<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
-&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/bookreviews/index.shtml">Book Reviews</a><BR>
-<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
-&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/AboutMe.shtml">About Me</a><BR>
-<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="../index.shtml">Home and Blogs</a><BR>
+<img src="../common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="../Articles.shtml">Essays</a><BR>
+<img src="../common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="../Software.shtml">Software</a><BR>
+<img src="../common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="../PrimeBrokerage.shtml">Prime Brokerage</a><BR>
+<img src="../common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="../columns/WebPageOptimiseStub.shtml">Web Page Optimisation</a><BR>
+<img src="../common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="../TechnicalInterviewingStub.shtml">Interviewing</a><BR>
+<img src="../common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="../devsim/devsim.shtml">Publications</a><BR>
+<img src="../common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="../resources/index.shtml">Resources</a><BR>
+<img src="../common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="../bookreviews/index.shtml">Book Reviews</a><BR>
+<img src="../common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="../AboutMe.shtml">About Me</a><BR>
+<img src="../common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
 
 
 
@@ -78,7 +78,7 @@ curobj.q.value="site:"+domainroot+" "+curobj.qfront.value
 <input name="qfront" type="text" style="width: 180px" /><p>
 ..<input STYLE="color: #FFFFFF; font-family: Verdana; font-weight: bold; font-size: 12px; background-color: #003F80;"
 type="submit" value="Search" />
-<img src="/common/img/menubar.jpg" width="201" height="11" border="0" alt="">
+<img src="../common/img/menubar.jpg" width="201" height="11" border="0" alt="">
 </form>
 
 <!-------------------------------------------------------------------------->
@@ -277,7 +277,7 @@ table.MsoTableGrid
   <p class=MsoNormal><span lang=EN-GB style='font-size:12.0pt;font-family:Tahoma;
   color:teal'>How much effort should you put into interviewing?</span><span
   lang=EN-GB style='font-family:Tahoma;color:teal'><span
-  style='mso-spacerun:yes'>                               </span><a
+  style='mso-spacerun:yes'>ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ </span><a
   href="interviewOrNot.htm">Printer Friendly Version</a><o:p></o:p></span></p>
   </td>
  </tr>
@@ -290,7 +290,7 @@ table.MsoTableGrid
    mso-padding-alt:0in 5.4pt 0in 5.4pt'>
    <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
     <td width=632 valign=top style='width:474.05pt;padding:0in 5.4pt 0in 5.4pt'>
-    <p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>I’ve
+    <p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>Iï¿½ve
     recently been hiring at Barcap and the in doing so have been reflecting on
     the various merits of structuring the process (these are enumerated in full
     in my article <a href="../TechnicalInterviewingStub.shtml">Technical
@@ -315,10 +315,10 @@ table.MsoTableGrid
   mso-border-bottom-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
   <h2><span lang=EN-GB style='font-size:12.0pt;font-family:Tahoma;color:teal;
   font-weight:normal;mso-bidi-font-weight:bold;font-style:normal;mso-bidi-font-style:
-  italic'>The Most Important Points <span style='mso-tab-count:1'>         </span></span><span
+  italic'>The Most Important Points <span style='mso-tab-count:1'>ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ </span></span><span
   lang=EN-GB style='font-family:Tahoma;color:teal;font-weight:normal;
   mso-bidi-font-weight:bold;font-style:normal;mso-bidi-font-style:italic'><span
-  style='mso-spacerun:yes'>                                   </span></span><span
+  style='mso-spacerun:yes'>ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½</span></span><span
   lang=EN-GB style='font-size:10.0pt;font-family:Tahoma;color:teal;font-weight:
   normal;mso-bidi-font-weight:bold;font-style:normal;mso-bidi-font-style:italic'><o:p></o:p></span></h2>
   </td>
@@ -436,13 +436,13 @@ table.MsoTableGrid
     <td width=632 valign=top style='width:474.05pt;padding:0in 5.4pt 0in 5.4pt'>
     <p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>Putting
     formality into the filtering process injects a level of objectivity into
-    something that is otherwise often just left to a ‘feeling’ as to whether
-    the candidate was up<span style='mso-spacerun:yes'>  </span>to scratch. In
+    something that is otherwise often just left to a ï¿½feelingï¿½ as to whether
+    the candidate was up<span style='mso-spacerun:yes'>ï¿½ </span>to scratch. In
     addition it allows broadening of the areas over which candidates are
     measured as well as making the process more scalable (as candidates taking
     tests has a smaller time constraint on the interviewer than direct
-    contact). This means that more CV’s can be processed which is beneficial
-    when CV’s provide a fairly arbitrary indicator to the worth of a candidate.
+    contact). This means that more CVï¿½s can be processed which is beneficial
+    when CVï¿½s provide a fairly arbitrary indicator to the worth of a candidate.
     <o:p></o:p></span></p>
     <p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'><o:p>&nbsp;</o:p></span></p>
     <p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>However an
@@ -450,7 +450,7 @@ table.MsoTableGrid
     hire of consistently able candidates. This is simply because these
     processes can never really indicate whether the applicant will actually be
     any good when they sit down at the desk and start coding. They just provide
-    additional ‘yard sticks’ with which to measure and evaluate abilities that
+    additional ï¿½yard sticksï¿½ with which to measure and evaluate abilities that
     are supposed to be associated with capable people.<o:p></o:p></span></p>
     </td>
    </tr>
@@ -475,7 +475,7 @@ table.MsoTableGrid
   <br clear=all style='page-break-before:always'>
   </span>
   <p class=MsoNormal><span lang=EN-GB style='font-size:12.0pt;font-family:Tahoma;
-  color:teal'>But you can only do so much …<o:p></o:p></span></p>
+  color:teal'>But you can only do so much ï¿½<o:p></o:p></span></p>
   </td>
  </tr>
  <tr style='mso-yfti-irow:1;mso-yfti-lastrow:yes'>
@@ -496,7 +496,7 @@ table.MsoTableGrid
     <p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>In summary,
     you need an effective interview process both to find and attract good
     people, but there is no point going overboard with this process as there is
-    a limit to what any process can really tell you. It’s up to you to judge
+    a limit to what any process can really tell you. Itï¿½s up to you to judge
     that you are covering enough in the process to remove the chaff without
     wasting too much time in the process. <o:p></o:p></span></p>
     <p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'><o:p>&nbsp;</o:p></span></p>
@@ -504,7 +504,7 @@ table.MsoTableGrid
     backup method, and one we usually use, is to only take on contract staff
     initially and convert them over if they are good. Whilst this is <span
     class=GramE>a</span> expensive process initially it can be beneficial if
-    you do get a ‘dud’ candidate (and there are a lot of them about).<o:p></o:p></span></p>
+    you do get a ï¿½dudï¿½ candidate (and there are a lot of them about).<o:p></o:p></span></p>
     <h1><span lang=EN-GB style='font-size:10.0pt;font-family:Tahoma;font-weight:
     normal;mso-bidi-font-weight:bold'>If you are interested in this topic
     generally, Scott <span class=SpellE>Berkun's</span> essay (whilst not

@@ -3,25 +3,25 @@
 <html>
 <head>
 	<title>BenStopford.com - Ben Stopford's site for technical essays and blogs</title>
-	<link rel=stylesheet type="text/css" href="/style.css">
+	<link rel=stylesheet type="text/css" href="../../../style.css">
 </head>
 
-<body bottommargin="0" leftmargin="0" rightmargin="0" topmargin="0" background="/old/common/img/background.jpg">
+<body bottommargin="0" leftmargin="0" rightmargin="0" topmargin="0" background="../../common/img/background.jpg">
 
 
 
 <table height="123" width="100%" cellpadding="0" cellspacing="0" border="0">
 <tr valign="top">
 <!----- insert logo below ------------------------------------------>
-<td><img src="/old/common/img/benbanner.jpg" width="587" height="123" border="0" alt=""></td>
+<td><img src="../../common/img/benbanner.jpg" width="587" height="123" border="0" alt=""></td>
 <!------------------------------------------------------------------>
-<td width="100%" background="/old/common/img/topbg.jpg">&nbsp;</td>
+<td width="100%" background="../../common/img/topbg.jpg">&nbsp;</td>
 </tr>
 </table>
 
 <table height="40" width="100%" cellpadding="0" cellspacing="0" border="0">
 <tr valign="top">
-<td width="100%" background="/old/common/img/topbar.jpg">&nbsp;</td>
+<td width="100%" background="../../common/img/topbar.jpg">&nbsp;</td>
 </tr>
 </table>
 
@@ -30,26 +30,26 @@
 
 <td width="201"><BR>
 <!----- menu, insert links below ------------------------------------------>
-&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/index.shtml">Home and Blogs</a><BR>
-<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
-&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/Articles.shtml">Essays</a><BR>
-<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
-&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/Software.shtml">Software</a><BR>
-<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
-&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/PrimeBrokerage.shtml">Prime Brokerage</a><BR>
-<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
-&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/columns/WebPageOptimiseStub.shtml">Web Page Optimisation</a><BR>
-<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
-&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/TechnicalInterviewingStub.shtml">Interviewing</a><BR>
-<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
-&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/devsim/devsim.shtml">Publications</a><BR>
-<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
-&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/resources/index.shtml">Resources</a><BR>
-<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
-&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/bookreviews/index.shtml">Book Reviews</a><BR>
-<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
-&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/AboutMe.shtml">About Me</a><BR>
-<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="../../index.shtml">Home and Blogs</a><BR>
+<img src="../../common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="../../Articles.shtml">Essays</a><BR>
+<img src="../../common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="../../Software.shtml">Software</a><BR>
+<img src="../../common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="../../PrimeBrokerage.shtml">Prime Brokerage</a><BR>
+<img src="../../common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="../../columns/WebPageOptimiseStub.shtml">Web Page Optimisation</a><BR>
+<img src="../../common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="../../TechnicalInterviewingStub.shtml">Interviewing</a><BR>
+<img src="../../common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="../../devsim/devsim.shtml">Publications</a><BR>
+<img src="../../common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="../../resources/index.shtml">Resources</a><BR>
+<img src="../../common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="../../bookreviews/index.shtml">Book Reviews</a><BR>
+<img src="../../common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="../../AboutMe.shtml">About Me</a><BR>
+<img src="../../common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
 
 
 
@@ -78,7 +78,7 @@ curobj.q.value="site:"+domainroot+" "+curobj.qfront.value
 <input name="qfront" type="text" style="width: 180px" /><p>
 ..<input STYLE="color: #FFFFFF; font-family: Verdana; font-weight: bold; font-size: 12px; background-color: #003F80;"
 type="submit" value="Search" />
-<img src="/common/img/menubar.jpg" width="201" height="11" border="0" alt="">
+<img src="../../common/img/menubar.jpg" width="201" height="11" border="0" alt="">
 </form>
 
 <!-------------------------------------------------------------------------->
@@ -185,21 +185,21 @@ last weeks topic, lets look at Singletons in the concept of testing. </span></p>
 
 <p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
 
-<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>There’s a lot of
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>Thereï¿½s a lot of
 on-line pontificating on how Singletons are the curse of test driven software
-development and should be banished. There’s almost as much boosting of the
-entirely opposite view point – that they make testing easier.</span></p>
+development and should be banished. Thereï¿½s almost as much boosting of the
+entirely opposite view point ï¿½ that they make testing easier.</span></p>
 
 <p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
 
 <p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>I not convinced
-I subscribe to either view – but what I can say is that code using Singletons
+I subscribe to either view ï¿½ but what I can say is that code using Singletons
 is no harder to test that code that does not use them.</span></p>
 
 <p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
 
 <p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>The following
-three examples show different ways to “configure” a Singleton at run-time so
+three examples show different ways to ï¿½configureï¿½ a Singleton at run-time so
 your tests can generate specific situations without modifying any code that
 consumes the singletons.</span></p>
 
@@ -334,7 +334,7 @@ handler.log(message);</span></p>
 Private constructor. Bit of a give away for a Singleton</span></p>
 
 <p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>(2)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-public static methods on the class – by some accounts this is not a true
+public static methods on the class ï¿½ by some accounts this is not a true
 singleton (I tend to think it is) but is an example of how to implement the
 pattern</span></p>
 
@@ -439,7 +439,7 @@ assertTrue(logMessages.equals(</span></p>
 <p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
 
 <p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>In this case the
-custom handler is used to assist in the test, in other cases a “null” handler
+custom handler is used to assist in the test, in other cases a ï¿½nullï¿½ handler
 could be used to simply discard the messages.</span></p>
 
 <p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
@@ -550,7 +550,7 @@ return persistence.getUser(id);</span></p>
 <p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
 
 <p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>(1)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-Private constructor again – certainly smells like a Singleton</span></p>
+Private constructor again ï¿½ certainly smells like a Singleton</span></p>
 
 <p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>(2)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 Public static lazily instantiated accessor for the single instance.</span></p>
@@ -1068,13 +1068,13 @@ return true;</span></p>
 <p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>Taking this
 approach is not fail-safe. Following this pattern, obfuscating the deployed
 code, sealing and signing the jars are all important steps, but all they do is
-“raise the bar” to a level where it would take a highly skilled practitioner to
+ï¿½raise the barï¿½ to a level where it would take a highly skilled practitioner to
 break into the client code.</span></p>
 
 <p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
 
 <p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>If we assume
-that the client side can be subverted, we must ensure the server is secure –
+that the client side can be subverted, we must ensure the server is secure ï¿½
 which has less to do with software and more to do with procedure and correct
 separation of responsibilities in the organisation.</span></p>
 

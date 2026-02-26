@@ -3,25 +3,25 @@
 <html>
 <head>
 	<title>BenStopford.com - Ben Stopford's site for technical essays and blogs</title>
-	<link rel=stylesheet type="text/css" href="/style.css">
+	<link rel=stylesheet type="text/css" href="../../style.css">
 </head>
 
-<body bottommargin="0" leftmargin="0" rightmargin="0" topmargin="0" background="/old/common/img/background.jpg">
+<body bottommargin="0" leftmargin="0" rightmargin="0" topmargin="0" background="../common/img/background.jpg">
 
 
 
 <table height="123" width="100%" cellpadding="0" cellspacing="0" border="0">
 <tr valign="top">
 <!----- insert logo below ------------------------------------------>
-<td><img src="/old/common/img/benbanner.jpg" width="587" height="123" border="0" alt=""></td>
+<td><img src="../common/img/benbanner.jpg" width="587" height="123" border="0" alt=""></td>
 <!------------------------------------------------------------------>
-<td width="100%" background="/old/common/img/topbg.jpg">&nbsp;</td>
+<td width="100%" background="../common/img/topbg.jpg">&nbsp;</td>
 </tr>
 </table>
 
 <table height="40" width="100%" cellpadding="0" cellspacing="0" border="0">
 <tr valign="top">
-<td width="100%" background="/old/common/img/topbar.jpg">&nbsp;</td>
+<td width="100%" background="../common/img/topbar.jpg">&nbsp;</td>
 </tr>
 </table>
 
@@ -30,26 +30,26 @@
 
 <td width="201"><BR>
 <!----- menu, insert links below ------------------------------------------>
-&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/index.shtml">Home and Blogs</a><BR>
-<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
-&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/Articles.shtml">Essays</a><BR>
-<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
-&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/Software.shtml">Software</a><BR>
-<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
-&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/PrimeBrokerage.shtml">Prime Brokerage</a><BR>
-<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
-&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/columns/WebPageOptimiseStub.shtml">Web Page Optimisation</a><BR>
-<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
-&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/TechnicalInterviewingStub.shtml">Interviewing</a><BR>
-<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
-&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/devsim/devsim.shtml">Publications</a><BR>
-<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
-&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/resources/index.shtml">Resources</a><BR>
-<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
-&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/bookreviews/index.shtml">Book Reviews</a><BR>
-<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
-&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/AboutMe.shtml">About Me</a><BR>
-<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="../index.shtml">Home and Blogs</a><BR>
+<img src="../common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="../Articles.shtml">Essays</a><BR>
+<img src="../common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="../Software.shtml">Software</a><BR>
+<img src="../common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="../PrimeBrokerage.shtml">Prime Brokerage</a><BR>
+<img src="../common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="../columns/WebPageOptimiseStub.shtml">Web Page Optimisation</a><BR>
+<img src="../common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="../TechnicalInterviewingStub.shtml">Interviewing</a><BR>
+<img src="../common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="../devsim/devsim.shtml">Publications</a><BR>
+<img src="../common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="../resources/index.shtml">Resources</a><BR>
+<img src="../common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="../bookreviews/index.shtml">Book Reviews</a><BR>
+<img src="../common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="../AboutMe.shtml">About Me</a><BR>
+<img src="../common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
 
 
 
@@ -78,7 +78,7 @@ curobj.q.value="site:"+domainroot+" "+curobj.qfront.value
 <input name="qfront" type="text" style="width: 180px" /><p>
 ..<input STYLE="color: #FFFFFF; font-family: Verdana; font-weight: bold; font-size: 12px; background-color: #003F80;"
 type="submit" value="Search" />
-<img src="/common/img/menubar.jpg" width="201" height="11" border="0" alt="">
+<img src="../common/img/menubar.jpg" width="201" height="11" border="0" alt="">
 </form>
 
 <!-------------------------------------------------------------------------->
@@ -516,7 +516,7 @@ style='mso-ansi-language:EN-GB'><o:p>&nbsp;</o:p></span></p>
 <h2><span lang=EN-GB style='mso-ansi-language:EN-GB'><o:p>&nbsp;</o:p></span></h2>
 
 <h2><span lang=EN-GB style='mso-ansi-language:EN-GB'><span
-style='mso-spacerun:yes'> </span>Is there an improvement in the cross-cutting
+style='mso-spacerun:yes'>ï¿½</span>Is there an improvement in the cross-cutting
 nature of design patterns when they are implemented in AspectJ?<o:p></o:p></span></h2>
 
 <p class=MsoNormal style='text-align:justify'><span lang=EN-GB
@@ -537,7 +537,7 @@ across one other. The Wikipedia definition [5] states:<o:p></o:p></span></p>
 <p class=MsoNormal style='text-align:justify'><span lang=EN-GB
 style='mso-ansi-language:EN-GB'><o:p>&nbsp;</o:p></span></p>
 
-<p class=MsoNormal style='text-align:justify'><span style='color:blue'>“In <a
+<p class=MsoNormal style='text-align:justify'><span style='color:blue'>ï¿½In <a
 href="http://www.answers.com/main/ntquery?method=4&amp;dsid=2222&amp;dekey=Computer+science&amp;gwp=8&amp;curtab=2222_1"
 target="_top"><span style='text-decoration:none;text-underline:none'>computer
 science</span></a>, <strong><span style='font-weight:normal;mso-bidi-font-weight:
@@ -547,7 +547,7 @@ target="_top"><span style='text-decoration:none;text-underline:none'>aspects</sp
 of a program, that do not relate to the <a
 href="http://www.answers.com/main/ntquery?method=4&amp;dsid=2222&amp;dekey=Core+concern&amp;gwp=8&amp;curtab=2222_1"
 target="_top"><span style='text-decoration:none;text-underline:none'>core
-concerns</span></a> directly, but are needed for proper program execution.”</span><span
+concerns</span></a> directly, but are needed for proper program execution.ï¿½</span><span
 lang=EN-GB style='color:blue;mso-ansi-language:EN-GB'><o:p></o:p></span></p>
 
 <p class=MsoNormal style='text-align:justify'><span lang=EN-GB
@@ -555,10 +555,10 @@ style='mso-ansi-language:EN-GB'><o:p>&nbsp;</o:p></span></p>
 
 <p class=MsoNormal style='text-align:justify'><span lang=EN-GB
 style='mso-ansi-language:EN-GB'>As an example let us consider a
-telecommunications application. This might have a core concern of “routing
-calls”, but code for other operations such as “timing” and “billing” those
-calls might be intertwined in the whole “routing” object hierarchy. Here the
-“billing concern” overlays the “routing concern” meaning that the code that
+telecommunications application. This might have a core concern of ï¿½routing
+callsï¿½, but code for other operations such as ï¿½timingï¿½ and ï¿½billingï¿½ those
+calls might be intertwined in the whole ï¿½routingï¿½ object hierarchy. Here the
+ï¿½billing concernï¿½ overlays the ï¿½routing concernï¿½ meaning that the code that
 implements each is crosscut (Fig. 1(a)). This intertwining of code for separate
 concerns, know as <b style='mso-bidi-font-weight:normal'><i style='mso-bidi-font-style:
 normal'>Cross-Cutting,</i></b> cannot be removed with regular programming
@@ -577,12 +577,12 @@ of tertiary concerns that would otherwise cut across it (fig. 1(b)).<o:p></o:p><
 style='mso-ansi-language:EN-GB'><o:p>&nbsp;</o:p></span></p>
 
 <p class=MsoNormal style='text-align:justify'><span lang=EN-GB
-style='mso-ansi-language:EN-GB'><span style='mso-tab-count:1'>                </span><o:p></o:p></span></p>
+style='mso-ansi-language:EN-GB'><span style='mso-tab-count:1'>ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ </span><o:p></o:p></span></p>
 
 <p class=MsoNormal style='text-align:justify'><!--[if mso & !supportInlineShapes & supportFields]><span
 lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-element:field-begin;
-mso-field-lock:yes'></span><span style='mso-spacerun:yes'> </span>SHAPE <span
-style='mso-spacerun:yes'> </span>\* MERGEFORMAT <span style='mso-element:field-separator'></span></span><![endif]--><span
+mso-field-lock:yes'></span><span style='mso-spacerun:yes'>ï¿½</span>SHAPE <span
+style='mso-spacerun:yes'>ï¿½</span>\* MERGEFORMAT <span style='mso-element:field-separator'></span></span><![endif]--><span
 lang=EN-GB style='mso-ansi-language:EN-GB'><!--[if gte vml 1]><v:group id="_x0000_s1077"
  editas="canvas" style='width:369pt;height:198pt;
  mso-position-horizontal-relative:char;mso-position-vertical-relative:line'
@@ -825,13 +825,13 @@ normal'><span lang=EN-GB style='mso-ansi-language:EN-GB'>Patterns and Roles<o:p>
 <p class=MsoNormal style='text-align:justify'><span lang=EN-GB
 style='mso-ansi-language:EN-GB'>Hannemann et al have observed that there are
 cross-cutting relationships between different roles within many of the GoF [2]
-patterns. They segregate these roles into two types. Firstly “Defining Roles”
+patterns. They segregate these roles into two types. Firstly ï¿½Defining Rolesï¿½
 are those for which the code is completely encapsulated in the pattern itself.
-A good example is the Façade pattern which has no influence on clients other
+A good example is the Faï¿½ade pattern which has no influence on clients other
 than to provide an interface with which they can interact. Such roles leverage
 little from an Aspect Orientated approach as their encapsulation means they
 rarely crosscut client code. The second role type observed by Hannemann are
-“Superimposed Roles”. These generally see improvements with the introduction of
+ï¿½Superimposed Rolesï¿½. These generally see improvements with the introduction of
 Aspects due to there being cross-cutting between the different roles which are
 superimposed as in the telecommunications example above.<o:p></o:p></span></p>
 
@@ -856,12 +856,12 @@ style='font-weight:normal'><o:p>&nbsp;</o:p></span></p>
 <p class=MsoBodyText style='text-align:justify'><span lang=EN-GB
 style='font-weight:normal'>For example the class that is participating as a
 subject in the Observer Pattern is likely to have other responsibilities such
-as a regular programming task like “being a timer”. This class has a
+as a regular programming task like ï¿½being a timerï¿½. This class has a
 superimposition of roles, the role of being a Subject in the pattern and the
-role of “being a timer”. Hannemanns et al refer to this as the “Participants
+role of ï¿½being a timerï¿½. Hannemanns et al refer to this as the ï¿½Participants
 having their own responsibilities and justification outside the pattern
-context” [7]. The manifestation of this in the regular java implementation is a
-plethora of<span style='mso-spacerun:yes'>  </span>notifyObservers() methods
+contextï¿½ [7]. The manifestation of this in the regular java implementation is a
+plethora of<span style='mso-spacerun:yes'>ï¿½ </span>notifyObservers() methods
 within subject classes. Within the Aspect implementation however the code is
 modularised into a single class leaving the Subject with no knowledge of its
 participation in the pattern at all. <o:p></o:p></span></p>
@@ -876,7 +876,7 @@ send a command without knowing what objects will receive it. The benefits due
 to cross-cutting are again revealed due to the concern of the pattern being
 separated from the concern of the participant classes i.e. each participant in
 the chain need not be aware of its role in the pattern.<span
-style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
+style='mso-spacerun:yes'>ï¿½ </span><o:p></o:p></span></p>
 
 <p class=MsoBodyText style='text-align:justify'><span lang=EN-GB
 style='font-weight:normal'><o:p>&nbsp;</o:p></span></p>
@@ -884,7 +884,7 @@ style='font-weight:normal'><o:p>&nbsp;</o:p></span></p>
 <p class=MsoBodyText style='text-align:justify'><span lang=EN-GB
 style='font-weight:normal'>The key point is that code modules for roles such as
 Subjects have no interest in containing code that facilitates their behaviour
-in the pattern.<span style='mso-spacerun:yes'>  </span>Hence the presence of any
+in the pattern.<span style='mso-spacerun:yes'>ï¿½ </span>Hence the presence of any
 such code for this role is of no relevance and this crosscuts their primary
 role. <o:p></o:p></span></p>
 
@@ -902,9 +902,9 @@ style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span></span><![endif]><span lang=EN-GB>Roles that Crosscut Participant
 Classes:</span><span lang=EN-GB style='font-weight:normal'> This defines the
 concept of different roles being intertwined as described above.<span
-style='mso-spacerun:yes'>  </span>Examples are the cross-cutting of the pattern
+style='mso-spacerun:yes'>ï¿½ </span>Examples are the cross-cutting of the pattern
 roles, such as being a Subject in the Observer or Leaf in the Composite etc,
-with the base role of the participant class such as “being a timer”.<o:p></o:p></span></p>
+with the base role of the participant class such as ï¿½being a timerï¿½.<o:p></o:p></span></p>
 
 <p class=MsoBodyText style='margin-left:.5in;text-align:justify;text-indent:
 -.25in;mso-list:l1 level1 lfo2;tab-stops:list .5in'><![if !supportLists]><span
@@ -912,7 +912,7 @@ lang=EN-GB style='font-weight:normal'><span style='mso-list:Ignore'>2.<span
 style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span></span><![endif]><span lang=EN-GB>Conceptual Operations Cross-Cutting
 Methods in one of more Classes:</span><span lang=EN-GB style='font-weight:normal'>
-This refers to the actual implementation of ‘one to many’ relationships across
+This refers to the actual implementation of ï¿½one to manyï¿½ relationships across
 multiple classes which generally result from (1). This level of cross-cutting
 is often modularised into a single class in the Aspect implementations. In the
 Observer example this is typified by the modularisation of the scattered
@@ -930,8 +930,8 @@ Hannemann et al lies in the improvement found when multiple patterns (or
 pattern instances) act upon the same subjects. For example there may be two
 instances of a pattern which each treat the <i style='mso-bidi-font-style:normal'>same
 class </i>or <i style='mso-bidi-font-style:normal'>method</i> with <i
-style='mso-bidi-font-style:normal'>different roles</i>. This “Pattern
-Composition” introduces additional cross-cutting issues. <o:p></o:p></span></p>
+style='mso-bidi-font-style:normal'>different roles</i>. This ï¿½Pattern
+Compositionï¿½ introduces additional cross-cutting issues. <o:p></o:p></span></p>
 
 <p class=MsoBodyText style='text-align:justify'><span lang=EN-GB
 style='font-weight:normal'><o:p>&nbsp;</o:p></span></p>
@@ -988,8 +988,8 @@ style='font-weight:normal'><o:p>&nbsp;</o:p></span></p>
 <p class=MsoBodyText style='text-align:justify'><span lang=EN-GB
 style='font-weight:normal'>The view put forward by Hannemann et al is that the
 pattern has two superimposed roles, the Composite and the Leaf. Cross-Cutting
-of roles can occur when the role of “being a Leaf” crosscuts the role that each
-class is designed to do, in this case “being a file or directory”. The problem
+of roles can occur when the role of ï¿½being a Leafï¿½ crosscuts the role that each
+class is designed to do, in this case ï¿½being a file or directoryï¿½. The problem
 arises that whilst this is true in the case of the Observer pattern, in many
 pattern implementations the pattern is tied to the same concern as the
 implementing class. <o:p></o:p></span></p>
@@ -1151,8 +1151,8 @@ style='mso-ansi-language:EN-GB'><o:p>&nbsp;</o:p></span></p>
 
 <p class=MsoNormal style='text-align:justify'><!--[if mso & !supportInlineShapes & supportFields]><span
 lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-element:field-begin;
-mso-field-lock:yes'></span><span style='mso-spacerun:yes'> </span>SHAPE <span
-style='mso-spacerun:yes'> </span>\* MERGEFORMAT <span style='mso-element:field-separator'></span></span><![endif]--><span
+mso-field-lock:yes'></span><span style='mso-spacerun:yes'>ï¿½</span>SHAPE <span
+style='mso-spacerun:yes'>ï¿½</span>\* MERGEFORMAT <span style='mso-element:field-separator'></span></span><![endif]--><span
 lang=EN-GB style='mso-ansi-language:EN-GB'><!--[if gte vml 1]><v:group id="_x0000_s1050"
  editas="canvas" style='width:477pt;height:162pt;
  mso-position-horizontal-relative:char;mso-position-vertical-relative:line'
@@ -1170,7 +1170,7 @@ lang=EN-GB style='mso-ansi-language:EN-GB'><!--[if gte vml 1]><v:group id="_x000
     <tr>
      <td><![endif]>
      <div>
-     <p class=MsoNormal>Fig. 2(b): Observers don’t just observe.</p>
+     <p class=MsoNormal>Fig. 2(b): Observers donï¿½t just observe.</p>
      </div>
      <![if !mso]></td>
     </tr>
@@ -1311,7 +1311,7 @@ lang=EN-GB style='mso-ansi-language:EN-GB'><!--[if gte vml 1]><v:group id="_x000
       <p class=MsoNormal><o:p>&nbsp;</o:p></p>
       <p class=MsoNormal><o:p>&nbsp;</o:p></p>
       <p class=MsoNormal><b style='mso-bidi-font-weight:normal'>Code in the
-      “Observer Class” for Roles other than Observing.<o:p></o:p></b></p>
+      ï¿½Observer Classï¿½ for Roles other than Observing.<o:p></o:p></b></p>
       </div>
       <![if !mso]></td>
      </tr>
@@ -1450,8 +1450,8 @@ style='mso-ansi-language:EN-GB'>Hannemann et al make use of this to split their
 implementation of the Observer pattern into two sections. The abstract aspect
 covers the contractual obligations (i.e. necessitating the addition of specific
 subject and observers) and the notification mechanism. I will denote this the
-“Abstract Aspect Pattern”. This “Abstract Aspect Pattern” is then extended by a
-“Concrete Aspect” which defines the specific relationship between Subject and
+ï¿½Abstract Aspect Patternï¿½. This ï¿½Abstract Aspect Patternï¿½ is then extended by a
+ï¿½Concrete Aspectï¿½ which defines the specific relationship between Subject and
 Observers of a specific type via the pattern i.e. the specific methods to be
 observed and those to be notified are defined here on a case by case basis (fig
 3(b)).<o:p></o:p></span></p>
@@ -1461,8 +1461,8 @@ style='mso-ansi-language:EN-GB'><o:p>&nbsp;</o:p></span></p>
 
 <p class=MsoNormal style='text-align:justify'><!--[if mso & !supportInlineShapes & supportFields]><span
 lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-element:field-begin;
-mso-field-lock:yes'></span><span style='mso-spacerun:yes'> </span>SHAPE <span
-style='mso-spacerun:yes'> </span>\* MERGEFORMAT <span style='mso-element:field-separator'></span></span><![endif]--><span
+mso-field-lock:yes'></span><span style='mso-spacerun:yes'>ï¿½</span>SHAPE <span
+style='mso-spacerun:yes'>ï¿½</span>\* MERGEFORMAT <span style='mso-element:field-separator'></span></span><![endif]--><span
 lang=EN-GB style='mso-ansi-language:EN-GB'><!--[if gte vml 1]><v:group id="_x0000_s1026"
  editas="canvas" style='width:486pt;height:171pt;
  mso-position-horizontal-relative:char;mso-position-vertical-relative:line'
@@ -1661,7 +1661,7 @@ lang=EN-GB style='mso-ansi-language:EN-GB'><!--[if gte vml 1]><v:group id="_x000
      <td><![endif]>
      <div>
      <p class=MsoNormal><b style='mso-bidi-font-weight:normal'>Concrete
-     Pattern:</b> <span style='font-size:9.0pt'>Specifies actual Subject –
+     Pattern:</b> <span style='font-size:9.0pt'>Specifies actual Subject ï¿½
      Observer relationships for each pattern instance</span> </p>
      </div>
      <![if !mso]></td>
@@ -1695,13 +1695,13 @@ Improvement within the Aspect Code.</span></p>
 <p class=MsoNormal style='text-align:justify'><span lang=EN-GB
 style='mso-ansi-language:EN-GB'>The first modularity improvement lies within
 the aspect code itself where responsibilities that are generic to the pattern
-can be abstracted to single, common place. This is the reason for the “Abstract
-Aspect Pattern”.<span style='mso-spacerun:yes'>  </span>In the Hannemann et al
+can be abstracted to single, common place. This is the reason for the ï¿½Abstract
+Aspect Patternï¿½.<span style='mso-spacerun:yes'>ï¿½ </span>In the Hannemann et al
 implementation they abstract out the responsibility for maintaining the
 observers list, notifying observers and defining the classes that take on the
-observing and subject roles.<span style='mso-spacerun:yes'>  </span>Thus no
+observing and subject roles.<span style='mso-spacerun:yes'>ï¿½ </span>Thus no
 matter how many Observer patterns are used between different Subject and
-Observers the same “Abstract Aspect Pattern” can be used, clearly increasing
+Observers the same ï¿½Abstract Aspect Patternï¿½ can be used, clearly increasing
 the modularity and reusability of the implementation.<o:p></o:p></span></p>
 
 <p class=MsoNormal style='text-align:justify'><span lang=EN-GB
@@ -1716,8 +1716,8 @@ through Abstraction</span></p>
 <p class=MsoNormal style='text-align:justify'><span lang=EN-GB
 style='mso-ansi-language:EN-GB'>The second modularity increase comes from the
 fact that the pattern utilises the ability of AspectJ to represent crosscut
-concerns in single program units. As the “Abstract Aspect Pattern” and
-“Concrete Aspect” are implemented as Aspects their source code exists
+concerns in single program units. As the ï¿½Abstract Aspect Patternï¿½ and
+ï¿½Concrete Aspectï¿½ are implemented as Aspects their source code exists
 separately from the physical implementations of the Observer and Subject
 classes. This allows modularisation of the cross-cutting concerns within the
 standard pattern so that all the distributed calls to methods like refresh()
@@ -1746,7 +1746,7 @@ client remains. Put another way; the pattern has an implicit dependency on the
 client code (the Subject and the Observer) but the client code has no reverse
 dependency back on the pattern (see Fig 4). This has the additional benefit
 that it increases (un)plugability in the client code. The client has no
-awareness of it’s inclusion in the pattern and hence it can be added to and
+awareness of itï¿½s inclusion in the pattern and hence it can be added to and
 removed from its role in the pattern at will, but the operation of the pattern
 is the same. <o:p></o:p></span></p>
 
@@ -1755,8 +1755,8 @@ style='mso-ansi-language:EN-GB'><o:p>&nbsp;</o:p></span></p>
 
 <p class=MsoNormal style='text-align:justify'><!--[if mso & !supportInlineShapes & supportFields]><span
 lang=EN-GB style='mso-ansi-language:EN-GB'><span style='mso-element:field-begin;
-mso-field-lock:yes'></span><span style='mso-spacerun:yes'> </span>SHAPE <span
-style='mso-spacerun:yes'> </span>\* MERGEFORMAT <span style='mso-element:field-separator'></span></span><![endif]--><span
+mso-field-lock:yes'></span><span style='mso-spacerun:yes'>ï¿½</span>SHAPE <span
+style='mso-spacerun:yes'>ï¿½</span>\* MERGEFORMAT <span style='mso-element:field-separator'></span></span><![endif]--><span
 lang=EN-GB style='mso-ansi-language:EN-GB'><!--[if gte vml 1]><v:group id="_x0000_s1093"
  editas="canvas" style='width:6in;height:270pt;
  mso-position-horizontal-relative:char;mso-position-vertical-relative:line'
@@ -1905,7 +1905,7 @@ lang=EN-GB style='mso-ansi-language:EN-GB'><!--[if gte vml 1]><v:group id="_x000
      <div>
      <p class=MsoNormal style='text-align:justify'>Fig 4. Demonstration of the
      one way (downwards) dependency between Pattern and Subject/Observer in the
-     AspectJ implementation.<span style='mso-spacerun:yes'>  </span>The concept
+     AspectJ implementation.<span style='mso-spacerun:yes'>ï¿½ </span>The concept
      of a Multicaster is used for demonstrational purposes (not used in the
      java Hannemann et al example).</p>
      </div>
@@ -1938,7 +1938,7 @@ From an implementation point of view these factors allow the pattern to exist in
 a neutral manor, most notably, without any dependencies from the participant
 classes back onto the pattern itself. Considering that the Observer pattern is
 used frequently for communications around application frameworks such
-dependency removal is extremely useful. ‘Framework’ concerns can be completely
+dependency removal is extremely useful. ï¿½Frameworkï¿½ concerns can be completely
 separated from client code and this in turn facilitates a true separation of
 concerns.<o:p></o:p></span></p>
 
@@ -1953,14 +1953,14 @@ page-break-before:always'>
 <h1 style='text-align:justify'><span lang=EN-GB>References</span></h1>
 
 <p class=MsoNormal><span lang=EN-GB style='mso-ansi-language:EN-GB'>[1] J.
-Hannemann and G. Kiczales, “Design Pattern Implementation in Java and AspectJ
-”, in Proceedings of the 17th Annual ACM conference on Object-Oriented
+Hannemann and G. Kiczales, ï¿½Design Pattern Implementation in Java and AspectJ
+ï¿½, in Proceedings of the 17th Annual ACM conference on Object-Oriented
 Programming, Systems, Languages, and Applications<span
-style='mso-spacerun:yes'>  </span>OOPSLA’02), pages 161-173,November 2002. <o:p></o:p></span></p>
+style='mso-spacerun:yes'>ï¿½ </span>OOPSLAï¿½02), pages 161-173,November 2002. <o:p></o:p></span></p>
 
 <p class=MsoNormal><span lang=EN-GB style='mso-ansi-language:EN-GB'>[2] E.
-Gamma, R. Helm, R. Johnson and J. Vlissides, “Design Patterns. Elements of
-Reusable Object-Oriented Software”. Addison-Wesley, <st1:place w:st="on"><st1:City
+Gamma, R. Helm, R. Johnson and J. Vlissides, ï¿½Design Patterns. Elements of
+Reusable Object-Oriented Softwareï¿½. Addison-Wesley, <st1:place w:st="on"><st1:City
  w:st="on">Reading</st1:City>, <st1:State w:st="on">MA</st1:State></st1:place>,
 1995.<o:p></o:p></span></p>
 

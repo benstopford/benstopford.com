@@ -3,25 +3,25 @@
 <html>
 <head>
 	<title>BenStopford.com - Ben Stopford's site for technical essays and blogs</title>
-	<link rel=stylesheet type="text/css" href="/style.css">
+	<link rel=stylesheet type="text/css" href="../style.css">
 </head>
 
-<body bottommargin="0" leftmargin="0" rightmargin="0" topmargin="0" background="/old/common/img/background.jpg">
+<body bottommargin="0" leftmargin="0" rightmargin="0" topmargin="0" background="common/img/background.jpg">
 
 
 
 <table height="123" width="100%" cellpadding="0" cellspacing="0" border="0">
 <tr valign="top">
 <!----- insert logo below ------------------------------------------>
-<td><img src="/old/common/img/benbanner.jpg" width="587" height="123" border="0" alt=""></td>
+<td><img src="common/img/benbanner.jpg" width="587" height="123" border="0" alt=""></td>
 <!------------------------------------------------------------------>
-<td width="100%" background="/old/common/img/topbg.jpg">&nbsp;</td>
+<td width="100%" background="common/img/topbg.jpg">&nbsp;</td>
 </tr>
 </table>
 
 <table height="40" width="100%" cellpadding="0" cellspacing="0" border="0">
 <tr valign="top">
-<td width="100%" background="/old/common/img/topbar.jpg">&nbsp;</td>
+<td width="100%" background="common/img/topbar.jpg">&nbsp;</td>
 </tr>
 </table>
 
@@ -30,26 +30,26 @@
 
 <td width="201"><BR>
 <!----- menu, insert links below ------------------------------------------>
-&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/index.shtml">Home and Blogs</a><BR>
-<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
-&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/Articles.shtml">Essays</a><BR>
-<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
-&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/Software.shtml">Software</a><BR>
-<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
-&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/PrimeBrokerage.shtml">Prime Brokerage</a><BR>
-<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
-&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/columns/WebPageOptimiseStub.shtml">Web Page Optimisation</a><BR>
-<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
-&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/TechnicalInterviewingStub.shtml">Interviewing</a><BR>
-<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
-&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/devsim/devsim.shtml">Publications</a><BR>
-<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
-&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/resources/index.shtml">Resources</a><BR>
-<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
-&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/bookreviews/index.shtml">Book Reviews</a><BR>
-<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
-&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/AboutMe.shtml">About Me</a><BR>
-<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="index.shtml">Home and Blogs</a><BR>
+<img src="common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="Articles.shtml">Essays</a><BR>
+<img src="common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="Software.shtml">Software</a><BR>
+<img src="common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="PrimeBrokerage.shtml">Prime Brokerage</a><BR>
+<img src="common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="columns/WebPageOptimiseStub.shtml">Web Page Optimisation</a><BR>
+<img src="common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="TechnicalInterviewingStub.shtml">Interviewing</a><BR>
+<img src="common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="devsim/devsim.shtml">Publications</a><BR>
+<img src="common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="resources/index.shtml">Resources</a><BR>
+<img src="common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="bookreviews/index.shtml">Book Reviews</a><BR>
+<img src="common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="AboutMe.shtml">About Me</a><BR>
+<img src="common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
 
 
 
@@ -78,7 +78,7 @@ curobj.q.value="site:"+domainroot+" "+curobj.qfront.value
 <input name="qfront" type="text" style="width: 180px" /><p>
 ..<input STYLE="color: #FFFFFF; font-family: Verdana; font-weight: bold; font-size: 12px; background-color: #003F80;"
 type="submit" value="Search" />
-<img src="/common/img/menubar.jpg" width="201" height="11" border="0" alt="">
+<img src="common/img/menubar.jpg" width="201" height="11" border="0" alt="">
 </form>
 
 <!-------------------------------------------------------------------------->
@@ -402,9 +402,9 @@ table.MsoTableGrid
   mso-border-bottom-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
   <h1><span style='font-size:12.0pt;font-family:Tahoma;color:teal'>Technical
   Interviewing<span
-  style='mso-spacerun:yes'>                                           </span></span><span
+  style='mso-spacerun:yes'>ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ </span></span><span
   style='font-size:10.0pt;font-family:Tahoma;color:teal'><span
-  style='mso-spacerun:yes'>    </span><a href="interview/interview.htm">Printer
+  style='mso-spacerun:yes'>ï¿½ï¿½ï¿½ï¿½</span><a href="interview/interview.htm">Printer
   Friendly Version</a></span><span style='font-size:12.0pt;font-family:Tahoma;
   color:teal'><o:p></o:p></span></h1>
   <p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma;color:black;
@@ -422,7 +422,7 @@ table.MsoTableGrid
    <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
     <td width=632 valign=top style='width:474.05pt;padding:0in 5.4pt 0in 5.4pt'>
     <p class=MsoNormal><span style='font-family:Tahoma;color:black'>Your team
-    is only as good as the people within it. If your team can’t deliver on time
+    is only as good as the people within it. If your team canï¿½t deliver on time
     or have problems communicating effectively with you or each other projects
     are likely to fail no matter how good your management style. <o:p></o:p></span></p>
     <p class=MsoNormal><span style='font-family:Tahoma;color:black'>&nbsp;<o:p></o:p></span></p>
@@ -442,7 +442,7 @@ table.MsoTableGrid
     indicator will always come from what <b style='mso-bidi-font-weight:normal'><i
     style='mso-bidi-font-style:normal'>you</i></b> <b style='mso-bidi-font-weight:
     normal'><i style='mso-bidi-font-style:normal'>feel</i></b> about the
-    candidate. You brain will always be the best measure of the candidate’s
+    candidate. You brain will always be the best measure of the candidateï¿½s
     ability to fit into <i style='mso-bidi-font-style:normal'>your</i> team
     structure. However the process described here helps structure your thoughts
     as well as adding objectivity where it can be applied, particularly to base
@@ -492,10 +492,10 @@ table.MsoTableGrid
       <h2><span style='font-size:12.0pt;font-family:Tahoma;color:teal;
       font-weight:normal;mso-bidi-font-weight:bold;font-style:normal;
       mso-bidi-font-style:italic'>The Most Important Points <span
-      style='mso-tab-count:1'>         </span></span><span style='font-size:
+      style='mso-tab-count:1'>ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ </span></span><span style='font-size:
       10.0pt;font-family:Tahoma;color:teal;font-weight:normal;mso-bidi-font-weight:
       bold;font-style:normal;mso-bidi-font-style:italic'><span
-      style='mso-spacerun:yes'>                                   </span><o:p></o:p></span></h2>
+      style='mso-spacerun:yes'>ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½</span><o:p></o:p></span></h2>
       <p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma;color:black;
       mso-ansi-language:EN-GB'><o:p>&nbsp;</o:p></span></p>
       </td>
@@ -613,10 +613,10 @@ table.MsoTableGrid
       font-weight:normal;mso-bidi-font-weight:bold;font-style:normal;
       mso-bidi-font-style:italic'>Phase 1: Written Test One</span><span
       style='font-size:12.0pt;font-family:Tahoma;color:teal;font-weight:normal;
-      mso-bidi-font-weight:bold'> <span style='mso-tab-count:1'>          </span></span><span
+      mso-bidi-font-weight:bold'> <span style='mso-tab-count:1'>ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ </span></span><span
       style='font-size:10.0pt;font-family:Tahoma;color:teal;font-weight:normal;
       mso-bidi-font-weight:bold'><span
-      style='mso-spacerun:yes'>                                      </span></span><span
+      style='mso-spacerun:yes'>ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½</span></span><span
       style='font-size:10.0pt;font-family:Tahoma;color:blue'><a
       href="interview/WrittenOne.htm">Link toTest</a></span><span
       style='font-size:10.0pt;font-family:Tahoma;color:teal;font-weight:normal;
@@ -647,9 +647,9 @@ table.MsoTableGrid
         <h3><span style='font-size:10.0pt;font-family:Tahoma;color:black'>Content:<o:p></o:p></span></h3>
         <p class=MsoNormal><span style='font-family:Tahoma;color:black'>Section
         1 examines their technical ability and process. The aim here is to
-        cover all the basic requirements such as “have they written a unit test
-        before?” and “Do they understand when to use the Event Dispatch
-        thread”.&nbsp;&nbsp;&nbsp; <o:p></o:p></span></p>
+        cover all the basic requirements such as ï¿½have they written a unit test
+        before?ï¿½ and ï¿½Do they understand when to use the Event Dispatch
+        threadï¿½.&nbsp;&nbsp;&nbsp; <o:p></o:p></span></p>
         <p class=MsoNormal><span style='font-family:Tahoma;color:black'>&nbsp;<o:p></o:p></span></p>
         <p class=MsoNormal><span style='font-family:Tahoma;color:black'>Section
         2 has four logic and lateral thinking problems. These provide a good
@@ -661,7 +661,7 @@ table.MsoTableGrid
         <ul style='margin-top:0in' type=disc>
          <li class=MsoNormal style='color:black;mso-list:l4 level1 lfo6;
              tab-stops:list .5in'><span style='font-family:Tahoma'>It allows
-             the interviewer a means to assess the candidate’s ability when
+             the interviewer a means to assess the candidateï¿½s ability when
              they are not under the direct pressure of an interview.<o:p></o:p></span></li>
          <li class=MsoNormal style='color:black;mso-list:l4 level1 lfo6;
              tab-stops:list .5in'><span style='font-family:Tahoma'>Time is
@@ -669,7 +669,7 @@ table.MsoTableGrid
              areas that may appear to be of issue.<o:p></o:p></span></li>
          <li class=MsoNormal style='color:black;mso-list:l4 level1 lfo6;
              tab-stops:list .5in'><span style='font-family:Tahoma'>The
-             interviewer can appraise the candidate’s ability to articulate
+             interviewer can appraise the candidateï¿½s ability to articulate
              written answers as apposed to simply verbal ones.<o:p></o:p></span></li>
          <li class=MsoNormal style='color:black;mso-list:l4 level1 lfo6;
              tab-stops:list .5in'><span style='font-family:Tahoma'>A hard copy
@@ -717,12 +717,12 @@ table.MsoTableGrid
         <h2><span style='font-size:10.0pt;font-family:Tahoma;color:black'>Score
         Sheet<o:p></o:p></span></h2>
         <p class=MsoNormal><span style='font-family:Tahoma;color:black'>Make
-        sure you make notes and keep score of the candidate’s answers. Single
+        sure you make notes and keep score of the candidateï¿½s answers. Single
         words to jog our memory often suffice.<o:p></o:p></span></p>
         <h2><span style='font-size:10.0pt;font-family:Tahoma;color:black'>Content:<o:p></o:p></span></h2>
         <h3 style='margin-left:.25in;text-indent:-.25in'><span
         style='font-size:10.0pt;font-family:Tahoma;color:black;font-weight:
-        normal'>Ø&nbsp;&nbsp;&nbsp;&nbsp; </span><span style='font-size:10.0pt;
+        normal'>ï¿½&nbsp;&nbsp;&nbsp;&nbsp; </span><span style='font-size:10.0pt;
         font-family:Tahoma;color:black'>Feedback from Written One (10 mins)<o:p></o:p></span></h3>
         <p class=MsoNormal><span style='font-family:Tahoma;color:black'>I usually
         start by going through the answers for the Written One. This only takes
@@ -743,7 +743,7 @@ table.MsoTableGrid
         <p class=MsoNormal><span style='font-family:Tahoma;color:black'>&nbsp;<o:p></o:p></span></p>
         <h3 style='margin-left:.25in;text-indent:-.25in'><span
         style='font-size:10.0pt;font-family:Tahoma;color:black;font-weight:
-        normal'>Ø&nbsp;&nbsp;&nbsp;&nbsp; </span><span style='font-size:10.0pt;
+        normal'>ï¿½&nbsp;&nbsp;&nbsp;&nbsp; </span><span style='font-size:10.0pt;
         font-family:Tahoma;color:black'>The Open Question (5 mins) <o:p></o:p></span></h3>
         <p class=MsoNormal><span style='font-family:Tahoma;color:black'>I
         always open the main phase of the interview with the same question: <o:p></o:p></span></p>
@@ -764,25 +764,25 @@ table.MsoTableGrid
         looking for?).<o:p></o:p></span></p>
         <p class=MsoNormal><span style='font-family:Tahoma;color:black'><o:p>&nbsp;</o:p></span></p>
         <p class=MsoNormal><span style='font-family:Tahoma;color:black'>If
-        candidates don’t jump on this one immediately, relate it back to their
-        last project: “In you last few projects what have you been really
-        pleased with and why?”<o:p></o:p></span></p>
+        candidates donï¿½t jump on this one immediately, relate it back to their
+        last project: ï¿½In you last few projects what have you been really
+        pleased with and why?ï¿½<o:p></o:p></span></p>
         <h3 style='margin-left:.25in;text-indent:-.25in'><span
         style='font-size:10.0pt;font-family:Tahoma;color:black;font-weight:
-        normal'>Ø&nbsp;&nbsp;&nbsp;&nbsp; </span><span style='font-size:10.0pt;
+        normal'>ï¿½&nbsp;&nbsp;&nbsp;&nbsp; </span><span style='font-size:10.0pt;
         font-family:Tahoma;color:black'>The Candidates Approach (15 mins) <span
-        style='mso-tab-count:1'>      </span></span><i style='mso-bidi-font-style:
+        style='mso-tab-count:1'>ï¿½ï¿½ï¿½ï¿½ï¿½ </span></span><i style='mso-bidi-font-style:
         normal'><span style='font-size:10.0pt;font-family:Tahoma;color:blue'><a
         href="interview/NonTechnical.htm">Link to Sample Questions</a></span></i><span
         style='font-size:10.0pt;font-family:Tahoma;color:black'><o:p></o:p></span></h3>
         <p class=MsoNormal><span style='font-family:Tahoma;color:black'>These
         questions are aimed to probe the candidates approach directly and have no
-        right or wrong answer. Specifically they look at areas such as “would
-        you make a change in this situation or would you leave it?” and “is
-        large scale copy and paste ever an acceptable development strategy?”. <o:p></o:p></span></p>
+        right or wrong answer. Specifically they look at areas such as ï¿½would
+        you make a change in this situation or would you leave it?ï¿½ and ï¿½is
+        large scale copy and paste ever an acceptable development strategy?ï¿½. <o:p></o:p></span></p>
         <p class=MsoNormal><span style='font-family:Tahoma;color:black'><o:p>&nbsp;</o:p></span></p>
         <p class=MsoNormal><span style='font-family:Tahoma;color:black'>Such
-        questions are subjective and it is up to you to assess the candidate’s
+        questions are subjective and it is up to you to assess the candidateï¿½s
         answers. Most importantly the answers must fit in with the development
         strategy of your team and business environment. I have seen highly able
         candidates perform badly in our environment simply because they cannot
@@ -792,9 +792,9 @@ table.MsoTableGrid
         always throw in a question about how they deal with confrontation.
         Something like:<o:p></o:p></span></p>
         <p class=MsoNormal><span style='font-family:Tahoma;color:black'><o:p>&nbsp;</o:p></span></p>
-        <p class=MsoNormal><span style='font-family:Tahoma;color:black'>“What
+        <p class=MsoNormal><span style='font-family:Tahoma;color:black'>ï¿½What
         do you do if you boss insists on you doing something you feel to be
-        fundamentally wrong. Have you been in this kind of situation before?”<o:p></o:p></span></p>
+        fundamentally wrong. Have you been in this kind of situation before?ï¿½<o:p></o:p></span></p>
         <p class=MsoNormal><span style='font-family:Tahoma;color:black'><o:p>&nbsp;</o:p></span></p>
         <p class=MsoNormal><span style='font-family:Tahoma;color:black'>Such
         questions often reveal interesting aspects of how the candidate has
@@ -802,9 +802,9 @@ table.MsoTableGrid
         <p class=MsoNormal><span style='font-family:Tahoma;color:black'>&nbsp;<o:p></o:p></span></p>
         <h3 style='margin-left:.25in;text-indent:-.25in'><span
         style='font-size:10.0pt;font-family:Tahoma;color:black;font-weight:
-        normal'>Ø&nbsp;&nbsp;&nbsp;&nbsp; </span><span style='font-size:10.0pt;
+        normal'>ï¿½&nbsp;&nbsp;&nbsp;&nbsp; </span><span style='font-size:10.0pt;
         font-family:Tahoma;color:black'>Previous Project (10 mins)<span
-        style='mso-tab-count:1'>          </span></span><i style='mso-bidi-font-style:
+        style='mso-tab-count:1'>ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ </span></span><i style='mso-bidi-font-style:
         normal'><span style='font-size:10.0pt;font-family:Tahoma;color:blue'><a
         href="interview/LastProject.htm">Link to Sample Questions</a></span></i><span
         style='font-size:10.0pt;font-family:Tahoma;color:black'><o:p></o:p></span></h3>
@@ -819,7 +819,7 @@ table.MsoTableGrid
              out. <o:p></o:p></span></li>
          <li class=MsoNormal style='color:black;mso-list:l0 level1 lfo9;
              tab-stops:list .5in'><span style='font-family:Tahoma'>If a good
-             topic isn’t immediately forthcoming ask some direct questions.
+             topic isnï¿½t immediately forthcoming ask some direct questions.
              Asking them to describe the workflow model in their last system or
              give them some paper and ask them to draw the system outline often
              works well (you can start the candidate off on this one when
@@ -834,16 +834,16 @@ table.MsoTableGrid
          <li class=MsoNormal style='color:black;mso-list:l0 level1 lfo9;
              tab-stops:list .5in'><span style='font-family:Tahoma'>Make sure you
              ascertain that they have thought about the big picture, questions
-             such as “how could that have been improved”, or “had you team
+             such as ï¿½how could that have been improvedï¿½, or ï¿½had you team
              considered taking that in this direction? What might be the
-             advantages and pit falls of this if you did?”<o:p></o:p></span></li>
+             advantages and pit falls of this if you did?ï¿½<o:p></o:p></span></li>
         </ul>
         <p class=MsoNormal><span style='font-family:Tahoma;color:black'>&nbsp;<o:p></o:p></span></p>
         <h3 style='margin-left:.25in;text-indent:-.25in'><span
         style='font-size:10.0pt;font-family:Tahoma;color:black;font-weight:
-        normal'>Ø&nbsp;&nbsp;&nbsp;&nbsp; </span><span style='font-size:10.0pt;
+        normal'>ï¿½&nbsp;&nbsp;&nbsp;&nbsp; </span><span style='font-size:10.0pt;
         font-family:Tahoma;color:black'>Technical Section (10 mins) <span
-        style='mso-tab-count:1'>        </span></span><i style='mso-bidi-font-style:
+        style='mso-tab-count:1'>ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ </span></span><i style='mso-bidi-font-style:
         normal'><span style='font-size:10.0pt;font-family:Tahoma;color:blue'><a
         href="interview/Technical.htm">Link to Sample Questions</a></span></i><span
         style='font-size:10.0pt;font-family:Tahoma;color:black'><o:p></o:p></span></h3>
@@ -854,14 +854,14 @@ table.MsoTableGrid
         <p class=MsoNormal><span style='font-family:Tahoma;color:black'>&nbsp;<o:p></o:p></span></p>
         <h3 style='margin-left:.25in;text-indent:-.25in'><span
         style='font-size:10.0pt;font-family:Tahoma;color:black;font-weight:
-        normal'>Ø&nbsp;&nbsp;&nbsp;&nbsp; </span><span style='font-size:10.0pt;
+        normal'>ï¿½&nbsp;&nbsp;&nbsp;&nbsp; </span><span style='font-size:10.0pt;
         font-family:Tahoma;color:black'>The CV (5 mins)<o:p></o:p></span></h3>
         <p class=MsoNormal><span style='font-family:Tahoma;color:black'>Probe
         their CV for past experiences, technical specifics etc<o:p></o:p></span></p>
         <p class=MsoNormal><span style='font-family:Tahoma;color:black'>&nbsp;<o:p></o:p></span></p>
         <h3 style='margin-left:.25in;text-indent:-.25in'><span
         style='font-size:10.0pt;font-family:Tahoma;color:black;font-weight:
-        normal'>Ø&nbsp;&nbsp;&nbsp;&nbsp; </span><span style='font-size:10.0pt;
+        normal'>ï¿½&nbsp;&nbsp;&nbsp;&nbsp; </span><span style='font-size:10.0pt;
         font-family:Tahoma;color:black'>About the Position (5 mins)<o:p></o:p></span></h3>
         <p class=MsoNormal><span style='font-family:Tahoma;color:black'>An
         opportunity for you to really sell the position you are recruiting for.
@@ -892,8 +892,8 @@ table.MsoTableGrid
       mso-bidi-font-style:italic'>Phase 3: Written Test Two</span><span
       style='font-size:12.0pt;font-family:Tahoma;color:teal;font-weight:normal;
       mso-bidi-font-weight:bold'><span
-      style='mso-spacerun:yes'>                       </span><span
-      style='mso-tab-count:1'>       </span></span><span style='font-size:10.0pt;
+      style='mso-spacerun:yes'>ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ </span><span
+      style='mso-tab-count:1'>ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ </span></span><span style='font-size:10.0pt;
       font-family:Tahoma;color:blue'><a href="interview/WrittenTwo.htm">Link to
       Test</a></span><span style='font-size:12.0pt;font-family:Tahoma;
       color:teal;font-weight:normal;mso-bidi-font-weight:bold'><o:p></o:p></span></h2>

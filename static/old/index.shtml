@@ -3,25 +3,25 @@
 <html>
 <head>
 	<title>BenStopford.com - Ben Stopford's site for technical essays and blogs</title>
-	<link rel=stylesheet type="text/css" href="/style.css">
+	<link rel=stylesheet type="text/css" href="../style.css">
 </head>
 
-<body bottommargin="0" leftmargin="0" rightmargin="0" topmargin="0" background="/old/common/img/background.jpg">
+<body bottommargin="0" leftmargin="0" rightmargin="0" topmargin="0" background="common/img/background.jpg">
 
 
 
 <table height="123" width="100%" cellpadding="0" cellspacing="0" border="0">
 <tr valign="top">
 <!----- insert logo below ------------------------------------------>
-<td><img src="/old/common/img/benbanner.jpg" width="587" height="123" border="0" alt=""></td>
+<td><img src="common/img/benbanner.jpg" width="587" height="123" border="0" alt=""></td>
 <!------------------------------------------------------------------>
-<td width="100%" background="/old/common/img/topbg.jpg">&nbsp;</td>
+<td width="100%" background="common/img/topbg.jpg">&nbsp;</td>
 </tr>
 </table>
 
 <table height="40" width="100%" cellpadding="0" cellspacing="0" border="0">
 <tr valign="top">
-<td width="100%" background="/old/common/img/topbar.jpg">&nbsp;</td>
+<td width="100%" background="common/img/topbar.jpg">&nbsp;</td>
 </tr>
 </table>
 
@@ -30,26 +30,26 @@
 
 <td width="201"><BR>
 <!----- menu, insert links below ------------------------------------------>
-&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/index.shtml">Home and Blogs</a><BR>
-<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
-&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/Articles.shtml">Essays</a><BR>
-<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
-&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/Software.shtml">Software</a><BR>
-<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
-&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/PrimeBrokerage.shtml">Prime Brokerage</a><BR>
-<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
-&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/columns/WebPageOptimiseStub.shtml">Web Page Optimisation</a><BR>
-<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
-&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/TechnicalInterviewingStub.shtml">Interviewing</a><BR>
-<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
-&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/devsim/devsim.shtml">Publications</a><BR>
-<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
-&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/resources/index.shtml">Resources</a><BR>
-<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
-&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/bookreviews/index.shtml">Book Reviews</a><BR>
-<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
-&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/AboutMe.shtml">About Me</a><BR>
-<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="index.shtml">Home and Blogs</a><BR>
+<img src="common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="Articles.shtml">Essays</a><BR>
+<img src="common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="Software.shtml">Software</a><BR>
+<img src="common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="PrimeBrokerage.shtml">Prime Brokerage</a><BR>
+<img src="common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="columns/WebPageOptimiseStub.shtml">Web Page Optimisation</a><BR>
+<img src="common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="TechnicalInterviewingStub.shtml">Interviewing</a><BR>
+<img src="common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="devsim/devsim.shtml">Publications</a><BR>
+<img src="common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="resources/index.shtml">Resources</a><BR>
+<img src="common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="bookreviews/index.shtml">Book Reviews</a><BR>
+<img src="common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="AboutMe.shtml">About Me</a><BR>
+<img src="common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
 
 
 
@@ -78,7 +78,7 @@ curobj.q.value="site:"+domainroot+" "+curobj.qfront.value
 <input name="qfront" type="text" style="width: 180px" /><p>
 ..<input STYLE="color: #FFFFFF; font-family: Verdana; font-weight: bold; font-size: 12px; background-color: #003F80;"
 type="submit" value="Search" />
-<img src="/common/img/menubar.jpg" width="201" height="11" border="0" alt="">
+<img src="common/img/menubar.jpg" width="201" height="11" border="0" alt="">
 </form>
 
 <!-------------------------------------------------------------------------->
@@ -139,7 +139,7 @@ div.Section1
   <td width=647 valign=top style='width:485.6pt;border:none;border-bottom:solid windowtext 1.0pt;
   padding:0cm 5.4pt 0cm 5.4pt'>
   <p class=MsoNormal><span style='font-size:16.0pt;font-family:Tahoma;
-  color:teal'>Welcome to Ben Stopford’s Homepage </span></p>
+  color:teal'>Welcome to Ben Stopfordï¿½s Homepage </span></p>
   </td>
  </tr>
  <tr>
@@ -194,7 +194,7 @@ div.Section1
     <td width=316 valign=top style='width:237.0pt;padding:0cm 5.4pt 0cm 5.4pt;
     height:6.6pt'>
     <p class=MsoNormal><span style='font-family:Tahoma'><a
-    href="articles/The%20Topic%20Specific%20Search%20Engine.pdf" target="_blank">A
+    href="articles/The%20Topic%20Specific%20Search%20Engine.pdf">A
     Novel Method for Focused Search</a></span></p>
     <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;</span></p>
     </td>
@@ -218,8 +218,8 @@ div.Section1
     <td width=316 valign=top style='width:237.05pt;padding:0cm 5.4pt 0cm 5.4pt;
     height:6.6pt'>
     <p class=MsoNormal><span style='font-family:Tahoma'>My latest paper, just
-    accepted as part of the ‘The International Workshop on Process Simulation
-    2006’</span></p>
+    accepted as part of the ï¿½The International Workshop on Process Simulation
+    2006ï¿½</span></p>
     <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;</span></p>
     </td>
    </tr>
@@ -291,7 +291,7 @@ div.Section1
    <tr style='height:26.8pt'>
     <td width=533 valign=top style='width:399.6pt;padding:0cm 5.4pt 0cm 5.4pt;
     height:26.8pt'>
-    <p class=MsoNormal><span style='font-family:Tahoma'>»&nbsp;<a
+    <p class=MsoNormal><span style='font-family:Tahoma'>ï¿½&nbsp;<a
     href="columns/intellectual.shtml">Software and the Intellectual Superiority
     Complex</a> </span><b><i><span style='font-size:8.0pt;font-family:Tahoma;
     color:#FFCC00'>**Updated**</span></i></b></p>
@@ -299,42 +299,42 @@ div.Section1
     </td>
     <td width=99 valign=top style='width:74.45pt;padding:0cm 5.4pt 0cm 5.4pt;
     height:26.8pt'>
-    <p class=MsoNormal><span style='font-family:Tahoma;color:teal'>Oct ‘05</span></p>
+    <p class=MsoNormal><span style='font-family:Tahoma;color:teal'>Oct ï¿½05</span></p>
     </td>
    </tr>
    <tr style='height:26.8pt'>
     <td width=533 valign=top style='width:399.6pt;padding:0cm 5.4pt 0cm 5.4pt;
     height:26.8pt'>
-    <p class=MsoNormal><span style='font-family:Tahoma'>»&nbsp;<a
+    <p class=MsoNormal><span style='font-family:Tahoma'>ï¿½&nbsp;<a
     href="columns/InterviewBlogStub.shtml">Reflections on the interview process</a></span></p>
     </td>
     <td width=99 valign=top style='width:74.45pt;padding:0cm 5.4pt 0cm 5.4pt;
     height:26.8pt'>
-    <p class=MsoNormal><span style='font-family:Tahoma;color:teal'>Aug ‘05</span></p>
+    <p class=MsoNormal><span style='font-family:Tahoma;color:teal'>Aug ï¿½05</span></p>
     </td>
    </tr>
    <tr style='height:26.75pt'>
     <td width=533 valign=top style='width:399.6pt;padding:0cm 5.4pt 0cm 5.4pt;
     height:26.75pt'>
-    <p class=MsoNormal><span style='font-family:Tahoma'>»&nbsp;<a
+    <p class=MsoNormal><span style='font-family:Tahoma'>ï¿½&nbsp;<a
     href="columns/aspects.shtml">Comments on the Aspect Orientated Programming
     problem</a></span></p>
     <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;</span></p>
     </td>
     <td width=99 valign=top style='width:74.45pt;padding:0cm 5.4pt 0cm 5.4pt;
     height:26.75pt'>
-    <p class=MsoNormal><span style='font-family:Tahoma;color:teal'>Aug ‘05</span></p>
+    <p class=MsoNormal><span style='font-family:Tahoma;color:teal'>Aug ï¿½05</span></p>
     </td>
    </tr>
    <tr style='height:26.75pt'>
     <td width=533 valign=top style='width:399.6pt;padding:0cm 5.4pt 0cm 5.4pt;
     height:26.75pt'>
-    <p class=MsoNormal><span style='font-family:Tahoma'>»&nbsp;<a
+    <p class=MsoNormal><span style='font-family:Tahoma'>ï¿½&nbsp;<a
     href="columns/middleteir.shtml">No one cares about the middle tier</a></span></p>
     </td>
     <td width=99 valign=top style='width:74.45pt;padding:0cm 5.4pt 0cm 5.4pt;
     height:26.75pt'>
-    <p class=MsoNormal><span style='font-family:Tahoma;color:teal'>Jun ‘05</span></p>
+    <p class=MsoNormal><span style='font-family:Tahoma;color:teal'>Jun ï¿½05</span></p>
     </td>
    </tr>
    <tr style='height:26.75pt'>
