@@ -10,7 +10,7 @@ slug: "book-designing-event-driven-systems"
 
 I wrote a book: Designing Event Driven Systems
 
-[PDF](https://www.confluent.io/designing-event-driven-systems)
+[PDF](/uploads/Designing-Event-Driven-Systems.pdf)
 
 [EPUB](/uploads/deds.epub)
 
