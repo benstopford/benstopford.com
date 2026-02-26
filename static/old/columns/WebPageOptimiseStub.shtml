@@ -1,0 +1,488 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	<title>BenStopford.com - Ben Stopford's site for technical essays and blogs</title>
+	<link rel=stylesheet type="text/css" href="/style.css">
+</head>
+
+<body bottommargin="0" leftmargin="0" rightmargin="0" topmargin="0" background="/old/common/img/background.jpg">
+
+
+
+<table height="123" width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr valign="top">
+<!----- insert logo below ------------------------------------------>
+<td><img src="/old/common/img/benbanner.jpg" width="587" height="123" border="0" alt=""></td>
+<!------------------------------------------------------------------>
+<td width="100%" background="/old/common/img/topbg.jpg">&nbsp;</td>
+</tr>
+</table>
+
+<table height="40" width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr valign="top">
+<td width="100%" background="/old/common/img/topbar.jpg">&nbsp;</td>
+</tr>
+</table>
+
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr valign="top">
+
+<td width="201"><BR>
+<!----- menu, insert links below ------------------------------------------>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/index.shtml">Home and Blogs</a><BR>
+<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/Articles.shtml">Essays</a><BR>
+<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/Software.shtml">Software</a><BR>
+<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/PrimeBrokerage.shtml">Prime Brokerage</a><BR>
+<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/columns/WebPageOptimiseStub.shtml">Web Page Optimisation</a><BR>
+<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/TechnicalInterviewingStub.shtml">Interviewing</a><BR>
+<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/devsim/devsim.shtml">Publications</a><BR>
+<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/resources/index.shtml">Resources</a><BR>
+<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/bookreviews/index.shtml">Book Reviews</a><BR>
+<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/AboutMe.shtml">About Me</a><BR>
+<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+
+
+
+
+
+<script type="text/javascript">
+
+//Enter domain of site to search.
+var domainroot="www.benstopford.com"
+
+function Gsitesearch(curobj){
+curobj.q.value="site:"+domainroot+" "+curobj.qfront.value
+}
+
+</script>
+
+
+<form action="http://www.google.co.uk/search" method="get" onSubmit="Gsitesearch(this)"&gt;
+
+<p>
+<input name="q" type="hidden" />
+<p>
+<BR><BR><BR>
+
+.
+<input name="qfront" type="text" style="width: 180px" /><p>
+..<input STYLE="color: #FFFFFF; font-family: Verdana; font-weight: bold; font-size: 12px; background-color: #003F80;"
+type="submit" value="Search" />
+<img src="/common/img/menubar.jpg" width="201" height="11" border="0" alt="">
+</form>
+
+<!-------------------------------------------------------------------------->
+
+</td>
+
+<td width="100%">
+	<table width="100%" cellpadding="10" cellspacing="0" border="0">
+		<tr valign="top">
+			<td>
+<!----- content, insert text and content below ------------------------------------------>
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 11 (filtered)">
+<title>The Design of My Homepage</title>
+
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Arial Unicode MS";
+	panose-1:2 11 6 4 2 2 2 2 2 4;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman";}
+h1
+	{margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	page-break-after:avoid;
+	font-size:16.0pt;
+	font-family:Arial;}
+h2
+	{margin:0in;
+	margin-bottom:.0001pt;
+	page-break-after:avoid;
+	font-size:12.0pt;
+	font-family:Arial;}
+h3
+	{margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	page-break-after:avoid;
+	font-size:13.0pt;
+	font-family:Arial;}
+p.MsoListBullet, li.MsoListBullet, div.MsoListBullet
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.25in;
+	margin-bottom:.0001pt;
+	text-indent:-.25in;
+	font-size:10.0pt;
+	font-family:"Times New Roman";}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:Arial;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;}
+pre
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Arial Unicode MS";}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:1.0in 1.25in 1.0in 1.25in;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US link=blue vlink=purple>
+
+<div class=Section1>
+
+<table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;border:none'>
+ <tr>
+  <td width=647 valign=top style='width:485.6pt;border:none;border-bottom:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:12.0pt;font-family:Tahoma;
+  color:teal'>How to Optimise a Web Page</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=647 valign=top style='width:485.6pt;border:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:8.0pt;font-family:Tahoma'>&nbsp;</span></p>
+  <table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 width=632
+   style='width:474.05pt;border-collapse:collapse'>
+   <tr>
+    <td width=632 valign=top style='width:474.05pt;padding:0in 5.4pt 0in 5.4pt'>
+    <p class=MsoNormal><span lang=EN-GB style='font-size:12.0pt'>This article focuses
+    on two prominent search engines. Google, the worlds largest search engine and
+    AllTheWeb, a smaller more specific search facility. What follows is an
+    overview of the important factors to incorporate in a webpage and how they
+    contribute to your search engine ranking.</span></p>
+    </td>
+   </tr>
+   <tr>
+    <td width=632 valign=top style='width:474.05pt;padding:0in 5.4pt 0in 5.4pt'>
+    <p class=MsoNormal><span lang=EN-GB style='font-size:12.0pt'>&nbsp;</span></p>
+    <table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
+     style='border-collapse:collapse;border:none'>
+     <tr>
+      <td width=647 valign=top style='width:485.6pt;border:none;border-bottom:
+      solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+      <p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma;color:teal'>Inward
+      Links:</span></p>
+      </td>
+     </tr>
+     <tr>
+      <td width=647 valign=top style='width:485.6pt;border:none;padding:0in 5.4pt 0in 5.4pt'>
+      <p class=MsoNormal><span lang=EN-GB style='font-size:8.0pt;font-family:
+      Tahoma'>&nbsp;</span></p>
+      <table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0
+       style='border-collapse:collapse'>
+       <tr>
+        <td width=632 valign=top style='width:474.05pt;padding:0in 5.4pt 0in 5.4pt'>
+        <p class=MsoNormal><span lang=EN-GB style='font-size:12.0pt'>Inward
+        link popularity is the most important single factor determining page rank,
+        particularly with Google. Emphasis is on the number and importance
+        (i.e. page rank) of sites referring links to the site being crawled *2.</span><span
+        lang=EN-GB> </span></p>
+        <p class=MsoNormal><span lang=EN-GB>&nbsp;</span></p>
+        <p class=MsoNormal><span lang=EN-GB style='font-size:12.0pt'>One way to
+        increase inward links is to submit the site to online directories and
+        forums that relate to the site theme. </span></p>
+        </td>
+       </tr>
+      </table>
+      <p class=MsoNormal></p>
+      </td>
+     </tr>
+    </table>
+    <p class=MsoNormal><span lang=EN-GB style='font-size:12.0pt'>&nbsp;</span></p>
+    <table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
+     style='border-collapse:collapse;border:none'>
+     <tr>
+      <td width=647 valign=top style='width:485.6pt;border:none;border-bottom:
+      solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+      <p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma;color:teal'>Title:</span></p>
+      </td>
+     </tr>
+     <tr>
+      <td width=647 valign=top style='width:485.6pt;border:none;padding:0in 5.4pt 0in 5.4pt'>
+      <p class=MsoNormal><span lang=EN-GB style='font-size:8.0pt;font-family:
+      Tahoma'>&nbsp;</span></p>
+      <table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0
+       style='border-collapse:collapse'>
+       <tr>
+        <td width=632 valign=top style='width:474.05pt;padding:0in 5.4pt 0in 5.4pt'>
+        <p class=MsoNormal><span lang=EN-GB style='font-size:12.0pt'>The title
+        is generally held as the highest textual regard by search engines after
+        the URL. The title is for defining the characters typically displayed in
+        the title bar at the top of the browser window. Care should be taken to
+        ensure that keywords were placed close together as proximity is an
+        important factor in ranking. The first letter of each was capitalised
+        to increase relevance for AllTheWeb search engine (*7).</span></p>
+        <p class=MsoNormal><span lang=EN-GB style='font-size:12.0pt'>&nbsp;</span></p>
+        <p class=MsoNormal><span lang=EN-GB style='font-size:12.0pt'>AllTheWeb
+        will consider up to 85 title characters (*7) so packing titles with
+        keywords can increase page-rank (*6). </span></p>
+        <p class=MsoNormal><span lang=EN-GB style='font-size:12.0pt'>&nbsp;</span></p>
+        <p class=MsoNormal><span lang=EN-GB style='font-size:12.0pt'>Google
+        however truncates titles at 40 characters with preference going to
+        words toward the start (see chart *9). This was applied to the home
+        page by entering the keywords at the start of the title.</span></p>
+        </td>
+       </tr>
+      </table>
+      <p class=MsoNormal></p>
+      </td>
+     </tr>
+    </table>
+    <p class=MsoNormal><span lang=EN-GB style='font-size:12.0pt'>&nbsp;</span></p>
+    <table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
+     style='border-collapse:collapse;border:none'>
+     <tr>
+      <td width=647 valign=top style='width:485.6pt;border:none;border-bottom:
+      solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+      <p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma;color:teal'>Page
+      content:</span></p>
+      </td>
+     </tr>
+     <tr>
+      <td width=647 valign=top style='width:485.6pt;border:none;padding:0in 5.4pt 0in 5.4pt'>
+      <p class=MsoNormal><span lang=EN-GB style='font-size:8.0pt;font-family:
+      Tahoma'>&nbsp;</span></p>
+      <table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0
+       style='border-collapse:collapse'>
+       <tr>
+        <td width=632 valign=top style='width:474.05pt;padding:0in 5.4pt 0in 5.4pt'>
+        <p class=MsoNormal><span lang=EN-GB style='font-size:12.0pt'>The page
+        content should include as many keyword references as reasonably
+        possible (Google places strong emphasis on keyword density. This is less
+        relevant for AllTheWeb, which only indexes the first two occurrences of
+        any keyword). </span></p>
+        <p class=MsoNormal><span lang=EN-GB style='font-size:12.0pt'>&nbsp;</span></p>
+        <p class=MsoNormal><span lang=EN-GB style='font-size:12.0pt'>Keywords
+        should be kept in close proximity in the home page content to increase
+        the keyword density (also know as weight). The keyword density
+        represents an Important part of the ranking algorithm used by both
+        search engines *3. However excessive keyword use can result in a
+        decrease in page rank should the search engine consider it Spamming
+        (*8). This was considered whist designing the page content.</span></p>
+        <p class=MsoNormal><span lang=EN-GB style='font-size:12.0pt'>&nbsp;</span></p>
+        </td>
+       </tr>
+      </table>
+      <p class=MsoNormal></p>
+      </td>
+     </tr>
+    </table>
+    <p class=MsoNormal><span lang=EN-GB style='font-size:12.0pt'>&nbsp;</span></p>
+    <table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
+     style='border-collapse:collapse;border:none'>
+     <tr>
+      <td width=647 valign=top style='width:485.6pt;border:none;border-bottom:
+      solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+      <p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma;color:teal'>Outward
+      Links:</span></p>
+      </td>
+     </tr>
+     <tr>
+      <td width=647 valign=top style='width:485.6pt;border:none;padding:0in 5.4pt 0in 5.4pt'>
+      <p class=MsoNormal><span lang=EN-GB style='font-size:8.0pt;font-family:
+      Tahoma'>&nbsp;</span></p>
+      <table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0
+       style='border-collapse:collapse'>
+       <tr>
+        <td width=632 valign=top style='width:474.05pt;padding:0in 5.4pt 0in 5.4pt'>
+        <p class=MsoNormal><span lang=EN-GB style='font-size:12.0pt'>Search
+        engines factor outward links into their page-rank calculations and
+        often give them higher weighting than regular text. Caution should be
+        made not overdo the outward links to non-relevant sites as these dilute
+        the page-rank applied by the search engines *5.</span></p>
+        </td>
+       </tr>
+      </table>
+      <p class=MsoNormal></p>
+      </td>
+     </tr>
+    </table>
+    <p class=MsoNormal><span lang=EN-GB style='font-size:12.0pt'>&nbsp;</span></p>
+    <table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
+     style='border-collapse:collapse;border:none'>
+     <tr>
+      <td width=647 valign=top style='width:485.6pt;border:none;border-bottom:
+      solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+      <p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma;color:teal'>Meta</span><span
+      lang=EN-GB style='font-family:Tahoma;color:teal'> Tags:</span></p>
+      </td>
+     </tr>
+     <tr>
+      <td width=647 valign=top style='width:485.6pt;border:none;padding:0in 5.4pt 0in 5.4pt'>
+      <p class=MsoNormal><span lang=EN-GB style='font-size:8.0pt;font-family:
+      Tahoma'>&nbsp;</span></p>
+      <table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0
+       style='border-collapse:collapse'>
+       <tr>
+        <td width=632 valign=top style='width:474.05pt;padding:0in 5.4pt 0in 5.4pt'>
+        <p class=MsoNormal><span lang=EN-GB style='font-size:12.0pt'>Meta Tags
+        are not used by either search engine specifically for ranking or
+        indexing purposes but Goggle uses the description as display text in the
+        search results (*1). Thus a brief synopsis of the page was entered into
+        this section:</span></p>
+        <p class=MsoNormal><span lang=EN-GB style='font-size:12.0pt'>&nbsp;</span></p>
+        <p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&lt;meta
+        name=&quot;description&quot; content=&quot;Academic Information
+        Regarding MSc Student Benjamin Stopford&quot;&gt;</span></p>
+        <p class=MsoNormal><span lang=EN-GB style='font-size:12.0pt'>&nbsp;</span></p>
+        <p class=MsoNormal><span lang=EN-GB style='font-size:12.0pt'>Meta</span><span
+        lang=EN-GB style='font-size:12.0pt'> tags were also used to explicitly
+        define the character set to be used for display purposes by the
+        browser.</span></p>
+        <p class=MsoNormal><span lang=EN-GB style='font-size:12.0pt'>&nbsp;</span></p>
+        <p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&lt;META
+        HTTP-EQUIV=&quot;Content-Type&quot; CONTENT=&quot;text/html;
+        charset=ISO-2022-JP&quot;&gt;</span></p>
+        <p class=MsoNormal><span lang=EN-GB style='font-size:12.0pt'>&nbsp;</span></p>
+        <p class=MsoNormal><span lang=EN-GB style='font-size:12.0pt'>Finally
+        the keywords tag can be added as it is utilised by AllTheWeb but not by
+        Google (*7).</span></p>
+        <p class=MsoNormal><span lang=EN-GB style='font-size:12.0pt'>&nbsp;</span></p>
+        <p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&lt;META name=&quot;keywords&quot; content=&quot;ben, benjamin, stopford, msc&quot;&gt;</span></p>
+        </td>
+       </tr>
+      </table>
+      <p class=MsoNormal></p>
+      </td>
+     </tr>
+    </table>
+    <p class=MsoNormal><span lang=EN-GB style='font-size:12.0pt'>&nbsp;</span></p>
+    <table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
+     style='border-collapse:collapse;border:none'>
+     <tr>
+      <td width=647 valign=top style='width:485.6pt;border:none;border-bottom:
+      solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+      <p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma;color:teal'>References:</span></p>
+      </td>
+     </tr>
+     <tr>
+      <td width=647 valign=top style='width:485.6pt;border:none;padding:0in 5.4pt 0in 5.4pt'>
+      <p class=MsoNormal><span lang=EN-GB style='font-size:8.0pt;font-family:
+      Tahoma'>&nbsp;</span></p>
+      <table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0
+       style='border-collapse:collapse'>
+       <tr>
+        <td width=632 valign=top style='width:474.05pt;padding:0in 5.4pt 0in 5.4pt'>
+        <p class=MsoNormal><span lang=EN-GB style='font-size:12.0pt'>*1 <a
+        href="http://www.searchengineoptimisationexperts.co.uk/search-engine-tips.html">http://www.searchengineoptimisationexperts.co.uk/search-engine-tips.html</a></span></p>
+        <p class=MsoNormal><span lang=EN-GB style='font-size:12.0pt'>*2 <a
+        href="http://www.clear-help.com/search-engine-tutorials/link-popularity.html">http://www.clear-help.com/search-engine-tutorials/link-popularity.html</a></span></p>
+        <p class=MsoNormal><span lang=EN-GB style='font-size:12.0pt'>*3 <a
+        href="http://www.searchengines.com/searchEnginesRankings.html">http://www.searchengines.com/searchEnginesRankings.html</a></span></p>
+        <p class=MsoNormal><span lang=EN-GB style='font-size:12.0pt'>*4 <a
+        href="http://www.websitepublisher.net/article/link_popularity/4">http://www.websitepublisher.net/article/link_popularity/4</a>
+        (viewing backward links)</span></p>
+        <p class=MsoNormal><span lang=EN-GB style='font-size:12.0pt'>*5 <a
+        href="http://www.zodiac-x-files.com/links.html">http://www.zodiac-x-files.com/links.html</a>
+        </span></p>
+        <p class=MsoNormal><span lang=EN-GB style='font-size:12.0pt'>*6 <a
+        href="http://www.seologic.com/optimization-ranking-submission/fast-all-the-web.php">http://www.seologic.com/optimization-ranking-submission/fast-all-the-web.php</a>
+        </span></p>
+        <p class=MsoNormal><span lang=EN-GB style='font-size:12.0pt'>*7 <a
+        href="http://www.internetmarketingwebsites.com/alltheweb.htm">http://www.internetmarketingwebsites.com/alltheweb.htm</a>
+        </span></p>
+        <p class=MsoNormal><span lang=EN-GB style='font-size:12.0pt'>*8 <a
+        href="http://www.topwebsite.co.uk/spamming.shtml">http://www.topwebsite.co.uk/spamming.shtml</a>
+        </span></p>
+        <p class=MsoNormal><span lang=EN-GB style='font-size:12.0pt'>*9 <a
+        href="http://www.searchengineworld.com/google/keyword_title_position.htm">http://www.searchengineworld.com/google/keyword_title_position.htm</a>
+        </span></p>
+        </td>
+       </tr>
+      </table>
+      <p class=MsoNormal></p>
+      </td>
+     </tr>
+    </table>
+    <p class=MsoNormal><span lang=EN-GB style='font-size:12.0pt'>&nbsp;</span></p>
+    <p class=MsoNormal><span lang=EN-GB style='font-size:12.0pt'>&nbsp;</span></p>
+    </td>
+   </tr>
+  </table>
+  <p class=MsoNormal></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=EN-GB>&nbsp;</span></p>
+
+</div>
+
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-1671531-1";
+urchinTracker();
+</script>
+
+</body>
+
+</html>
+
+<!--------------------------------------------------------------------------------------->
+
+<BR><BR><BR><BR><BR><BR><BR>
+<BR><BR><BR><BR><BR><BR><BR>
+<p align="center">
+This site is &copy; Copyright BenStopford.com 2003-2005, All Rights Reserved<BR>
+<p>
+			</td>
+		</tr>
+	</table>
+</td>
+
+</tr>
+</table>
+
+</body>
+</html>
+

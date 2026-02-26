@@ -1,0 +1,402 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	<title>BenStopford.com - Ben Stopford's site for technical essays and blogs</title>
+	<link rel=stylesheet type="text/css" href="/style.css">
+</head>
+
+<body bottommargin="0" leftmargin="0" rightmargin="0" topmargin="0" background="/old/common/img/background.jpg">
+
+
+
+<table height="123" width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr valign="top">
+<!----- insert logo below ------------------------------------------>
+<td><img src="/old/common/img/benbanner.jpg" width="587" height="123" border="0" alt=""></td>
+<!------------------------------------------------------------------>
+<td width="100%" background="/old/common/img/topbg.jpg">&nbsp;</td>
+</tr>
+</table>
+
+<table height="40" width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr valign="top">
+<td width="100%" background="/old/common/img/topbar.jpg">&nbsp;</td>
+</tr>
+</table>
+
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr valign="top">
+
+<td width="201"><BR>
+<!----- menu, insert links below ------------------------------------------>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/index.shtml">Home and Blogs</a><BR>
+<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/Articles.shtml">Essays</a><BR>
+<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/Software.shtml">Software</a><BR>
+<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/PrimeBrokerage.shtml">Prime Brokerage</a><BR>
+<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/columns/WebPageOptimiseStub.shtml">Web Page Optimisation</a><BR>
+<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/TechnicalInterviewingStub.shtml">Interviewing</a><BR>
+<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/devsim/devsim.shtml">Publications</a><BR>
+<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/resources/index.shtml">Resources</a><BR>
+<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/bookreviews/index.shtml">Book Reviews</a><BR>
+<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/AboutMe.shtml">About Me</a><BR>
+<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+
+
+
+
+
+<script type="text/javascript">
+
+//Enter domain of site to search.
+var domainroot="www.benstopford.com"
+
+function Gsitesearch(curobj){
+curobj.q.value="site:"+domainroot+" "+curobj.qfront.value
+}
+
+</script>
+
+
+<form action="http://www.google.co.uk/search" method="get" onSubmit="Gsitesearch(this)"&gt;
+
+<p>
+<input name="q" type="hidden" />
+<p>
+<BR><BR><BR>
+
+.
+<input name="qfront" type="text" style="width: 180px" /><p>
+..<input STYLE="color: #FFFFFF; font-family: Verdana; font-weight: bold; font-size: 12px; background-color: #003F80;"
+type="submit" value="Search" />
+<img src="/common/img/menubar.jpg" width="201" height="11" border="0" alt="">
+</form>
+
+<!-------------------------------------------------------------------------->
+
+</td>
+
+<td width="100%">
+	<table width="100%" cellpadding="10" cellspacing="0" border="0">
+		<tr valign="top">
+			<td>
+
+<!----- content, insert text and content below ------------------------------------------>
+
+
+
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 11 (filtered)">
+<title>Welcome to BenStopford</title>
+
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman";}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;}
+@page Section1
+	{size:612.0pt 792.0pt;
+	margin:72.0pt 90.0pt 72.0pt 90.0pt;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US link=blue vlink=purple>
+
+<div class=Section1>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse'>
+ <tr>
+  <td width=647 valign=top style='width:485.6pt;border:none;border-bottom:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-size:16.0pt;font-family:Tahoma;
+  color:teal'>Welcome to Ben Stopford’s Homepage </span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=647 valign=top style='width:485.6pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;font-family:Tahoma'>&nbsp;</span></p>
+  <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=632
+   style='width:474.05pt;border-collapse:collapse'>
+   <tr>
+    <td width=632 valign=top style='width:474.05pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;</span></p>
+    </td>
+   </tr>
+  </table>
+  <p class=MsoNormal></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;</span></p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse'>
+ <tr>
+  <td width=647 valign=top style='width:485.6pt;border:none;border-bottom:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-size:12.0pt;font-family:Tahoma;
+  color:teal'>New Articles and Essays</span><span style='font-family:Tahoma;
+  color:teal'>:</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=647 valign=top style='width:485.6pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;font-family:Tahoma'>&nbsp;</span></p>
+  <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+   style='border-collapse:collapse'>
+   <tr style='height:6.6pt'>
+    <td width=316 valign=top style='width:237.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+    height:6.6pt'>
+    <p class=MsoNormal><span style='font-family:Tahoma'><a
+    href="Design%20and%20Architecture%20in%20Industry%20Final.pdf">Architecture
+    and Design in Industry</a></span></p>
+    </td>
+    <td width=316 valign=top style='width:237.05pt;padding:0cm 5.4pt 0cm 5.4pt;
+    height:6.6pt'>
+    <p class=MsoNormal style='text-align:justify'><span style='font-family:
+    Tahoma'>Architecture and Design in Industry. Guest Lecture given at Brunel University Jan 07</span></p>
+    <p class=MsoNormal style='text-align:justify'><span style='font-family:
+    Tahoma'>&nbsp;</span></p>
+    </td>
+   </tr>
+   <tr style='height:6.6pt'>
+    <td width=316 valign=top style='width:237.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+    height:6.6pt'>
+    <p class=MsoNormal><span style='font-family:Tahoma'><a
+    href="articles/The%20Topic%20Specific%20Search%20Engine.pdf" target="_blank">A
+    Novel Method for Focused Search</a></span></p>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;</span></p>
+    </td>
+    <td width=316 valign=top style='width:237.05pt;padding:0cm 5.4pt 0cm 5.4pt;
+    height:6.6pt'>
+    <p class=MsoNormal style='text-align:justify'><span style='font-family:
+    Tahoma'>My white paper describing a method for performing focused search
+    with limited resources.</span></p>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;</span></p>
+    </td>
+   </tr>
+   <tr style='height:6.6pt'>
+    <td width=316 valign=top style='width:237.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+    height:6.6pt'>
+    <p class=MsoNormal><span style='font-family:Tahoma'><a
+    href="devsim/Simulating%20the%20Structural%20Evolution%20of%20Software.pdf">Simulating
+    the Structural Evolution of Software</a></span></p>
+    <p class=MsoNormal><b><i><span style='font-size:8.0pt;font-family:Tahoma;
+    color:#FFCC00'>**Updated Jan 2006**</span></i></b></p>
+    </td>
+    <td width=316 valign=top style='width:237.05pt;padding:0cm 5.4pt 0cm 5.4pt;
+    height:6.6pt'>
+    <p class=MsoNormal><span style='font-family:Tahoma'>My latest paper, just
+    accepted as part of the ‘The International Workshop on Process Simulation
+    2006’</span></p>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;</span></p>
+    </td>
+   </tr>
+   <tr style='height:6.6pt'>
+    <td width=316 valign=top style='width:237.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+    height:6.6pt'>
+    <p class=MsoNormal><span style='font-family:Tahoma'><a
+    href="TechnicalInterviewingStub.shtml">Technical Interviewing</a></span></p>
+    </td>
+    <td width=316 valign=top style='width:237.05pt;padding:0cm 5.4pt 0cm 5.4pt;
+    height:6.6pt'>
+    <p class=MsoNormal><span style='font-family:Tahoma'>An overview of a more
+    structured approach to conducting the technical interview.</span></p>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;</span></p>
+    </td>
+   </tr>
+   <tr style='height:6.55pt'>
+    <td width=316 valign=top style='width:237.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+    height:6.55pt'>
+    <p class=MsoNormal><span style='font-family:Tahoma'><a
+    href="articles/metrics.shtml">Essay: The Future for Software Metrics</a></span></p>
+    </td>
+    <td width=316 valign=top style='width:237.05pt;padding:0cm 5.4pt 0cm 5.4pt;
+    height:6.55pt'>
+    <p class=MsoNormal><span style='font-family:Tahoma'>Is there a future for
+    Metrics in Software Engineering today?</span></p>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;</span></p>
+    </td>
+   </tr>
+   <tr style='height:6.55pt'>
+    <td width=316 valign=top style='width:237.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+    height:6.55pt'>
+    <p class=MsoNormal><span style='font-family:Tahoma'><a
+    href="articles/ComponentFuture.shtml">Essay: The Future Of Component
+    Software</a></span></p>
+    </td>
+    <td width=316 valign=top style='width:237.05pt;padding:0cm 5.4pt 0cm 5.4pt;
+    height:6.55pt'>
+    <p class=MsoNormal><span style='font-family:Tahoma'>Reflections on where
+    componentization is going and what shapes its progression. </span></p>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;</span></p>
+    </td>
+   </tr>
+  </table>
+  <p class=MsoNormal></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;</span></p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse'>
+ <tr>
+  <td width=647 valign=top style='width:485.6pt;border:none;border-bottom:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'><span style='font-size:10.0pt;font-family:Tahoma'><br
+  clear=all style='page-break-before:always'>
+  <br clear=all style='page-break-before:always'>
+  </span>
+  <p class=MsoNormal><span style='font-size:12.0pt;font-family:Tahoma;
+  color:teal'>Recent Blogs:</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=647 valign=top style='width:485.6pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;font-family:Tahoma'>&nbsp;</span></p>
+  <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=632
+   style='width:474.05pt;border-collapse:collapse'>
+   <tr style='height:26.8pt'>
+    <td width=533 valign=top style='width:399.6pt;padding:0cm 5.4pt 0cm 5.4pt;
+    height:26.8pt'>
+    <p class=MsoNormal><span style='font-family:Tahoma'>»&nbsp;<a
+    href="columns/intellectual.shtml">Software and the Intellectual Superiority
+    Complex</a> </span><b><i><span style='font-size:8.0pt;font-family:Tahoma;
+    color:#FFCC00'>**Updated**</span></i></b></p>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;</span></p>
+    </td>
+    <td width=99 valign=top style='width:74.45pt;padding:0cm 5.4pt 0cm 5.4pt;
+    height:26.8pt'>
+    <p class=MsoNormal><span style='font-family:Tahoma;color:teal'>Oct ‘05</span></p>
+    </td>
+   </tr>
+   <tr style='height:26.8pt'>
+    <td width=533 valign=top style='width:399.6pt;padding:0cm 5.4pt 0cm 5.4pt;
+    height:26.8pt'>
+    <p class=MsoNormal><span style='font-family:Tahoma'>»&nbsp;<a
+    href="columns/InterviewBlogStub.shtml">Reflections on the interview process</a></span></p>
+    </td>
+    <td width=99 valign=top style='width:74.45pt;padding:0cm 5.4pt 0cm 5.4pt;
+    height:26.8pt'>
+    <p class=MsoNormal><span style='font-family:Tahoma;color:teal'>Aug ‘05</span></p>
+    </td>
+   </tr>
+   <tr style='height:26.75pt'>
+    <td width=533 valign=top style='width:399.6pt;padding:0cm 5.4pt 0cm 5.4pt;
+    height:26.75pt'>
+    <p class=MsoNormal><span style='font-family:Tahoma'>»&nbsp;<a
+    href="columns/aspects.shtml">Comments on the Aspect Orientated Programming
+    problem</a></span></p>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;</span></p>
+    </td>
+    <td width=99 valign=top style='width:74.45pt;padding:0cm 5.4pt 0cm 5.4pt;
+    height:26.75pt'>
+    <p class=MsoNormal><span style='font-family:Tahoma;color:teal'>Aug ‘05</span></p>
+    </td>
+   </tr>
+   <tr style='height:26.75pt'>
+    <td width=533 valign=top style='width:399.6pt;padding:0cm 5.4pt 0cm 5.4pt;
+    height:26.75pt'>
+    <p class=MsoNormal><span style='font-family:Tahoma'>»&nbsp;<a
+    href="columns/middleteir.shtml">No one cares about the middle tier</a></span></p>
+    </td>
+    <td width=99 valign=top style='width:74.45pt;padding:0cm 5.4pt 0cm 5.4pt;
+    height:26.75pt'>
+    <p class=MsoNormal><span style='font-family:Tahoma;color:teal'>Jun ‘05</span></p>
+    </td>
+   </tr>
+   <tr style='height:26.75pt'>
+    <td width=533 valign=top style='width:399.6pt;padding:0cm 5.4pt 0cm 5.4pt;
+    height:26.75pt'>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;</span></p>
+    </td>
+    <td width=99 valign=top style='width:74.45pt;padding:0cm 5.4pt 0cm 5.4pt;
+    height:26.75pt'>
+    <p class=MsoNormal><span style='font-family:Tahoma;color:teal'>&nbsp;</span></p>
+    </td>
+   </tr>
+  </table>
+  <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;</span></p>
+  <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+</div>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-1671531-1";
+urchinTracker();
+</script>
+
+</body>
+
+</html>
+
+
+<!--------------------------------------------------------------------------------------->
+
+
+<BR><BR><BR><BR><BR><BR><BR>
+<BR><BR><BR><BR><BR><BR><BR>
+<p align="center">
+This site is &copy; Copyright BenStopford.com 2003-2005, All Rights Reserved<BR>
+<p>
+			</td>
+		</tr>
+	</table>
+</td>
+
+</tr>
+</table>
+
+</body>
+</html>
+
+
+

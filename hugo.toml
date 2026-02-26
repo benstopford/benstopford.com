@@ -1,0 +1,28 @@
+baseURL = "https://www.benstopford.com/"
+languageCode = "en-us"
+title = "Ben Stopford"
+theme = "PaperMod"
+
+[permalinks]
+  posts = "/:year/:month/:day/:slug/"
+  pages = "/:year/:month/:day/:slug/"
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+[params]
+  author = "Ben Stopford"
+  description = "Writing on distributed systems, data, and software engineering"
+  ShowReadingTime = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+
+[menu]
+  [[menu.main]]
+    name = "Posts"
+    url = "/posts/"
+    weight = 1
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 2

@@ -1,0 +1,366 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	<title>BenStopford.com - Ben Stopford's site for technical essays and blogs</title>
+	<link rel=stylesheet type="text/css" href="/style.css">
+</head>
+
+<body bottommargin="0" leftmargin="0" rightmargin="0" topmargin="0" background="/old/common/img/background.jpg">
+
+
+
+<table height="123" width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr valign="top">
+<!----- insert logo below ------------------------------------------>
+<td><img src="/old/common/img/benbanner.jpg" width="587" height="123" border="0" alt=""></td>
+<!------------------------------------------------------------------>
+<td width="100%" background="/old/common/img/topbg.jpg">&nbsp;</td>
+</tr>
+</table>
+
+<table height="40" width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr valign="top">
+<td width="100%" background="/old/common/img/topbar.jpg">&nbsp;</td>
+</tr>
+</table>
+
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr valign="top">
+
+<td width="201"><BR>
+<!----- menu, insert links below ------------------------------------------>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/index.shtml">Home and Blogs</a><BR>
+<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/Articles.shtml">Essays</a><BR>
+<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/Software.shtml">Software</a><BR>
+<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/PrimeBrokerage.shtml">Prime Brokerage</a><BR>
+<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/columns/WebPageOptimiseStub.shtml">Web Page Optimisation</a><BR>
+<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/TechnicalInterviewingStub.shtml">Interviewing</a><BR>
+<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/devsim/devsim.shtml">Publications</a><BR>
+<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/resources/index.shtml">Resources</a><BR>
+<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/bookreviews/index.shtml">Book Reviews</a><BR>
+<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/AboutMe.shtml">About Me</a><BR>
+<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+
+
+
+
+
+<script type="text/javascript">
+
+//Enter domain of site to search.
+var domainroot="www.benstopford.com"
+
+function Gsitesearch(curobj){
+curobj.q.value="site:"+domainroot+" "+curobj.qfront.value
+}
+
+</script>
+
+
+<form action="http://www.google.co.uk/search" method="get" onSubmit="Gsitesearch(this)"&gt;
+
+<p>
+<input name="q" type="hidden" />
+<p>
+<BR><BR><BR>
+
+.
+<input name="qfront" type="text" style="width: 180px" /><p>
+..<input STYLE="color: #FFFFFF; font-family: Verdana; font-weight: bold; font-size: 12px; background-color: #003F80;"
+type="submit" value="Search" />
+<img src="/common/img/menubar.jpg" width="201" height="11" border="0" alt="">
+</form>
+
+<!-------------------------------------------------------------------------->
+
+</td>
+
+<td width="100%">
+	<table width="100%" cellpadding="10" cellspacing="0" border="0">
+		<tr valign="top">
+			<td>
+<!----- content, insert text and content below ------------------------------------------>
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 11 (filtered)">
+<title>Sybase Tips and Tricks Printer Friendly Version</title>
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:72.0pt 90.0pt 72.0pt 90.0pt;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US link=blue vlink=purple>
+
+<div class=Section1>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:363.0pt;margin-bottom:
+0cm;margin-left:36.0pt;margin-bottom:.0001pt;text-align:justify'><b><span
+lang=EN-GB style='font-size:10.0pt;font-family:Tahoma'>&nbsp;</span></b></p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse'>
+ <tr>
+  <td width=647 valign=top style='width:485.6pt;border:none;border-bottom:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-family:Tahoma;
+  color:teal'>Sybase Tips and Tricks&nbsp;&nbsp;&nbsp; <a href="sybase.htm">Printer
+  Friendly Version</a></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=647 valign=top style='width:485.6pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=632
+   style='width:474.05pt;border-collapse:collapse'>
+   <tr>
+    <td width=632 valign=top style='width:474.05pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+    font-family:Tahoma'>&nbsp;</span></p>
+    </td>
+   </tr>
+  </table>
+  <p class=MsoNormal></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+font-family:Tahoma'>&nbsp;</span></p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse'>
+ <tr>
+  <td width=647 valign=top style='width:485.6pt;border:none;border-bottom:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-family:Tahoma;
+  color:teal'>These are little tips I have collected on the use of Sybase</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=647 valign=top style='width:485.6pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+  font-family:Tahoma'>&nbsp;</span></p>
+  <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+   style='border-collapse:collapse'>
+   <tr>
+    <td width=632 valign=top style='width:474.05pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal style='text-align:justify'><b><span style='font-size:
+    10.0pt;font-family:Tahoma;color:teal'>1) The (default) 4 table limit on
+    where clauses:</span></b></p>
+    <p class=MsoNormal style='margin-left:36.0pt;text-align:justify'><span
+    style='font-size:10.0pt;font-family:Tahoma'>If there are more than 4 tables
+    in a join criterion then the optimizer does not calculate all possible
+    query plans as there will be too many. What it does is find all plans for
+    first 4 tables. Then find all plans for next 4 tables (alone) etc until all
+    tables are covered. It then selects the most optimal plan. This can lead to
+    apparently strange behaviour e.g.</span></p>
+    <p class=MsoNormal style='margin-left:36.0pt;text-align:justify'><span
+    style='font-size:10.0pt;font-family:Tahoma'>&nbsp;</span></p>
+    <p class=MsoNormal style='margin-left:36.0pt;text-align:justify'><span
+    style='font-size:10.0pt;font-family:Tahoma'>Select table1.* from table1,
+    ..2, ..3, ..4, ..5</span></p>
+    <p class=MsoNormal style='margin-left:36.0pt;text-align:justify'><span
+    style='font-size:10.0pt;font-family:Tahoma'>where table1.x = table2.x</span></p>
+    <p class=MsoNormal style='margin-left:36.0pt;text-align:justify'><span
+    style='font-size:10.0pt;font-family:Tahoma'>and table1.x = table3.x</span></p>
+    <p class=MsoNormal style='margin-left:36.0pt;text-align:justify'><span
+    style='font-size:10.0pt;font-family:Tahoma'>and table1.x = table4.x</span></p>
+    <p class=MsoNormal style='margin-left:36.0pt;text-align:justify'><span
+    style='font-size:10.0pt;font-family:Tahoma'>and table1.x = table5.x</span></p>
+    <p class=MsoNormal style='margin-left:36.0pt;text-align:justify'><span
+    style='font-size:10.0pt;font-family:Tahoma'>&nbsp;</span></p>
+    <p class=MsoNormal style='margin-left:36.0pt;text-align:justify'><span
+    style='font-size:10.0pt;font-family:Tahoma'>The query plans that include the
+    table 1 to 4 where clauses will be calculated together. However the final
+    where clause with table5 will be calculated in isolation. In this situation
+    it would be important to ensure that the most important tables (i.e. the
+    ones with the most data) are present in the table 1-4 group. Likewise,
+    grouping related tables is advisable.</span></p>
+    <p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+    font-family:Tahoma'>&nbsp;</span></p>
+    </td>
+   </tr>
+   <tr>
+    <td width=632 valign=top style='width:474.05pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal style='text-align:justify'><b><span style='font-size:
+    10.0pt;font-family:Tahoma;color:teal'>2) Set the table limit in development
+    to solve hard optimisation problems:</span></b></p>
+    <p class=MsoNormal style='margin-left:36.0pt;text-align:justify'><span
+    style='font-size:10.0pt;font-family:Tahoma'>You can change the above
+    setting to be other numbers but this may result in it taking a long time to
+    calculate the query plans (on compilation). However, a good trick, if you
+    have a performance problem, is to up the number of tables considered in a
+    development environment and run the problematic stored proc. This will take
+    some time but it should allow you to view the optimal plan from all
+    possibilities. </span></p>
+    <p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+    font-family:Tahoma'>&nbsp;</span></p>
+    </td>
+   </tr>
+   <tr>
+    <td width=632 valign=top style='width:474.05pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal style='text-align:justify'><b><span style='font-size:
+    10.0pt;font-family:Tahoma;color:teal'>3) Indexes are used in two different
+    ways:</span></b></p>
+    <p class=MsoNormal style='margin-left:36.0pt;text-align:justify'><span
+    style='font-size:10.0pt;font-family:Tahoma'>Indexes can be used in two ways
+    with one being more efficient than the other. The less efficient version is
+    identified by in the query plan by something along the lines of &quot;Non
+    Clustered Leaf-Level Scan&quot;. Each page costs the same IO (approx)
+    regardless of its size. </span></p>
+    <p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+    font-family:Tahoma'>&nbsp;</span></p>
+    </td>
+   </tr>
+   <tr>
+    <td width=632 valign=top style='width:474.05pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal style='text-align:justify'><b><span style='font-size:
+    10.0pt;font-family:Tahoma;color:teal'>4) Speed Things Up with Big
+    Non-Clustered Indexes:</span></b></p>
+    <p class=MsoNormal style='margin-left:36.0pt;text-align:justify'><span
+    style='font-size:10.0pt;font-family:Tahoma'>Adding extra key values to a non
+    clustered index will speed it up. Remember that for every lookup in a non
+    clustered index there is an additional I/O required to get the actual data
+    page and read it (this is not needed in a clustered index where the index
+    is the data page). &nbsp;Thus by adding extra data to a non-clustered
+    index, that data is being demoralised into the index. Thus there may be no
+    need for the extra I/O if all the data required is already in the index.
+    Obviously there is an extra overhead of this for both insert speed (to update
+    the index) and physical memory usage. </span></p>
+    <p class=MsoNormal style='text-align:justify'><b><span style='font-size:
+    10.0pt;font-family:Tahoma;color:teal'>&nbsp;</span></b></p>
+    </td>
+   </tr>
+   <tr>
+    <td width=632 valign=top style='width:474.05pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal style='text-align:justify'><b><span style='font-size:
+    10.0pt;font-family:Tahoma;color:teal'>5) Data Page Locking (Because I
+    always forget):</span></b></p>
+    <p class=MsoNormal style='margin-left:36.0pt;text-align:justify'><span
+    style='font-size:10.0pt;font-family:Tahoma'>Data page locking is a
+    combination of page level locking (in that it still locks at a data page
+    level) and row level locking (as it uses all the fancy techniques Sybase
+    developed to support row level locking). The result is that the speed of
+    page level locking is retained (almost) but the indexes are not locked in
+    the same way. In usual operation the entire B tree traversal from the root
+    to the rows would be locked. Instead Sybase only locks the leaf pages
+    allowing the indexes to perform as if they were under page level locking.
+    The best of both worlds </span><span style='font-size:10.0pt;font-family:
+    Wingdings'>J</span><span style='font-size:10.0pt;font-family:Tahoma'> </span></p>
+    <p class=MsoNormal style='margin-left:36.0pt;text-align:justify'><span
+    style='font-size:10.0pt;font-family:Tahoma'>I asked an expert from Sybase
+    about this when he came to visit us at Barcap. Interesting he said that
+    whilst in theory there is a difference between row and page locking in
+    terms of performance in reality the differences are rarely observed!!</span></p>
+    <p class=MsoNormal style='margin-left:36.0pt;text-align:justify'>&nbsp;</p>
+    </td>
+   </tr>
+   <tr>
+    <td width=632 valign=top style='width:474.05pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+    font-family:Tahoma'>&nbsp;<b><span style='color:teal'>5) Clustered Unique
+    Indexes with page level locking - Warning</span></b></span></p>
+    <p class=MsoNormal style='margin-left:36.0pt;text-align:justify'><span
+    style='font-size:10.0pt;font-family:Tahoma'>A potential problem can occur
+    when a clusted index is used if you have a large number of inserts. The
+    problem arises as all inserts will need to be added to the last data page.
+    This creates contention as all inserts are requesting the same page lock.
+    The solution is to use the (slightly slower) non-clustered index type.</span></p>
+    <p class=MsoNormal style='margin-left:36.0pt;text-align:justify'>&nbsp;</p>
+    </td>
+   </tr>
+   <tr>
+    <td width=632 valign=top style='width:474.05pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+    font-family:Tahoma'>&nbsp;</span></p>
+    </td>
+   </tr>
+  </table>
+  <p class=MsoNormal></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='text-align:justify'><b><span lang=EN-GB
+style='font-size:10.0pt;font-family:Tahoma;color:teal'>&nbsp;Resources:</span></b></p>
+
+<p class=MsoNormal style='text-align:justify'><b><span lang=EN-GB
+style='font-family:Tahoma;color:teal'><a href="SybaseBarCap.BrownBag.pdf"><span
+style='font-weight:normal'>Presentation on Sybase Performance Tuning given at
+Barcap</span></a></span></b></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-family:Tahoma'><a
+href="dbcc%20traceon%20guide.pdf">Using DBCC TraceOn</a></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB>&nbsp;</span></p>
+
+</div>
+
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-1671531-1";
+urchinTracker();
+</script>
+
+</body>
+
+</html>
+
+<!--------------------------------------------------------------------------------------->
+
+<BR><BR><BR><BR><BR><BR><BR>
+<BR><BR><BR><BR><BR><BR><BR>
+<p align="center">
+This site is &copy; Copyright BenStopford.com 2003-2005, All Rights Reserved<BR>
+<p>
+			</td>
+		</tr>
+	</table>
+</td>
+
+</tr>
+</table>
+
+</body>
+</html>
+

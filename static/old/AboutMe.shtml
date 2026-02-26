@@ -1,0 +1,249 @@
+
+
+<!----- content, insert text and content below ------------------------------------------>
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 11 (filtered)">
+<title>AboutMe</title>
+
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman";}
+h2
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:18.0pt;
+	font-family:"Times New Roman";
+	font-weight:bold;}
+h3
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:13.5pt;
+	font-family:"Times New Roman";
+	font-weight:bold;}
+p.MsoBodyTextIndent, li.MsoBodyTextIndent, div.MsoBodyTextIndent
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:8.0cm;
+	margin-bottom:.0001pt;
+	text-indent:-36.0pt;
+	layout-grid-mode:char;
+	font-size:10.0pt;
+	font-family:"Times New Roman";}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;}
+p
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Times New Roman";}
+p.heading4, li.heading4, div.heading4
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	text-indent:-18.0pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";}
+@page Section1
+	{size:612.0pt 792.0pt;
+	margin:72.0pt 90.0pt 72.0pt 90.0pt;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US link=blue vlink=purple>
+
+<div class=Section1>
+
+<h2>&nbsp;<span style='font-family:Tahoma;color:teal'>About Me</span><span
+style='font-size:12.0pt'> </span></h2>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse'>
+ <tr style='height:12.0pt'>
+  <td width=309 valign=top style='width:231.6pt;border:none;border-bottom:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:12.0pt'>
+  <p class=MsoBodyTextIndent style='margin-left:0cm;text-align:justify;
+  text-indent:0cm'><span lang=EN-GB style='font-family:Tahoma;color:teal'>Email:</span></p>
+  </td>
+  <td width=339 valign=top style='width:254.6pt;border:none;border-bottom:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:12.0pt'>
+  <p class=MsoNormal><span style='font-family:Tahoma;color:black'><a
+  href="mailto:benjamin_stopford@yahoo.co.uk">benjamin_stopford@yahoo.co.uk</a></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span style='font-size:12.0pt;display:none'>&nbsp;</span></p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse'>
+ <tr>
+  <td width=647 valign=top style='width:485.6pt;border:none;border-bottom:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-family:Tahoma;color:teal'>&nbsp;</span></p>
+  <p class=MsoNormal><span style='font-family:Tahoma;color:teal'>Employment</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=647 valign=top style='width:485.6pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;font-family:Tahoma'>&nbsp;</span></p>
+  <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=632
+   style='width:474.05pt;border-collapse:collapse'>
+   <tr>
+    <td width=632 valign=top style='width:474.05pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal style='text-align:justify'><span style='font-family:
+    Tahoma'>I currently work at <a href="http://www.thoughtworks.com/">Thoughtworks</a>
+    in the UK where I have provided consultation for the FX Options team at <a
+    href="http://www.dresdnerkleinwort.com/">Dresdner Kleinwort</a> and, prior
+    to that, <a href="http://www.rightmove.co.uk/">Rightmove</a> in Milton Keynes. Before moving to consultancy I worked for <a href="http://www.barcap.com/">Barclays
+    Capital</a> for seven years covering a range of areas including Client
+    Technology, Prime Brokerage, Stock Loan and Equity Finance. I have
+    technical experience with Java, VB and Sybase, Crystal Clear and XP.</span></p>
+    </td>
+   </tr>
+  </table>
+  <p class=MsoNormal></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;</span></p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse'>
+ <tr>
+  <td width=647 valign=top style='width:485.0pt;border:none;border-bottom:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'><span style='font-size:10.0pt;font-family:Tahoma'><br
+  clear=all style='page-break-before:always'>
+  <br clear=all style='page-break-before:always'>
+  </span>
+  <p class=MsoNormal><span style='font-family:Tahoma;color:teal'>Achievements</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=647 valign=top style='width:485.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;font-family:Tahoma'>&nbsp;</span></p>
+  <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=632
+   style='width:474.05pt;border-collapse:collapse'>
+   <tr>
+    <td width=632 valign=top style='width:474.05pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal style='text-align:justify'><span style='font-family:
+    Tahoma'>I graduated with distinction from a part time MSc in Information
+    Systems and have a previous Masters in Physics from Imperial College. I also (somehow) won the Rectors prize for Public Speaking <a
+    href="presentation/presentation.shtml">(View Presentation Animation)</a>.
+    My MSc project involved the development of a framework for experimenting
+    with software evolution. I was also fortunate enough to get a paper
+    accepted for the ‘International Workshop on Process Simulation’ at ICSE
+    2006 in Shanghai (<a href="devsim/devsim.shtml">View Paper</a>).&nbsp;&nbsp;</span></p>
+    </td>
+   </tr>
+  </table>
+  <p class=MsoNormal></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse'>
+ <tr>
+  <td width=647 valign=top style='width:485.6pt;border:none;border-bottom:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'><span style='font-size:10.0pt;font-family:Tahoma'><br
+  clear=all style='page-break-before:always'>
+  <br clear=all style='page-break-before:always'>
+  </span>
+  <p class=MsoNormal><span style='font-family:Tahoma;color:teal'>Interests</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=647 valign=top style='width:485.6pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;font-family:Tahoma'>&nbsp;</span></p>
+  <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=632
+   style='width:474.05pt;border-collapse:collapse'>
+   <tr>
+    <td width=632 valign=top style='width:474.05pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal><span style='font-family:Tahoma'>I’m a keen snowboarder,
+    surfer and downhill mountain biker.&nbsp;</span></p>
+    </td>
+   </tr>
+  </table>
+  <p class=MsoNormal></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 align=left>
+ <tr style='height:.75pt'>
+  <td width=16 style='width:12.0pt;padding:0cm 0cm 0cm 0cm;height:.75pt'>
+  <p class=MsoNormal><span style='font-size:12.0pt'>&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span style='font-size:12.0pt'>&nbsp;</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span style='font-size:12.0pt'><img border=0 width=123
+  height=163 src="aboutme_files/image001.jpg"></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal><span style='font-size:12.0pt'><br clear=all>
+</span></p>
+
+<p class=MsoNormal>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</p>
+
+</div>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-1671531-1";
+urchinTracker();
+</script>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-1671531-1";
+urchinTracker();
+</script> 
+
+</body>
+
+</html>
+
+<!--------------------------------------------------------------------------------------->
+
+

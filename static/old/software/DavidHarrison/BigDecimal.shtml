@@ -1,0 +1,928 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	<title>BenStopford.com - Ben Stopford's site for technical essays and blogs</title>
+	<link rel=stylesheet type="text/css" href="/style.css">
+</head>
+
+<body bottommargin="0" leftmargin="0" rightmargin="0" topmargin="0" background="/old/common/img/background.jpg">
+
+
+
+<table height="123" width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr valign="top">
+<!----- insert logo below ------------------------------------------>
+<td><img src="/old/common/img/benbanner.jpg" width="587" height="123" border="0" alt=""></td>
+<!------------------------------------------------------------------>
+<td width="100%" background="/old/common/img/topbg.jpg">&nbsp;</td>
+</tr>
+</table>
+
+<table height="40" width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr valign="top">
+<td width="100%" background="/old/common/img/topbar.jpg">&nbsp;</td>
+</tr>
+</table>
+
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr valign="top">
+
+<td width="201"><BR>
+<!----- menu, insert links below ------------------------------------------>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/index.shtml">Home and Blogs</a><BR>
+<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/Articles.shtml">Essays</a><BR>
+<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/Software.shtml">Software</a><BR>
+<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/PrimeBrokerage.shtml">Prime Brokerage</a><BR>
+<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/columns/WebPageOptimiseStub.shtml">Web Page Optimisation</a><BR>
+<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/TechnicalInterviewingStub.shtml">Interviewing</a><BR>
+<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/devsim/devsim.shtml">Publications</a><BR>
+<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/resources/index.shtml">Resources</a><BR>
+<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/bookreviews/index.shtml">Book Reviews</a><BR>
+<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/AboutMe.shtml">About Me</a><BR>
+<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+
+
+
+
+
+<script type="text/javascript">
+
+//Enter domain of site to search.
+var domainroot="www.benstopford.com"
+
+function Gsitesearch(curobj){
+curobj.q.value="site:"+domainroot+" "+curobj.qfront.value
+}
+
+</script>
+
+
+<form action="http://www.google.co.uk/search" method="get" onSubmit="Gsitesearch(this)"&gt;
+
+<p>
+<input name="q" type="hidden" />
+<p>
+<BR><BR><BR>
+
+.
+<input name="qfront" type="text" style="width: 180px" /><p>
+..<input STYLE="color: #FFFFFF; font-family: Verdana; font-weight: bold; font-size: 12px; background-color: #003F80;"
+type="submit" value="Search" />
+<img src="/common/img/menubar.jpg" width="201" height="11" border="0" alt="">
+</form>
+
+<!-------------------------------------------------------------------------->
+
+</td>
+
+<td width="100%">
+	<table width="100%" cellpadding="10" cellspacing="0" border="0">
+		<tr valign="top">
+			<td>
+<!----- content, insert text and content below ------------------------------------------>
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 11 (filtered)">
+<title>BigDecimal, double and Rounding</title>
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";}
+h1
+	{margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:3.0pt;
+	margin-left:0cm;
+	page-break-after:avoid;
+	font-size:16.0pt;
+	font-family:Arial;}
+h2
+	{margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:3.0pt;
+	margin-left:0cm;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:Arial;
+	font-style:italic;}
+h3
+	{margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:3.0pt;
+	margin-left:0cm;
+	page-break-after:avoid;
+	font-size:13.0pt;
+	font-family:Arial;}
+h4
+	{margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:3.0pt;
+	margin-left:0cm;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Times New Roman";}
+h5
+	{margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:3.0pt;
+	margin-left:0cm;
+	font-size:13.0pt;
+	font-family:"Times New Roman";
+	font-style:italic;}
+h6
+	{margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:3.0pt;
+	margin-left:0cm;
+	font-size:11.0pt;
+	font-family:"Times New Roman";}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;}
+@page Section1
+	{size:612.0pt 792.0pt;
+	margin:72.0pt 90.0pt 72.0pt 90.0pt;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US link=blue vlink=purple>
+
+<div class=Section1>
+
+<h1><span lang=EN-GB style='font-family:Tahoma'>BigDecimal, double and Rounding</span></h1>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>This subject
+came about thanks to my involvement with the Intelligent Pricing project which
+introduced me to the client side pricing functionality found in:</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+com.barcap.fox.client.pricing</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>and it’s sub
+packages. This pricing code makes heavy use of classes from:</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+com.barcap.fox.client.dataobjects</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>and it’s sub
+packages.</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>Browsing through
+the ClearQuest cases raised against the Intelligent Pricing project, I noticed
+that almost all the client side cases were to do with rounding issues.</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>I smelled a rat
+but had no remit to follow it up.</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>However, I can
+say that floating point arithmetic is being undertaken in the client side
+pricing code and may be impacted by the well known problem that not all
+floating point numbers can be represents as a binary fraction. </span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>Take this
+example: Start with a relatively large floating point number (a price, for
+instance) and add a few, relatively small, floating point numbers (spreads,
+say) to it.</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>After adding
+each spread we round the resulting price to two decimal places.</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>Are we expecting
+any problems?</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>The answer (in
+Java) depends on whether or not you are using double or BigDecimal to hold your
+prices and spreads.</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>Take the simple
+case where we add 0.0001 to 1.2345 10 times. In the real world, this equates to
+a sequence like so:</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>Original
+Value&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Rounded Value</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>1.2345</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>1.2346</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>1.2347</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>1.2348</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>1.2349</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>1.2350</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>1.2351</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>1.2352</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>1.2353</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>1.2354 1.23</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>1.23</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>1.23</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>1.23</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>1.23</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>1.24</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>1.24</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>1.24</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>1.24</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>1.24</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>Ok, using a
+simple “half round up” algorithm, do we get this in a Java Program?</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;
+public static void main(String[] argv) {</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+int places= 2;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+double value= 1.2345;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+for (int i= 0; i &lt; 10; i++) {</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+System.err.println(</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&quot;+0.000&quot; +i +&quot; rounded= &quot; +round(value, places));</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+value += 0.0001;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+}&nbsp;&nbsp;&nbsp; </span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;
+}</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;
+static double round(double value, int places) {</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+double power= 1;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+while (places-- &gt; 0) </span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+power *= 10.0;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+return Math.round(value*power)/power;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;
+}</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>Nope. This
+produces a rounded sequence like so.</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>1.23</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>1.23</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>1.23</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>1.23</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>1.23</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>1.23</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>1.24</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>1.24</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>1.24</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>1.24</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>The item in bold
+is wrong!</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>Now, I said this
+problem had a lot to do with java.math.BigDecimal, so lets’ replace the basic
+Math round() method with this one:</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;
+static double round(double value, int places) {</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+BigDecimal decimal= new BigDecimal(value);</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+decimal= decimal.setScale(places, BigDecimal.ROUND_HALF_UP);</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+return decimal.doubleValue();</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;
+}</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>Did that fix it?
+</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>Well, we get
+this rounded sequence:</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>1.23</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>1.23</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>1.23</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>1.23</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>1.23</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>1.23</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>1.24</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>1.24</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>1.24</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>1.24</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>The item in bold
+is still wrong!</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>This may be the
+origin of a rather frightening belief I’ve heard bandied about here that
+java.math.BigDecimal is “broken”.</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>In reality, the
+aspect of this that is truly broken is the use of double to store the price.</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>Consider this
+from the java.math.BigDecimal javadoc.</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>public
+BigDecimal(double val)</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>Translates a
+double into a BigDecimal. The scale of the BigDecimal is the smallest value
+such that (10scale * val) is an integer. </span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>Note: the
+results of this constructor can be somewhat unpredictable. One might assume
+that new BigDecimal(.1) is exactly equal to .1, but it is actually equal to
+.1000000000000000055511151231257827021181583404541015625. This is so because .1
+cannot be represented exactly as a double (or, for that matter, as a binary
+fraction of any finite length). Thus, the long value that is being passed in to
+the constructor is not exactly equal to .1, appearances notwithstanding. </span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>The (String)
+constructor, on the other hand, is perfectly predictable: new
+BigDecimal(&quot;.1&quot;) is exactly equal to .1, as one would expect.
+Therefore, it is generally recommended that the (String) constructor be used in
+preference to this one. </span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>I don’t think
+anyone could argue with that.</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>So, let’s try
+again with the price held as a string:</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;
+public static void main(String[] argv) {</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+int places= 2;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+int integerPart= 1;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+int decimalPart= 2345;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+for (int i= 0; i &lt; 10; i++) {</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+String value= integerPart +&quot;.&quot; +decimalPart;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+System.err.println(</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&quot;+0.000&quot; +i +&quot; rounded= &quot; +round(value, places));</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+decimalPart += 1;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+}</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;
+}</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;
+static double round(String value, int places) {</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+BigDecimal decimal= new BigDecimal(value);</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+decimal= decimal.setScale(places, BigDecimal.ROUND_HALF_UP);</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+return decimal.doubleValue();</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;
+}</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>We now get this
+rounded sequence:</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>1.23</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>1.23</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>1.23</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>1.23</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>1.23</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>1.24</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>1.24</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>1.24</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>1.24</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>1.24</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>Our bold item is
+now correct! </span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>However,
+carrying around the integer and decimal part of a price is a bit cumbersome, so
+let’s delegate that responsibility to BigDecimal and try again:</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;
+public static void main(String[] argv) {</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+int places= 2;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+BigDecimal value= new BigDecimal(&quot;1.2345&quot;);</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+BigDecimal spread= new BigDecimal(&quot;0.0001&quot;);</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+for (int i= 0; i &lt; 10; i++) {</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+System.err.println(</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&quot;+0.000&quot; +i +&quot; rounded= &quot; +round(value, places));</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+value= value.add(spread);</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+}</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;
+}</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;
+static double round(BigDecimal value, int places) {</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+return value.setScale(places,</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+BigDecimal.ROUND_HALF_UP).doubleValue();</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;
+}</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>What do we get
+now?</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>1.23</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>1.23</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>1.23</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>1.23</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>1.23</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>1.24</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>1.24</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>1.24</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>1.24</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>1.24</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>Bingo. </span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>Here’s a
+composition of all the methods to see who gets what:</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>import
+java.math.BigDecimal;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>public class
+Rounding {</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;
+public static void main(String[] argv) {</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+int places= 2;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+double value= 1.2345;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+int integerPart= 1;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+int decimalPart= 2345;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+BigDecimal bdv= new BigDecimal(&quot;1.2345&quot;);</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+BigDecimal spread= new BigDecimal(&quot;0.0001&quot;);</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+for (int i= 0; i &lt; 10; i++) {</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+String szValue= integerPart +&quot;.&quot; +decimalPart;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+double math= math(value, places);</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+double decimal= decimal(value, places);</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+double string= string(szValue, places);</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+double round= round(bdv, places);</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+boolean match= </span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+(math == decimal) &amp;&amp; (decimal == string) &amp;&amp; </span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+(decimal == round);</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+System.err.println(</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&quot;places= &quot; +places +&quot;, szValue= &quot; +szValue </span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
++&quot;, value= &quot; +value</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
++ &quot; =&gt; &quot; + math +&quot;, &quot; +decimal +&quot;, &quot; +string
++&quot;, &quot; +round</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;+ (match ? &quot;&quot; : &quot;&nbsp; whoops!&quot;));</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+value += 0.0001;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+decimalPart += 1;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+bdv= bdv.add(spread);</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+}</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;
+}</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;
+static double math(double value, int places) {</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+double power= 1;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+while (places-- &gt; 0) </span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+power *= 10.0;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+return Math.round(value*power)/power;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;
+}</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;
+static double decimal(double value, int places) {</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+BigDecimal decimal= new BigDecimal(value);</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+decimal= decimal.setScale(places, BigDecimal.ROUND_HALF_UP);</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return decimal.doubleValue();</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;
+}</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;
+static double string(String value, int places) {</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+BigDecimal decimal= new BigDecimal(value);</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+decimal= decimal.setScale(places, BigDecimal.ROUND_HALF_UP);</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+return decimal.doubleValue();</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;
+&nbsp;&nbsp;}</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;
+static double round(BigDecimal value, int places) {</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+return value.setScale(places,</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+BigDecimal.ROUND_HALF_UP).doubleValue();</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;
+}</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>}</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>Which produces
+the following:</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>places= 2,
+szValue= 1.2345, value= 1.2345 =&gt; 1.23, 1.23, 1.23, 1.23</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>places= 2,
+szValue= 1.2346, value= 1.2346 =&gt; 1.23, 1.23, 1.23, 1.23</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>places= 2,
+szValue= 1.2347, value= 1.2347 =&gt; 1.23, 1.23, 1.23, 1.23</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>places= 2,
+szValue= 1.2348, value= 1.2348 =&gt; 1.23, 1.23, 1.23, 1.23</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>places= 2,
+szValue= 1.2349, value= 1.2348999999999999 =&gt; 1.23, 1.23, 1.23, 1.23</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>places= 2,
+szValue= 1.2350, value= 1.2349999999999999 =&gt; 1.23, 1.23, 1.24, 1.24&nbsp;
+whoops!</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>places= 2,
+szValue= 1.2351, value= 1.2350999999999999 =&gt; 1.24, 1.24, 1.24, 1.24</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>places= 2,
+szValue= 1.2352, value= 1.2351999999999999 =&gt; 1.24, 1.24, 1.24, 1.24</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>places= 2,
+szValue= 1.2353, value= 1.2352999999999998 =&gt; 1.24, 1.24, 1.24, 1.24</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>places= 2,
+szValue= 1.2354, value= 1.2353999999999998 =&gt; 1.24, 1.24, 1.24, 1.24</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>Which clearly
+demonstrates that the problem is with floating point arithmetic (adding double
+to double) not with java.math.BigDecimal.</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+</div>
+
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-1671531-1";
+urchinTracker();
+</script>
+
+</body>
+
+</html>
+
+<!--------------------------------------------------------------------------------------->
+
+<BR><BR><BR><BR><BR><BR><BR>
+<BR><BR><BR><BR><BR><BR><BR>
+<p align="center">
+This site is &copy; Copyright BenStopford.com 2003-2005, All Rights Reserved<BR>
+<p>
+			</td>
+		</tr>
+	</table>
+</td>
+
+</tr>
+</table>
+
+</body>
+</html>
+

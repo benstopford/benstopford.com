@@ -1,0 +1,128 @@
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	<title>BenStopford.com - Ben Stopford's site for technical essays and blogs</title>
+	<link rel=stylesheet type="text/css" href="/style.css">
+</head>
+
+<body bottommargin="0" leftmargin="0" rightmargin="0" topmargin="0" background="/old/common/img/background.jpg">
+
+
+
+<table height="123" width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr valign="top">
+<!----- insert logo below ------------------------------------------>
+<td><img src="/old/common/img/benbanner.jpg" width="587" height="123" border="0" alt=""></td>
+<!------------------------------------------------------------------>
+<td width="100%" background="/old/common/img/topbg.jpg">&nbsp;</td>
+</tr>
+</table>
+
+<table height="40" width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr valign="top">
+<td width="100%" background="/old/common/img/topbar.jpg">&nbsp;</td>
+</tr>
+</table>
+
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr valign="top">
+
+<td width="201"><BR>
+<!----- menu, insert links below ------------------------------------------>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/index.shtml">Home and Blogs</a><BR>
+<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/Articles.shtml">Essays</a><BR>
+<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/Software.shtml">Software</a><BR>
+<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/PrimeBrokerage.shtml">Prime Brokerage</a><BR>
+<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/columns/WebPageOptimiseStub.shtml">Web Page Optimisation</a><BR>
+<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/TechnicalInterviewingStub.shtml">Interviewing</a><BR>
+<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/devsim/devsim.shtml">Publications</a><BR>
+<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/resources/index.shtml">Resources</a><BR>
+<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/bookreviews/index.shtml">Book Reviews</a><BR>
+<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/AboutMe.shtml">About Me</a><BR>
+<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+
+
+
+
+
+<script type="text/javascript">
+
+//Enter domain of site to search.
+var domainroot="www.benstopford.com"
+
+function Gsitesearch(curobj){
+curobj.q.value="site:"+domainroot+" "+curobj.qfront.value
+}
+
+</script>
+
+
+<form action="http://www.google.co.uk/search" method="get" onSubmit="Gsitesearch(this)"&gt;
+
+<p>
+<input name="q" type="hidden" />
+<p>
+<BR><BR><BR>
+
+.
+<input name="qfront" type="text" style="width: 180px" /><p>
+..<input STYLE="color: #FFFFFF; font-family: Verdana; font-weight: bold; font-size: 12px; background-color: #003F80;"
+type="submit" value="Search" />
+<img src="/common/img/menubar.jpg" width="201" height="11" border="0" alt="">
+</form>
+
+<!-------------------------------------------------------------------------->
+
+</td>
+
+<td width="100%">
+	<table width="100%" cellpadding="10" cellspacing="0" border="0">
+		<tr valign="top">
+			<td>
+<!----- content, insert text and content below ------------------------------------------>
+<embed src="presentation.swf"
+pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash"
+type="application/x-shockwave-flash" height=300 width=500>
+</embed>
+<p>
+
+
+
+<p class=MsoNormal ><span
+style='font-family:Tahoma;color:teal'>Right click and select &quot;Play&quot;
+to move to the next animated slide.</span><span style='font-size:12.0pt;
+font-family:Tahoma;color:teal'><o:p></o:p></span></p>
+
+<!--------------------------------------------------------------------------------------->
+
+<BR><BR><BR><BR><BR><BR><BR>
+<BR><BR><BR><BR><BR><BR><BR>
+<p align="center">
+This site is &copy; Copyright BenStopford.com 2003-2005, All Rights Reserved<BR>
+<p>
+			</td>
+		</tr>
+	</table>
+</td>
+
+</tr>
+</table>
+
+</body>
+</html>
+
+
+
+

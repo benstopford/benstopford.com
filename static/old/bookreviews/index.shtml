@@ -1,0 +1,620 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	<title>BenStopford.com - Ben Stopford's site for technical essays and blogs</title>
+	<link rel=stylesheet type="text/css" href="/style.css">
+</head>
+
+<body bottommargin="0" leftmargin="0" rightmargin="0" topmargin="0" background="/old/common/img/background.jpg">
+
+
+
+<table height="123" width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr valign="top">
+<!----- insert logo below ------------------------------------------>
+<td><img src="/old/common/img/benbanner.jpg" width="587" height="123" border="0" alt=""></td>
+<!------------------------------------------------------------------>
+<td width="100%" background="/old/common/img/topbg.jpg">&nbsp;</td>
+</tr>
+</table>
+
+<table height="40" width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr valign="top">
+<td width="100%" background="/old/common/img/topbar.jpg">&nbsp;</td>
+</tr>
+</table>
+
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr valign="top">
+
+<td width="201"><BR>
+<!----- menu, insert links below ------------------------------------------>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/index.shtml">Home and Blogs</a><BR>
+<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/Articles.shtml">Essays</a><BR>
+<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/Software.shtml">Software</a><BR>
+<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/PrimeBrokerage.shtml">Prime Brokerage</a><BR>
+<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/columns/WebPageOptimiseStub.shtml">Web Page Optimisation</a><BR>
+<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/TechnicalInterviewingStub.shtml">Interviewing</a><BR>
+<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/devsim/devsim.shtml">Publications</a><BR>
+<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/resources/index.shtml">Resources</a><BR>
+<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/bookreviews/index.shtml">Book Reviews</a><BR>
+<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/AboutMe.shtml">About Me</a><BR>
+<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+
+
+
+
+
+<script type="text/javascript">
+
+//Enter domain of site to search.
+var domainroot="www.benstopford.com"
+
+function Gsitesearch(curobj){
+curobj.q.value="site:"+domainroot+" "+curobj.qfront.value
+}
+
+</script>
+
+
+<form action="http://www.google.co.uk/search" method="get" onSubmit="Gsitesearch(this)"&gt;
+
+<p>
+<input name="q" type="hidden" />
+<p>
+<BR><BR><BR>
+
+.
+<input name="qfront" type="text" style="width: 180px" /><p>
+..<input STYLE="color: #FFFFFF; font-family: Verdana; font-weight: bold; font-size: 12px; background-color: #003F80;"
+type="submit" value="Search" />
+<img src="/common/img/menubar.jpg" width="201" height="11" border="0" alt="">
+</form>
+
+<!-------------------------------------------------------------------------->
+
+</td>
+
+<td width="100%">
+	<table width="100%" cellpadding="10" cellspacing="0" border="0">
+		<tr valign="top">
+			<td>
+<!----- content, insert text and content below ------------------------------------------>
+
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 11">
+<meta name=Originator content="Microsoft Word 11">
+<base target="_blank">
+<link rel=File-List href="bookreview_files/filelist.xml">
+<link rel=Edit-Time-Data href="bookreview_files/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>test</title>
+<!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:Zoom>133</w:Zoom>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" LatentStyleCount="156">
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:1627421319 -2147483648 8 0 66047 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;
+	text-underline:single;}
+@page Section1
+	{size:612.0pt 792.0pt;
+	margin:72.0pt 90.0pt 72.0pt 90.0pt;
+	mso-header-margin:35.4pt;
+	mso-footer-margin:35.4pt;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ansi-language:#0400;
+	mso-fareast-language:#0400;
+	mso-bidi-language:#0400;}
+</style>
+<![endif]-->
+</head>
+
+<body lang=EN-US link=blue vlink=purple style='tab-interval:36.0pt'>
+
+<div class=Section1>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma;mso-ansi-language:
+EN-GB'>&nbsp;</span></p>
+
+<p class=MsoNormal><b><span lang=EN-GB style='font-size:14.0pt;font-family:
+Tahoma;color:teal;mso-ansi-language:EN-GB'>Book Reviews</span></b></p>
+
+<p class=MsoNormal><b><span lang=EN-GB style='font-size:14.0pt;font-family:
+Tahoma;mso-ansi-language:EN-GB'>&nbsp;</span></b></p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;mso-padding-alt:0cm 0cm 0cm 0cm'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td width=780 valign=top style='width:584.95pt;border:none;border-bottom:
+  solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'><span lang=EN-GB
+  style='font-size:10.0pt;font-family:Tahoma;mso-fareast-font-family:"Times New Roman";
+  mso-ansi-language:EN-GB;mso-fareast-language:EN-US;mso-bidi-language:AR-SA'><br
+  clear=all style='page-break-before:always'>
+  <br clear=all style='page-break-before:always'>
+  </span>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:12.0pt;font-family:Tahoma;
+  color:teal;mso-ansi-language:EN-GB'>Crystal Clear – A Human-Powered
+  Methodology for Small Teams </span></p>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:12.0pt;font-family:Tahoma;
+  color:teal;mso-ansi-language:EN-GB'>by Alistair Cockburn</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1;mso-yfti-lastrow:yes'>
+  <td width=780 valign=top style='width:584.95pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma;mso-ansi-language:
+  EN-GB'>&nbsp;</span></p>
+  <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=761
+   style='width:570.55pt;border-collapse:collapse;mso-padding-alt:0cm 0cm 0cm 0cm'>
+   <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+    <td width=617 valign=top style='width:462.8pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma;color:blue;
+    mso-ansi-language:EN-GB'>Mark: 8/10</span></p>
+    </td>
+    <td width=144 valign=top style='width:107.75pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma;mso-ansi-language:
+    EN-GB'>&nbsp;</span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:1'>
+    <td width=617 rowspan=2 valign=top style='width:462.8pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+    style='font-family:Tahoma;mso-ansi-language:EN-GB'>There are a number of
+    books out there on development process. Crystal Clear presents Cockburn’s
+    agile methodology for small teams (With orange, for larger teams, just
+    being published now). Crystal clear is a lighter methodology. For me this
+    has the advantage that, unlike XP, adoption of the entire suite of
+    processes is not required. You can pick and choose those practices you
+    like. This leaves the responsibility to you to implement enough practices
+    to form a cohesive process but Cockburn suggests those that are required as
+    a minimum etc. </span></p>
+    <p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+    style='font-family:Tahoma;mso-ansi-language:EN-GB'>&nbsp;</span></p>
+    <p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+    style='font-family:Tahoma;mso-ansi-language:EN-GB'>Looking at it cynically,
+    few of the practices are new, instead they are taken from Cockburn’s
+    experience watching agile teams using Scrum, XP and others. However the
+    treatment, presented as part of his human methodology, along with the way
+    Cockburn structures them into a methodology make a thought provoking read. </span></p>
+    </td>
+    <td width=144 valign=top style='width:107.75pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal><img width=197 height=197 id="_x0000_i1025"
+    src="bookreview3_files/image001.jpg"></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:2'>
+    <td width=144 valign=top style='width:107.75pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma;mso-ansi-language:
+    EN-GB'>&nbsp;</span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:3;mso-yfti-lastrow:yes'>
+    <td width=617 valign=top style='width:462.8pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma;mso-ansi-language:
+    EN-GB'>»&nbsp;<a
+    href="http://www.amazon.co.uk/exec/obidos/ASIN/0201699478/qid=1148676476/sr=8-1/ref=pd_ka_1/026-2661973-9906051">View
+    on Amazon</a></span></p>
+    </td>
+    <td width=144 valign=top style='width:107.75pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma;mso-ansi-language:
+    EN-GB'>&nbsp;</span></p>
+    </td>
+   </tr>
+  </table>
+  <p class=MsoNormal><span style='font-size:12.0pt'><o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma;mso-ansi-language:
+EN-GB'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma;mso-ansi-language:
+EN-GB'>&nbsp;</span></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;mso-padding-alt:0cm 0cm 0cm 0cm'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td width=780 valign=top style='width:584.95pt;border:none;border-bottom:
+  solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'><span lang=EN-GB
+  style='font-size:10.0pt;font-family:Tahoma;mso-fareast-font-family:"Times New Roman";
+  mso-ansi-language:EN-GB;mso-fareast-language:EN-US;mso-bidi-language:AR-SA'><br
+  clear=all style='page-break-before:always'>
+  <br clear=all style='page-break-before:always'>
+  </span>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:12.0pt;font-family:Tahoma;
+  color:teal;mso-ansi-language:EN-GB'>Component Software </span></p>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:12.0pt;font-family:Tahoma;
+  color:teal;mso-ansi-language:EN-GB'>by Clemens Szyperksi</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1;mso-yfti-lastrow:yes'>
+  <td width=780 valign=top style='width:584.95pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma;mso-ansi-language:
+  EN-GB'>&nbsp;</span></p>
+  <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=761
+   style='width:570.55pt;border-collapse:collapse;mso-padding-alt:0cm 0cm 0cm 0cm'>
+   <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+    <td width=617 valign=top style='width:462.8pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma;color:blue;
+    mso-ansi-language:EN-GB'>Mark: 6/10</span></p>
+    </td>
+    <td width=144 valign=top style='width:107.75pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma;mso-ansi-language:
+    EN-GB'>&nbsp;</span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:1'>
+    <td width=617 rowspan=2 valign=top style='width:462.8pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+    style='font-family:Tahoma;mso-ansi-language:EN-GB'>This book provides a
+    general overview of most topics that relate to component software from
+    advanced object approaches such as object-composition and delegation right
+    through to component architecture, development and frameworks. The chapters
+    on component markets and the inevitability of component architectures are
+    particularly thought provoking. </span></p>
+    <p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+    style='font-family:Tahoma;mso-ansi-language:EN-GB'>&nbsp;</span></p>
+    <p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+    style='font-family:Tahoma;mso-ansi-language:EN-GB'>My only grievance is
+    that some sections appear to delve into great depth on seemingly minor
+    topics (which you get the feeling he understands well) whilst other
+    significant areas get only a glancing coverage. This lack of consistency
+    can be slightly frustrating.</span></p>
+    <p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+    style='font-family:Tahoma;mso-ansi-language:EN-GB'>&nbsp;</span></p>
+    <p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+    style='font-family:Tahoma;mso-ansi-language:EN-GB'>Syperski’s command of
+    the subject matter is clear and his writing concise. This is an academic
+    text and as such it is not the most accessible book ever written
+    (colleagues have complained about its inaccessibility which is to some
+    extent justified but not insurmountable). </span></p>
+    <p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+    style='font-family:Tahoma;mso-ansi-language:EN-GB'>&nbsp;</span></p>
+    <p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+    style='font-family:Tahoma;mso-ansi-language:EN-GB'>In conclusion, if you
+    have an interest in understanding the forces that drive component
+    technology or if you simply want a general text on component development
+    Component Software should probably be your first port of call. </span></p>
+    <p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma;mso-ansi-language:
+    EN-GB'>&nbsp;</span></p>
+    <p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma;mso-ansi-language:
+    EN-GB'>Related Books:</span></p>
+    <p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma;mso-ansi-language:
+    EN-GB'>»&nbsp;<a
+    href="http://www.amazon.co.uk/exec/obidos/ASIN/020167520X/qid=1131829962/sr=8-2/ref=sr_8_xs_ap_i2_xgl/202-9714558-4782224">Realizing
+    E-business with Components by Paul Allen</a></span></p>
+    <p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma;mso-ansi-language:
+    EN-GB'>»&nbsp;<a
+    href="http://www.amazon.co.uk/exec/obidos/ASIN/0471202843/qid=1131830001/sr=1-1/ref=sr_1_2_1/202-9714558-4782224">Software
+    Factories: Assembling Applications with Patterns, Models, Frameworks, and
+    Tools</a> </span></p>
+    <p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma;mso-ansi-language:
+    EN-GB'>&nbsp;</span></p>
+    </td>
+    <td width=144 valign=top style='width:107.75pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal><img border=0 width=172 height=261 id="_x0000_i1026"
+    src="bookreview3_files/image002.jpg"></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:2'>
+    <td width=144 valign=top style='width:107.75pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma;mso-ansi-language:
+    EN-GB'>&nbsp;</span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:3;mso-yfti-lastrow:yes'>
+    <td width=617 valign=top style='width:462.8pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma;mso-ansi-language:
+    EN-GB'>»&nbsp;<a
+    href="http://www.amazon.co.uk/exec/obidos/ASIN/0201745720/qid=1131829772/sr=8-1/ref=sr_8_xs_ap_i1_xgl/202-9714558-4782224">View
+    on Amazon</a></span></p>
+    </td>
+    <td width=144 valign=top style='width:107.75pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma;mso-ansi-language:
+    EN-GB'>&nbsp;</span></p>
+    </td>
+   </tr>
+  </table>
+  <p class=MsoNormal><span style='font-size:12.0pt'><o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma;mso-ansi-language:
+EN-GB'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma;mso-ansi-language:
+EN-GB'>&nbsp;</span><b><span lang=EN-GB style='font-size:14.0pt;font-family:
+Tahoma;mso-ansi-language:EN-GB'>&nbsp;</span></b></p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;mso-padding-alt:0cm 0cm 0cm 0cm'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td width=780 valign=top style='width:584.95pt;border:none;border-bottom:
+  solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'><span lang=EN-GB
+  style='font-size:10.0pt;font-family:Tahoma;mso-fareast-font-family:"Times New Roman";
+  mso-ansi-language:EN-GB;mso-fareast-language:EN-US;mso-bidi-language:AR-SA'><br
+  clear=all style='page-break-before:always'>
+  <br clear=all style='page-break-before:always'>
+  </span>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:12.0pt;font-family:Tahoma;
+  color:teal;mso-ansi-language:EN-GB'>Effective Java </span></p>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:12.0pt;font-family:Tahoma;
+  color:teal;mso-ansi-language:EN-GB'>by Joshua Bloch</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1;mso-yfti-lastrow:yes'>
+  <td width=780 valign=top style='width:584.95pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma;mso-ansi-language:
+  EN-GB'>&nbsp;</span></p>
+  <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=761
+   style='width:570.55pt;border-collapse:collapse;mso-padding-alt:0cm 0cm 0cm 0cm'>
+   <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+    <td width=617 valign=top style='width:462.8pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma;color:blue;
+    mso-ansi-language:EN-GB'>Mark: 8/10</span></p>
+    </td>
+    <td width=144 valign=top style='width:107.75pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma;mso-ansi-language:
+    EN-GB'>&nbsp;</span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:1'>
+    <td width=617 rowspan=2 valign=top style='width:462.8pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+    style='font-family:Tahoma;mso-ansi-language:EN-GB'>Every once in a while
+    you read something that is truly fundamental that you can’t believe you’ve
+    never come across it before. This book contains many of those moments. In
+    essence it imparts most of the truly fundamental principals that you need
+    to understand to program effectively in java. </span></p>
+    <p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+    style='font-family:Tahoma;mso-ansi-language:EN-GB'>&nbsp;</span></p>
+    <p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+    style='font-family:Tahoma;mso-ansi-language:EN-GB'>There are several
+    sections covering different aspects of java programming. Bloch starts with
+    an in depth look at some of the idiosyncrasies of the language that can
+    lead to the creation of strange and nasty bugs. For example a surprising
+    number of developers don’t realize that you have to override hashCode()
+    when you override equals. Bloch goes into why. He also covers many design
+    issues and good practices such as favouring static inner classes, favouring
+    composition over inheritance and minimizing scope. In each case his
+    analysis is succinct and thought provoking without ever becoming overly
+    dense.</span></p>
+    <p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+    style='font-family:Tahoma;mso-ansi-language:EN-GB'>&nbsp;</span></p>
+    <p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+    style='font-family:Tahoma;mso-ansi-language:EN-GB'>Finally, the book is
+    organized in a very accessible manor. The contents refers to the 57 items
+    that he highlights and the judicious use of bolding in the text is simple
+    yet extremely effective at both highlighting the important points as well
+    as making return visits for references accessible.</span></p>
+    <p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+    style='font-family:Tahoma;mso-ansi-language:EN-GB'>&nbsp;</span></p>
+    <p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+    style='font-family:Tahoma;mso-ansi-language:EN-GB'>If there is one book all
+    java programmers should have it is this one.&nbsp; </span></p>
+    <p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma;mso-ansi-language:
+    EN-GB'>&nbsp;&nbsp;</span></p>
+    </td>
+    <td width=144 valign=top style='width:107.75pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal><img border=0 width=201 height=252 id="_x0000_i1027"
+    src="bookreview3_files/image003.jpg"></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:2'>
+    <td width=144 valign=top style='width:107.75pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma;mso-ansi-language:
+    EN-GB'>&nbsp;</span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:3;mso-yfti-lastrow:yes'>
+    <td width=617 valign=top style='width:462.8pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma;mso-ansi-language:
+    EN-GB'>»&nbsp;<a
+    href="http://www.amazon.co.uk/exec/obidos/ASIN/0201310058/qid=1134927981/sr=8-1/ref=sr_8_xs_ap_i1_xgl/202-9714558-4782224">View
+    on Amazon</a></span></p>
+    </td>
+    <td width=144 valign=top style='width:107.75pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma;mso-ansi-language:
+    EN-GB'>&nbsp;</span></p>
+    </td>
+   </tr>
+  </table>
+  <p class=MsoNormal><span style='font-size:12.0pt'><o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma;mso-ansi-language:
+EN-GB'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma;mso-ansi-language:
+EN-GB'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='mso-ansi-language:EN-GB'>&nbsp;</span></p>
+
+<p class=MsoNormal><b><span lang=EN-GB style='font-size:14.0pt;font-family:
+Tahoma;mso-ansi-language:EN-GB'>&nbsp;</span></b></p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;mso-padding-alt:0cm 0cm 0cm 0cm'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td width=780 valign=top style='width:584.95pt;border:none;border-bottom:
+  solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'><span lang=EN-GB
+  style='font-size:10.0pt;font-family:Tahoma;mso-fareast-font-family:"Times New Roman";
+  mso-ansi-language:EN-GB;mso-fareast-language:EN-US;mso-bidi-language:AR-SA'><br
+  clear=all style='page-break-before:always'>
+  <br clear=all style='page-break-before:always'>
+  </span>
+  <p class=MsoNormal><span lang=EN-GB style='font-size:12.0pt;font-family:Tahoma;
+  color:teal;mso-ansi-language:EN-GB'>Links to other good book review sites:</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1;mso-yfti-lastrow:yes'>
+  <td width=780 valign=top style='width:584.95pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma;mso-ansi-language:
+  EN-GB'>&nbsp;</span></p>
+  <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=761
+   style='width:570.55pt;border-collapse:collapse;mso-padding-alt:0cm 0cm 0cm 0cm'>
+   <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+    <td width=293 valign=top style='width:219.8pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal><span lang=EN-GB style='mso-ansi-language:EN-GB'>&nbsp;</span></p>
+    </td>
+    <td width=468 valign=top style='width:350.75pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma;mso-ansi-language:
+    EN-GB'>&nbsp;</span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:1;height:24.75pt'>
+    <td width=293 valign=top style='width:219.8pt;padding:0cm 5.4pt 0cm 5.4pt;
+    height:24.75pt'>
+    <p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma;mso-ansi-language:
+    EN-GB'>»&nbsp;<a href="http://www.wwisa.org/wwisamain/books.htm">Reviews of
+    Software Architecture Books</a> </span></p>
+    <p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma;mso-ansi-language:
+    EN-GB'>&nbsp;</span></p>
+    </td>
+    <td width=468 valign=top style='width:350.75pt;padding:0cm 5.4pt 0cm 5.4pt;
+    height:24.75pt'>
+    <p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma;mso-ansi-language:
+    EN-GB'>&nbsp;Reviews on the “Worldwide Institute of Software Architects”
+    site.</span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:2;mso-yfti-lastrow:yes'>
+    <td width=293 valign=top style='width:219.8pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal><span lang=EN-GB style='mso-ansi-language:EN-GB'>&nbsp;</span></p>
+    </td>
+    <td width=468 valign=top style='width:350.75pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma;mso-ansi-language:
+    EN-GB'>&nbsp;</span></p>
+    </td>
+   </tr>
+  </table>
+  <p class=MsoNormal><span style='font-size:12.0pt'><o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma;mso-ansi-language:
+EN-GB'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma;mso-ansi-language:
+EN-GB'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma;mso-ansi-language:
+EN-GB'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma;mso-ansi-language:
+EN-GB'>&nbsp;</span></p>
+
+</div>
+
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-1671531-1";
+urchinTracker();
+</script>
+
+</body>
+
+</html>
+
+
+<!--------------------------------------------------------------------------------------->
+
+<BR><BR><BR><BR><BR><BR><BR>
+<BR><BR><BR><BR><BR><BR><BR>
+<p align="center">
+This site is &copy; Copyright BenStopford.com 2003-2005, All Rights Reserved<BR>
+<p>
+			</td>
+		</tr>
+	</table>
+</td>
+
+</tr>
+</table>
+
+</body>
+</html>
+

@@ -1,0 +1,984 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	<title>BenStopford.com - Ben Stopford's site for technical essays and blogs</title>
+	<link rel=stylesheet type="text/css" href="/style.css">
+</head>
+
+<body bottommargin="0" leftmargin="0" rightmargin="0" topmargin="0" background="/old/common/img/background.jpg">
+
+
+
+<table height="123" width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr valign="top">
+<!----- insert logo below ------------------------------------------>
+<td><img src="/old/common/img/benbanner.jpg" width="587" height="123" border="0" alt=""></td>
+<!------------------------------------------------------------------>
+<td width="100%" background="/old/common/img/topbg.jpg">&nbsp;</td>
+</tr>
+</table>
+
+<table height="40" width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr valign="top">
+<td width="100%" background="/old/common/img/topbar.jpg">&nbsp;</td>
+</tr>
+</table>
+
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr valign="top">
+
+<td width="201"><BR>
+<!----- menu, insert links below ------------------------------------------>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/index.shtml">Home and Blogs</a><BR>
+<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/Articles.shtml">Essays</a><BR>
+<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/Software.shtml">Software</a><BR>
+<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/PrimeBrokerage.shtml">Prime Brokerage</a><BR>
+<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/columns/WebPageOptimiseStub.shtml">Web Page Optimisation</a><BR>
+<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/TechnicalInterviewingStub.shtml">Interviewing</a><BR>
+<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/devsim/devsim.shtml">Publications</a><BR>
+<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/resources/index.shtml">Resources</a><BR>
+<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/bookreviews/index.shtml">Book Reviews</a><BR>
+<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/AboutMe.shtml">About Me</a><BR>
+<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+
+
+
+
+
+<script type="text/javascript">
+
+//Enter domain of site to search.
+var domainroot="www.benstopford.com"
+
+function Gsitesearch(curobj){
+curobj.q.value="site:"+domainroot+" "+curobj.qfront.value
+}
+
+</script>
+
+
+<form action="http://www.google.co.uk/search" method="get" onSubmit="Gsitesearch(this)"&gt;
+
+<p>
+<input name="q" type="hidden" />
+<p>
+<BR><BR><BR>
+
+.
+<input name="qfront" type="text" style="width: 180px" /><p>
+..<input STYLE="color: #FFFFFF; font-family: Verdana; font-weight: bold; font-size: 12px; background-color: #003F80;"
+type="submit" value="Search" />
+<img src="/common/img/menubar.jpg" width="201" height="11" border="0" alt="">
+</form>
+
+<!-------------------------------------------------------------------------->
+
+</td>
+
+<td width="100%">
+	<table width="100%" cellpadding="10" cellspacing="0" border="0">
+		<tr valign="top">
+			<td>
+<!----- content, insert text and content below ------------------------------------------>
+
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 11">
+<meta name=Originator content="Microsoft Word 11">
+<link rel=File-List href="interview_files/filelist.xml">
+<title>Technical Interviewing</title>
+<!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:Zoom>120</w:Zoom>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" LatentStyleCount="156">
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:553679495 -2147483648 8 0 66047 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+h1
+	{margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:1;
+	font-size:16.0pt;
+	font-family:Arial;}
+h2
+	{margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:2;
+	font-size:14.0pt;
+	font-family:Arial;
+	font-style:italic;}
+h3
+	{margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:3;
+	font-size:13.0pt;
+	font-family:Arial;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;
+	text-underline:single;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:474446821;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1414990396 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l0:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l0:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1
+	{mso-list-id:704864994;
+	mso-list-template-ids:1855781118;}
+@list l1:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l1:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2
+	{mso-list-id:1563829382;
+	mso-list-template-ids:-1504799020;}
+@list l2:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l3
+	{mso-list-id:1578132651;
+	mso-list-template-ids:1712388756;}
+@list l3:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l4
+	{mso-list-id:1735542131;
+	mso-list-template-ids:559606638;}
+@list l4:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l4:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l4:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l4:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l4:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l4:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l4:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l4:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l4:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l5
+	{mso-list-id:1839345917;
+	mso-list-template-ids:930245620;}
+@list l5:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ansi-language:#0400;
+	mso-fareast-language:#0400;
+	mso-bidi-language:#0400;}
+table.MsoTableGrid
+	{mso-style-name:"Table Grid";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	border:solid windowtext 1.0pt;
+	mso-border-alt:solid windowtext .5pt;
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-border-insideh:.5pt solid windowtext;
+	mso-border-insidev:.5pt solid windowtext;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ansi-language:#0400;
+	mso-fareast-language:#0400;
+	mso-bidi-language:#0400;}
+</style>
+<![endif]-->
+</head>
+
+<body lang=EN-US link=blue vlink=purple style='tab-interval:.5in'>
+
+<div class=Section1>
+
+<table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
+ mso-yfti-tbllook:480;mso-padding-alt:0in 5.4pt 0in 5.4pt;mso-border-insideh:
+ .5pt solid windowtext;mso-border-insidev:.5pt solid windowtext'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td width=647 valign=top style='width:485.6pt;border:none;border-bottom:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <h1><span style='font-size:12.0pt;font-family:Tahoma;color:teal'>Technical
+  Interviewing<span
+  style='mso-spacerun:yes'>                                           </span></span><span
+  style='font-size:10.0pt;font-family:Tahoma;color:teal'><span
+  style='mso-spacerun:yes'>    </span><a href="interview/interview.htm">Printer
+  Friendly Version</a></span><span style='font-size:12.0pt;font-family:Tahoma;
+  color:teal'><o:p></o:p></span></h1>
+  <p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma;color:black;
+  mso-ansi-language:EN-GB'><o:p>&nbsp;</o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1;mso-yfti-lastrow:yes'>
+  <td width=647 valign=top style='width:485.6pt;border:none;mso-border-top-alt:
+  solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma;color:black;
+  mso-ansi-language:EN-GB'><o:p>&nbsp;</o:p></span></p>
+  <table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 width=632
+   style='width:474.05pt;border-collapse:collapse;mso-yfti-tbllook:480;
+   mso-padding-alt:0in 5.4pt 0in 5.4pt'>
+   <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+    <td width=632 valign=top style='width:474.05pt;padding:0in 5.4pt 0in 5.4pt'>
+    <p class=MsoNormal><span style='font-family:Tahoma;color:black'>Your team
+    is only as good as the people within it. If your team can’t deliver on time
+    or have problems communicating effectively with you or each other projects
+    are likely to fail no matter how good your management style. <o:p></o:p></span></p>
+    <p class=MsoNormal><span style='font-family:Tahoma;color:black'>&nbsp;<o:p></o:p></span></p>
+    <p class=MsoNormal><span style='font-family:Tahoma;color:black'>It follows
+    that interviewing should play an important role in structuring a team as,
+    not only do you need to find people that are technically able, you must
+    also consider how they will fit in your existing team structure. <o:p></o:p></span></p>
+    <p class=MsoNormal><span style='font-family:Tahoma;color:black'><o:p>&nbsp;</o:p></span></p>
+    <p class=MsoNormal><span style='font-family:Tahoma;color:black'>This is a
+    subjective process. In this article I attempt to outline an more structured
+    approach to the interview process. This does not remove the subjectivity
+    completely. Far from it in fact. But it does provide an objective basis on
+    which to make judgments. <o:p></o:p></span></p>
+    <p class=MsoNormal><span style='font-family:Tahoma;color:black'><o:p>&nbsp;</o:p></span></p>
+    <p class=MsoNormal><span style='font-family:Tahoma;color:black'>It is
+    important to note that no matter what process you put in place the best
+    indicator will always come from what <b style='mso-bidi-font-weight:normal'><i
+    style='mso-bidi-font-style:normal'>you</i></b> <b style='mso-bidi-font-weight:
+    normal'><i style='mso-bidi-font-style:normal'>feel</i></b> about the
+    candidate. You brain will always be the best measure of the candidate’s
+    ability to fit into <i style='mso-bidi-font-style:normal'>your</i> team
+    structure. However the process described here helps structure your thoughts
+    as well as adding objectivity where it can be applied, particularly to base
+    levels of ability both technical and intellectual.<o:p></o:p></span></p>
+    <p class=MsoNormal><span style='font-family:Tahoma;color:black'>&nbsp;<o:p></o:p></span></p>
+    <p class=MsoNormal><span style='font-family:Tahoma;color:black'>The below
+    process was formulated to find candidates for a Java development role at a
+    major Investment Bank.<o:p></o:p></span></p>
+    <p class=MsoNormal><span style='font-family:Tahoma;color:black'>&nbsp;<o:p></o:p></span></p>
+    <p class=MsoNormal><span style='font-family:Tahoma;color:black'>It has
+    three phases:-<o:p></o:p></span></p>
+    <ul style='margin-top:0in' type=disc>
+     <li class=MsoNormal style='color:black;mso-list:l1 level1 lfo3;tab-stops:
+         list .5in'><b style='mso-bidi-font-weight:normal'><span
+         style='font-family:Tahoma'>Phase1 - The First Written Test</span></b><span
+         style='font-family:Tahoma'>: A one hour test performed on site
+         immediately prior to the interview.<o:p></o:p></span></li>
+     <li class=MsoNormal style='color:black;mso-list:l1 level1 lfo3;tab-stops:
+         list .5in'><b style='mso-bidi-font-weight:normal'><span
+         style='font-family:Tahoma'>Phase2 - The interview itself</span></b><span
+         style='font-family:Tahoma'>.<o:p></o:p></span></li>
+     <li class=MsoNormal style='color:black;mso-list:l1 level1 lfo3;tab-stops:
+         list .5in'><b style='mso-bidi-font-weight:normal'><span
+         style='font-family:Tahoma'>Phase3 - The Second Written Test
+         &lt;Optional&gt;</span></b><span style='font-family:Tahoma'>: Only
+         supplied to good candidates, this test takes about three hours and can
+         be taken at home. It is a code comprehension exercise based on a piece
+         of open source software. <o:p></o:p></span></li>
+    </ul>
+    <p class=MsoNormal><span style='font-family:Tahoma;color:black'>&nbsp;<o:p></o:p></span></p>
+    <p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma;color:black;
+    mso-ansi-language:EN-GB'><o:p>&nbsp;</o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:1;mso-yfti-lastrow:yes'>
+    <td width=632 valign=top style='width:474.05pt;padding:0in 5.4pt 0in 5.4pt'>
+    <p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma;color:black;
+    mso-ansi-language:EN-GB'><o:p>&nbsp;</o:p></span></p>
+    <table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
+     style='border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
+     mso-yfti-tbllook:480;mso-padding-alt:0in 5.4pt 0in 5.4pt;mso-border-insideh:
+     .5pt solid windowtext;mso-border-insidev:.5pt solid windowtext'>
+     <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+      <td width=647 valign=top style='width:485.6pt;border:none;border-bottom:
+      solid windowtext 1.0pt;mso-border-bottom-alt:solid windowtext .5pt;
+      padding:0in 5.4pt 0in 5.4pt'>
+      <h2><span style='font-size:12.0pt;font-family:Tahoma;color:teal;
+      font-weight:normal;mso-bidi-font-weight:bold;font-style:normal;
+      mso-bidi-font-style:italic'>The Most Important Points <span
+      style='mso-tab-count:1'>         </span></span><span style='font-size:
+      10.0pt;font-family:Tahoma;color:teal;font-weight:normal;mso-bidi-font-weight:
+      bold;font-style:normal;mso-bidi-font-style:italic'><span
+      style='mso-spacerun:yes'>                                   </span><o:p></o:p></span></h2>
+      <p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma;color:black;
+      mso-ansi-language:EN-GB'><o:p>&nbsp;</o:p></span></p>
+      </td>
+     </tr>
+     <tr style='mso-yfti-irow:1;mso-yfti-lastrow:yes'>
+      <td width=647 valign=top style='width:485.6pt;border:none;mso-border-top-alt:
+      solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+      <p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma;color:black;
+      mso-ansi-language:EN-GB'><o:p>&nbsp;</o:p></span></p>
+      <table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0
+       style='border-collapse:collapse;mso-yfti-tbllook:480;mso-padding-alt:
+       0in 5.4pt 0in 5.4pt'>
+       <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;height:32.75pt'>
+        <td width=206 valign=top style='width:2.15in;padding:0in 5.4pt 0in 5.4pt;
+        height:32.75pt'>
+        <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+        lang=EN-GB style='font-family:Tahoma;color:teal;mso-ansi-language:EN-GB'>Be
+        decisive:</span></b><span lang=EN-GB style='font-family:Tahoma;
+        color:black;mso-ansi-language:EN-GB'> <o:p></o:p></span></p>
+        <p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma;
+        color:black;mso-ansi-language:EN-GB'><o:p>&nbsp;</o:p></span></p>
+        </td>
+        <td width=397 valign=top style='width:297.65pt;padding:0in 5.4pt 0in 5.4pt;
+        height:32.75pt'>
+        <p class=MsoNormal><span style='font-family:Tahoma'>If a candidate is
+        good then take him forward (if you have several rounds). If he is not then
+        reject the candidate. If you are not sure then reject the candidate. A
+        bad hire will cost much time and money so </span><i style='mso-bidi-font-style:
+        normal'><span lang=EN-GB style='font-family:Tahoma;color:red;
+        mso-ansi-language:EN-GB'>if in any doubt, do not hire.</span></i><span
+        lang=EN-GB style='font-family:Tahoma;color:black;mso-ansi-language:
+        EN-GB'><o:p></o:p></span></p>
+        </td>
+       </tr>
+       <tr style='mso-yfti-irow:1;height:32.7pt'>
+        <td width=206 valign=top style='width:2.15in;padding:0in 5.4pt 0in 5.4pt;
+        height:32.7pt'>
+        <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+        lang=EN-GB style='font-family:Tahoma;color:teal;mso-ansi-language:EN-GB'>Be
+        aware of preconceptions:<o:p></o:p></span></b></p>
+        </td>
+        <td width=397 valign=top style='width:297.65pt;padding:0in 5.4pt 0in 5.4pt;
+        height:32.7pt'>
+        <p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma;
+        color:black;mso-ansi-language:EN-GB'>It is easy to form a prejudice before
+        you enter the interview. These can be formed from the candidates CV,
+        from talking to a recruiter or a colleague that has interviewed the
+        candidate. It is hard to turn such preconceptions around in a one hour
+        interview it is best to avoid them in the first place if you can. If
+        you do think they may be forming try to be as neutral as possible in
+        the interview. </span><i style='mso-bidi-font-style:normal'><span
+        lang=EN-GB style='font-family:Tahoma;color:red;mso-ansi-language:EN-GB'>Trust
+        your instincts and find out for yourself.</span></i><b
+        style='mso-bidi-font-weight:normal'><span lang=EN-GB style='font-family:
+        Tahoma;color:teal;mso-ansi-language:EN-GB'><o:p></o:p></span></b></p>
+        </td>
+       </tr>
+       <tr style='mso-yfti-irow:2;height:32.7pt'>
+        <td width=206 valign=top style='width:2.15in;padding:0in 5.4pt 0in 5.4pt;
+        height:32.7pt'>
+        <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+        lang=EN-GB style='font-family:Tahoma;color:teal;mso-ansi-language:EN-GB'>Objective
+        measures only tell you so much</span></b><span lang=EN-GB
+        style='font-family:Tahoma;color:black;mso-ansi-language:EN-GB'>: <o:p></o:p></span></p>
+        <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+        lang=EN-GB style='font-family:Tahoma;color:teal;mso-ansi-language:EN-GB'><o:p>&nbsp;</o:p></span></b></p>
+        </td>
+        <td width=397 valign=top style='width:297.65pt;padding:0in 5.4pt 0in 5.4pt;
+        height:32.7pt'>
+        <p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma;
+        color:black;mso-ansi-language:EN-GB'>Using the tools suggested here to
+        find out if a candidate is technically able is only a small part of the
+        story. Your task as interviewer evaluate whether the guy will fit in.</span><span
+        lang=EN-GB style='font-family:Tahoma;color:red;mso-ansi-language:EN-GB'>
+        <i style='mso-bidi-font-style:normal'>Again trust your instincts and if
+        in doubt just say NO.</i></span><b style='mso-bidi-font-weight:normal'><span
+        lang=EN-GB style='font-family:Tahoma;color:teal;mso-ansi-language:EN-GB'><o:p></o:p></span></b></p>
+        </td>
+       </tr>
+       <tr style='mso-yfti-irow:3;mso-yfti-lastrow:yes;height:32.7pt'>
+        <td width=206 valign=top style='width:2.15in;padding:0in 5.4pt 0in 5.4pt;
+        height:32.7pt'>
+        <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+        lang=EN-GB style='font-family:Tahoma;color:teal;mso-ansi-language:EN-GB'>Overall
+        you are looking for bright people that get things done</span></b><span
+        lang=EN-GB style='font-family:Tahoma;color:black;mso-ansi-language:
+        EN-GB'>:</span><b style='mso-bidi-font-weight:normal'><span lang=EN-GB
+        style='font-family:Tahoma;color:teal;mso-ansi-language:EN-GB'><o:p></o:p></span></b></p>
+        </td>
+        <td width=397 valign=top style='width:297.65pt;padding:0in 5.4pt 0in 5.4pt;
+        height:32.7pt'>
+        <p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma;
+        color:black;mso-ansi-language:EN-GB'>These are by far the two most
+        important attributes.</span><b style='mso-bidi-font-weight:normal'><span
+        lang=EN-GB style='font-family:Tahoma;color:teal;mso-ansi-language:EN-GB'><o:p></o:p></span></b></p>
+        </td>
+       </tr>
+      </table>
+      <p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma;color:black;
+      mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+      </td>
+     </tr>
+    </table>
+    <p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma;color:black;
+    mso-ansi-language:EN-GB'><o:p>&nbsp;</o:p></span></p>
+    <table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
+     style='border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
+     mso-yfti-tbllook:480;mso-padding-alt:0in 5.4pt 0in 5.4pt;mso-border-insideh:
+     .5pt solid windowtext;mso-border-insidev:.5pt solid windowtext'>
+     <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+      <td width=647 valign=top style='width:485.6pt;border:none;border-bottom:
+      solid windowtext 1.0pt;mso-border-bottom-alt:solid windowtext .5pt;
+      padding:0in 5.4pt 0in 5.4pt'>
+      <h2><span style='font-size:12.0pt;font-family:Tahoma;color:teal;
+      font-weight:normal;mso-bidi-font-weight:bold;font-style:normal;
+      mso-bidi-font-style:italic'>Phase 1: Written Test One</span><span
+      style='font-size:12.0pt;font-family:Tahoma;color:teal;font-weight:normal;
+      mso-bidi-font-weight:bold'> <span style='mso-tab-count:1'>          </span></span><span
+      style='font-size:10.0pt;font-family:Tahoma;color:teal;font-weight:normal;
+      mso-bidi-font-weight:bold'><span
+      style='mso-spacerun:yes'>                                      </span></span><span
+      style='font-size:10.0pt;font-family:Tahoma;color:blue'><a
+      href="interview/WrittenOne.htm">Link toTest</a></span><span
+      style='font-size:10.0pt;font-family:Tahoma;color:teal;font-weight:normal;
+      mso-bidi-font-weight:bold'><o:p></o:p></span></h2>
+      <p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma;color:black;
+      mso-ansi-language:EN-GB'><o:p>&nbsp;</o:p></span></p>
+      </td>
+     </tr>
+     <tr style='mso-yfti-irow:1;mso-yfti-lastrow:yes'>
+      <td width=647 valign=top style='width:485.6pt;border:none;mso-border-top-alt:
+      solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+      <p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma;color:black;
+      mso-ansi-language:EN-GB'><o:p>&nbsp;</o:p></span></p>
+      <table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0
+       style='border-collapse:collapse;mso-yfti-tbllook:480;mso-padding-alt:
+       0in 5.4pt 0in 5.4pt'>
+       <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
+        <td width=632 valign=top style='width:474.05pt;padding:0in 5.4pt 0in 5.4pt'>
+        <h3><span style='font-size:10.0pt;font-family:Tahoma;color:black'>Overview:<o:p></o:p></span></h3>
+        <p class=MsoNormal><span style='font-family:Tahoma;color:black'>The candidates
+        are brought into the office and given an hour to complete this test.
+        The test has two sections. A full interview is performed immediately
+        after the test and commences by going through the results of this test,
+        asking the candidate to clarify their answers where necessary. Should
+        the candidate not come up to the required benchmark at this point the
+        interview is terminated.<o:p></o:p></span></p>
+        <p class=MsoNormal><span style='font-family:Tahoma;color:black'>&nbsp;<o:p></o:p></span></p>
+        <h3><span style='font-size:10.0pt;font-family:Tahoma;color:black'>Content:<o:p></o:p></span></h3>
+        <p class=MsoNormal><span style='font-family:Tahoma;color:black'>Section
+        1 examines their technical ability and process. The aim here is to
+        cover all the basic requirements such as “have they written a unit test
+        before?” and “Do they understand when to use the Event Dispatch
+        thread”.&nbsp;&nbsp;&nbsp; <o:p></o:p></span></p>
+        <p class=MsoNormal><span style='font-family:Tahoma;color:black'>&nbsp;<o:p></o:p></span></p>
+        <p class=MsoNormal><span style='font-family:Tahoma;color:black'>Section
+        2 has four logic and lateral thinking problems. These provide a good
+        cross-candidate benchmark for problem solving ability. <o:p></o:p></span></p>
+        <p class=MsoNormal><span style='font-family:Tahoma;color:black'>&nbsp;<o:p></o:p></span></p>
+        <h3><span style='font-size:10.0pt;font-family:Tahoma;color:black'>Rationale:<o:p></o:p></span></h3>
+        <p class=MsoNormal><span style='font-family:Tahoma;color:black'>The
+        written test has several distinct advantages:-<o:p></o:p></span></p>
+        <ul style='margin-top:0in' type=disc>
+         <li class=MsoNormal style='color:black;mso-list:l4 level1 lfo6;
+             tab-stops:list .5in'><span style='font-family:Tahoma'>It allows
+             the interviewer a means to assess the candidate’s ability when
+             they are not under the direct pressure of an interview.<o:p></o:p></span></li>
+         <li class=MsoNormal style='color:black;mso-list:l4 level1 lfo6;
+             tab-stops:list .5in'><span style='font-family:Tahoma'>Time is
+             saved in the interview itself as you can immediately jump to any
+             areas that may appear to be of issue.<o:p></o:p></span></li>
+         <li class=MsoNormal style='color:black;mso-list:l4 level1 lfo6;
+             tab-stops:list .5in'><span style='font-family:Tahoma'>The
+             interviewer can appraise the candidate’s ability to articulate
+             written answers as apposed to simply verbal ones.<o:p></o:p></span></li>
+         <li class=MsoNormal style='color:black;mso-list:l4 level1 lfo6;
+             tab-stops:list .5in'><span style='font-family:Tahoma'>A hard copy
+             is retained which can prove useful when making comparisons later
+             in the process.<o:p></o:p></span></li>
+        </ul>
+        <p class=MsoNormal><span style='font-family:Tahoma;color:black'>&nbsp;<o:p></o:p></span></p>
+        <p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma;
+        color:black;mso-ansi-language:EN-GB'><o:p>&nbsp;</o:p></span></p>
+        </td>
+       </tr>
+      </table>
+      <p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma;color:black;
+      mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+      </td>
+     </tr>
+    </table>
+    <p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma;color:black;
+    mso-ansi-language:EN-GB'><o:p>&nbsp;</o:p></span></p>
+    <table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
+     style='border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
+     mso-yfti-tbllook:480;mso-padding-alt:0in 5.4pt 0in 5.4pt;mso-border-insideh:
+     .5pt solid windowtext;mso-border-insidev:.5pt solid windowtext'>
+     <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+      <td width=647 valign=top style='width:485.6pt;border:none;border-bottom:
+      solid windowtext 1.0pt;mso-border-bottom-alt:solid windowtext .5pt;
+      padding:0in 5.4pt 0in 5.4pt'>
+      <h2><span style='font-size:12.0pt;font-family:Tahoma;color:teal;
+      font-weight:normal;mso-bidi-font-weight:bold;font-style:normal;
+      mso-bidi-font-style:italic'>Phase 2: The Interview<o:p></o:p></span></h2>
+      <p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma;color:black;
+      mso-ansi-language:EN-GB'><o:p>&nbsp;</o:p></span></p>
+      </td>
+     </tr>
+     <tr style='mso-yfti-irow:1;mso-yfti-lastrow:yes'>
+      <td width=647 valign=top style='width:485.6pt;border:none;mso-border-top-alt:
+      solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+      <p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma;color:black;
+      mso-ansi-language:EN-GB'><o:p>&nbsp;</o:p></span></p>
+      <table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0
+       style='border-collapse:collapse;mso-yfti-tbllook:480;mso-padding-alt:
+       0in 5.4pt 0in 5.4pt'>
+       <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
+        <td width=632 valign=top style='width:474.05pt;padding:0in 5.4pt 0in 5.4pt'>
+        <h2><span style='font-size:10.0pt;font-family:Tahoma;color:black'>Score
+        Sheet<o:p></o:p></span></h2>
+        <p class=MsoNormal><span style='font-family:Tahoma;color:black'>Make
+        sure you make notes and keep score of the candidate’s answers. Single
+        words to jog our memory often suffice.<o:p></o:p></span></p>
+        <h2><span style='font-size:10.0pt;font-family:Tahoma;color:black'>Content:<o:p></o:p></span></h2>
+        <h3 style='margin-left:.25in;text-indent:-.25in'><span
+        style='font-size:10.0pt;font-family:Tahoma;color:black;font-weight:
+        normal'>Ø&nbsp;&nbsp;&nbsp;&nbsp; </span><span style='font-size:10.0pt;
+        font-family:Tahoma;color:black'>Feedback from Written One (10 mins)<o:p></o:p></span></h3>
+        <p class=MsoNormal><span style='font-family:Tahoma;color:black'>I usually
+        start by going through the answers for the Written One. This only takes
+        five of ten minutes and provides an opportunity to assess whether the
+        interview should proceed as well as allowing the candidate to firm up
+        answers that may be unclear. This is a great opportunity to probe areas
+        in which the candidate appears wooly. For example many candidates fail
+        to test the null case in a unit test. This would flag that they may not
+        be that familiar with the process and thus would warrant further
+        investigation.<o:p></o:p></span></p>
+        <p class=MsoNormal><span style='font-family:Tahoma;color:black'>&nbsp;<o:p></o:p></span></p>
+        <p class=MsoNormal><span style='font-family:Tahoma;color:black'>This
+        phase can have the drawback that it applies excessive pressure to the
+        candidate early in the interview, particularly if you are not happy
+        with some of their answers. It is worth iterating that care should be
+        taken not to make questions too accusatory or condescending in this (or
+        any other) section of the interview.<o:p></o:p></span></p>
+        <p class=MsoNormal><span style='font-family:Tahoma;color:black'>&nbsp;<o:p></o:p></span></p>
+        <h3 style='margin-left:.25in;text-indent:-.25in'><span
+        style='font-size:10.0pt;font-family:Tahoma;color:black;font-weight:
+        normal'>Ø&nbsp;&nbsp;&nbsp;&nbsp; </span><span style='font-size:10.0pt;
+        font-family:Tahoma;color:black'>The Open Question (5 mins) <o:p></o:p></span></h3>
+        <p class=MsoNormal><span style='font-family:Tahoma;color:black'>I
+        always open the main phase of the interview with the same question: <o:p></o:p></span></p>
+        <p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma;
+        color:black;mso-ansi-language:EN-GB'>&nbsp;</span><span
+        style='font-family:Tahoma;color:black'><o:p></o:p></span></p>
+        <p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma;
+        color:black;mso-ansi-language:EN-GB'>What makes you a good developer?
+        &nbsp;When you start to write a piece of code what are you aiming to do
+        other than fulfil the functional specification?</span><span
+        style='font-family:Tahoma;color:black'><o:p></o:p></span></p>
+        <p class=MsoNormal><span style='font-family:Tahoma;color:black'>&nbsp;<o:p></o:p></span></p>
+        <p class=MsoNormal><span style='font-family:Tahoma;color:black'>Proactive
+        candidates will jump on this opportunity to demonstrate what they are
+        interested in and how they like to improve the environment in which
+        they work. Developers that just churn out code are likely to give
+        flatter, more instrumental answers (but this may be what you are
+        looking for?).<o:p></o:p></span></p>
+        <p class=MsoNormal><span style='font-family:Tahoma;color:black'><o:p>&nbsp;</o:p></span></p>
+        <p class=MsoNormal><span style='font-family:Tahoma;color:black'>If
+        candidates don’t jump on this one immediately, relate it back to their
+        last project: “In you last few projects what have you been really
+        pleased with and why?”<o:p></o:p></span></p>
+        <h3 style='margin-left:.25in;text-indent:-.25in'><span
+        style='font-size:10.0pt;font-family:Tahoma;color:black;font-weight:
+        normal'>Ø&nbsp;&nbsp;&nbsp;&nbsp; </span><span style='font-size:10.0pt;
+        font-family:Tahoma;color:black'>The Candidates Approach (15 mins) <span
+        style='mso-tab-count:1'>      </span></span><i style='mso-bidi-font-style:
+        normal'><span style='font-size:10.0pt;font-family:Tahoma;color:blue'><a
+        href="interview/NonTechnical.htm">Link to Sample Questions</a></span></i><span
+        style='font-size:10.0pt;font-family:Tahoma;color:black'><o:p></o:p></span></h3>
+        <p class=MsoNormal><span style='font-family:Tahoma;color:black'>These
+        questions are aimed to probe the candidates approach directly and have no
+        right or wrong answer. Specifically they look at areas such as “would
+        you make a change in this situation or would you leave it?” and “is
+        large scale copy and paste ever an acceptable development strategy?”. <o:p></o:p></span></p>
+        <p class=MsoNormal><span style='font-family:Tahoma;color:black'><o:p>&nbsp;</o:p></span></p>
+        <p class=MsoNormal><span style='font-family:Tahoma;color:black'>Such
+        questions are subjective and it is up to you to assess the candidate’s
+        answers. Most importantly the answers must fit in with the development
+        strategy of your team and business environment. I have seen highly able
+        candidates perform badly in our environment simply because they cannot
+        fit in with the process and approach that it requires. <o:p></o:p></span></p>
+        <p class=MsoNormal><span style='font-family:Tahoma;color:black'><o:p>&nbsp;</o:p></span></p>
+        <p class=MsoNormal><span style='font-family:Tahoma;color:black'>Finally
+        always throw in a question about how they deal with confrontation.
+        Something like:<o:p></o:p></span></p>
+        <p class=MsoNormal><span style='font-family:Tahoma;color:black'><o:p>&nbsp;</o:p></span></p>
+        <p class=MsoNormal><span style='font-family:Tahoma;color:black'>“What
+        do you do if you boss insists on you doing something you feel to be
+        fundamentally wrong. Have you been in this kind of situation before?”<o:p></o:p></span></p>
+        <p class=MsoNormal><span style='font-family:Tahoma;color:black'><o:p>&nbsp;</o:p></span></p>
+        <p class=MsoNormal><span style='font-family:Tahoma;color:black'>Such
+        questions often reveal interesting aspects of how the candidate has
+        dealt with confrontation before.<o:p></o:p></span></p>
+        <p class=MsoNormal><span style='font-family:Tahoma;color:black'>&nbsp;<o:p></o:p></span></p>
+        <h3 style='margin-left:.25in;text-indent:-.25in'><span
+        style='font-size:10.0pt;font-family:Tahoma;color:black;font-weight:
+        normal'>Ø&nbsp;&nbsp;&nbsp;&nbsp; </span><span style='font-size:10.0pt;
+        font-family:Tahoma;color:black'>Previous Project (10 mins)<span
+        style='mso-tab-count:1'>          </span></span><i style='mso-bidi-font-style:
+        normal'><span style='font-size:10.0pt;font-family:Tahoma;color:blue'><a
+        href="interview/LastProject.htm">Link to Sample Questions</a></span></i><span
+        style='font-size:10.0pt;font-family:Tahoma;color:black'><o:p></o:p></span></h3>
+        <p class=MsoNormal><span style='font-family:Tahoma;color:black'>As with
+        standard interview practice it is very useful to spend time probing
+        what the candidate did in their last position. In particular:<o:p></o:p></span></p>
+        <ul style='margin-top:0in' type=disc>
+         <li class=MsoNormal style='color:black;mso-list:l0 level1 lfo9;
+             tab-stops:list .5in'><span style='font-family:Tahoma'>Try and
+             understand their last project. This gives you an opportunity to
+             probe them on their home turf about subjects they should know inside
+             out. <o:p></o:p></span></li>
+         <li class=MsoNormal style='color:black;mso-list:l0 level1 lfo9;
+             tab-stops:list .5in'><span style='font-family:Tahoma'>If a good
+             topic isn’t immediately forthcoming ask some direct questions.
+             Asking them to describe the workflow model in their last system or
+             give them some paper and ask them to draw the system outline often
+             works well (you can start the candidate off on this one when
+             marking the Written One).<o:p></o:p></span></li>
+         <li class=MsoNormal style='color:black;mso-list:l0 level1 lfo9;
+             tab-stops:list .5in'><span style='font-family:Tahoma'>Do they seem
+             passionate about what they did? Getting enthralled in describing
+             some aspect is a sign of a good candidate. <o:p></o:p></span></li>
+         <li class=MsoNormal style='color:black;mso-list:l0 level1 lfo9;
+             tab-stops:list .5in'><span style='font-family:Tahoma'>Do they
+             explain their project in a eloquent and comprehensible way?<o:p></o:p></span></li>
+         <li class=MsoNormal style='color:black;mso-list:l0 level1 lfo9;
+             tab-stops:list .5in'><span style='font-family:Tahoma'>Make sure you
+             ascertain that they have thought about the big picture, questions
+             such as “how could that have been improved”, or “had you team
+             considered taking that in this direction? What might be the
+             advantages and pit falls of this if you did?”<o:p></o:p></span></li>
+        </ul>
+        <p class=MsoNormal><span style='font-family:Tahoma;color:black'>&nbsp;<o:p></o:p></span></p>
+        <h3 style='margin-left:.25in;text-indent:-.25in'><span
+        style='font-size:10.0pt;font-family:Tahoma;color:black;font-weight:
+        normal'>Ø&nbsp;&nbsp;&nbsp;&nbsp; </span><span style='font-size:10.0pt;
+        font-family:Tahoma;color:black'>Technical Section (10 mins) <span
+        style='mso-tab-count:1'>        </span></span><i style='mso-bidi-font-style:
+        normal'><span style='font-size:10.0pt;font-family:Tahoma;color:blue'><a
+        href="interview/Technical.htm">Link to Sample Questions</a></span></i><span
+        style='font-size:10.0pt;font-family:Tahoma;color:black'><o:p></o:p></span></h3>
+        <p class=MsoNormal><span style='font-family:Tahoma;color:black'>I pick
+        questions that have not been addressed so far from a list of technical
+        questions &lt;technical questions&gt;. These include topics such as
+        threading, swing and OO design.<o:p></o:p></span></p>
+        <p class=MsoNormal><span style='font-family:Tahoma;color:black'>&nbsp;<o:p></o:p></span></p>
+        <h3 style='margin-left:.25in;text-indent:-.25in'><span
+        style='font-size:10.0pt;font-family:Tahoma;color:black;font-weight:
+        normal'>Ø&nbsp;&nbsp;&nbsp;&nbsp; </span><span style='font-size:10.0pt;
+        font-family:Tahoma;color:black'>The CV (5 mins)<o:p></o:p></span></h3>
+        <p class=MsoNormal><span style='font-family:Tahoma;color:black'>Probe
+        their CV for past experiences, technical specifics etc<o:p></o:p></span></p>
+        <p class=MsoNormal><span style='font-family:Tahoma;color:black'>&nbsp;<o:p></o:p></span></p>
+        <h3 style='margin-left:.25in;text-indent:-.25in'><span
+        style='font-size:10.0pt;font-family:Tahoma;color:black;font-weight:
+        normal'>Ø&nbsp;&nbsp;&nbsp;&nbsp; </span><span style='font-size:10.0pt;
+        font-family:Tahoma;color:black'>About the Position (5 mins)<o:p></o:p></span></h3>
+        <p class=MsoNormal><span style='font-family:Tahoma;color:black'>An
+        opportunity for you to really sell the position you are recruiting for.
+        Technologists tend to be attracted by good technology and the
+        opportunity to learn on the job so always play that card first if you
+        can. <o:p></o:p></span></p>
+        <p class=MsoNormal><span style='font-family:Tahoma;color:black'>&nbsp;<o:p></o:p></span></p>
+        </td>
+       </tr>
+      </table>
+      <p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma;color:black;
+      mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+      </td>
+     </tr>
+    </table>
+    <p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma;color:black;
+    mso-ansi-language:EN-GB'><o:p>&nbsp;</o:p></span></p>
+    <table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
+     style='border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
+     mso-yfti-tbllook:480;mso-padding-alt:0in 5.4pt 0in 5.4pt;mso-border-insideh:
+     .5pt solid windowtext;mso-border-insidev:.5pt solid windowtext'>
+     <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+      <td width=647 valign=top style='width:485.6pt;border:none;border-bottom:
+      solid windowtext 1.0pt;mso-border-bottom-alt:solid windowtext .5pt;
+      padding:0in 5.4pt 0in 5.4pt'>
+      <h2><span style='font-size:12.0pt;font-family:Tahoma;color:teal;
+      font-weight:normal;mso-bidi-font-weight:bold;font-style:normal;
+      mso-bidi-font-style:italic'>Phase 3: Written Test Two</span><span
+      style='font-size:12.0pt;font-family:Tahoma;color:teal;font-weight:normal;
+      mso-bidi-font-weight:bold'><span
+      style='mso-spacerun:yes'>                       </span><span
+      style='mso-tab-count:1'>       </span></span><span style='font-size:10.0pt;
+      font-family:Tahoma;color:blue'><a href="interview/WrittenTwo.htm">Link to
+      Test</a></span><span style='font-size:12.0pt;font-family:Tahoma;
+      color:teal;font-weight:normal;mso-bidi-font-weight:bold'><o:p></o:p></span></h2>
+      <p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma;color:black;
+      mso-ansi-language:EN-GB'><o:p>&nbsp;</o:p></span></p>
+      </td>
+     </tr>
+     <tr style='mso-yfti-irow:1;mso-yfti-lastrow:yes'>
+      <td width=647 valign=top style='width:485.6pt;border:none;mso-border-top-alt:
+      solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+      <p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma;color:black;
+      mso-ansi-language:EN-GB'><o:p>&nbsp;</o:p></span></p>
+      <table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0
+       style='border-collapse:collapse;mso-yfti-tbllook:480;mso-padding-alt:
+       0in 5.4pt 0in 5.4pt'>
+       <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
+        <td width=632 valign=top style='width:474.05pt;padding:0in 5.4pt 0in 5.4pt'>
+        <p class=MsoNormal><span style='font-family:Tahoma;color:black'>Only supplied
+        to good candidates, this test takes about three hours and can be taken
+        at home. It is a code comprehension exercise based on a piece of open
+        source software. Answers are available on request.<o:p></o:p></span></p>
+        <p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma;
+        color:black;mso-ansi-language:EN-GB'><o:p>&nbsp;</o:p></span></p>
+        </td>
+       </tr>
+      </table>
+      <p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma;color:black;
+      mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+      </td>
+     </tr>
+    </table>
+    <p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma;color:black;
+    mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+    </td>
+   </tr>
+  </table>
+  <p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma;color:black;
+  mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<h1><span style='font-size:10.0pt;font-family:Tahoma;color:teal'>References:<o:p></o:p></span></h1>
+
+<h1><span style='font-size:10.0pt;font-family:Tahoma;color:black;font-weight:
+normal;mso-bidi-font-weight:bold'><a
+href="http://www.joelonsoftware.com/articles/fog0000000073.html">Joel on
+Software</a><o:p></o:p></span></h1>
+
+<h1><span style='font-size:10.0pt;font-family:Tahoma;font-weight:normal;
+mso-bidi-font-weight:bold'><a
+href="http://www.scottberkun.com/essays/essay39.htm">How to interview and hire
+people</a><span style='color:black'><o:p></o:p></span></span></h1>
+
+<p class=MsoNormal><span style='font-family:Tahoma;color:black'>&nbsp;<o:p></o:p></span></p>
+
+</div>
+
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-1671531-1";
+urchinTracker();
+</script>
+
+</body>
+
+</html>
+
+
+<!--------------------------------------------------------------------------------------->
+
+<BR><BR><BR><BR><BR><BR><BR>
+<BR><BR><BR><BR><BR><BR><BR>
+<p align="center">
+This site is &copy; Copyright BenStopford.com 2003-2005, All Rights Reserved<BR>
+<p>
+			</td>
+		</tr>
+	</table>
+</td>
+
+</tr>
+</table>
+
+</body>
+</html>
+

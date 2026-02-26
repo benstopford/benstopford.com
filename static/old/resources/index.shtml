@@ -1,0 +1,1324 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	<title>BenStopford.com - Ben Stopford's site for technical essays and blogs</title>
+	<link rel=stylesheet type="text/css" href="/style.css">
+</head>
+
+<body bottommargin="0" leftmargin="0" rightmargin="0" topmargin="0" background="/old/common/img/background.jpg">
+
+
+
+<table height="123" width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr valign="top">
+<!----- insert logo below ------------------------------------------>
+<td><img src="/old/common/img/benbanner.jpg" width="587" height="123" border="0" alt=""></td>
+<!------------------------------------------------------------------>
+<td width="100%" background="/old/common/img/topbg.jpg">&nbsp;</td>
+</tr>
+</table>
+
+<table height="40" width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr valign="top">
+<td width="100%" background="/old/common/img/topbar.jpg">&nbsp;</td>
+</tr>
+</table>
+
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr valign="top">
+
+<td width="201"><BR>
+<!----- menu, insert links below ------------------------------------------>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/index.shtml">Home and Blogs</a><BR>
+<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/Articles.shtml">Essays</a><BR>
+<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/Software.shtml">Software</a><BR>
+<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/PrimeBrokerage.shtml">Prime Brokerage</a><BR>
+<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/columns/WebPageOptimiseStub.shtml">Web Page Optimisation</a><BR>
+<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/TechnicalInterviewingStub.shtml">Interviewing</a><BR>
+<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/devsim/devsim.shtml">Publications</a><BR>
+<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/resources/index.shtml">Resources</a><BR>
+<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/bookreviews/index.shtml">Book Reviews</a><BR>
+<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/AboutMe.shtml">About Me</a><BR>
+<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+
+
+
+
+
+<script type="text/javascript">
+
+//Enter domain of site to search.
+var domainroot="www.benstopford.com"
+
+function Gsitesearch(curobj){
+curobj.q.value="site:"+domainroot+" "+curobj.qfront.value
+}
+
+</script>
+
+
+<form action="http://www.google.co.uk/search" method="get" onSubmit="Gsitesearch(this)"&gt;
+
+<p>
+<input name="q" type="hidden" />
+<p>
+<BR><BR><BR>
+
+.
+<input name="qfront" type="text" style="width: 180px" /><p>
+..<input STYLE="color: #FFFFFF; font-family: Verdana; font-weight: bold; font-size: 12px; background-color: #003F80;"
+type="submit" value="Search" />
+<img src="/common/img/menubar.jpg" width="201" height="11" border="0" alt="">
+</form>
+
+<!-------------------------------------------------------------------------->
+
+</td>
+
+<td width="100%">
+	<table width="100%" cellpadding="10" cellspacing="0" border="0">
+		<tr valign="top">
+			<td>
+<!----- content, insert text and content below ------------------------------------------>
+
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 11 (filtered)">
+<base target="_blank">
+<title>test</title>
+
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+	{font-family:"Andale Mono";}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman";}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;}
+@page Section1
+	{size:612.0pt 792.0pt;
+	margin:72.0pt 90.0pt 72.0pt 90.0pt;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-GB link=blue vlink=purple>
+
+<div class=Section1>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:14.0pt;font-family:Tahoma;
+color:teal'>Useful Resources on the Web:</span></p>
+
+<p class=MsoNormal><b><span lang=EN-US style='font-size:14.0pt'>&nbsp;</span></b></p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse'>
+ <tr>
+  <td width=780 valign=top style='width:584.95pt;border:none;border-bottom:
+  solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'><span style='font-size:
+  10.0pt;font-family:Tahoma'><br clear=all style='page-break-before:always'>
+  <br clear=all style='page-break-before:always'>
+  </span>
+  <p class=MsoNormal><span style='font-size:12.0pt;font-family:Tahoma;
+  color:teal'>General Interest and Management</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=780 valign=top style='width:584.95pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;font-family:Tahoma'>&nbsp;</span></p>
+  <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=761
+   style='width:570.55pt;border-collapse:collapse'>
+   <tr>
+    <td width=245 valign=top style='width:183.55pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;»&nbsp;<a
+    href="http://www.joelonsoftware.com/navLinks/fog0000000247.html">Joel On
+    Software Essay Archive</a></span></p>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;</span></p>
+    </td>
+    <td width=163 valign=top style='width:122.55pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal><span style='font-family:Tahoma'>Software Management
+    Essays</span></p>
+    </td>
+    <td width=353 valign=top style='width:264.45pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal style='text-align:justify'><span style='font-family:
+    Tahoma'>Joel used to work on the Excel team. He has a very pragmatic
+    outlook on software development and I have a lot of time for that. Useful
+    words, tips and insights.</span></p>
+    <p class=MsoNormal style='text-align:justify'>&nbsp;</p>
+    </td>
+   </tr>
+   <tr>
+    <td width=245 valign=top style='width:183.55pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;»&nbsp;<a
+    href="http://andrewj.co.uk/">Andrew Johnston</a></span></p>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;</span></p>
+    </td>
+    <td width=163 valign=top style='width:122.55pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal><span style='font-family:Tahoma'>General IT interest</span></p>
+    </td>
+    <td width=353 valign=top style='width:264.45pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal style='text-align:justify'><span style='font-family:
+    Tahoma'>Good for a browse and some good book reviews.</span></p>
+    <p class=MsoNormal style='text-align:justify'>&nbsp;</p>
+    </td>
+   </tr>
+   <tr>
+    <td width=245 valign=top style='width:183.55pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;»&nbsp;<a
+    href="http://radio.javaranch.com/val/2004/07/14/1089792614000.html">Val's
+    Blog</a></span></p>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;</span></p>
+    </td>
+    <td width=163 valign=top style='width:122.55pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal><span style='font-family:Tahoma'>General IT interest</span></p>
+    </td>
+    <td width=353 valign=top style='width:264.45pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal style='text-align:justify'><span style='font-family:
+    Tahoma'>Another good site to browse and has lots of book reviews</span></p>
+    <p class=MsoNormal style='text-align:justify'>&nbsp;</p>
+    </td>
+   </tr>
+   <tr style='height:63.45pt'>
+    <td width=245 valign=top style='width:183.55pt;padding:0cm 5.4pt 0cm 5.4pt;
+    height:63.45pt'>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;»&nbsp;<a
+    href="http://www.scottberkun.com/">Scott Berkun</a></span></p>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;</span></p>
+    </td>
+    <td width=163 valign=top style='width:122.55pt;padding:0cm 5.4pt 0cm 5.4pt;
+    height:63.45pt'>
+    <p class=MsoNormal><span style='font-family:Tahoma'>Software Management
+    Essays</span></p>
+    </td>
+    <td width=353 valign=top style='width:264.45pt;padding:0cm 5.4pt 0cm 5.4pt;
+    height:63.45pt'>
+    <p class=MsoNormal style='text-align:justify'><span style='font-family:
+    Tahoma'>To be honest Scott can waffle a bit in places but his essays are
+    well thought out and of use. Much more of a technical project management
+    tip.</span></p>
+    <p class=MsoNormal style='text-align:justify'>&nbsp;</p>
+    </td>
+   </tr>
+   <tr>
+    <td width=245 valign=top style='width:183.55pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;»&nbsp;<a
+    href="http://www.paulgraham.com/articles.html">Paul Graham</a></span></p>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;</span></p>
+    </td>
+    <td width=163 valign=top style='width:122.55pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal><span style='font-family:Tahoma'>Start-Ups + Assorted
+    others</span></p>
+    </td>
+    <td width=353 valign=top style='width:264.45pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal style='text-align:justify'><span style='font-family:
+    Tahoma'>Paul is the author of the renowned book <a
+    href="http://www.amazon.co.uk/exec/obidos/ASIN/0596006624/qid=1130526853/sr=8-1/ref=sr_8_xs_ap_i1_xgl/202-9714558-4782224">Hackers
+    and Painters</a>. Essays recently focus on start ups but earlier ones cover
+    an assortment of geeky subjects. Interesting if not all that useful. </span></p>
+    <p class=MsoNormal style='text-align:justify'><span style='font-family:
+    Tahoma'>&nbsp;</span></p>
+    </td>
+   </tr>
+  </table>
+  <p class=MsoNormal></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse'>
+ <tr style='height:5.85pt'>
+  <td width=780 valign=top style='width:584.95pt;border:none;border-bottom:
+  solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:5.85pt'><span
+  style='font-size:10.0pt;font-family:Tahoma'><br clear=all style='page-break-before:
+  always'>
+  <br clear=all style='page-break-before:always'>
+  </span>
+  <p class=MsoNormal><span style='font-size:12.0pt;font-family:Tahoma;
+  color:teal'>Technology and Programming:</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=780 valign=top style='width:584.95pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;font-family:Tahoma'>&nbsp;</span></p>
+  <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=761
+   style='width:570.55pt;border-collapse:collapse'>
+   <tr>
+    <td width=245 valign=top style='width:183.55pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;»&nbsp;<a
+    href="http://www.martinfowler.com/">Martin Fowler</a></span></p>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;</span></p>
+    </td>
+    <td width=163 valign=top style='width:122.55pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal><span style='font-family:Tahoma'>Design, Methodology,
+    Refactoring and New Paradigms.</span></p>
+    </td>
+    <td width=353 valign=top style='width:264.45pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal style='text-align:justify'><span style='font-family:
+    Tahoma'>Martin Fowler needs little introduction to most. The daddy of
+    design, his site provides numerous articles on topics such as software
+    design, methodology and of course his baby; refactoring.</span></p>
+    <p class=MsoNormal style='text-align:justify'>&nbsp;</p>
+    </td>
+   </tr>
+   <tr>
+    <td width=245 valign=top style='width:183.55pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;» <a
+    href="http://www.bredemeyer.com/" target="_blank">Software Architecture
+    Resources</a></span></p>
+    </td>
+    <td width=163 valign=top style='width:122.55pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal><span style='font-family:Tahoma'>Architecture</span></p>
+    </td>
+    <td width=353 valign=top style='width:264.45pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal style='text-align:justify'><span style='font-family:
+    Tahoma'>A great site for anyone interested in software architecture and the
+    role of the architect. There is lots of free content here. I particularly
+    like:-</span></p>
+    <p class=MsoNormal style='text-align:justify'><span style='font-family:
+    Tahoma'>» <a href="http://www.bredemeyer.com/HotSpot/20040428EASoapBox.htm">Guiding
+    Principles for Enterprise Architects</a></span></p>
+    <p class=MsoNormal style='text-align:justify'><span style='font-family:
+    Tahoma'>» <a href="http://www.bredemeyer.com/papers.htm">Software
+    Architecture Resources</a></span></p>
+    <p class=MsoNormal style='text-align:justify'>&nbsp;</p>
+    </td>
+   </tr>
+   <tr>
+    <td width=245 valign=top style='width:183.55pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal style='text-align:justify'><span style='font-family:
+    Tahoma;color:black'>Links on Usibility…</span></p>
+    <p class=MsoNormal style='text-autospace:none'><span style='font-family:
+    Tahoma'><a href="http://www.asktog.com/">http://www.asktog.com/</a><span
+    style='color:navy'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </span></span></p>
+    <p class=MsoNormal style='text-autospace:none'><span style='font-family:
+    Tahoma'><a href="http://www.jnd.org/">http://www.jnd.org/</a><span
+    style='color:navy'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </span></span></p>
+    <p class=MsoNormal style='text-autospace:none'><span style='font-family:
+    Tahoma'><a href="http://www.useit.com/">http://www.useit.com/</a><span
+    style='color:navy'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </span></span></p>
+    <p class=MsoNormal><span style='font-family:Tahoma'><a
+    href="http://www.nngroup.com/index.html">http://www.nngroup.com/index.html</a></span><span
+    style='font-size:8.0pt;font-family:"Andale Mono";color:navy'>&nbsp; </span></p>
+    </td>
+    <td width=163 valign=top style='width:122.55pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;</span></p>
+    </td>
+    <td width=353 valign=top style='width:264.45pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal style='text-align:justify'><span lang=FR
+    style='font-family:Tahoma;color:black'>Links on Usibility…</span></p>
+    <ul style='margin-top:0cm' type=disc>
+     <li class=MsoNormal style='color:black;text-align:justify'><span lang=FR
+         style='font-family:Tahoma'>Bruce Tognazini</span></li>
+     <li class=MsoNormal style='color:black;text-align:justify'><span lang=FR
+         style='font-family:Tahoma'>Don Norman</span></li>
+     <li class=MsoNormal style='color:black;text-align:justify'><span
+         style='font-family:Tahoma'>Jackob Nielsen</span></li>
+     <li class=MsoNormal style='text-align:justify'><span style='font-family:
+         Tahoma;color:black'>All 3 together</span></li>
+    </ul>
+    <p class=MsoNormal style='margin-left:18.0pt;text-align:justify'><span
+    style='font-family:Tahoma'>&nbsp;</span></p>
+    </td>
+   </tr>
+   <tr>
+    <td width=245 valign=top style='width:183.55pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal style='text-align:justify'><span style='font-family:
+    Tahoma'>&nbsp;» <span style='color:black'><a
+    href="http://www.dreamsongs.com/NewFiles/PatternsOfSoftware.pdf">PatternsOfSoftware</a></span></span></p>
+    </td>
+    <td width=163 valign=top style='width:122.55pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;</span></p>
+    </td>
+    <td width=353 valign=top style='width:264.45pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal style='text-align:justify'><span style='font-family:
+    Tahoma;color:black'>An online book by Alexander, the architect (of
+    buildings</span></p>
+    <p class=MsoNormal style='text-align:justify'><span style='font-family:
+    Tahoma;color:black'>made out of concrete!) that the GOF kept refering to as</span></p>
+    <p class=MsoNormal style='text-align:justify'><span style='font-family:
+    Tahoma;color:black'>the source for unearthing the &quot;software pattern&quot;
+    idea ..</span></p>
+    </td>
+   </tr>
+  </table>
+  <p class=MsoNormal></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse'>
+ <tr style='height:5.85pt'>
+  <td width=780 valign=top style='width:584.95pt;border:none;border-bottom:
+  solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:5.85pt'><span
+  style='font-size:10.0pt;font-family:Tahoma'><br clear=all style='page-break-before:
+  always'>
+  <br clear=all style='page-break-before:always'>
+  </span>
+  <p class=MsoNormal><span style='font-size:12.0pt;font-family:Tahoma;
+  color:teal'>Java Stuff:</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=780 valign=top style='width:584.95pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;font-family:Tahoma'>&nbsp;</span></p>
+  <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=761
+   style='width:570.55pt;border-collapse:collapse'>
+   <tr>
+    <td width=245 valign=top style='width:183.55pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;»&nbsp;<a
+    href="http://jmock.org/">JMock</a></span></p>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;</span></p>
+    </td>
+    <td width=163 valign=top style='width:122.55pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal><span style='font-family:Tahoma'>Unit Testing</span></p>
+    </td>
+    <td width=353 valign=top style='width:264.45pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal style='text-align:justify'><span style='font-family:
+    Tahoma'>A library for testing Java code using mock objects.</span></p>
+    <p class=MsoNormal style='text-align:justify'>&nbsp;</p>
+    </td>
+   </tr>
+   <tr>
+    <td width=245 valign=top style='width:183.55pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;»&nbsp;<a
+    href="http://www.jgroups.org/javagroupsnew/docs/index.html">JGroups</a></span></p>
+    </td>
+    <td width=163 valign=top style='width:122.55pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal><span style='font-family:Tahoma'>Multicasting framework
+    for Java</span></p>
+    </td>
+    <td width=353 valign=top style='width:264.45pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal style='text-align:justify'><span style='font-family:
+    Tahoma'>JGroups is a toolkit for reliable multicast communication which can
+    be used to create groups of processes whose members can send messages to
+    each other.</span></p>
+    </td>
+   </tr>
+   <tr>
+    <td width=245 valign=top style='width:183.55pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;» <a
+    href="http://java.about.com/od/freesourcecode/">'About Java' Free Source</a></span></p>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;</span></p>
+    </td>
+    <td width=163 valign=top style='width:122.55pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal><span style='font-family:Tahoma'>Java Source Code
+    Resources</span></p>
+    </td>
+    <td width=353 valign=top style='width:264.45pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal style='text-align:justify'><span style='font-family:
+    Tahoma'>&nbsp;</span></p>
+    </td>
+   </tr>
+   <tr>
+    <td width=245 valign=top style='width:183.55pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;» <a
+    href="http://java.sun.com/webservices/jaxb/index.jsp">JAXB</a></span></p>
+    </td>
+    <td width=163 valign=top style='width:122.55pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal><span style='font-family:Tahoma'>Java</span></p>
+    </td>
+    <td width=353 valign=top style='width:264.45pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal style='text-align:justify'><span style='font-family:
+    Tahoma'>Bind XML and your java code</span></p>
+    <p class=MsoNormal style='text-align:justify'><span style='font-family:
+    Tahoma'>&nbsp;</span></p>
+    </td>
+   </tr>
+   <tr>
+    <td width=245 valign=top style='width:183.55pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;» <a
+    href="http://www.ezjcom.com/">JCOM</a></span></p>
+    </td>
+    <td width=163 valign=top style='width:122.55pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;</span></p>
+    </td>
+    <td width=353 valign=top style='width:264.45pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal style='text-align:justify'><span style='font-family:
+    Tahoma'>Connect to COM objects and applications easily with this Java-COM
+    bridge e.g. Access and Excel</span></p>
+    </td>
+   </tr>
+   <tr>
+    <td width=245 valign=top style='width:183.55pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;» <a
+    href="http://www.canoo.com/ulc/" target="_blank">Ultra Light Clients</a></span></p>
+    </td>
+    <td width=163 valign=top style='width:122.55pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;</span></p>
+    </td>
+    <td width=353 valign=top style='width:264.45pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal style='text-align:justify'><span style='font-family:
+    Tahoma'>An alternative to AJAX. Swing on the server via J2EE.</span></p>
+    <p class=MsoNormal style='text-align:justify'><span style='font-family:
+    Tahoma'>&nbsp;</span></p>
+    </td>
+   </tr>
+   <tr>
+    <td width=245 valign=top style='width:183.55pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;» <a
+    href="https://jdic.dev.java.net/" target="_blank">JDIC</a></span></p>
+    </td>
+    <td width=163 valign=top style='width:122.55pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;</span></p>
+    </td>
+    <td width=353 valign=top style='width:264.45pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal style='text-align:justify'><span style='font-family:
+    Tahoma'>Java Desktop Integration Components – Integration to native
+    facilities such as System Tray, Wallpaper, File Explorer and Browser.
+    Dependent on 1.5.</span></p>
+    </td>
+   </tr>
+   <tr>
+    <td width=245 valign=top style='width:183.55pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;</span></p>
+    </td>
+    <td width=163 valign=top style='width:122.55pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;</span></p>
+    </td>
+    <td width=353 valign=top style='width:264.45pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal style='text-align:justify'><span style='font-family:
+    Tahoma'>&nbsp;</span></p>
+    </td>
+   </tr>
+  </table>
+  <p class=MsoNormal></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=FR>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=FR>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=FR>&nbsp;</span></p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse'>
+ <tr>
+  <td width=780 valign=top style='width:584.95pt;border:none;border-bottom:
+  solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'><span lang=FR
+  style='font-size:10.0pt;font-family:Tahoma'><br clear=all style='page-break-before:
+  always'>
+  <br clear=all style='page-break-before:always'>
+  </span>
+  <p class=MsoNormal><span style='font-size:12.0pt;font-family:Tahoma;
+  color:teal'>Metholodologies</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=780 valign=top style='width:584.95pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;font-family:Tahoma'>&nbsp;</span></p>
+  <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=761
+   style='width:570.55pt;border-collapse:collapse'>
+   <tr>
+    <td width=231 valign=top style='width:173.2pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;»&nbsp;<a
+    href="http://alistair.cockburn.us/crystal/crystal.html">Crystal</a></span></p>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;</span></p>
+    </td>
+    <td width=158 valign=top style='width:118.3pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;</span></p>
+    </td>
+    <td width=372 valign=top style='width:279.05pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal style='text-align:justify'><span style='font-family:
+    Tahoma'>My personal favorite. Crystal is for the pragmatist who is happy to
+    improve on what they have rather than opting for a big bang all or nothing approaches
+    (such as XP). Crystal principals are designed to fit into your current
+    methodologies and processes. Improvement is then gradual and symbiotic. The
+    <a
+    href="http://www.amazon.co.uk/exec/obidos/ASIN/0201699478/qid=1130529830/sr=8-4/ref=sr_8_xs_ap_i4_xgl/202-9714558-4782224">book
+    (Crystal Clear)</a> is also excellent.</span></p>
+    <p class=MsoNormal style='text-align:justify'><span style='font-family:
+    Tahoma'>&nbsp;</span></p>
+    </td>
+   </tr>
+   <tr>
+    <td width=231 valign=top style='width:173.2pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;»&nbsp;<a
+    href="http://www.comptechdoc.org/independent/xp/summary/intro.html">Summary
+    of XP</a></span></p>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;</span></p>
+    </td>
+    <td width=158 valign=top style='width:118.3pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;Methodologies</span></p>
+    </td>
+    <td width=372 valign=top style='width:279.05pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal style='text-align:justify'><span style='font-family:
+    Tahoma'>A brief outline of the important features of XP</span></p>
+    </td>
+   </tr>
+   <tr>
+    <td width=231 valign=top style='width:173.2pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;»&nbsp;<a
+    href="../OtherPeoplesArticles/LaunchingXPInProcessIntensiveCompany.pdf">Launching
+    XP in a Process Intensive Company</a></span></p>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;</span></p>
+    </td>
+    <td width=158 valign=top style='width:118.3pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;Methodologies</span></p>
+    </td>
+    <td width=372 valign=top style='width:279.05pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal style='text-align:justify'><span style='font-family:
+    Tahoma'>IEEE Software article from the November/December 2001 issue:
+    Launching Extreme Programming at a Process-Intensive Company by James
+    Grenning.</span></p>
+    <p class=MsoNormal style='text-align:justify'>&nbsp;</p>
+    </td>
+   </tr>
+   <tr>
+    <td width=231 valign=top style='width:173.2pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;»&nbsp;<a
+    href="http://www.softwarereality.com/lifecycle/xp/case_against_xp.jsp">The
+    Case Against XP</a></span></p>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;</span></p>
+    </td>
+    <td width=158 valign=top style='width:118.3pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal><span style='font-family:Tahoma'>Methodologies</span></p>
+    </td>
+    <td width=372 valign=top style='width:279.05pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal style='text-align:justify'><span style='font-family:
+    Tahoma'>An interesting discussion of the case <b><i>against</i></b> XP. Although
+    I have to say that I do not agree with many of the viewpoints put forward.
+    It is however interesting to read.</span></p>
+    <p class=MsoNormal style='text-align:justify'>&nbsp;</p>
+    </td>
+   </tr>
+   <tr>
+    <td width=231 valign=top style='width:173.2pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;»&nbsp;<a
+    href="http://en.wikipedia.org/wiki/Rational_Unified_Process">RUP -
+    Wikipedia</a></span></p>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;</span></p>
+    </td>
+    <td width=158 valign=top style='width:118.3pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal><span style='font-family:Tahoma'>Methodologies</span></p>
+    </td>
+    <td width=372 valign=top style='width:279.05pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal style='text-align:justify'><span style='font-family:
+    Tahoma'>Flawed in many ways but one of the founding processes that led to
+    many successors. See also </span></p>
+    <p class=MsoNormal style='text-align:justify'><span style='font-family:
+    Tahoma'>»&nbsp;<a href="http://www-306.ibm.com/software/awdtools/rup/">RUP
+    - IBM Site</a></span></p>
+    <p class=MsoNormal style='text-align:justify'><span style='font-family:
+    Tahoma'>&nbsp;</span></p>
+    </td>
+   </tr>
+   <tr>
+    <td width=231 valign=top style='width:173.2pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;»&nbsp;<a
+    href="http://bdn.borland.com/article/0,1410,29684,00.html">Feature Driven
+    Development</a></span></p>
+    </td>
+    <td width=158 valign=top style='width:118.3pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal><span style='font-family:Tahoma'>Methodologies</span></p>
+    </td>
+    <td width=372 valign=top style='width:279.05pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal style='text-align:justify'><span style='font-family:
+    Tahoma'>A good overview of this practical methodology. See also</span></p>
+    <p class=MsoNormal style='text-align:justify'><span style='font-family:
+    Tahoma'><a href="http://thecoadletter.com/article/0,1410,31862,00.html">FDD
+    2</a></span></p>
+    <p class=MsoNormal style='text-align:justify'><span style='font-family:
+    Tahoma'><a href="http://www.featuredrivendevelopment.com/">www.featuredrivendevelopment.com</a></span></p>
+    <p class=MsoNormal style='text-align:justify'><span style='font-family:
+    Tahoma'>&nbsp;</span></p>
+    </td>
+   </tr>
+   <tr>
+    <td width=231 valign=top style='width:173.2pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;»&nbsp;<a
+    href="http://hubert.blogs.com/dahdidahdi_dadadihda/2005/02/new_burndown_ch.html">Hubert
+    Smit Example</a></span></p>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;»&nbsp;<a
+    href="http://www.xprogramming.com/xpmag/BigVisibleCharts.htm">Ron Jeffries
+    Example</a></span></p>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;»&nbsp;<a
+    href="http://weblogs.asp.net/wallen/archive/2004/10/23/246763.aspx">Wayne
+    Allan's Example</a></span></p>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;»&nbsp;<a
+    href="http://www.testing.com/cgi-bin/blog/2004/10/21">Brain Marick's
+    Example</a></span></p>
+    </td>
+    <td width=158 valign=top style='width:118.3pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;Methodologies</span></p>
+    </td>
+    <td width=372 valign=top style='width:279.05pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal style='text-align:justify'><span style='font-family:
+    Tahoma'>Example Burn Charts (Burndown charts). These are a great project
+    management tool introduced in Scrum and included in Crystal.</span></p>
+    <p class=MsoNormal style='text-align:justify'><span style='font-family:
+    Tahoma'>&nbsp;</span></p>
+    <p class=MsoNormal style='text-align:justify'><span style='font-family:
+    Tahoma'>&nbsp;</span></p>
+    </td>
+   </tr>
+   <tr>
+    <td width=231 valign=top style='width:173.2pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;»&nbsp;<a
+    href="../OtherPeoplesArticles/Balancing%20Agility%20And%20Discipline.pdf">Balancing
+    Agility and Discipline</a></span></p>
+    </td>
+    <td width=158 valign=top style='width:118.3pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal><span style='font-family:Tahoma'>Methodologies</span></p>
+    </td>
+    <td width=372 valign=top style='width:279.05pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal style='text-align:justify'><span style='font-family:
+    Tahoma'>Balancing Agility and Discipline – the original paper by Boehm. Very
+    insightful comparison between agile and plan driven methods. This was the
+    foundation of his book of the same name. A great resource for how to scale
+    up XP or ‘agilify’ plan driven methods.</span></p>
+    <p class=MsoNormal style='text-align:justify'><span style='font-family:
+    Tahoma'>&nbsp;</span></p>
+    </td>
+   </tr>
+   <tr>
+    <td width=231 valign=top style='width:173.2pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;»&nbsp;<a
+    href="../OtherPeoplesArticles/Beck%20and%20Boehm%20Debate.pdf">Debate: Beck
+    and Boehm</a></span></p>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;</span></p>
+    </td>
+    <td width=158 valign=top style='width:118.3pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;</span></p>
+    </td>
+    <td width=372 valign=top style='width:279.05pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal style='text-align:justify'><span style='font-family:
+    Tahoma'>A debate between Beck and Boehm on plan and agile methods. Even as
+    an agile proponent, it’s hard to side with Barry on this one. A great read.</span></p>
+    <p class=MsoNormal style='text-align:justify'><span style='font-family:
+    Tahoma'>&nbsp;</span></p>
+    </td>
+   </tr>
+   <tr>
+    <td width=231 valign=top style='width:173.2pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;»&nbsp;<a
+    href="../OtherPeoplesArticles/Challenges%20for%20Analysts%20using%20XP%20-%20Schalliol.pdf">Scaling
+    Up XP - Schalliol</a></span></p>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;</span></p>
+    </td>
+    <td width=158 valign=top style='width:118.3pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;</span></p>
+    </td>
+    <td width=372 valign=top style='width:279.05pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal style='text-align:justify'><span style='font-family:
+    Tahoma'>Paper describing issues involved in scaling up XP.</span></p>
+    <p class=MsoNormal style='text-align:justify'><span style='font-family:
+    Tahoma'>&nbsp;</span></p>
+    </td>
+   </tr>
+   <tr>
+    <td width=231 valign=top style='width:173.2pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;»&nbsp;<a
+    href="http://www.stsc.hill.af.mil/crossTalk/2002/10/manzo.html">Code
+    Science - Successes</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </span></p>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;</span></p>
+    </td>
+    <td width=158 valign=top style='width:118.3pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;</span></p>
+    </td>
+    <td width=372 valign=top style='width:279.05pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal style='text-align:justify'><span style='font-family:
+    Tahoma'>Code Science is a hybrid methodology that combines a plan driven
+    shell containing mainly XP practices. It is designed for large mission
+    critical projects but leverages from the agile tenants. Agile on 400KLOC
+    projects. Another similar approach is Agile+</span></p>
+    <p class=MsoNormal style='text-align:justify'><span style='font-family:
+    Tahoma'>&nbsp;</span></p>
+    </td>
+   </tr>
+   <tr>
+    <td width=231 valign=top style='width:173.2pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;»&nbsp;<a
+    href="http://www.cs.colorado.edu/~kena/classes/5828/s01/guestlectures/NSB-guest.pdf">Brooks
+    Laws</a></span></p>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </span></p>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;</span></p>
+    </td>
+    <td width=158 valign=top style='width:118.3pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;</span></p>
+    </td>
+    <td width=372 valign=top style='width:279.05pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal style='text-align:justify'><span style='font-family:
+    Tahoma'>Lecture summarizing Brooks laws that effect software projects.
+    These are of interest as they are the problems that agile will increasingly
+    face as it upscales into mainstream enterprise-coupled applications.</span></p>
+    <p class=MsoNormal style='text-align:justify'>&nbsp;</p>
+    </td>
+   </tr>
+   <tr>
+    <td width=231 valign=top style='width:173.2pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;»&nbsp;<a
+    href="http://www.agilemanagement.net/Articles/hidden/AGSE_Overview.pdf">Agile
+    Maturity Model (Slides explaining the case for)</a>&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;&nbsp;</span></p>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;»&nbsp;<a
+    href="http://www.agilejournal.com/component/option,com_magazine/func,show_article/id,44/">AMM
+    Proposed</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;</span></p>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;»&nbsp;<a
+    href="http://www.ddj.com/dept/architect/184415287">AMM and CMMI - Dr Dobbs</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;</span></p>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </span></p>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;</span></p>
+    </td>
+    <td width=158 valign=top style='width:118.3pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;</span></p>
+    </td>
+    <td width=372 valign=top style='width:279.05pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal style='text-align:justify'><span style='font-family:
+    Tahoma'>Introduction to the Agile Maturity Model and associated resources.</span></p>
+    </td>
+   </tr>
+  </table>
+  <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse'>
+ <tr>
+  <td width=780 valign=top style='width:584.95pt;border:none;border-bottom:
+  solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'><span style='font-size:
+  10.0pt;font-family:Tahoma'><br clear=all style='page-break-before:always'>
+  <br clear=all style='page-break-before:always'>
+  </span>
+  <p class=MsoNormal><span style='font-size:12.0pt;font-family:Tahoma;
+  color:teal'>Book Summaries</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=780 valign=top style='width:584.95pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;font-family:Tahoma'>&nbsp;</span></p>
+  <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=761
+   style='width:570.55pt;border-collapse:collapse'>
+   <tr>
+    <td width=231 valign=top style='width:173.2pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;»&nbsp;<a
+    href="http://www.donphin.com/Booksummary.asp">A collection of book
+    summaries</a></span></p>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;</span></p>
+    </td>
+    <td width=158 valign=top style='width:118.3pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;</span></p>
+    </td>
+    <td width=372 valign=top style='width:279.05pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal style='text-align:justify'><span style='font-family:
+    Tahoma'>Free and includes a good IT one ‘Unleashing The Killer App’</span></p>
+    </td>
+   </tr>
+  </table>
+  <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse'>
+ <tr>
+  <td width=780 valign=top style='width:584.95pt;border:none;border-bottom:
+  solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'><span style='font-size:
+  10.0pt;font-family:Tahoma'><br clear=all style='page-break-before:always'>
+  <br clear=all style='page-break-before:always'>
+  </span>
+  <p class=MsoNormal><span style='font-size:12.0pt;font-family:Tahoma;
+  color:teal'>Finding Information on the Web – Using Focused Search</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=780 valign=top style='width:584.95pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;font-family:Tahoma'>&nbsp;</span></p>
+  <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=761
+   style='width:570.55pt;border-collapse:collapse'>
+   <tr>
+    <td width=231 valign=top style='width:173.2pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;»&nbsp;<a
+    href="../articles/The%20Topic%20Specific%20Search%20Engine.pdf">My Focused
+    Search White Paper</a></span></p>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;</span></p>
+    </td>
+    <td width=158 valign=top style='width:118.3pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;</span></p>
+    </td>
+    <td width=372 valign=top style='width:279.05pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal style='text-align:justify'><span style='font-family:
+    Tahoma'>My white paper describing a method for performing focused search
+    with limited resources.</span></p>
+    <p class=MsoNormal style='text-align:justify'><span style='font-family:
+    Tahoma'>&nbsp;</span></p>
+    </td>
+   </tr>
+   <tr>
+    <td width=231 valign=top style='width:173.2pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;»&nbsp;<a
+    href="http://www.researchindex.com/">Computer Science Search</a></span></p>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;</span></p>
+    </td>
+    <td width=158 valign=top style='width:118.3pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;</span></p>
+    </td>
+    <td width=372 valign=top style='width:279.05pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal style='text-align:justify'><span style='font-family:
+    Tahoma'>Research Index is a search engine focusing on computer science
+    research and articles. It's a wonderful browsing tool for finding articles
+    and research relating to searching the web.</span></p>
+    <p class=MsoNormal style='text-align:justify'>&nbsp;</p>
+    </td>
+   </tr>
+   <tr>
+    <td width=231 valign=top style='width:173.2pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal>&nbsp;<span style='font-family:Tahoma'>&nbsp;»&nbsp;<a
+    href="http://www.bitpipe.com/">BitPipe</a></span></p>
+    <p class=MsoNormal>&nbsp;</p>
+    </td>
+    <td width=158 valign=top style='width:118.3pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal>&nbsp;</p>
+    </td>
+    <td width=372 valign=top style='width:279.05pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal><span style='font-family:Tahoma'>Bitpipe is the leading
+    destination for busy professionals who need technology white papers,
+    webcasts, case studies and IT product information -- all the IT information
+    and resources you need to make smart enterprise IT purchasing decisions. </span></p>
+    <p class=MsoNormal>&nbsp;</p>
+    </td>
+   </tr>
+   <tr>
+    <td width=231 valign=top style='width:173.2pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;»&nbsp;<a
+    href="http://scholar.google.com/">Google Scholar</a></span></p>
+    </td>
+    <td width=158 valign=top style='width:118.3pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;</span></p>
+    </td>
+    <td width=372 valign=top style='width:279.05pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal style='text-align:justify'><span style='font-family:
+    Tahoma'>Research papers and resources indexed by Google.</span></p>
+    <p class=MsoNormal style='text-align:justify'>&nbsp;</p>
+    </td>
+   </tr>
+   <tr>
+    <td width=231 valign=top style='width:173.2pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;»&nbsp;<a
+    href="http://www.javaworld.com/javaworld/jw-01-2006/jw-0123-usability.html">Improving
+    Search User Interfaces </a></span></p>
+    </td>
+    <td width=158 valign=top style='width:118.3pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;</span></p>
+    </td>
+    <td width=372 valign=top style='width:279.05pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal style='text-align:justify'><span style='font-family:
+    Tahoma'>How to create effective and easy-to-use search-results pages by
+    providing sophisticated yet intuitive filtering and sorting controls.</span></p>
+    <p class=MsoNormal style='text-align:justify'><span style='font-family:
+    Tahoma'>&nbsp;</span></p>
+    </td>
+   </tr>
+   <tr>
+    <td width=231 valign=top style='width:173.2pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;»&nbsp;<a
+    href="http://www.invisibleweb.com/index.asp">Inteliseek</a></span></p>
+    </td>
+    <td width=158 valign=top style='width:118.3pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;</span></p>
+    </td>
+    <td width=372 valign=top style='width:279.05pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal style='text-align:justify'><span style='font-family:
+    Tahoma'>Some guys that do some interesting stuff with the web such as
+    amalgamating blog entries and measuring web presence.</span></p>
+    </td>
+   </tr>
+   <tr>
+    <td width=231 valign=top style='width:173.2pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;»&nbsp;<a
+    href="http://a9.com/">A9</a></span></p>
+    </td>
+    <td width=158 valign=top style='width:118.3pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;</span></p>
+    </td>
+    <td width=372 valign=top style='width:279.05pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal style='text-align:justify'><span style='font-family:
+    Tahoma'>Search engine with API – hosted by Amazon.</span></p>
+    <p class=MsoNormal style='text-align:justify'><span style='font-family:
+    Tahoma'>&nbsp;</span></p>
+    </td>
+   </tr>
+  </table>
+  <p class=MsoNormal></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse'>
+ <tr>
+  <td width=780 valign=top style='width:584.95pt;border:none;border-bottom:
+  solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'><span style='font-size:
+  10.0pt;font-family:Tahoma'><br clear=all style='page-break-before:always'>
+  <br clear=all style='page-break-before:always'>
+  </span>
+  <p class=MsoNormal><span style='font-size:12.0pt;font-family:Tahoma;
+  color:teal'>Databases</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=780 valign=top style='width:584.95pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;font-family:Tahoma'>&nbsp;</span></p>
+  <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=761
+   style='width:570.55pt;border-collapse:collapse'>
+   <tr>
+    <td width=257 valign=top style='width:192.8pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;»&nbsp;<a
+    href="http://www.bcarter.com/sapov.htm">Sybase Performance Tuning Tips</a></span></p>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;</span></p>
+    </td>
+    <td width=132 valign=top style='width:98.7pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;</span></p>
+    </td>
+    <td width=372 valign=top style='width:279.05pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal style='text-align:justify'><span style='font-family:
+    Tahoma'>Tips on profiling Sybase are hard to find. Here are some.</span></p>
+    <p class=MsoNormal style='text-align:justify'><span style='font-family:
+    Tahoma'>&nbsp;</span></p>
+    </td>
+   </tr>
+   <tr>
+    <td width=257 valign=top style='width:192.8pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;»&nbsp;<a
+    href="http://manuals.sybase.com/onlinebooks/group-as/asg1250e/refman/@Generic__BookView">Sybase
+    Reference</a></span></p>
+    <p class=MsoNormal>&nbsp;</p>
+    </td>
+    <td width=132 valign=top style='width:98.7pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;</span></p>
+    </td>
+    <td width=372 valign=top style='width:279.05pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal style='text-align:justify'><span style='font-family:
+    Tahoma'>&nbsp;The official one.</span></p>
+    </td>
+   </tr>
+   <tr>
+    <td width=257 valign=top style='width:192.8pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;»&nbsp;<a
+    href="http://download.sybase.com/pdfdocs/asg1250e/quickref_04.pdf">Sybase
+    Quick Reference (PDF)</a></span></p>
+    <p class=MsoNormal>&nbsp;</p>
+    </td>
+    <td width=132 valign=top style='width:98.7pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;</span></p>
+    </td>
+    <td width=372 valign=top style='width:279.05pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal style='text-align:justify'><span style='font-family:
+    Tahoma'>&nbsp;The official one.</span></p>
+    </td>
+   </tr>
+   <tr>
+    <td width=257 valign=top style='width:192.8pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;»&nbsp;<a
+    href="http://manuals.sybase.com/onlinebooks/group-as/asg1250e/ptallbk/@Generic__BookView">Sybase
+    Performance Manual</a></span></p>
+    <p class=MsoNormal>&nbsp;</p>
+    </td>
+    <td width=132 valign=top style='width:98.7pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;</span></p>
+    </td>
+    <td width=372 valign=top style='width:279.05pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal style='text-align:justify'><span style='font-family:
+    Tahoma'>&nbsp;The official one.</span></p>
+    </td>
+   </tr>
+   <tr>
+    <td width=257 valign=top style='width:192.8pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;»&nbsp;<a
+    href="http://manuals.sybase.com/onlinebooks/group-as/asg1250e/">Sybase
+    Documentation Home</a></span></p>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;</span></p>
+    </td>
+    <td width=132 valign=top style='width:98.7pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;</span></p>
+    </td>
+    <td width=372 valign=top style='width:279.05pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal style='text-align:justify'><span style='font-family:
+    Tahoma'>&nbsp;The official one.</span></p>
+    </td>
+   </tr>
+  </table>
+  <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse'>
+ <tr>
+  <td width=780 valign=top style='width:584.95pt;border:none;border-bottom:
+  solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'><span style='font-size:
+  10.0pt;font-family:Tahoma'><br clear=all style='page-break-before:always'>
+  <br clear=all style='page-break-before:always'>
+  </span>
+  <p class=MsoNormal><span style='font-size:12.0pt;font-family:Tahoma;
+  color:teal'>Useful and Interesting</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=780 valign=top style='width:584.95pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;font-family:Tahoma'>&nbsp;</span></p>
+  <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=761
+   style='width:570.55pt;border-collapse:collapse'>
+   <tr>
+    <td width=257 valign=top style='width:192.8pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;»&nbsp;<a
+    href="http://www.techcrunch.com/index.php">Techcrunch</a></span></p>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;</span></p>
+    </td>
+    <td width=132 valign=top style='width:98.7pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;</span></p>
+    </td>
+    <td width=372 valign=top style='width:279.05pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal style='text-align:justify'><span style='font-family:
+    Tahoma'>Mashes up the latest tech blogs</span></p>
+    <p class=MsoNormal style='text-align:justify'><span style='font-family:
+    Tahoma'>&nbsp;</span></p>
+    </td>
+   </tr>
+   <tr>
+    <td width=257 valign=top style='width:192.8pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;»&nbsp;<a
+    href="http://www.tailrank.com/">Tailrank</a></span></p>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;</span></p>
+    </td>
+    <td width=132 valign=top style='width:98.7pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;</span></p>
+    </td>
+    <td width=372 valign=top style='width:279.05pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal style='text-align:justify'><span style='font-family:
+    Tahoma'>Mashes up the latest tech blogs</span></p>
+    <p class=MsoNormal style='text-align:justify'><span style='font-family:
+    Tahoma'>&nbsp;</span></p>
+    </td>
+   </tr>
+   <tr>
+    <td width=257 valign=top style='width:192.8pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;»&nbsp;<a
+    href="http://www.javablogs.com/Welcome.action">JavaBlogs</a></span></p>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;</span></p>
+    </td>
+    <td width=132 valign=top style='width:98.7pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;</span></p>
+    </td>
+    <td width=372 valign=top style='width:279.05pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal style='text-align:justify'><span style='font-family:
+    Tahoma'>Mashes up the latest Java blogs</span></p>
+    <p class=MsoNormal style='text-align:justify'><span style='font-family:
+    Tahoma'>&nbsp;</span></p>
+    </td>
+   </tr>
+   <tr>
+    <td width=257 valign=top style='width:192.8pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;»&nbsp;<a
+    href="http://www.breakthroughdiscoveries.org/afd.php/3/9/">The puzzle
+    decoder</a></span></p>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;</span></p>
+    </td>
+    <td width=132 valign=top style='width:98.7pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;</span></p>
+    </td>
+    <td width=372 valign=top style='width:279.05pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal style='text-align:justify'><span style='font-family:
+    Tahoma'>Charles Handy is the specialist in organisation behaviour.</span></p>
+    </td>
+   </tr>
+   <tr>
+    <td width=257 valign=top style='width:192.8pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;</span></p>
+    </td>
+    <td width=132 valign=top style='width:98.7pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;</span></p>
+    </td>
+    <td width=372 valign=top style='width:279.05pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal style='text-align:justify'><span style='font-family:
+    Tahoma'>&nbsp;</span></p>
+    </td>
+   </tr>
+  </table>
+  <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse'>
+ <tr>
+  <td width=780 valign=top style='width:584.95pt;border:none;border-bottom:
+  solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-size:12.0pt;font-family:Tahoma;
+  color:teal'>Other</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=780 valign=top style='width:584.95pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;font-family:Tahoma'>&nbsp;</span></p>
+  <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=761
+   style='width:570.55pt;border-collapse:collapse'>
+   <tr>
+    <td width=257 valign=top style='width:192.8pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;»&nbsp;<a
+    href="http://www.patriziadiemling.com/">Patrizia Diemling</a></span></p>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;</span></p>
+    </td>
+    <td width=132 valign=top style='width:98.7pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;</span></p>
+    </td>
+    <td width=372 valign=top style='width:279.05pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal style='text-align:justify'><span style='font-family:
+    Tahoma'>A friend’s excellent website</span></p>
+    <p class=MsoNormal style='text-align:justify'><span style='font-family:
+    Tahoma'>&nbsp;</span></p>
+    </td>
+   </tr>
+   <tr>
+    <td width=257 valign=top style='width:192.8pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal>&nbsp;</p>
+    </td>
+    <td width=132 valign=top style='width:98.7pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal>&nbsp;</p>
+    </td>
+    <td width=372 valign=top style='width:279.05pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal style='text-align:justify'>&nbsp;</p>
+    </td>
+   </tr>
+   <tr>
+    <td width=257 valign=top style='width:192.8pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal>&nbsp;</p>
+    </td>
+    <td width=132 valign=top style='width:98.7pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal>&nbsp;</p>
+    </td>
+    <td width=372 valign=top style='width:279.05pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal style='text-align:justify'>&nbsp;</p>
+    </td>
+   </tr>
+   <tr>
+    <td width=257 valign=top style='width:192.8pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal>&nbsp;</p>
+    </td>
+    <td width=132 valign=top style='width:98.7pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal>&nbsp;</p>
+    </td>
+    <td width=372 valign=top style='width:279.05pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal style='text-align:justify'>&nbsp;</p>
+    </td>
+   </tr>
+   <tr>
+    <td width=257 valign=top style='width:192.8pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;</span></p>
+    </td>
+    <td width=132 valign=top style='width:98.7pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;</span></p>
+    </td>
+    <td width=372 valign=top style='width:279.05pt;padding:0cm 5.4pt 0cm 5.4pt'>
+    <p class=MsoNormal style='text-align:justify'><span style='font-family:
+    Tahoma'>&nbsp;</span></p>
+    <a href="http://melanieb.org">Melanie Boyle's Website</a>
+    </td>
+   </tr>
+  </table>
+  <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;</span></p>
+  </td>
+ </tr>
+</table>
+
+
+
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+</div>
+
+</body>
+
+</html>
+
+
+<!--------------------------------------------------------------------------------------->
+
+<BR><BR><BR><BR><BR><BR><BR>
+<BR><BR><BR><BR><BR><BR><BR>
+<p align="center">
+This site is &copy; Copyright BenStopford.com 2003-2005, All Rights Reserved<BR>
+<p>
+			</td>
+		</tr>
+	</table>
+</td>
+
+</tr>
+</table>
+
+</body>
+</html>
+

@@ -1,0 +1,1115 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	<title>BenStopford.com - Ben Stopford's site for technical essays and blogs</title>
+	<link rel=stylesheet type="text/css" href="/style.css">
+</head>
+
+<body bottommargin="0" leftmargin="0" rightmargin="0" topmargin="0" background="/old/common/img/background.jpg">
+
+
+
+<table height="123" width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr valign="top">
+<!----- insert logo below ------------------------------------------>
+<td><img src="/old/common/img/benbanner.jpg" width="587" height="123" border="0" alt=""></td>
+<!------------------------------------------------------------------>
+<td width="100%" background="/old/common/img/topbg.jpg">&nbsp;</td>
+</tr>
+</table>
+
+<table height="40" width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr valign="top">
+<td width="100%" background="/old/common/img/topbar.jpg">&nbsp;</td>
+</tr>
+</table>
+
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr valign="top">
+
+<td width="201"><BR>
+<!----- menu, insert links below ------------------------------------------>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/index.shtml">Home and Blogs</a><BR>
+<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/Articles.shtml">Essays</a><BR>
+<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/Software.shtml">Software</a><BR>
+<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/PrimeBrokerage.shtml">Prime Brokerage</a><BR>
+<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/columns/WebPageOptimiseStub.shtml">Web Page Optimisation</a><BR>
+<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/TechnicalInterviewingStub.shtml">Interviewing</a><BR>
+<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/devsim/devsim.shtml">Publications</a><BR>
+<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/resources/index.shtml">Resources</a><BR>
+<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/bookreviews/index.shtml">Book Reviews</a><BR>
+<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/AboutMe.shtml">About Me</a><BR>
+<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+
+
+
+
+
+<script type="text/javascript">
+
+//Enter domain of site to search.
+var domainroot="www.benstopford.com"
+
+function Gsitesearch(curobj){
+curobj.q.value="site:"+domainroot+" "+curobj.qfront.value
+}
+
+</script>
+
+
+<form action="http://www.google.co.uk/search" method="get" onSubmit="Gsitesearch(this)"&gt;
+
+<p>
+<input name="q" type="hidden" />
+<p>
+<BR><BR><BR>
+
+.
+<input name="qfront" type="text" style="width: 180px" /><p>
+..<input STYLE="color: #FFFFFF; font-family: Verdana; font-weight: bold; font-size: 12px; background-color: #003F80;"
+type="submit" value="Search" />
+<img src="/common/img/menubar.jpg" width="201" height="11" border="0" alt="">
+</form>
+
+<!-------------------------------------------------------------------------->
+
+</td>
+
+<td width="100%">
+	<table width="100%" cellpadding="10" cellspacing="0" border="0">
+		<tr valign="top">
+			<td>
+<!----- content, insert text and content below ------------------------------------------>
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 11 (filtered)">
+<title>(1) Singletons and testing</title>
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";}
+h1
+	{margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:3.0pt;
+	margin-left:0cm;
+	page-break-after:avoid;
+	font-size:16.0pt;
+	font-family:Arial;}
+h2
+	{margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:3.0pt;
+	margin-left:0cm;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:Arial;
+	font-style:italic;}
+h3
+	{margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:3.0pt;
+	margin-left:0cm;
+	page-break-after:avoid;
+	font-size:13.0pt;
+	font-family:Arial;}
+h4
+	{margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:3.0pt;
+	margin-left:0cm;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Times New Roman";}
+h5
+	{margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:3.0pt;
+	margin-left:0cm;
+	font-size:13.0pt;
+	font-family:"Times New Roman";
+	font-style:italic;}
+h6
+	{margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:3.0pt;
+	margin-left:0cm;
+	font-size:11.0pt;
+	font-family:"Times New Roman";}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;}
+@page Section1
+	{size:612.0pt 792.0pt;
+	margin:72.0pt 90.0pt 72.0pt 90.0pt;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US link=blue vlink=purple>
+
+<div class=Section1>
+
+<h1><span lang=EN-GB style='font-family:Tahoma'>(1) Singletons and testing</span></h1>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>Returning to
+last weeks topic, lets look at Singletons in the concept of testing. </span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>There’s a lot of
+on-line pontificating on how Singletons are the curse of test driven software
+development and should be banished. There’s almost as much boosting of the
+entirely opposite view point – that they make testing easier.</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>I not convinced
+I subscribe to either view – but what I can say is that code using Singletons
+is no harder to test that code that does not use them.</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>The following
+three examples show different ways to “configure” a Singleton at run-time so
+your tests can generate specific situations without modifying any code that
+consumes the singletons.</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<h2><span lang=EN-GB style='font-family:Tahoma'>(1.1) System Properties</span></h2>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>A classic
+example of the Singleton is a logger used by all components in a system. This
+example has some merit as just that, and example of a Singleton, but in
+practice such a simple approach to logging is insufficient in any modern
+system.</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>That said,
+consider this:</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>package logging;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>/**</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;*
+Configurable logger.</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;*
+&lt;p&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;* Set the
+system property:</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;*
+&lt;ul&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;*
+&lt;li&gt;&quot;logging.Logger.handler&quot;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;*
+&lt;/ul&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;* to the
+name of an implementation of Handler to modify the </span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;* logging
+behaviour.</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;*/</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>public final
+class Logger</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>{</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;
+private static Handler handler= createHandler();</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;
+private static Handler createHandler() {</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>(3)&nbsp;&nbsp;&nbsp;&nbsp;
+String clazz= System.getProperty(</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&quot;logging.Logger.handler&quot;, &quot;logging.DefaultHandler&quot;);</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Handler h= null;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+try {</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+h= (Handler) Class.forName(clazz).newInstance();</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+} finally {</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+return h != null ?&nbsp; h : new DefaultHandler();</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+}</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;
+}</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>(1) private
+Logger() { } </span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;
+/**</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;
+* Dispatch &lt;tt&gt;message&lt;/tt&gt; to the configured
+&lt;tt&gt;Handler&lt;/tt&gt;. </span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;
+* No additional formatting is done on &lt;tt&gt;message&lt;/tt&gt;.</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;
+*/</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>(2) public
+static void log(String message) {</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+handler.log(message);</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;
+}</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>}</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>(1)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Private constructor. Bit of a give away for a Singleton</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>(2)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+public static methods on the class – by some accounts this is not a true
+singleton (I tend to think it is) but is an example of how to implement the
+pattern</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>(3)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+A system property is examined to determine how to handle log messages.</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>So, in normal
+operation, the Logger will use a DefaultHandler.</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>In test mode, we
+may not want this, so we can implement our own Handler implementation and use
+that:</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>package logging;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>import
+junit.framework.TestCase;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>public class
+TestLogger</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;
+extends TestCase</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>{</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;
+public static class TestHandler extends Handler {</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+public void log(String message) {</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+logMessages += message +&quot;, &quot;;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+}</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;
+}</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;
+private static String logMessages;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;
+protected void setUp() throws Exception {</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+System.setProperty(</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&quot;logging.Logger.handler&quot;, </span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&quot;logging.TestLogger$TestHandler&quot;);</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+logMessages = &quot;&quot;;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;
+}</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;
+public void testLogger() {</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Logger.log(&quot;hello world&quot;);</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Logger.log(&quot;hello mum&quot;);</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Logger.log(&quot;hello kitty&quot;);</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+assertTrue(logMessages.equals(</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&quot;hello world, hello mum, hello kitty, &quot;));</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;
+}</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>}</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>In this case the
+custom handler is used to assist in the test, in other cases a “null” handler
+could be used to simply discard the messages.</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<h2><span lang=EN-GB style='font-family:Tahoma'>(1.2) Mock Objects</span></h2>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>The custom
+handler in the above example is, essentially, a mock object. If we want to be
+more explicit about things, we can provide programmatic methods for assigning
+the mock.</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>For example, if
+we have a singleton Database. How to we mock its persistence layer? This is a
+very common thing to do in testing. </span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>Take this
+example:</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>package data;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>public final
+class Database </span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>{</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>(4) private
+static Persistence persistence= new FilePersistence();</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;
+private static Database instance;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;
+static void setPersistence(Persistence persistence) {</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Database.persistence= persistence;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;
+}</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>(5) public
+static synchronized Database getInstance() {</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+if (instance == null) </span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+instance= new Database();</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+return instance;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;
+}</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>(1) private
+Database() { }</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;
+/**</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;
+* @param&nbsp; id the user id</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;
+* @return the user identified by &lt;tt&gt;id&lt;/tt&gt;,
+&lt;tt&gt;null&lt;/tt&gt; </span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;
+* if not found.</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;
+*/</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;
+public User getUser(int id) {</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>(3)&nbsp;&nbsp;&nbsp;&nbsp;
+return persistence.getUser(id);</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;
+}</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>}</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>(1)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Private constructor again – certainly smells like a Singleton</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>(2)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Public static lazily instantiated accessor for the single instance.</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>(3)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Persistence delegate is used here</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>(4)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+defaulted here</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>(5)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+and re-assigned here</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>So, we have the
+production configuration that uses a real persistence mechanism, but we have
+the opportunity to use a mock one.</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>The following
+test case does just that (the logic class it tests and associated classes can
+be found in the attached .zip file):</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>package logic;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>import
+junit.framework.TestCase;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>import
+data.User;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>import
+data.MockPersistence;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>public class
+TestIsHeTheDevilInDisguise</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;
+extends TestCase</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>{</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;
+/** </span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;
+* The real devil should NOT be identified as being in disguise. He is</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;
+* who he is, and proud of it, no doubt.</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;
+*/</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;
+public void testTheDevil() {</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+User user= new User(666, &quot;The Devil&quot;);</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>(1)&nbsp;&nbsp;&nbsp;&nbsp;
+new MockPersistence(new User[] { user });</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+assertFalse(new LogicBean().isHeTheDevilInDisguise(user.getId()));</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;
+}</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;
+/** </span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;
+* Even if he changes his name, the real devil should not be identified </span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;
+* as being in disguise.</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;
+*/</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;
+public void testFakeDevil() {</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+User user= new User(666, &quot;A Fake Devil?&quot;);</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>(1)&nbsp;&nbsp;&nbsp;&nbsp;
+new MockPersistence(new User[] { user });</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+assertFalse(new LogicBean().isHeTheDevilInDisguise(user.getId()));</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;
+}</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;
+/** </span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;
+* The well known alias &quot;Lucifer&quot; should be identified as being the</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;
+* devil in disguise.</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;
+*/</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;
+public void testLucifer() {</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+User user= new User(999, &quot;Lucifer&quot;);</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>(1)&nbsp;&nbsp;&nbsp;&nbsp;
+new MockPersistence(new User[] { user });</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+assertTrue(new LogicBean().isHeTheDevilInDisguise(user.getId()));</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;
+}</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;
+/** </span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;
+* The well known alias &quot;Beelzebub&quot; should also be identified as being
+</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;
+* the evil one in a wig.</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;
+*/</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;
+public void testBeelzebub() {</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+User user= new User(333, &quot;Beelzebub&quot;);</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>(1)&nbsp;&nbsp;&nbsp;&nbsp;
+new MockPersistence(new User[] { user });</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+assertTrue(new LogicBean().isHeTheDevilInDisguise(user.getId()));</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;
+}</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;
+/** </span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;
+* Sir Cliff (bless him) is rarely identified as Satan.</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;
+*/</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;
+public void testCliffRichard() {</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+User user= new User(111, &quot;Cliff Richard&quot;);</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>(1)&nbsp;&nbsp;&nbsp;&nbsp;
+new MockPersistence(new User[] { user });</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+assertFalse(new LogicBean().isHeTheDevilInDisguise(user.getId()));</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;
+}</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>}</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>(1)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Here a mock persistence object is created (it attaches itself to the Database).
+This mock has exactly what we want in it so the test fails or works as expected
+each time.</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<h2><span lang=EN-GB style='font-family:Tahoma'>(1.3) Configuration Singleton</span></h2>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>Ok, both the two
+earlier methods are easy to use and flexible to various degrees. However, they
+do introduce a security problem.</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>They leave
+testing artefacts in the production code. </span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>These artefacts
+could introduce security problems!</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>For code running
+inside the bank, this is not a big issue, but for the code that runs outside
+the bank, on client machines, we should really try to minimise this risk.</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>So, what to do? </span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>If we assume
+good deployment practice that requires heavy obfuscation plus jar sealing and
+signing. We can have production code query configuration Singletons that do not
+delegate and always return the same values.</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>In a testing
+scenario, one-for-one replacements for the configuration singletons can be
+placed on the class path ahead of the real ones.</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>In production,
+the fact that the jars have been sealed prevents third parties from dong this
+themselves.</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>Take this
+example, where a socket factor would normally return secure sockets can be
+configured to return plain ones for testing:</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>package net;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>import
+java.net.Socket;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>import
+java.io.IOException;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>public final
+class SecureSocketFactory {</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;
+private SecureSocketFactory() { }</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp; /**</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;
+* Create a secure socket.</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;
+* </span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;
+* @param&nbsp; host&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; machine name or ip
+address of the machine an SSL</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;
+*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+secured server is running on.</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;
+* @param&nbsp; port&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; port the server is
+listening on.</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;
+* @param&nbsp; pkcs12file absolute or relative pathname to a PKCS12 encoded</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;
+*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+certificate chain to use as the client certificate.</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;
+* @param&nbsp; passwd&nbsp;&nbsp;&nbsp;&nbsp; plain text password for the
+PKCS12 certificate file.</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;
+* @return an secure socket</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;
+* @throws java.io.IOException if the PKCS12 file could not be read, a </span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;
+*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; valid certificate could not
+be extracted from it or the socket</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;
+*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; create failed.</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;
+*/</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;
+public static Socket createSecureSocket(</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+String host, int port, String pkcs12file, String passwd) </span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;
+throws IOException {</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Socket socket = null;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+if (Config.usePlainSockets()) {</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+socket = new Socket(host, port);</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+} else {</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+// create a real SSL socket</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+}</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+return socket;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;
+}</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>}</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>Where the Config
+class is:</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>package net;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>final class
+Config {</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;
+static boolean usePlainSockets() { </span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+return false;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;
+}</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>}</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>If we have a
+test that wants to use plain sockets, we do something like this:</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>package net;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>import
+java.net.Socket;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>import
+java.net.ServerSocket;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>import
+junit.framework.TestCase;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>public class
+TestSecureSocketFactory</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;
+extends TestCase</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>{</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;
+public void testCreateSecureSocket() throws Exception {</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+new Thread() {</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+public void run() {</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+try {</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+new ServerSocket(666).accept();</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+} finally {</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+return;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+}</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+}</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+}.start();</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Thread.sleep(500);</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Socket socket= SecureSocketFactory.createSecureSocket(</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&quot;localhost&quot;, 666, </span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&quot;some-file-that-does-not-exist.p12&quot;, &quot;foo&quot;);</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+assertTrue(socket != null);</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;
+}</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>}</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>final class
+Config {</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;
+static boolean usePlainSockets() { </span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+return true;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;&nbsp;&nbsp;
+}</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>}</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>NOTE: </span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>Taking this
+approach is not fail-safe. Following this pattern, obfuscating the deployed
+code, sealing and signing the jars are all important steps, but all they do is
+“raise the bar” to a level where it would take a highly skilled practitioner to
+break into the client code.</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>If we assume
+that the client side can be subverted, we must ensure the server is secure –
+which has less to do with software and more to do with procedure and correct
+separation of responsibilities in the organisation.</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='font-family:Tahoma'>&nbsp;</span></p>
+
+</div>
+
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-1671531-1";
+urchinTracker();
+</script>
+
+</body>
+
+</html>
+
+<!--------------------------------------------------------------------------------------->
+
+<BR><BR><BR><BR><BR><BR><BR>
+<BR><BR><BR><BR><BR><BR><BR>
+<p align="center">
+This site is &copy; Copyright BenStopford.com 2003-2005, All Rights Reserved<BR>
+<p>
+			</td>
+		</tr>
+	</table>
+</td>
+
+</tr>
+</table>
+
+</body>
+</html>
+

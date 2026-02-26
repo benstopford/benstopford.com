@@ -1,0 +1,17 @@
+---
+title: "Slides fo NDC - The Data Dichotomy"
+date: 2018-01-19
+categories: 
+  - "blogroll"
+slug: "slides-fo-ndc-data-dichotomy"
+---
+
+https://www.slideshare.net/benstopford/ndc-london-2017-the-data-dichotomy-rethinking-data-and-services-with-streams
+
+When building service-based systems, we don’t generally think too much about data. If we need data from another service, we ask for it. This pattern works well for whole swathes of use cases, particularly ones where datasets are small and requirements are simple. But real business services have to join and operate on datasets from many different sources. This can be slow and cumbersome in practice.
+
+These problems stem from an underlying dichotomy. Data systems are built to make data as accessible as possible—a mindset that focuses on getting the job done. Services, instead, focus on encapsulation—a mindset that allows independence and autonomy as we evolve and grow. But these two forces inevitably compete in most serious service-based architectures.
+
+Ben Stopford explains why understanding and accepting this dichotomy is an important part of designing service-based systems at any significant scale. Ben looks at how companies make use of a shared, immutable sequence of records to balance data that sits inside their services with data that is shared, an approach that allows the likes of Uber, Netflix, and LinkedIn to scale to millions of events per second.
+
+Ben concludes by examining the potential of stream processors as a mechanism for joining significant, event-driven datasets across a whole host of services and explains why stream processing provides much of the benefits of data warehousing but without the same degree of centralization.

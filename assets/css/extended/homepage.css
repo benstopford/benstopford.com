@@ -1,0 +1,138 @@
+/* ── Top 4 Posts Grid ── */
+.top-posts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.top-post-card {
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1.25rem 1.5rem;
+  position: relative;
+}
+
+.top-post-card h2 {
+  font-size: 1.1rem;
+  margin: 0 0 0.5rem 0;
+  line-height: 1.35;
+}
+
+.top-post-card h2 a {
+  text-decoration: none;
+}
+
+.top-post-card h2 a:hover {
+  text-decoration: underline;
+}
+
+.top-post-card p {
+  font-size: 0.9rem;
+  color: var(--secondary);
+  margin: 0 0 0.75rem 0;
+  line-height: 1.5;
+}
+
+.top-post-card time {
+  font-size: 0.8rem;
+  color: var(--secondary);
+}
+
+@media (max-width: 600px) {
+  .top-posts {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ── Section Divider ── */
+.section-hr {
+  margin: 2rem 0;
+  border: none;
+  border-top: 1px solid var(--border);
+}
+
+/* ── Index Sections ── */
+.index-sections {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem 3rem;
+  margin-bottom: 2rem;
+  /* Break out beyond the 720px content column */
+  width: min(1080px, calc(100vw - 2 * var(--gap)));
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.index-column {
+  min-width: 0;
+}
+
+.index-block {
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 700px) {
+  .index-sections {
+    grid-template-columns: 1fr;
+    width: 100%;
+    left: 0;
+    transform: none;
+  }
+}
+
+.index-block-title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0 0 0.5rem 0;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.3rem;
+}
+
+.index-block-link {
+  font-size: 0.8rem;
+  font-weight: 400;
+  margin-left: 0.4rem;
+  color: var(--secondary);
+}
+
+.index-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+
+.index-list li {
+  margin-bottom: 0.2rem;
+}
+
+.index-list a {
+  text-decoration: none;
+}
+
+.index-list a:hover {
+  text-decoration: underline;
+}
+
+.index-year {
+  color: var(--secondary);
+  font-size: 0.8rem;
+}
+
+.about-links {
+  font-size: 0.875rem;
+  line-height: 1.8;
+  margin: 0;
+}
+
+/* ── Blog Section Title ── */
+.blog-section-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.4rem;
+}

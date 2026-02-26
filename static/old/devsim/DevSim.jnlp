@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<jnlp spec="1.0+" codebase="http://www.benstopford.com/devsim" href="DevSim.jnlp">
+	<information> 
+		<title>DevSim</title> 
+		<vendor>www.BenStopford.com</vendor> 
+		<homepage href="index.html"/> 
+		<description>A Simulation Framework for Analysing Software Evolution</description> 
+		<icon href="images/barclays_32.gif"/>		
+	</information> 
+	<offline-allowed/>
+<security>
+ <all-permissions/> 
+</security>
+
+	<resources> 
+		<j2se version="1.4" />
+		<jar href="devsim.jar"/>	  
+	</resources> 
+	<application-desc main-class="com.devsim.gui.DevSimGUI" />
+</jnlp>

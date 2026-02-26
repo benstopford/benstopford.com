@@ -1,0 +1,481 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 11">
+<meta name=Originator content="Microsoft Word 11">
+<link rel=File-List href="Coupling%20And%20Cohesion_files/filelist.xml">
+<title>A Brief Look at Coupling and Cohesion as Design Principals</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>stopforb</o:Author>
+  <o:LastAuthor>ben stopford</o:LastAuthor>
+  <o:Revision>32</o:Revision>
+  <o:TotalTime>174</o:TotalTime>
+  <o:LastPrinted>2005-05-13T18:37:00Z</o:LastPrinted>
+  <o:Created>2005-05-13T17:23:00Z</o:Created>
+  <o:LastSaved>2005-08-23T20:03:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>631</o:Words>
+  <o:Characters>3599</o:Characters>
+  <o:Company>Barclays Capital</o:Company>
+  <o:Lines>29</o:Lines>
+  <o:Paragraphs>8</o:Paragraphs>
+  <o:CharactersWithSpaces>4222</o:CharactersWithSpaces>
+  <o:Version>11.5606</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:Zoom>120</w:Zoom>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" LatentStyleCount="156">
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:2;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:0 268435456 0 0 -2147483648 0;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:553679495 -2147483648 8 0 66047 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;
+	text-underline:single;}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:35.4pt;
+	mso-footer-margin:35.4pt;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:825824086;
+	mso-list-type:hybrid;
+	mso-list-template-ids:536240464 67698703 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l0:level1
+	{mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1
+	{mso-list-id:1266962592;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1818088034 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l1:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ansi-language:#0400;
+	mso-fareast-language:#0400;
+	mso-bidi-language:#0400;}
+table.MsoTableGrid
+	{mso-style-name:"Table Grid";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	border:solid windowtext 1.0pt;
+	mso-border-alt:solid windowtext .5pt;
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-border-insideh:.5pt solid windowtext;
+	mso-border-insidev:.5pt solid windowtext;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ansi-language:#0400;
+	mso-fareast-language:#0400;
+	mso-bidi-language:#0400;}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="5122"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=EN-US link=blue vlink=purple style='tab-interval:.5in'>
+
+<div class=Section1>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:363.0pt;margin-bottom:
+0in;margin-left:.5in;margin-bottom:.0001pt'><b style='mso-bidi-font-weight:
+normal'><span lang=EN-GB style='font-size:10.0pt;font-family:Tahoma;mso-ansi-language:
+EN-GB'><o:p>&nbsp;</o:p></span></b></p>
+
+<table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
+ mso-yfti-tbllook:480;mso-padding-alt:0in 5.4pt 0in 5.4pt;mso-border-insideh:
+ .5pt solid windowtext;mso-border-insidev:.5pt solid windowtext'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td width=647 valign=top style='width:485.6pt;border:none;border-bottom:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-family:Tahoma;color:teal'>A Brief Look
+  at Coupling and Cohesion as Design Principals<span
+  style='mso-spacerun:yes'>    </span><a href="Coupling%20And%20Cohesion.htm">Printer
+  Friendly Version</a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1;mso-yfti-lastrow:yes'>
+  <td width=647 valign=top style='width:485.6pt;border:none;mso-border-top-alt:
+  solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 width=632
+   style='width:474.05pt;border-collapse:collapse;mso-yfti-tbllook:480;
+   mso-padding-alt:0in 5.4pt 0in 5.4pt'>
+   <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
+    <td width=632 valign=top style='width:474.05pt;padding:0in 5.4pt 0in 5.4pt'>
+    <p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'><o:p>&nbsp;</o:p></span></p>
+    </td>
+   </tr>
+  </table>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'><o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'><o:p>&nbsp;</o:p></span></p>
+
+<table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
+ mso-yfti-tbllook:480;mso-padding-alt:0in 5.4pt 0in 5.4pt;mso-border-insideh:
+ .5pt solid windowtext;mso-border-insidev:.5pt solid windowtext'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td width=647 valign=top style='width:485.6pt;border:none;border-bottom:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-family:Tahoma;color:teal'>What do we
+  mean by coupling between classes?<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1;mso-yfti-lastrow:yes'>
+  <td width=647 valign=top style='width:485.6pt;border:none;mso-border-top-alt:
+  solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'><o:p>&nbsp;</o:p></span></p>
+  <table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0
+   style='border-collapse:collapse;mso-yfti-tbllook:480;mso-padding-alt:0in 5.4pt 0in 5.4pt'>
+   <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
+    <td width=632 valign=top style='width:474.05pt;padding:0in 5.4pt 0in 5.4pt'>
+    <p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'>Coupling
+    is usually defined as the degree by which one class depends on others. This
+    is usually measured through the number of references both in and out of different
+    types (global data, protected variables etc).<o:p></o:p></span></p>
+    </td>
+   </tr>
+  </table>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'><o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'><o:p>&nbsp;</o:p></span></p>
+
+<table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
+ mso-yfti-tbllook:480;mso-padding-alt:0in 5.4pt 0in 5.4pt;mso-border-insideh:
+ .5pt solid windowtext;mso-border-insidev:.5pt solid windowtext'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td width=647 valign=top style='width:485.6pt;border:none;border-bottom:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'><span
+  style='font-size:10.0pt;font-family:Tahoma;mso-fareast-font-family:"Times New Roman";
+  mso-ansi-language:EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA'><br
+  clear=all style='page-break-before:always'>
+  <br clear=all style='page-break-before:always'>
+  </span>
+  <p class=MsoNormal><span style='font-family:Tahoma;color:teal'>Why should we
+  worry about coupling between classes?<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1;mso-yfti-lastrow:yes'>
+  <td width=647 valign=top style='width:485.6pt;border:none;mso-border-top-alt:
+  solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'><o:p>&nbsp;</o:p></span></p>
+  <table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 width=632
+   style='width:474.05pt;border-collapse:collapse;mso-yfti-tbllook:480;
+   mso-padding-alt:0in 5.4pt 0in 5.4pt'>
+   <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
+    <td width=632 valign=top style='width:474.05pt;padding:0in 5.4pt 0in 5.4pt'>
+    <p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'>High coupling
+    in a class implies that there is much dependence on other classes. This tends
+    to imply that changing the class may force changes in the dependent classes.
+    This is sometimes known as dependency rot.<o:p></o:p></span></p>
+    <p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'><o:p>&nbsp;</o:p></span></p>
+    <p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'>Conversely
+    Low coupling increases encapsulation which makes classes easier to; <o:p></o:p></span></p>
+    <p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'><o:p>&nbsp;</o:p></span></p>
+    <ol style='margin-top:0in' start=1 type=1>
+     <li class=MsoNormal style='mso-list:l0 level1 lfo2;tab-stops:list .5in'><span
+         style='font-size:10.0pt;font-family:Tahoma'>Understand and Change:
+         Reducing dependency fan out from a class decreases the number of
+         classes that must be considered to understand the function of the
+         class. <o:p></o:p></span></li>
+     <li class=MsoNormal style='mso-list:l0 level1 lfo2;tab-stops:list .5in'><span
+         style='font-size:10.0pt;font-family:Tahoma'>Reuse: Low coupling
+         increases encapsulation. This in turn makes a class easier to reuse as
+         it has less associated ‘baggage’ to be considered.<o:p></o:p></span></li>
+    </ol>
+    <p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'><o:p>&nbsp;</o:p></span></p>
+    <p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'>Coupling
+    is often considered in conjunction with <b style='mso-bidi-font-weight:
+    normal'>Cohesion </b>(see below) as design principals when reflecting on
+    the responsibilities of a class. However there are no hard and fast rules.
+    This is just a trade off to consider when making design decisions.<o:p></o:p></span></p>
+    </td>
+   </tr>
+  </table>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'><o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'><o:p>&nbsp;</o:p></span></p>
+
+<table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
+ mso-yfti-tbllook:480;mso-padding-alt:0in 5.4pt 0in 5.4pt;mso-border-insideh:
+ .5pt solid windowtext;mso-border-insidev:.5pt solid windowtext'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td width=647 valign=top style='width:485.6pt;border:none;border-bottom:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-family:Tahoma;color:teal'>How is
+  coupling measured?<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1;mso-yfti-lastrow:yes'>
+  <td width=647 valign=top style='width:485.6pt;border:none;mso-border-top-alt:
+  solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'><o:p>&nbsp;</o:p></span></p>
+  <table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0
+   style='border-collapse:collapse;mso-yfti-tbllook:480;mso-padding-alt:0in 5.4pt 0in 5.4pt'>
+   <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
+    <td width=632 valign=top style='width:474.05pt;padding:0in 5.4pt 0in 5.4pt'>
+    <p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'>In a
+    metrics sense coupling is measured simply as the number of classes that are
+    called or call a single class. The standard measure, originally proposed by
+    Chidamber and Kemerer in the early 1990’s, takes this approach.<o:p></o:p></span></p>
+    </td>
+   </tr>
+  </table>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'><o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'><o:p>&nbsp;</o:p></span></p>
+
+<table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
+ mso-yfti-tbllook:480;mso-padding-alt:0in 5.4pt 0in 5.4pt;mso-border-insideh:
+ .5pt solid windowtext;mso-border-insidev:.5pt solid windowtext'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td width=647 valign=top style='width:485.6pt;border:none;border-bottom:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-family:Tahoma;color:teal'>So does the
+  Type of coupling matter?<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1;mso-yfti-lastrow:yes'>
+  <td width=647 valign=top style='width:485.6pt;border:none;mso-border-top-alt:
+  solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'><o:p>&nbsp;</o:p></span></p>
+  <table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0
+   style='border-collapse:collapse;mso-yfti-tbllook:480;mso-padding-alt:0in 5.4pt 0in 5.4pt'>
+   <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
+    <td width=632 valign=top style='width:474.05pt;padding:0in 5.4pt 0in 5.4pt'>
+    <p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'>Yes,
+    very much so. The worst kind of coupling occurs when one class modifies the
+    data in another class. Passing large (partially unused) data structures
+    around is also found upon.<o:p></o:p></span></p>
+    <p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'><o:p>&nbsp;</o:p></span></p>
+    <p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'>The
+    types of coupling, in order of lowest to highest coupling, are as follows:<o:p></o:p></span></p>
+    <p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'><o:p>&nbsp;</o:p></span></p>
+    <ul style='margin-top:0in' type=disc>
+     <li class=MsoNormal style='mso-list:l1 level1 lfo1;tab-stops:list .5in'><span
+         style='font-size:10.0pt;font-family:Tahoma'>Data coupling - Data
+         coupling is when modules share data through, for example, parameters.
+         Each datum is an elementary piece, and these are the only data which
+         are shared (e.g. passing an integer to a function which computes a
+         square root).<o:p></o:p></span></li>
+     <li class=MsoNormal style='mso-list:l1 level1 lfo1;tab-stops:list .5in'><span
+         style='font-size:10.0pt;font-family:Tahoma'>Stamp coupling
+         (Data-structured coupling) - Stamp coupling is when modules share a
+         composite data structure, each module not knowing which part of the
+         data structure will be used by the other (e.g. passing a student
+         record to a function which calculates the student's GPA).<o:p></o:p></span></li>
+     <li class=MsoNormal style='mso-list:l1 level1 lfo1;tab-stops:list .5in'><span
+         style='font-size:10.0pt;font-family:Tahoma'>Control coupling - Control
+         coupling is one module controlling the logic of another, by passing it
+         information on what to do (e.g. passing a what-to-do flag).<o:p></o:p></span></li>
+     <li class=MsoNormal style='mso-list:l1 level1 lfo1;tab-stops:list .5in'><span
+         style='font-size:10.0pt;font-family:Tahoma'>External coupling -
+         External coupling occurs when two modules share an externally imposed
+         data format, communication protocol, or device interface.<o:p></o:p></span></li>
+     <li class=MsoNormal style='mso-list:l1 level1 lfo1;tab-stops:list .5in'><span
+         style='font-size:10.0pt;font-family:Tahoma'>Common coupling - Common
+         coupling is when two modules share the same global data (e.g. a global
+         variable).<o:p></o:p></span></li>
+     <li class=MsoNormal style='mso-list:l1 level1 lfo1;tab-stops:list .5in'><span
+         style='font-size:10.0pt;font-family:Tahoma'>Content coupling - Content
+         coupling is when one module modifies or relies on the internal
+         workings of another module (e.g. accessing local data of another
+         module). (<a
+         href="http://en.wikipedia.org/wiki/Dependency_%28computer_science%29">ref</a>)<o:p></o:p></span></li>
+    </ul>
+    <p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'><o:p>&nbsp;</o:p></span></p>
+    <p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'>So far
+    we have been considering static coupling. What about dynamic coupling. Why
+    might this add complexity to the issue?<o:p></o:p></span></p>
+    <p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'><o:p>&nbsp;</o:p></span></p>
+    <p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'>By
+    considering Dynamic coupling we are considering temporal dependencies (i.e.
+    dependencies in execution order) between classes. Problems can occur in
+    highly coupled classes when they expose observable state as the order (or
+    even worse the timing) in which individual methods on a class are called
+    must be maintained.<o:p></o:p></span></p>
+    </td>
+   </tr>
+  </table>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'><o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'><o:p>&nbsp;</o:p></span></p>
+
+<table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
+ mso-yfti-tbllook:480;mso-padding-alt:0in 5.4pt 0in 5.4pt;mso-border-insideh:
+ .5pt solid windowtext;mso-border-insidev:.5pt solid windowtext'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td width=647 valign=top style='width:485.6pt;border:none;border-bottom:solid windowtext 1.0pt;
+  mso-border-bottom-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-family:Tahoma;color:teal'>So what about
+  cohesion?<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1;mso-yfti-lastrow:yes'>
+  <td width=647 valign=top style='width:485.6pt;border:none;mso-border-top-alt:
+  solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'><o:p>&nbsp;</o:p></span></p>
+  <table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0
+   style='border-collapse:collapse;mso-yfti-tbllook:480;mso-padding-alt:0in 5.4pt 0in 5.4pt'>
+   <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
+    <td width=632 valign=top style='width:474.05pt;padding:0in 5.4pt 0in 5.4pt'>
+    <p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'>Cohesion
+    is a measure of how strongly related and focused the responsibilities of a
+    class are. <o:p></o:p></span></p>
+    <p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'><o:p>&nbsp;</o:p></span></p>
+    <p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'>The
+    general design principal is to promote Low Coupling and High Cohesion.<o:p></o:p></span></p>
+    <p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'><o:p>&nbsp;</o:p></span></p>
+    <p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'>Cohesion
+    from a metric point of view is measured by comparing the use of variables
+    within a class. <o:p></o:p></span></p>
+    <p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'>•<span
+    style='mso-tab-count:1'>           </span>If two methods use the same
+    variable this will act to decrement the cohesion rating. <o:p></o:p></span></p>
+    <p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'>•<span
+    style='mso-tab-count:1'>           </span>If one method uses a variable
+    that the other does not this increases the cohesion measure. <o:p></o:p></span></p>
+    <p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'>Cohesion
+    measures of 0 are ideal. However it should be noted that this is by no
+    means an ideal metric and its measurement can be misleading in certain
+    circumstances. <o:p></o:p></span></p>
+    <p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'><o:p>&nbsp;</o:p></span></p>
+    <p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'><a
+    href="http://en.wikipedia.org/wiki/Cohesion">See Wikipedia Definition</a><o:p></o:p></span></p>
+    <p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'><o:p>&nbsp;</o:p></span></p>
+    </td>
+   </tr>
+  </table>
+  <p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'><o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:Tahoma'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:363.0pt;margin-bottom:
+0in;margin-left:.5in;margin-bottom:.0001pt'><span lang=EN-GB style='font-size:
+10.0pt;font-family:Tahoma;mso-ansi-language:EN-GB'><o:p>&nbsp;</o:p></span></p>
+
+</div>
+
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-1671531-1";
+urchinTracker();
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,245 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	<title>BenStopford.com - Ben Stopford's site for technical essays and blogs</title>
+	<link rel=stylesheet type="text/css" href="/style.css">
+</head>
+
+<body bottommargin="0" leftmargin="0" rightmargin="0" topmargin="0" background="/old/common/img/background.jpg">
+
+
+
+<table height="123" width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr valign="top">
+<!----- insert logo below ------------------------------------------>
+<td><img src="/old/common/img/benbanner.jpg" width="587" height="123" border="0" alt=""></td>
+<!------------------------------------------------------------------>
+<td width="100%" background="/old/common/img/topbg.jpg">&nbsp;</td>
+</tr>
+</table>
+
+<table height="40" width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr valign="top">
+<td width="100%" background="/old/common/img/topbar.jpg">&nbsp;</td>
+</tr>
+</table>
+
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr valign="top">
+
+<td width="201"><BR>
+<!----- menu, insert links below ------------------------------------------>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/index.shtml">Home and Blogs</a><BR>
+<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/Articles.shtml">Essays</a><BR>
+<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/Software.shtml">Software</a><BR>
+<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/PrimeBrokerage.shtml">Prime Brokerage</a><BR>
+<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/columns/WebPageOptimiseStub.shtml">Web Page Optimisation</a><BR>
+<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/TechnicalInterviewingStub.shtml">Interviewing</a><BR>
+<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/devsim/devsim.shtml">Publications</a><BR>
+<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/resources/index.shtml">Resources</a><BR>
+<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/bookreviews/index.shtml">Book Reviews</a><BR>
+<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+&nbsp;&nbsp;&raquo;&nbsp;<a href="/old/AboutMe.shtml">About Me</a><BR>
+<img src="/old/common/img/menubar.jpg" width="201" height="11" border="0" alt=""><BR>
+
+
+
+
+
+<script type="text/javascript">
+
+//Enter domain of site to search.
+var domainroot="www.benstopford.com"
+
+function Gsitesearch(curobj){
+curobj.q.value="site:"+domainroot+" "+curobj.qfront.value
+}
+
+</script>
+
+
+<form action="http://www.google.co.uk/search" method="get" onSubmit="Gsitesearch(this)"&gt;
+
+<p>
+<input name="q" type="hidden" />
+<p>
+<BR><BR><BR>
+
+.
+<input name="qfront" type="text" style="width: 180px" /><p>
+..<input STYLE="color: #FFFFFF; font-family: Verdana; font-weight: bold; font-size: 12px; background-color: #003F80;"
+type="submit" value="Search" />
+<img src="/common/img/menubar.jpg" width="201" height="11" border="0" alt="">
+</form>
+
+<!-------------------------------------------------------------------------->
+
+</td>
+
+<td width="100%">
+	<table width="100%" cellpadding="10" cellspacing="0" border="0">
+		<tr valign="top">
+			<td>
+<!----- content, insert text and content below ------------------------------------------>
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 11 (filtered)">
+<title>Welcome to BenStopford</title>
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman";}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US link=blue vlink=purple>
+
+<div class=Section1>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse'>
+ <tr>
+  <td width=647 valign=top style='width:485.6pt;border:none;border-bottom:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:12.0pt;font-family:Tahoma;
+  color:teal'>Essays</span><span style='font-family:Tahoma;color:teal'>:</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=647 valign=top style='width:485.6pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:8.0pt;font-family:Tahoma'>&nbsp;</span></p>
+  <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+   style='border-collapse:collapse'>
+   <tr style='height:6.6pt'>
+    <td width=316 valign=top style='width:237.0pt;padding:0in 5.4pt 0in 5.4pt;
+    height:6.6pt'>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;»&nbsp;<a
+    href="articles/The%20Topic%20Specific%20Search%20Engine.pdf" target="_blank">Focused
+    Search White Paper</a></span></p>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;</span></p>
+    </td>
+    <td width=316 valign=top style='width:237.05pt;padding:0in 5.4pt 0in 5.4pt;
+    height:6.6pt'>
+    <p class=MsoNormal style='text-align:justify'><span style='font-family:
+    Tahoma'>My white paper describing a method for performing focused search
+    with limited resources.</span></p>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;</span></p>
+    </td>
+   </tr>
+   <tr style='height:6.6pt'>
+    <td width=316 valign=top style='width:237.0pt;padding:0in 5.4pt 0in 5.4pt;
+    height:6.6pt'>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;»&nbsp;<a
+    href="articles/ComponentFuture.shtml">The Future Of Component Software</a></span></p>
+    </td>
+    <td width=316 valign=top style='width:237.05pt;padding:0in 5.4pt 0in 5.4pt;
+    height:6.6pt'>
+    <p class=MsoNormal><span style='font-family:Tahoma'>Reflections on where is
+    componentization going and why it is going there.</span></p>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;</span></p>
+    </td>
+   </tr>
+   <tr style='height:6.55pt'>
+    <td width=316 valign=top style='width:237.0pt;padding:0in 5.4pt 0in 5.4pt;
+    height:6.55pt'>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;»&nbsp;<a
+    href="articles/metrics.shtml">The Future for Software Metrics</a></span></p>
+    </td>
+    <td width=316 valign=top style='width:237.05pt;padding:0in 5.4pt 0in 5.4pt;
+    height:6.55pt'>
+    <p class=MsoNormal><span style='font-family:Tahoma'>Is there a future for
+    Metrics in Software Engineering today?</span></p>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;</span></p>
+    </td>
+   </tr>
+   <tr style='height:6.55pt'>
+    <td width=316 valign=top style='width:237.0pt;padding:0in 5.4pt 0in 5.4pt;
+    height:6.55pt'>
+    <p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;»&nbsp;<a
+    href="articles/aspectstub.shtml">AspectJ and Patterns</a></span></p>
+    </td>
+    <td width=316 valign=top style='width:237.05pt;padding:0in 5.4pt 0in 5.4pt;
+    height:6.55pt'>
+    <p class=MsoNormal><span style='font-family:Tahoma'>The Gamma et al
+    Software Patterns have been converted to Aspect J. This essay reflects on
+    the benefits gained from using the aspect paradigm.</span></p>
+    </td>
+   </tr>
+  </table>
+  <p class=MsoNormal></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span style='font-family:Tahoma'>&nbsp;</span></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+</div>
+
+</body>
+
+</html>
+
+<!--------------------------------------------------------------------------------------->
+
+<BR><BR><BR><BR><BR><BR><BR>
+<BR><BR><BR><BR><BR><BR><BR>
+<p align="center">
+This site is &copy; Copyright BenStopford.com 2003-2005, All Rights Reserved<BR>
+<p>
+			</td>
+		</tr>
+	</table>
+</td>
+
+</tr>
+</table>
+
+</body>
+</html>
+
+
+
