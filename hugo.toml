@@ -10,6 +10,9 @@ theme = "PaperMod"
 [markup.goldmark.renderer]
   unsafe = true
 
+[params.label]
+  text = "ben stopford"
+
 [params]
   author = "Ben Stopford"
   description = "Writing on distributed systems, data, and software engineering"

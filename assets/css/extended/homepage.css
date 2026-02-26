@@ -86,7 +86,7 @@
   font-size: 1rem;
   font-weight: 600;
   margin: 0 0 0.5rem 0;
-  border-bottom: 1px solid var(--border);
+  border-bottom: 2px solid var(--primary);
   padding-bottom: 0.3rem;
 }
 
@@ -106,7 +106,9 @@
 }
 
 .index-list li {
-  margin-bottom: 0.2rem;
+  margin-bottom: 0;
+  padding-bottom: 0.2rem;
+  border-bottom: 1px solid var(--border);
 }
 
 .index-list a {
@@ -126,6 +128,40 @@
   font-size: 0.875rem;
   line-height: 1.8;
   margin: 0;
+}
+
+/* ── Site Header ── */
+.logo a {
+  font-family: medium-content-serif-font, Georgia, Cambria, "Times New Roman", Times, serif;
+}
+
+.logo-name {
+  font-size: 2.94rem;
+  font-weight: 400;
+  vertical-align: middle;
+}
+
+.logo-divider {
+  font-size: 2.94rem;
+  font-weight: 100;
+  line-height: 1;
+  vertical-align: middle;
+  margin: 0 0.3rem;
+  color: var(--secondary);
+}
+
+#theme-toggle {
+  position: relative;
+  top: 0.3rem;
+}
+
+.logo-tagline {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: var(--secondary);
+  vertical-align: middle;
+  position: relative;
+  top: 0.3rem;
 }
 
 /* ── Blog Section Title ── */
