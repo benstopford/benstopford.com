@@ -4,6 +4,10 @@
   grid-template-columns: 1fr 1fr;
   gap: 1.5rem;
   margin-bottom: 2rem;
+  width: min(900px, calc(100vw - 2 * var(--gap)));
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .top-post-card {
@@ -56,7 +60,7 @@
 /* ── Index Sections ── */
 .index-sections {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 2rem 3rem;
   margin-bottom: 2rem;
   /* Break out beyond the 720px content column */

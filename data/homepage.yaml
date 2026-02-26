@@ -1,6 +1,22 @@
 sections:
+  - title: "About"
+    column: 2
+    titleUrl: "/aboutme/"
+    isAbout: true
+    socialLinks:
+      - text: "Twitter"
+        url: "https://twitter.com/benstopford"
+      - text: "RSS"
+        url: "/index.xml"
+      - text: "Github"
+        url: "https://github.com/benstopford"
+      - text: "Photography"
+        url: "https://www.flickr.com/photos/benstopford/albums/72157669650629005"
+      - text: "Full Bio"
+        url: "/aboutme/"
+
   - title: "Talks"
-    column: 1
+    column: 2
     linkUrl: "https://www.youtube.com/playlist?list=PLAtliISFmifPUHxqdfN_U_JlPmarr1pPA"
     linkText: "View on YouTube"
     items:
@@ -68,7 +84,7 @@ sections:
         url: "/architecting-for-change-an-agile-approach/"
 
   - title: "Essays"
-    column: 2
+    column: 1
     linkUrl: "/categories/analysis/"
     linkText: "all"
     items:
@@ -121,47 +137,8 @@ sections:
         url: "/2004/03/14/do-metrics-have-a-place-in-software-engineering-today/"
         year: "2004"
 
-  - title: "Test Driven Development"
-    column: 2
-    linkUrl: "/categories/test-driven-development-software-development/"
-    linkText: "all"
-    items:
-      - text: "Test Oriented Languages: Is it Time for a New Era?"
-        url: "/2011/02/02/test-oriented-languages-is-it-time-for-a-new-era/"
-        year: "2011"
-      - text: "Beyond Stubs: Why We Need Interaction Testing"
-        url: "/2010/02/18/beyond-stubs-why-we-need-interaction-testing/"
-        year: "2010"
-      - text: "Isolating Functional Units: Why We Need Stubs"
-        url: "/2010/02/14/isolating-functional-units-why-we-need-stubs/"
-        year: "2010"
-      - text: "Are Mocks All They Are Cracked Up To Be?"
-        url: "/2010/02/06/are-mocks-all-they-are-cracked-up-to-be/"
-        year: "2010"
-
-  - title: "Coherence"
-    column: 2
-    linkUrl: "/categories/coherence/"
-    linkText: "all"
-
-  - title: "About"
-    column: 3
-    titleUrl: "/aboutme/"
-    isAbout: true
-    socialLinks:
-      - text: "Twitter"
-        url: "https://twitter.com/benstopford"
-      - text: "RSS"
-        url: "/index.xml"
-      - text: "Github"
-        url: "https://github.com/benstopford"
-      - text: "Photography"
-        url: "https://www.flickr.com/photos/benstopford/albums/72157669650629005"
-      - text: "Full Bio"
-        url: "/aboutme/"
-
   - title: "Data Tech"
-    column: 3
+    column: 1
     linkUrl: "/categories/products/"
     linkText: "all"
     items:
@@ -190,8 +167,31 @@ sections:
         url: "/2012/08/09/looking-at-intel-xeon-phi-kinghts-corner/"
         year: "2012"
 
+  - title: "Test Driven Development"
+    column: 1
+    linkUrl: "/categories/test-driven-development-software-development/"
+    linkText: "all"
+    items:
+      - text: "Test Oriented Languages: Is it Time for a New Era?"
+        url: "/2011/02/02/test-oriented-languages-is-it-time-for-a-new-era/"
+        year: "2011"
+      - text: "Beyond Stubs: Why We Need Interaction Testing"
+        url: "/2010/02/18/beyond-stubs-why-we-need-interaction-testing/"
+        year: "2010"
+      - text: "Isolating Functional Units: Why We Need Stubs"
+        url: "/2010/02/14/isolating-functional-units-why-we-need-stubs/"
+        year: "2010"
+      - text: "Are Mocks All They Are Cracked Up To Be?"
+        url: "/2010/02/06/are-mocks-all-they-are-cracked-up-to-be/"
+        year: "2010"
+
+  - title: "Coherence"
+    column: 2
+    linkUrl: "/categories/coherence/"
+    linkText: "all"
+
   - title: "Team / Process / Interviewing"
-    column: 3
+    column: 1
     linkUrl: "/categories/team-development/"
     linkText: "all"
     items:
