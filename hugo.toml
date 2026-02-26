@@ -1,5 +1,4 @@
-#baseURL = "https://www.benstopford.com/"
-baseURL = "https://benstopford.github.io/benstopford.com/"
+baseURL = "https://benstopford.com/"
 languageCode = "en-us"
 title = "Ben Stopford"
 theme = "PaperMod"
