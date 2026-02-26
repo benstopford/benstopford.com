@@ -1,5 +1,7 @@
 #baseURL = "https://www.benstopford.com/"
 baseURL = "https://benstopford.github.io/benstopford.com/"
+relativeURLs = true
+canonifyURLs = false
 languageCode = "en-us"
 title = "Ben Stopford"
 theme = "PaperMod"
