@@ -165,6 +165,11 @@
   top: 0.3rem;
 }
 
+/* ── Post Images ── */
+.post-content img {
+  background: white;
+}
+
 /* ── Blog Section Title ── */
 .blog-section-title {
   font-size: 1.2rem;
