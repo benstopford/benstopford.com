@@ -135,6 +135,49 @@
   margin: 0;
 }
 
+/* ── Nav Right (theme toggle + menu grouped) ── */
+.nav-right {
+  display: flex;
+  align-items: center;
+  margin: auto var(--gap);
+}
+
+.nav-right #menu {
+  margin: 0;
+}
+
+/* ── Mobile Header ── */
+@media (max-width: 540px) {
+  .logo {
+    width: 100%;
+  }
+
+  .logo a {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+  }
+
+  .logo-divider {
+    display: none;
+  }
+
+  .logo-tagline {
+    width: 100%;
+    font-size: 1.1rem;
+    top: 0;
+  }
+
+  .nav-right {
+    width: 100%;
+    margin-left: var(--gap);
+    margin-right: var(--gap);
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+}
+
 /* ── Site Header ── */
 .logo a {
   font-family: medium-content-serif-font, Georgia, Cambria, "Times New Roman", Times, serif;
@@ -157,7 +200,7 @@
 
 #theme-toggle {
   position: relative;
-  top: 0.3rem;
+  top: -0.2rem;
 }
 
 .logo-tagline {
