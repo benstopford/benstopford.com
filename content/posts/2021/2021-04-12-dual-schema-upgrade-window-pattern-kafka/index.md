@@ -15,7 +15,7 @@ All four approaches achieve the same goal: to give services a window in which th
 
 <figure>
 
-![](images/image-1024x604.png)
+<div style="text-align: center;"><img src="images/image-1024x604.png" alt=""></div>
 
 <figcaption>
 

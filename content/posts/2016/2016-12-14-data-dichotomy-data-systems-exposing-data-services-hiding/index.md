@@ -12,6 +12,6 @@ slug: "data-dichotomy-data-systems-exposing-data-services-hiding"
 
 A post about services and data, published on the Confluent site.
 
-[![](images/image12.png)](https://www.confluent.io/blog/data-dichotomy-rethinking-the-way-we-treat-data-and-services/)
+<div style="text-align: center;"><a href="https://www.confluent.io/blog/data-dichotomy-rethinking-the-way-we-treat-data-and-services/"><img src="images/image12.png" alt=""></a></div>
 
 [https://www.confluent.io/blog/data-dichotomy-rethinking-the-way-we-treat-data-and-services/](https://www.confluent.io/blog/data-dichotomy-rethinking-the-way-we-treat-data-and-services/)

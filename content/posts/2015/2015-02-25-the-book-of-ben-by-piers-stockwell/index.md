@@ -4,7 +4,7 @@ date: 2015-02-25
 slug: "the-book-of-ben-by-piers-stockwell"
 ---
 
-![](images/piers.png)
+<div style="text-align: center;"><img src="images/piers.png" alt=""></div>
 
 23rd June 2014
 

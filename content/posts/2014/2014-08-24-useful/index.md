@@ -6,7 +6,7 @@ categories:
 slug: "useful"
 ---
 
-![](images/linux_observability_tools.png)
+<div style="text-align: center;"><img src="images/linux_observability_tools.png" alt=""></div>
 
 http://www.slideshare.net/brendangregg/linux-performance-tools
 

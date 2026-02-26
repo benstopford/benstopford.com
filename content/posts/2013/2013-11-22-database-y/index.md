@@ -10,7 +10,7 @@ slug: "database-y"
 
 MongoDB recently secured $150m in funding. If you’re not sure how to place that figure, it is more than any database vendor has secured in a single funding round, ever!  The company was reportedly valued at $1.2 billion, a huge amount considering the total annual revenue in the NoSQL market was only $542m in 2012. News reports of new databases appear on what feels like a weekly basis. The [latest database landscape](http://blogs.the451group.com/information_management/2013/06/10/updated-database-landscape-map-june-2013/) cites more than two hundred products, and only really scratches the surface.
 
-[![](images/Databasey-3-1024x786.png "Databasey-3")](images/Databasey-3.png)
+<div style="text-align: center;"><a href="images/Databasey-3.png"><img src="images/Databasey-3-1024x786.png" alt=""></a></div>
 
 So this is an interesting time for the database world and there are some inevitable questions arising from where these change have come from. Certainly it would seem that the database field has not been serving us, the customers, sufficiently well. If it were these new products would be unlikely to exist. Behind this likely sits a more fundamental change in our needs. The internet has been an obvious contributory factor but there is likely more to this change than simply the need to scale. [Joe Hellerstein](http://en.wikipedia.org/wiki/Joseph_M._Hellerstein), something of a guru in the database field, called this out more than a decade ago, and [his words](http://db.cs.berkeley.edu/jmh/talks/hpts2001-we-lose.pdf) make interesting reading today with provocative, if informal, comments like:
 
@@ -30,7 +30,7 @@ Whist it seems unlikely that the latest bedroom-crafted distributed hash table w
 
 One of the key problems that many of the NoSQL (and NewSQL) vendors face is the absence of the rigorous heritage of the traditional database products. Databases are complicated software, the most complex libraries you will likely program with on a day-to-day basis. Most recent relational database contenders; Aster Data, ParAccel, Greenplum, Netezza, Vertica – to name just [a few of many](http://wiki.postgresql.org/wiki/PostgreSQL_derived_databases) - have been Postgres forks. This being necessary to get a leg up the steep development curve required to build a fully functional DBMS.
 
-[![](images/Databasey-12.png "Databasey-1")](images/Databasey-12.png)
+<div style="text-align: center;"><a href="images/Databasey-12.png"><img src="images/Databasey-12.png" alt=""></a></div>
 
 NoSQLs; Couchbase, Cassandra and Dynamo (Voldemort) are all under 200k lines of code, a questionable metric I know, but it hints to the comparative simplicity of some of these solutions.
 
@@ -52,7 +52,7 @@ Oracle took $11 billion of the $34 billion database market in 2012. The whole No
 
 It is unclear to me, as it stands today, whether this path is really disruptive. I’ve discussed the [signs of convergence](/2012/11/10/the-big-data-conundrum/) before but there are also a number of technical approaches that are acting as differentiators: The use of [shards and replicas](http://www.slideshare.net/rick446/scaling-withmongodb) are in many ways more advanced that those seen in relational systems. The application of [schema on need](http://www.dbms2.com/2013/09/21/schema-on-need-hadapt/) provides an iterative, explorative approach to data-modelling and data-model evolution. More progressively No/NewSQL is moving beyond CAP to include [lightweight transactional models](http://pmg.csail.mit.edu/papers/vr-revisited.pdf) that provide stronger consistency guarantees without all the baggage of serialisable two-phase commit.
 
-[![](images/databasey-22.png "databasey-2")](images/databasey-22.png)
+<div style="text-align: center;"><a href="images/databasey-22.png"><img src="images/databasey-22.png" alt=""></a></div>
 
 So whether this is tangential or revolutionary remains to be seen. Intuitively it certainly seems unlikely that David will topple any of the Goliaths, in fact it seems more likely that the Goliaths with simply eat (buy) the Davids, but we should still see deeper changes than those evidenced by the current lip service paid by the big vendors. This is a good thing.
 

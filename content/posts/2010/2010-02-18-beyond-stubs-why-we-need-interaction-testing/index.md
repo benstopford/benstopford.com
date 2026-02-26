@@ -21,7 +21,9 @@ But Interaction testing is much more than stubs with a little functionality adde
 
 > Unit testing becomes about the behaviour of objects rather than  the function of the system.
 
-Consider an extension to the call stack model, presented in the last article ([here](images/overlappingtests1.png)). The figure below evolves this model by adding branching of the call stack, this being a better approximation of reality. Small branches, such as the one highlighted at the top, are naturally encapsulated making them easy to test with simple, state based tests.[![branched stack](images/branchedstack_thumb.png "branched stack")](images/branchedstack.png)
+Consider an extension to the call stack model, presented in the last article ([here](images/overlappingtests1.png)). The figure below evolves this model by adding branching of the call stack, this being a better approximation of reality. Small branches, such as the one highlighted at the top, are naturally encapsulated making them easy to test with simple, state based tests.
+
+<div style="text-align: center;"><a href="images/branchedstack.png"><img src="images/branchedstack_thumb.png" alt="branched stack"></a></div>
 
 However classes whose primary concern is to aide the forwarding of the call stack (rather than exposing a change in state) present a tougher problem. For example the lower circled interaction in the figure below. Such objects are defined solely by how they interact with collaborating (composed) objects.
 
@@ -29,7 +31,7 @@ Examples of such types of classes include Proxies, Marshallers and Composites, t
 
 Lets consider the example of a [composite object](http://en.wikipedia.org/wiki/Composite_pattern) which forwards invocations to a set of delegates that share the same interface. To test such a Composite Object assertions should be made on the calls it makes to the objects being composed (all the red circles on the figure), so that we can ensure that this contract, of forwarding calls, is honoured.
 
-![mock assertion](images/mockassertion_thumb.png "mock assertion")
+<div style="text-align: center;"><img src="images/mockassertion_thumb.png" alt="mock assertion"></div>
 
 This could be done with a stub that tracks invocations. The success of the test is then based on the stub’s invocation counter being incremented by each forwarded call the composite makes.
 
@@ -39,7 +41,9 @@ Mocking frameworks assert that objects interact with their collaborators in an e
 
 1) A succinct tool that allows them to demarcate the area under test with stubs.
 
-2) A method for asserting on the interactions that a class makes with its collaborators when such assertions are important to the test.[![tdd](images/tdd_thumb.png "tdd")](images/tdd.png)
+2) A method for asserting on the interactions that a class makes with its collaborators when such assertions are important to the test.
+
+<div style="text-align: center;"><a href="images/tdd.png"><img src="images/tdd_thumb.png" alt="tdd"></a></div>
 
 When we practice TDD with mocking frameworks both of these tools have a significant affect on the process we follow. Firstly Mockist developers only need to concentrate on developing one class at a time. Classes are developed in isolation with mocked interfaces providing detail of the roles collaborators must provide. This in turn leads to a rapid loop -  writing a test, writing the implementation – teasing out collaborating roles as mocks. Once the class is completed focus is turned to one of the previously defined collaborating roles and the cycle is repeated. This encourages the prescription of specific roles that collaborators must perform rather than simply defining entities. The process is akin to [Design by Contract](http://en.wikipedia.org/wiki/Design_by_contract) and some refer to this as [Need Driven Development](http://xunitpatterns.com/need-driven%20development.html).
 

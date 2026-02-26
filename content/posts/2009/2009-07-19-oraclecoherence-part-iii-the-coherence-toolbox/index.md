@@ -19,7 +19,9 @@ Coherence is so much more than a hash map. In this article we’ll introduce som
 
 ### Aggregation: Coherence’s MapReduce
 
-For operations that act on data that exists on multiple machines Coherence will parallelise the execution. The example shown here is a summation of “quantities” across a particular cache. Each machine in the cluster performs the summation for their portion of the data. The result of each of these is passed back to the serving node which performs the final summation and returns the final answer to the client. This is analogous to [Google’s MapReduce pattern](http://research.google.com/archive/mapreduce.html)[![paralell](images/paralell_thumb.png "paralell")](images/paralell.png)
+For operations that act on data that exists on multiple machines Coherence will parallelise the execution. The example shown here is a summation of “quantities” across a particular cache. Each machine in the cluster performs the summation for their portion of the data. The result of each of these is passed back to the serving node which performs the final summation and returns the final answer to the client. This is analogous to [Google’s MapReduce pattern](http://research.google.com/archive/mapreduce.html)
+
+<div style="text-align: center;"><a href="images/paralell.png"><img src="images/paralell_thumb.png" alt="paralell"></a></div>
 
 ### Near Caching: Where the Real Caching is at
 
@@ -31,7 +33,7 @@ All client processes can configure a near cache that sits “in process”. This
 
 Thus Near Caching is a great way to store data which may be needed again by a client process.
 
-[![NearCache](images/NearCache_thumb.png "NearCache")](images/NearCache.png)
+<div style="text-align: center;"><a href="images/NearCache.png"><img src="images/NearCache_thumb.png" alt="NearCache"></a></div>
 
 ### Continuous Query: Pub-Sub Queries at our Fingertips
 
@@ -45,7 +47,7 @@ Thus Continuous queries provide a proactively updated in-process data set to cli
 - A trading blotter containing trades for a certain trader/book.
 - Ticking prices for a certain Currency.
 
-[![cqc](images/cqc_thumb.png "cqc")](images/cqc.png)
+<div style="text-align: center;"><a href="images/cqc.png"><img src="images/cqc_thumb.png" alt="cqc"></a></div>
 
 Thus in summary near caches receive invalidations only, with subsequent requests falling through to the server to get the changed data. Conversely continuous queries receive updates containing all new and changed data. So when might you use each of these? Use near caches by default for cases where there is likely to be reuse. Use continuous queries when it is known that all changes to a certain data set will be relevant to clients.
 
@@ -55,7 +57,7 @@ The cache types, Partitioned, Replicated and Near all support expiration policie
 
 In the example here a client has a near cache configured to keep the most recent 1000 tuples. The partitioned backing cache on the server has a different expiration policy set that expires entries once they reach a certain age.
 
-[![expirey](images/expirey_thumb.png "expirey")](images/expirey.png)
+<div style="text-align: center;"><a href="images/expirey.png"><img src="images/expirey_thumb.png" alt="expirey"></a></div>
 
 Indexes: Not So Much About Lookup Speed As Avoiding Deserialisation.
 
@@ -72,7 +74,7 @@ However the real boon of Coherence indexes is that in creating an index Coherenc
 
 Locking keys directly is supported in Coherence, but it is expensive. In the example here a client locks a key, performs an action and then unlocks it again. This takes a scary 12 network hops to complete. Fortunately, there is a better way…
 
-[![locking](images/locking_thumb.png "locking")](images/locking.png)
+<div style="text-align: center;"><a href="images/locking.png"><img src="images/locking_thumb.png" alt="locking"></a></div>
 
 Entry processors solve this distributed locking problem by executing a predefined piece of code, on the server, against a certain key. They represent one of the four primary constructs that Coherence offers and have the following properties:
 
@@ -80,7 +82,7 @@ Entry processors solve this distributed locking problem by executing a predefine
 - They execute synchronously with respect to that key (i.e. the key is write-locked during the execution of the Entry Processor).
 - They code they run has full access to the key and entry.
 
-[![ep](images/ep_thumb.png "ep")](images/ep.png)
+<div style="text-align: center;"><a href="images/ep.png"><img src="images/ep_thumb.png" alt="ep"></a></div>
 
 In this example the client invokes an Entry Processor against a  specific key in the cache.
 
@@ -92,7 +94,7 @@ Thus an arbitrary piece of code is run against a key on the server.
 
 Here we see an example of an entry processor, the ValueChangingEntryProcessor which updates the value associated with a certain key. Note that in contrast to the locking example described on a previous slide, this execution involves only 4 rather than 12 network hops.
 
-[![ep2](images/ep2_thumb.png "ep2")](images/ep2.png)
+<div style="text-align: center;"><a href="images/ep2.png"><img src="images/ep2_thumb.png" alt="ep2"></a></div>
 
 ```
  
@@ -122,7 +124,9 @@ class ValueChangingEntryProcessor extends AbstractProcessor {
 
 Invocables are the second of the four primary constructs and are analogous to a DataSynapse grid task in that they allow an arbitrary piece of code to be run on the server. Invocables are similar to Entry Processors except that they are not associated with any particular key. As such they can be defined to run against a single machine or across the whole cluster.
 
-In the example here an Invocable is used to invoke a garbage collection on all nodes on the cluster. Other good examples of the use of Invocables are the bulk loading of data, with Invocables being used to parallelise the execution across the available machines. [![invocables](images/invocables_thumb.png "invocables")](images/invocables.png)
+In the example here an Invocable is used to invoke a garbage collection on all nodes on the cluster. Other good examples of the use of Invocables are the bulk loading of data, with Invocables being used to parallelise the execution across the available machines. 
+
+<div style="text-align: center;"><a href="images/invocables.png"><img src="images/invocables_thumb.png" alt="invocables"></a></div>
 
 ### Server Side Eventing I: Triggers
 
@@ -144,7 +148,7 @@ The retry queue is fault tolerant. So long as the cluster is up it will continue
 
 Should multiple values be received for the same key during the write delay of an asynchronous CacheStore the values will be coalesced, that is to say that only the most recent tuple will be persisted. This coalescing also applies to the retry queue.
 
-[![cachestore](images/cachestore_thumb.png "cachestore")](images/cachestore.png)
+<div style="text-align: center;"><a href="images/cachestore.png"><img src="images/cachestore_thumb.png" alt="cachestore"></a></div>
 
 ### Your Coherence Toolbox
 
@@ -155,7 +159,7 @@ Thus, to summarise the four primary constructs:
 - Triggers/BackingMapListeners, like Entry Processors, lock on the key for which they are executing. Synchronous cache stores also lock but their use in asynchronous mode tends to be more common.
 - Cache stores are guaranteed, in that they will retry should execution fail and this retry logic is fault tolerant (it will retry on a different machine should the one it is running on fail). They also coalesce changes.
 
-[![function-comparison](images/functioncomparison_thumb.png "function-comparison")](images/functioncomparison.png)
+<div style="text-align: center;"><a href="images/functioncomparison.png"><img src="images/functioncomparison_thumb.png" alt="function-comparison"></a></div>
 
 See also:
 

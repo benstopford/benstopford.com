@@ -7,7 +7,7 @@ coverImage: "Click-to-View.png"
 slug: "qcon-slidesvideo-beyond-the-data-grid-coherence-normalization-joins-and-linear-scalability"
 ---
 
-[![](images/Click-to-View-300x187.png "Click to View")](http://www.infoq.com/presentations/ODC-Beyond-The-Data-Grid)
+<div style="text-align: center;"><a href="http://www.infoq.com/presentations/ODC-Beyond-The-Data-Grid"><img src="images/Click-to-View-300x187.png" alt=""></a></div>
 
 The slides/video from the my talk at QCon London have been put up on InfoQ.
 

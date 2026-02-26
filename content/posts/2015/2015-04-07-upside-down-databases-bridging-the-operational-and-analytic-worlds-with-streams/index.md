@@ -22,7 +22,7 @@ The approach had some nice side effects which we didn't originally anticipate. 
 
 This led to some interesting properties. The front end provided a near term, consistent view. Clients could collaborate around it. It could be scaled out horizontally by adding shards. At the back, everything was asynchronous and immutable. This meant it was easy to scale with replicas. Creating another replica is relatively simple when your system of record is an event stream.
 
-![](images/oabridge3.png)
+<div style="text-align: center;"><img src="images/oabridge3.png" alt=""></div>
 
 The event stream tied the two together. It was the bridge between the operational and analytic sections. A stream for clients to fork directly or as a firehose to create another view.
 
@@ -46,7 +46,7 @@ So the trick, at least for me, is how this is all tied together. A synchronous
 
 Martin suggests, in his original talk, using the [Samza](http://samza.apache.org/) stack to manage views like these with [Kafka](http://kafka.apache.org/) providing the log. This seems a good place to start today. Kafka's bare-boned approach certainly removes many of the scalability barriers seen in JMS/AMQP implementations, albeit at the cost of some utility.
 
-![](images/oabridge.png)
+<div style="text-align: center;"><img src="images/oabridge.png" alt=""></div>
 
 There are, of course, a plethora of little devils lurking in the detail. There are also a number of points that I skimmed over here. I'm not sure that I'd use a data grid again. In fact I'd argue that the single collaboration point isn't always necessary\*. Time synchronisation across asynchronous views can cause problems. Replaying functions on a historical stream of state is also pretty tricky, particularly as time passes and inbound data formats change. This deserves a post of its own. Finally scaling traditional messaging systems, even using topics, becomes painful, particularly when message selectors are used.
 

@@ -53,7 +53,7 @@ Using this trick you can guarantee that reads done using read-time will be repea
 
 To understand how this works we're going to introduce the concept of a cluster-clock. The clock ticks along setting write-time and read-time on all nodes. The condition it will uphold is that at any read time all writes for that time will have been completed.
 
-![](images/clock-300x94.png "clock")
+<div style="text-align: center;"><img src="images/clock-300x94.png" alt=""></div>
 
 The implementation of this cluster-clock takes a little thinking about. Firstly you need a singleton service for the clock to live in. There will only be one clock running in the cluster and this needs to be fault tolerant. The singleton-service pattern for doing this is described [here](/2011/11/05/coherence-the-singleton-service/).
 
@@ -65,7 +65,9 @@ Next the clock needs to ensure our above condition that read-time always superse
 4. Iterate over all nodes in the cluster setting **read** time = **T** (as we now know no nodes will be writing with T+1)
 5. continue to loop....
 
-This is described in the figure. We originally attempted this this using replicated caches to hold the times but unfortunately this does not work. Replicated caches do not behave quite as you might think. They do not wait for data to be synchronised with all nodes.[![](images/clock-write-300x129.png "clock-write")](images/clock-write.png)
+This is described in the figure. We originally attempted this this using replicated caches to hold the times but unfortunately this does not work. Replicated caches do not behave quite as you might think. They do not wait for data to be synchronised with all nodes.
+
+<div style="text-align: center;"><a href="images/clock-write.png"><img src="images/clock-write-300x129.png" alt=""></a></div>
 
 The approach we use now is an invocable that is synchronously broadcast to the cluster. The invocable performs the ticks on each node.
 
@@ -75,7 +77,9 @@ Snapshot queries then work by querying objects where arrivedAt() >  readTime an
 
 The read-time corresponds to a snapshot. To take a snapshot of the system, you simply ask it _what is the current read-time_. In our case the readtime is taken from the extend proxy the client connects to.
 
-Queries using this snapshot of read-time in this manner are guaranteed to be repeatable.[![](images/clock-read-300x172.png "clock-read")](images/clock-read.png)
+Queries using this snapshot of read-time in this manner are guaranteed to be repeatable.
+
+<div style="text-align: center;"><a href="images/clock-read.png"><img src="images/clock-read-300x172.png" alt=""></a></div>
 
 Finally there can be multiple versions returned by this mechanism which must be removed. The cluster time is in fact more like an epoch so multiple versions can exist in each 'tick'. In ODC we standardise the ticks of the clock to be every second (they will be at least one second, possibly more particularly if nodes are doing garbage collection).
 

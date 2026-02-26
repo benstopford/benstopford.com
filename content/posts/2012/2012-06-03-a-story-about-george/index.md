@@ -9,7 +9,7 @@ slug: "a-story-about-george"
 
 Once upon a time, in a land of metaphor, there lived a database called George. George was one of the most prominent databases the land had ever seen. In fact George was more than a database, George was a data craftsman. He had been responsible for the care and welfare of data for as long as data had existed in the little land, and the application developers loved him for his meticulous stewardship of their most precious commodity. Life was good.
 
-![](images/7050969-farm-landscape-showing-rows-of-crops-and-silhouette-of-farm-buildings-including-windmill.jpg "7050969-farm-landscape-showing-rows-of-crops-and-silhouette-of-farm-buildings-including-windmill")
+<div style="text-align: center;"><img src="images/7050969-farm-landscape-showing-rows-of-crops-and-silhouette-of-farm-buildings-including-windmill.jpg" alt="" style="width: 380px; max-width: 100%"></div>
 
 Time passed and data flourished. George did his best to keep up, furrowing his data into neat little rows that stretched long into the distance. The furrowing hurt his hands but it was good, honest work and George loved it.
 
@@ -21,7 +21,7 @@ For a moment George was startled. He caught up with Sandy at the bus stop and qu
 
 This was one step too far for George and he set off for Application Town to sort this situation out.
 
-![](images/1275166719e0nIKb.jpg "1275166719e0nIKb")
+<div style="text-align: center;"><img src="images/1275166719e0nIKb.jpg" alt="" style="width: 380px; max-width: 100%"></div>
 
 When George got to Doogle’s rather grand office building he was decidedly aggrieved, partially because he’d spent most of the journey mulling the heresy that was taking place and partially because he’d got his sandal strap stuck in the building’s revolving door and his wicker soles had become partially dislodged.
 
@@ -33,7 +33,7 @@ Doogle let George settle for a long moment before saying anything.
 
 “Take a seat George” Doogle said calmly. George perched himself, propped slightly forward over the front of the chair, still looking anxious and wondering how Doogle knew who he was.
 
-![](images/DOOGLE.png "DOOGLE")
+<div style="text-align: center;"><img src="images/DOOGLE.png" alt="" style="width: 380px; max-width: 100%"></div>
 
 “George, I have one hundred and eighty thousand hectares of unmanaged data. A vast crop; too large even for you. To manage this we were forced to leave behind the traditional ways and start from scratch.” Doogle continued to explain his new way of managing data. George was puzzled at first by the complete absence of the neat rows he was used to, but after some time he started to understand where Doogle was coming from. There was, slightly annoyingly, elegance to what Doogle was describing.
 
@@ -49,7 +49,7 @@ Doogle sank further back in his chair. “That, my friend, is a very interesting
 
 George sat for a moment and twiddled his neck beard. “I think they are just besotted with you to be honest”.
 
-![](images/cartoon-landia-300x187.jpg "cartoon-landia")
+<div style="text-align: center;"><img src="images/cartoon-landia-300x187.jpg" alt="" style="width: 380px; max-width: 100%"></div>
 
 Doogle let out a small chuckle as George continued.  “We’ve been refining and tuning our ways for decades and you’ve just ignored all of it. You’ve neglected almost everything that we already know about data. It’s completely crazy. Simple is good but not when it’s an excuse for naivety. This path can only lead to pain in the long run!”
 
@@ -61,7 +61,7 @@ After some time he decided to go back to Application Town to watch the goings on
 
 But George couldn’t help but be impressed by how quickly the new tools ripped through large swathes of data. He also noticed that most of the application developers didn’t have the large crops Doogle had, and some struggled with the unstructured nature, occasionally making a mess and ruining some part of their crop. George did a very good job of suppressing the urge to say “I told you so”.
 
-![](images/10364366-10364366-cartoon-town.jpg "10364366-10364366-cartoon-town")
+<div style="text-align: center;"><img src="images/10364366-10364366-cartoon-town.jpg" alt="" style="width: 380px; max-width: 100%"></div>
 
 As time passed however, George made friends. As they got to know him the application developers seemed to value the things he said more and more. He became better at talking to them and was able to build new tools that sat closer to the ways they seemed to work:  tools which retained the structured and consistent approach he was used to, but were also easy to wield without having to resort to burdensome instruction manuals and hired in labour. He learnt to relax a bit too.
 

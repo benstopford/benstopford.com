@@ -13,4 +13,4 @@ The pattern is used on ODC to track aggregate views. Say you want a materialised
 
 One downside of this pattern is that if the concept is not well known it can be confusing, after all the object you put() is not the same type as is returned from a get().  Simple naming as collections\* can help avoid this confusion though.
 
-[![](images/collections-cache.png "collections-cache")](images/collections-cache.png)
+<div style="text-align: center;"><a href="images/collections-cache.png"><img src="images/collections-cache.png" alt=""></a></div>

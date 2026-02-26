@@ -16,7 +16,7 @@ POF a variable length, bit-packed serialisation format used to represent object 
 
 Conceptually simple, each class writes out its fields to a binary stream using a single bit-packed (variable length encoded) integer as an index followed by a value. Various other pieces of metadata are also encoded into the stream using bit-packed ints. It's simplest to show in pictorially:
 
-[![](images/IsPofReallyWorthIt-Pics2-1024x249.png "IsPofReallyWorthIt-Pics2")](images/IsPofReallyWorthIt-Pics2.png)
+<div style="text-align: center;"><a href="images/IsPofReallyWorthIt-Pics2.png"><img src="images/IsPofReallyWorthIt-Pics2-1024x249.png" alt=""></a></div>
 
 **Variable Length Encoding using Bit-Packed Values**
 

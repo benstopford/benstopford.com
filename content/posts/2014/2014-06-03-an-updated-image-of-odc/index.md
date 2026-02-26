@@ -11,7 +11,7 @@ We're hiring! so I thought I'd share this image which shows a little more about 
 
  
 
-[![ODC-Single-Slide-Summary.001](images/ODC-Single-Slide-Summary.001-e1401826818222.jpg)](/uploads/ODC-Single-Slide-Summary.pdf)
+<div style="text-align: center;"><a href="/uploads/ODC-Single-Slide-Summary.pdf"><img src="images/ODC-Single-Slide-Summary.001-e1401826818222.jpg" alt="ODC-Single-Slide-Summary.001"></a></div>
 
  
 

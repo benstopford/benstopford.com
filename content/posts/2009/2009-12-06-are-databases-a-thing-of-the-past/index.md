@@ -30,7 +30,7 @@ Clustering is crucial to modern systems as it both provides a route out of the s
 
 The downside of clustering is that it pushes the fundamental problem of the hardware architecture; access to shared memory, into the software domain. Not only must software handle the federation of hardware but these disparate machines are connected via significantly slower interconnects then their scale-up counterparts (100μs being typical for a wire call vs 100ns for local memory access). This represents _the_ fundamental problem of distributed systems. Yet clustered datastores represent probably the greatest challenge of all as they are little more than shared state ( for example a clustered shared disk architecture as shown in figure 1).
 
-[![](images/SharedDisk-300x150.png "SharedDisk.png")](images/SharedDisk.png)
+<div style="text-align: center;"><a href="images/SharedDisk.png"><img src="images/SharedDisk-300x150.png" alt=""></a></div>
 
 Figure 1. A shared disk architecture. All nodes have access to all data.
 
@@ -38,7 +38,7 @@ There is unfortunately no general solution for efficiently sharing state across 
 
 To better understand the challenges of shared memory in a clustered database consider the simple case of writes. As writes can be routed to any machine in the cluster a machine must obtain the appropriate lock, usually from another machine (See figure 2). Such protocols that require lock management over the network tend to scale as On although this challenge is dependent on the architecture used by the DBMS. This is discussed further in \[15\].
 
-[![](images/distributedlock_thumb-300x172.png "distributedlock_thumb.png")](images/distributedlock_thumb.png)
+<div style="text-align: center;"><a href="images/distributedlock_thumb.png"><img src="images/distributedlock_thumb-300x172.png" alt=""></a></div>
 
 Figure 2. The distributed locking problem inherent in distributed data stores that replicate data.
 
@@ -48,7 +48,7 @@ One alternative is to change the architecture to remove the need for block shipp
 
 Because a Shared Nothing Architecture involves a physical partitioning of resources, processing, memory and disk become dedicated to a certain sub-section of the data set (the local partition). Thus each process has dedicated resources and is autonomous with respect to its data subset (see figure 3). It is this autonomous partitioning that allows such stores to scale linearly as hardware is added. Automaticity reduces the need for coordination between machines (particularly with respect to locks) when compared to the shared memory architecture shown in Figure 1.
 
-[![](images/SharedNothing1-300x150.png "SharedNothing.png")](images/SharedNothing1.png)
+<div style="text-align: center;"><a href="images/SharedNothing1.png"><img src="images/SharedNothing1-300x150.png" alt=""></a></div>
 
 Figure 3. A Shared Nothing Architecture. Nodes only have access to data associated with that node.
 

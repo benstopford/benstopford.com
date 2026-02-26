@@ -35,7 +35,7 @@ The last thing to consider is the cost of change. For simple data sets it is les
 
 However most of today's databases have the HUGE disadvantage that the schema needs to be defined, and the data understood, upfront. Great for simple, well defined business data, but if you're searching free text, machine generated data or simply a hugely diverse data population (like the data that gets thrown around most big organisations) it's simply not practical or maybe not possible to understand, and model, the data upfront. By applying the schema later in the cycle the cost of change, the availability of insight and the inherent feedback cycles can all be improved.
 
-![](images/Merging-300x265.png "Merging")
+<div style="text-align: center;"><img src="images/Merging-300x265.png" alt=""></div>
 
 **As for the future?**
 

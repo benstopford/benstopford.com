@@ -20,7 +20,7 @@ The below describes the setup and how to get it all to play nicely:
 
 \- The server runs [Airfoil](https://www.rogueamoeba.com/airfoil/) (I tried a number of others including [Porthole](http://www.getporthole.com/)for a while but Airfoil appears to be the most stable and functional).
 
-![](images/airfoil-161x300.png "airfoil")
+<div style="text-align: center;"><img src="images/airfoil-161x300.png" alt=""></div>
 
 For the 6 speakers I use:
 

@@ -23,13 +23,17 @@ Lets consider why we use disk at all. To gain a degree of fault tolerance is com
 
 Disk is also useful for providing extra storage. Allowing us to 'overflow' our available memory. This can become painful, if we take the concept too far. The sluggish performance of an overladed PC that's constantly paging memory to and from disk in an intuitive example, but this approach actually proves to be very successful in many data technologies, when the commonly used dataset fits largely in memory.<!--more-->
 
-[![inmemory_computing_efGBE](images/inmemory_computing_efGBE.jpg)](images/inmemory_computing_efGBE.jpg)The operating system's page cache is a key ingredient here. It'll happily gobble up any available RAM, making many disk-backed solutions perform similarly to in-memory ones when there's enough memory to play with. This applies to both reads and writes too, assuming the OS is left to page data to disk in its own time.
+<div style="text-align: center;"><a href="images/inmemory_computing_efGBE.jpg"><img src="images/inmemory_computing_efGBE.jpg" alt="inmemory_computing_efGBE"></a></div>
+
+The operating system's page cache is a key ingredient here. It'll happily gobble up any available RAM, making many disk-backed solutions perform similarly to in-memory ones when there's enough memory to play with. This applies to both reads and writes too, assuming the OS is left to page data to disk in its own time.
 
 So this means the two approaches often perform similarly. Say we have two 128GB machines. On one we install an in-memory database. On the other we install a similar disk-backed database. We put 100GB of data into each of them. The disk-backed database will be reading data from memory most of the time. But it'll also let you overflow beyond 128GB, pushing infrequently used data (which is common in most systems) onto disk so it doesn't clutter the address space.
 
 Now the tradeoff is a little subtler in reality. An in-memory database can guarantee comparatively fast random access. This gives good breadth for optimisation. On the other hand, the disk-backed database must use data structures optimised for the sequential approaches that magnetic (and to a slightly lesser extent SSD) based media require for good performance, even if the data is actually being served from memory.
 
-So if the storage engine is something like a [LSM](/2015/02/14/log-structured-merge-trees/) tree there will be an associated overhead that the in-memory solution would not need to endure. This is undoubtedly significant, but we are still left wondering whether the benefit of this optimisation is really worth the downsides a of pure, in-memory solution. ![overflow](images/overflow.jpg)
+So if the storage engine is something like a [LSM](/2015/02/14/log-structured-merge-trees/) tree there will be an associated overhead that the in-memory solution would not need to endure. This is undoubtedly significant, but we are still left wondering whether the benefit of this optimisation is really worth the downsides a of pure, in-memory solution.
+
+<div style="text-align: center;"><img src="images/overflow.jpg" alt="overflow"></div>
 
 Another subtlety relates to something we mentioned earlier. We may use disk for fault tolerance. A typical disk-backed database, like Postgres or Cassandra, uses disk in two different ways. The storage engine will use a file structure that is read-optimised in some way. In most cases an additional structure is used, generally termed a Write Ahead Log. This provides a fast way for logging data to a persistent media so the database can reply to clients in the knowledge that data is safe.
 

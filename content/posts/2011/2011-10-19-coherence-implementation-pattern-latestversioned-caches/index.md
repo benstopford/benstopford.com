@@ -21,7 +21,7 @@ Key = \[Business Key\]\[Version\]
 
 In Coherence accessing objects via their key directly is far more performant than doing a query (see [The Fallacy of Linear Scalability](/2009/12/12/coherence-the-falacy-of-linear-scalability/)) so it is preferable to keep the latest version of the object available via its business key alone. There are two common approaches to solving this problem: The Latest/Versioned pattern and the Latest Version Marker pattern.
 
-![](images/LatestVersioned1-300x247.png "LatestVersioned")
+<div style="text-align: center;"><img src="images/LatestVersioned1-300x247.png" alt=""></div>
 
 **Approach 1: Latest and Versioned Caches**
 
@@ -44,7 +44,7 @@ Checklist:
 - Specify KeyAssociation ([Affinity](http://wiki.tangosol.com/display/COH35UG/Data+Affinity "Affinity")) on the business key of the Latest\* cache across both caches.
 - Write a trigger that adds a monotomically incrementing version to the business key as it copies the value's reference to the Versioned cache. You'll need to use direct backing map access to avoid reentrancy problems (I've discussed the issues of reentrancy in Coherence before. See [Merging Data And Processing: Why it doesn’t “just work”](/2009/08/30/the-trials-of-merging-data-and-processing-in-coherence-why-it-doesnt-quite-just-work/ "<p>Coherence appears the perfect platform in which to merge data and processing. However the reality is slightly less rosy. This article looks at why.</p> ")). The code sample below is provided for reference.
 
-![](images/LatestMarker-300x220.png "LatestMarker")
+<div style="text-align: center;"><img src="images/LatestMarker-300x220.png" alt=""></div>
 
 **Approach 2: Versioned Cache Only With a Latest Version Marker**
 

@@ -15,11 +15,19 @@ If you've been using Coherence for a while (or any other distributed cache servi
 
 <!--more-->
 
-As a toy example lets conside[![affinity](images/affinity.jpg "affinity")](images/affinity.jpg)r pricing a large portfolio of trades. The pricing algorithm would require trade and market data as input, but as these are logically distinct entities you are likely to store each in a different cache. But for efficiency you’ll need the data for the corresponding trade and the market data on the same node, so that wire calls to collocate them don’t need to be made prior to pricing.
+As a toy example lets conside
+
+<div style="text-align: center;"><a href="images/affinity.jpg"><img src="images/affinity.jpg" alt="affinity"></a></div>
+
+r pricing a large portfolio of trades. The pricing algorithm would require trade and market data as input, but as these are logically distinct entities you are likely to store each in a different cache. But for efficiency you’ll need the data for the corresponding trade and the market data on the same node, so that wire calls to collocate them don’t need to be made prior to pricing.
 
 Coherence gives you a great way to do this: [Affinity](http://wiki.tangosol.com/display/COH35UG/Data+Affinity "Affinity") instructs Coherence to store data in a certain way, that is to say it is grouped together so that all data items with the same 'affinity key' are kept together (see figures).
 
-Thinking along these lines you'd think we might have solved our pricing problem. We can use affinity to keep the trade and m[![affinity2](images/affinity2-300x173.png "affinity2")](images/affinity2.png)arket data together. As it happens this does work (depending somewhat on your data distribution). However it all falls to bits when you need to perform the processing to price the trade.
+Thinking along these lines you'd think we might have solved our pricing problem. We can use affinity to keep the trade and m
+
+<div style="text-align: center;"><a href="images/affinity2.png"><img src="images/affinity2-300x173.png" alt="affinity2"></a></div>
+
+arket data together. As it happens this does work (depending somewhat on your data distribution). However it all falls to bits when you need to perform the processing to price the trade.
 
 The problem is that you want to wrap the processing in a Coherence function that is 'data aware'. Most likely an Aggretator or possibly an Entry Processor. The reasoning being this is that these functions will automatically route themselves to the nodes where the data resides.
 
@@ -29,11 +37,17 @@ So persisting with the data-aware functions as a wrapper for our pricing algorit
 
 So what does that mean? It means that, if you ran your Aggregator against the trades cache, you would not be able to call out from that Aggregator into the Market Data cache to get the data you require to price the trade. Such a call would ultimately cause a deadlock.
 
-The  [![coherence-threading](images/coherence-threading.jpg "coherence-threading")](images/coherence-threading.jpg)diagram demonstrates the CacheService threading model under a simulated deadlock. Even when the Cache service is configured with a thread pool there is the possibility that a re-entrant call will be scheduled back to the worker thread that is making that call, particularly in the case where the thread pool is small and the EntryProcessor workload is long.
+The  
+
+<div style="text-align: center;"><a href="images/coherence-threading.jpg"><img src="images/coherence-threading.jpg" alt="coherence-threading"></a></div>
+
+diagram demonstrates the CacheService threading model under a simulated deadlock. Even when the Cache service is configured with a thread pool there is the possibility that a re-entrant call will be scheduled back to the worker thread that is making that call, particularly in the case where the thread pool is small and the EntryProcessor workload is long.
 
 A work around for this problem is to place the parent cache (or more precisely, the cache against which the Entry Processor or Aggregator is run) in a different Cache Service to the cache that the function is operating on. By splitting into at least two Cache Services the call to the 'other' cache will enter via a different Main thread to which invoked the Aggregator that you are currently running. This removes the possibility of deadlock.
 
-[![Invocable](images/Invocable.jpg "Invocable")](images/Invocable.jpg)However, for our use case, spitting the market data cache and trades cache into different cache services is not an option as it breaks Affinity. The data items will no longer collocate (as affinity is based on the hashing algorithm Coherence uses to store data, and that algorithm is at a cache service level).
+<div style="text-align: center;"><a href="images/Invocable.jpg"><img src="images/Invocable.jpg" alt="Invocable"></a></div>
+
+However, for our use case, spitting the market data cache and trades cache into different cache services is not an option as it breaks Affinity. The data items will no longer collocate (as affinity is based on the hashing algorithm Coherence uses to store data, and that algorithm is at a cache service level).
 
 So how do you solve this problem. Well you have two options.
 

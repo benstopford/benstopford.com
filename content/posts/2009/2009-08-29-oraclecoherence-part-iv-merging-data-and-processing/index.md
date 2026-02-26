@@ -22,13 +22,13 @@ There are a couple of points worthy of note before we go on:
 
 Data affinity allows associations to be set up between data in different caches so that the associated data objects in the two different caches are collocated on the same machine. In the example here trade data and market data are linked via the ticker meaning that all trades for ticker ATT will be stored on the same machine as the ATT market data.
 
-[![data-affinity](images/dataaffinity_thumb.png "data-affinity")](images/dataaffinity.png)
+<div style="text-align: center;"><a href="images/dataaffinity.png"><img src="images/dataaffinity_thumb.png" alt="data-affinity"></a></div>
 
 ### Using Coherence to Run Processing in the Grid
 
 Thus when an Entry Processor or Aggregator executes, say to run a trade pricing routine, it can access the trade and its market data without having to make a wire call as the market data for that particular trade will be held on the same machine (whenever possible).
 
-[![affinity](images/affinity_thumb.png "affinity")](images/affinity1.png)
+<div style="text-align: center;"><a href="images/affinity1.png"><img src="images/affinity_thumb.png" alt="affinity"></a></div>
 
 This presents the possibility of folding the classic service-centric approach in two\[1\]. Suddenly compute architectures can be merged into one layer that has responsibility for compute and data.  The fundamental advantage being that far less data needs to be transmitted across the wire.
 
@@ -38,7 +38,7 @@ In a standard architecture (the upper example) data is retrieved from a data sou
 
 But it is important to note that Coherence is not a direct substitute for a compute grid such as DataSynapse. Application-Centric Coherence involves leveraging in the inherent distribution Coherence provides as well as its inherent collocation of processing and data.
 
-[![sending code or data](images/sendingcodeordata_thumb1.png "sending code or data")](images/sendingcodeordata1.png)
+<div style="text-align: center;"><a href="images/sendingcodeordata1.png"><img src="images/sendingcodeordata_thumb1.png" alt="sending code or data"></a></div>
 
 Thus looking at the anatomy of a simple Application-Centric deployment we see:
 
@@ -48,7 +48,7 @@ Thus looking at the anatomy of a simple Application-Centric deployment we see:
 
 This is just one sample pattern, there are many others. Simply using Aggregators (thing MapReduce) distribute work to collocated data on the grid is a powerful pattern in it's own right.  All these patterns share the ability to collocate domain processing in a Java across a large, distributed address space. This means that not only is the execution collocated with the data but the executions are implicitly load balanced across the Coherence cluster.
 
-[![app-cenric](images/appcenric_thumb.png "app-cenric")](images/appcenric.png)
+<div style="text-align: center;"><a href="images/appcenric.png"><img src="images/appcenric_thumb.png" alt="app-cenric"></a></div>
 
 So Coherence has evolved from being a data repository to an application container which provides:
 

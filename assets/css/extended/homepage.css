@@ -172,6 +172,7 @@
 /* ── Post Images ── */
 .post-content img {
   background: white;
+  margin: 0 auto;
 }
 
 /* ── Blog Section Title ── */

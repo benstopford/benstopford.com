@@ -27,7 +27,7 @@ This pattern can be extended to be a **[sidecar](https://docs.microsoft.com/en-
 
  
 
-![](images/Screen-Shot-2018-10-26-at-01.28.00-1024x581.png)
+<div style="text-align: center;"><img src="images/Screen-Shot-2018-10-26-at-01.28.00-1024x581.png" alt=""></div>
 
 **Implementation** 
 

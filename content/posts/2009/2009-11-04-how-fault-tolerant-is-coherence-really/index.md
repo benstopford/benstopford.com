@@ -15,7 +15,11 @@ Dessert Island Disks Top 3 reasons for using Coherence have to be: Speed, Scalab
 
 When designing systems with Coherence it’s easy to get carried away with the latter, especially when you start to embed your own services and leverage the implicit fault tolerance.
 
-But in all this excitement I've often found myself overlooking  what the guarantees really are. <!--more-->![Failure](images/Failure_thumb.jpg "Failure")Most people know that Coherence backs up your data on another node so that if one process is lost it can be restored (see diagram). They also may know that the number of backups Coherence takes, for each piece of data you store, is configurable. However it takes a little consideration to become totally clear on what guarentees of fault tollerance Coherence really provides, hence my summary here.
+But in all this excitement I've often found myself overlooking  what the guarantees really are. <!--more-->
+
+<div style="text-align: center;"><img src="images/Failure_thumb.jpg" alt="Failure"></div>
+
+Most people know that Coherence backs up your data on another node so that if one process is lost it can be restored (see diagram). They also may know that the number of backups Coherence takes, for each piece of data you store, is configurable. However it takes a little consideration to become totally clear on what guarentees of fault tollerance Coherence really provides, hence my summary here.
 
 There are two questions worth considering:
 
@@ -41,7 +45,7 @@ The implication is that the loss of a single machine with be handled with the ad
 
 However the loss of a second machine will, most likely, cause data loss if some of the data from the first machine is backed up on the second. The cluster won’t loose much, but it will likely loose some.
 
-[![Backups](images/Backups_thumb3.jpg "Backups")](images/Backups4.jpg)
+<div style="text-align: center;"><a href="images/Backups4.jpg"><img src="images/Backups_thumb3.jpg" alt="Backups"></a></div>
 
 One suggestion for combating this is to increase the backup count. Unfortunately, in the current version, this doesn’t help. Coherence is really smart about how it places the first backup copy; putting it on a different machine where possible and spreading the backups evenly across the cluster. But when it comes to the second backup it is not so clever. The problem of backup placement is O(n), hence this restriction. As a result, configuring a second backup provides no extra guarantee that the second backup will be held on a different machine to the first, hence loss of two machines may still cause data loss (but the probability of this has been reduced).
 

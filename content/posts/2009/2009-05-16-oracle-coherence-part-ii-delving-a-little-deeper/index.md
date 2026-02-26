@@ -17,7 +17,7 @@ Thus, in the example seen below, the user requests the key “2” from the cach
 
 A subsequent request for key “334” is routed to the machine in the bottom left corner as it is this machine which is responsible for that key.
 
-[![partitioning](images/partitioning_thumb.png "partitioning")](images/partitioning.png)
+<div style="text-align: center;"><a href="images/partitioning.png"><img src="images/partitioning_thumb.png" alt="partitioning"></a></div>
 
 Although the main storage mode is the partitioned cache, where the data is distributed across all machines in the cluster. It also supports the simpler case of the replicated cache, where each node has its own copy of the entire data set.
 
@@ -32,15 +32,17 @@ The advantages of in-process data on the server will become apparent later on wh
 
 ### How it Works: Reading and Writing
 
-Lets look at what happens during a simple data retrieval operation. Here the client invokes a “get” operation to retrieve the value for the key:Key1. The request is directed to a connection proxy on the server. This manages the connection as well as forwarding the request on to the machine which it knows contains the key: Key1. It does this via the “Well known hashing algorithm”.[![retrieving data](images/retrievingdata_thumb.png "retrieving data")](images/retrievingdata.png)
+Lets look at what happens during a simple data retrieval operation. Here the client invokes a “get” operation to retrieve the value for the key:Key1. The request is directed to a connection proxy on the server. This manages the connection as well as forwarding the request on to the machine which it knows contains the key: Key1. It does this via the “Well known hashing algorithm”.
+
+<div style="text-align: center;"><a href="images/retrievingdata.png"><img src="images/retrievingdata_thumb.png" alt="retrieving data"></a></div>
 
 The Well Known Hashing Algorithm is the algorithm used to determine on which machine each hash bucket will be stored. This algorithm is distributed to all members of the cluster, hence “well known”. This has the effect that the location of all keys are known to all nodes.
 
-[![well known hashing](images/wellknownhashing_thumb.png "well known hashing")](images/wellknownhashing.png)
+<div style="text-align: center;"><a href="images/wellknownhashing.png"><img src="images/wellknownhashing_thumb.png" alt="well known hashing"></a></div>
 
 Now looking at writing data to the cluster, the format is similar to gets with the put travelling through a connection proxy which locates the data to be written and forwards on the write. The difference is that writes must also be written to the backup copy which will exist on a different machine. This adds two extra network hops to the transaction.
 
-[![writing](images/writing_thumb.png "writing")](images/writing.png)
+<div style="text-align: center;"><a href="images/writing.png"><img src="images/writing_thumb.png" alt="writing"></a></div>
 
 ### How it works: Communication Protocols
 
@@ -54,17 +56,17 @@ Coherence includes a clever mechanism for detecting and responding to node failu
 
 Once Node X has been removed from the cluster the backup of its data, seen here on the node to its left, is instantly promoted to being a Primary store. This is quickly followed by the redistribution of data around the cluster to fully backup all data and to ensure there is an even distribution across the cluster. The redistribution step is throttled to ensure it does not swamp cluster communication. However this step completes more quickly on larger clusters where less data must be redistributed to each node.
 
-[![consensus](images/consensus_thumb.png "consensus")](images/consensus.png)
+<div style="text-align: center;"><a href="images/consensus.png"><img src="images/consensus_thumb.png" alt="consensus"></a></div>
 
 Coherence has a propiatary object serialisation and communication protocal called PIF/POF standing for Portable Invocation Format and Portable Object Format respectively. POF is particuarly important as apart from being highly compressed (when compared to Java serialisation) it allows deserialisation into C++ and .NET Coherence clients. There is a detailed post on the internals of POF [here](/2014/04/12/pof-pimer/).
 
 In the example the C# client defines the POF serialisation routine which is executed by the IPofSerialiser (written in C#) to create a POF object which is stored in the cluster. When a Java client requests the same object it is inflated with the PofSerialiser (written in Java) to create a comparable Java object.
 
-[![technologies-serviced](images/technologiesserviced_thumb.png "technologies-serviced")](images/technologiesserviced.png)
+<div style="text-align: center;"><a href="images/technologiesserviced.png"><img src="images/technologiesserviced_thumb.png" alt="technologies-serviced"></a></div>
 
 The previous slide covered the marshalling of data from one language to another. However non-Java clients also need to execute code on the cluster and, as the cluster is written in Java, any executions run there must also be in Java. To solve this problem server side code, such as the Invocable shown here, is mapped from a C# implementation on the client to a Java implementation on the server. Thus calling MyInvovable in C# will result in the Java version of MyInvocable being run on the server with the objects it uses being marshalled from one language to another via POF (as described in the previous slide).
 
-[![csharp](images/csharp_thumb.png "csharp")](images/csharp.png)
+<div style="text-align: center;"><a href="images/csharp.png"><img src="images/csharp_thumb.png" alt="csharp"></a></div>
 
 ### Client Types
 
@@ -73,7 +75,7 @@ There are two types of client in Coherence:
 - Extend Client: Connects to the cluster via TCP\*Extend which is a protocol based on TCP-IP. This is the typical means for connecting to the cluster, is lightweight and scalable.
 - Compute Clients: These are cluster members running in a data-disabled mode. They are heavier processes needing tens of seconds to initialise as part of the cluster. However they are faster as they know the location of data (via the well known hashing algorithm).
 
-[![clienttypes](images/clienttypes.png "clienttypes")](images/paralell.png)
+<div style="text-align: center;"><a href="images/paralell.png"><img src="images/clienttypes.png" alt="clienttypes"></a></div>
 
 ### Monitoring: Boring but Necessary
 
@@ -81,7 +83,7 @@ Monitoring of Coherence is done via inspection of the MBeans it publishes over J
 
 The Coherence JMX implementation includes Mbean publication from each cluster member which is collated via a singe nominated JMX Collector node. The JMX Collector makes all MBeans available to users via JMX.
 
-[![monitoring](images/monitoring_thumb.png "monitoring")](images/monitoring.png)
+<div style="text-align: center;"><a href="images/monitoring.png"><img src="images/monitoring_thumb.png" alt="monitoring"></a></div>
 
 See also:
 

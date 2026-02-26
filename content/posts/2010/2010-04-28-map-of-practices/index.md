@@ -6,4 +6,4 @@ slug: "map-of-practices"
 url: "/map-of-practices/"
 ---
 
-[![](images/Map-of-Personal-Practices-Ben-Stopford-300x212.jpg "Map of Personal Practices - Ben Stopford")](images/Map-of-Personal-Practices-Ben-Stopford.jpg)
+<div style="text-align: center;"><a href="images/Map-of-Personal-Practices-Ben-Stopford.jpg"><img src="images/Map-of-Personal-Practices-Ben-Stopford-300x212.jpg" alt=""></a></div>

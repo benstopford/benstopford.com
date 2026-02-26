@@ -17,13 +17,13 @@ NoSQL and the Big Data upstarts, hungry for a piece of the pie, appear fresh and
 
 But the marketing surge that has come with it is something of a mixed blessing. You can barely move for the hype. There are also many misconceptions, particularly around the technology itself. One of the most notable is the misconception that handling large data sets necessitates something that looks like Hadoop. At the other end of the spectrum the 'big three' database vendors are touting products that look very much like the products of ten years ago. Big Data seems to have caught them off guard and they seem to be floundering somewhat, pinning Big Data emblems to their existing products without really rethinking their approach to problem in the context of today's world.
 
-[![](images/DB-NoSQL-History-300x233.png "DB-NoSQL-History")](images/DB-NoSQL-History.png)
+<div style="text-align: center;"><a href="images/DB-NoSQL-History.png"><img src="images/DB-NoSQL-History-300x233.png" alt=""></a></div>
 
 This apparent apathy is highlighted by the host of upstart database and NoSQL technologies that have achieved market penetration. The database market is not an easy one to get into. It is an oligopoly, in economic terms: A market dominated by a small number of key players. The barrier to entry is high, making it hard for smaller companies to penetrate. The products are similar, largely interchangeable and no one vendor has total monopolistic control. In fact many markets end up in this state. Mobile technology and service provision, oil, airlines etc. The database industry is one of these too and has been for twenty years. Yet there are today something in the order of two hundred viable vendors in different segments. A smaller group of these fledgling brands have gained real traction. The implication being that the mainstream must be missing a trick somewhere, at least it's not fully catering to its customer's needs.
 
 Their 'way in' has been products that pander to subtly different use-cases. Some sold as databases, some NoSQL stores, some BigData. The categories are starting to blur but the general theme favours simpler contracts to achieve scalability rather than more traditional worries about keeping data safe and consistent.  [Clayton M. Christensen](http://en.wikipedia.org/wiki/Clayton_M._Christensen "Clayton M. Christensen") might well term these new approaches [disruptive](http://en.wikipedia.org/wiki/Disruptive_technology); innovation driving new markets and value networks, in the process forcing the base market to change, or even be replaced. Whatever they are, they are bringing change.
 
-![](images/hadoop.jpg)
+<div style="text-align: center;"><img src="images/hadoop.jpg" alt=""></div>
 
 Certainly if you are building a system today you will likely consider more than the core products from the top four database vendors, even if it is just to probe what the whole NoSQL and Big Data movement really is. But if you find the current breadth of choice confusing you are not alone. With the NoSQL and Relational fields taking very different approaches, each having a variety of upstarts that specialise further, there is a huge array of choice and it's hard to cut through the marketing spiel to where and why we might find these different technologies useful. We are bombarded by terminology: NoSQL, MapReduce, Big Data, Hadoop, ACID, BASE, Eventual Consistency, Shared Nothing Architectures, OLAP, OLTP, BI, MPP, Column Orientation … the list goes on. It has become downright c0nfuZ1nG.
 
@@ -52,7 +52,7 @@ We can get a slightly different, but more reliable figure using the population o
 
 These figures are useful for a couple of reasons. Firstly they give us a yardstick through which we can bound our problem. If we are interested in the text on the Internet we’re in the high terabyte range. If we’re interested in downloading webpages we’re in the mid petabyte range but the web in its entirety, with video, scripts, audio etc, is going to be  a whole lot bigger.
 
-![](images/EnterprisesDBSAreSmall-300x230.jpg "EnterprisesDBSAreSmall")
+<div style="text-align: center;"><img src="images/EnterprisesDBSAreSmall-300x230.jpg" alt=""></div>
 
 It’s not of course just the Internet. There are a huge variety of other data sources, sensor networks, mobile transmissions, video streams, log files, the list goes on.  People are finding this data useful too, marketing, intelligence, fraud detection, tax evasion, scientific research all benefit from the analysis of our digital footprint. Gartner, amongst many others, state that 80% of business is now conducted on unstructured data (interesting discussion [here](http://clarabridge.com/default.aspx?tabid=137&ModuleID=635&ArticleID=551)) and the World Economic Forum even declared Big Data a new form of Economic Asset earlier in 2012 ([here](http://www.weforum.org/reports/big-data-big-impact-new-possibilities-international-development)).
 
@@ -72,7 +72,9 @@ The backlash against MapReduce started in 2009, most notably via Michael Stonebr
 
 - MapReduce is a step backwards: Schemas allow you to separate the physical implementation of storage from the logic that operates on your data.
 - A poor implementation: The lack of indexes and ignorance of data skew make it a purely brute force implementation.
-- A lack of novelty: concepts data back to the 1980s.![](images/HadoopvsVerticaEtc-300x267.png "HadoopvsVerticaEtc")
+- A lack of novelty: concepts data back to the 1980s.
+
+<div style="text-align: center;"><img src="images/HadoopvsVerticaEtc-300x267.png" alt=""></div>
 - Incompatibility with the huge array of DBMS tools.
 - A lack of integrity (referential) and ACID properties that protect against unexpected results.
 
@@ -88,7 +90,7 @@ The hacker culture (which is prevalent at Google and other prominent internet 
 
 ### Our Love-Hate relationship with the Relational Database
 
-![](images/LoveAndHate-300x178.png "LoveAndHate")
+<div style="text-align: center;"><img src="images/LoveAndHate-300x178.png" alt=""></div>
 
 [Joe Hellerstein](http://db.cs.berkeley.edu/jmh/), from Berkeley, did an fascinating talk at the ‘High Performance Transaction Systems Workshop’ (HTPS) way back in 2001 entitled [“We Lose”](http://db.cs.berkeley.edu/jmh/talks/hpts2001-we-lose.pdf). It's a retrospective on the state of the database field just after the dot-com bubble focussing particularly on their lack of uptake with the young internet companies of that time. He observes (and I'm paraphrasing) that the grassroots use file systems, not databases. That the ‘cool new internet space’ is lost and they (the database industry) are forced to remain in the doldrums of the Enterprise Space as databases are black boxes that require a lot of coaxing to get maximum performance. Yet databases do some very cool stuff: Statistically based optimisers, compression, distributed queries etc. These are some of the most interesting problems in Computer Science. Yet in his words ‘Only the standard enterprise folks will come to us, tail-between-legs’.
 
@@ -154,7 +156,7 @@ However most of today's databases have the HUGE disadvantage that the schema nee
 
 So relational tends to be great for well understood business data, but if you're searching free text, machine generated data or simply a very diverse data population it's simply not practical or maybe not even possible to understand, and model, the data upfront.
 
-![](images/Merging-300x265.png "Merging")
+<div style="text-align: center;"><img src="images/Merging-300x265.png" alt=""></div>
 
 ### As for the future?
 

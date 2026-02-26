@@ -7,7 +7,7 @@ coverImage: "image_thumb1.png"
 slug: "oracle-coherence-part-i-an-introduction"
 ---
 
-[![image](images/image_thumb1.png "image")](images/image1.png)
+<div style="text-align: center;"><a href="images/image1.png"><img src="images/image_thumb1.png" alt="image"></a></div>
 
 You can think of Coherence as simply being a distributed cache. It is after all what it was designed to do. But doing so would be something of an injustice. If a caching layer is all you need there are probably cheaper options. What you get with Coherence is a well thought out, simple framework for dealing with distributed data.
 
@@ -19,7 +19,7 @@ It's also important to understand the limits of the technology and Coherence cer
 
 Coherence is laid out over three distinct layers; client, cluster, persistence (see opening figure). The Coherence cluster itself is sandwiched between the client on the left and the persistent data source on the right. The client has it’s own, in process, 2nd level cache. The persistent data source is usually only used for data writes, it does not contribute to data retrieval (as the cluster, in the centre of the diagram, will typically be pre-populated with data, but more on that later).
 
-[![image](images/image_thumb2.png "image")](images/image2.png)
+<div style="text-align: center;"><a href="images/image2.png"><img src="images/image_thumb2.png" alt="image"></a></div>
 
 Coherence has three major things going for it; it is fast, fault tolerant and scalable. Lets look at each of these in turn…
 
@@ -31,7 +31,9 @@ Coherence’s speed can be attributed to five major attributes of it’s design:
 2. Objects are always held in their serialised form (using an efficient binary encoding named POF - find out more about this [here](/2014/04/12/pof-pimer/)). Holding data in a serialised form allows Coherence to skip the serialisation step on the server meaning that data requests only have one serialisation hit, occurring when they are deserialised on the client after a response. Note that both keys and values are held in their serialised form (and in fact the hash code has to be cached as a result of this).
 3. Writes to the database are usually performed asynchronously (this is configurable). Asynchronous persistence of data is desirable as it means Coherence does not have to wait for disk access on a potentially bottlenecked resource. As we’ll see later it also does some clever stuff to batch writes to persistent stores to make them more efficient. The result of asynchronous database access is that writes to the Coherence cluster are fast and will stay fast as the cluster scales. The downside being that data could be lost should a critical failure occur. As a result you should only use this asynchronous behaviour for data you don't mind loosing.
 4. Queries use indexes which are sharded across the data grid. Thus queries follow a divide and conquer approach.
-5. Coherence includes a second level cache that sits in process on the client. This is a analogous to a typical caching layer, holding an in-process copy. This copy can be kept coherent either via setting a near-cache to be 'present' or via using a 'continuous query'[![fast](images/fast_thumb.png "fast")](images/fast.png)
+5. Coherence includes a second level cache that sits in process on the client. This is a analogous to a typical caching layer, holding an in-process copy. This copy can be kept coherent either via setting a near-cache to be 'present' or via using a 'continuous query'
+
+<div style="text-align: center;"><a href="images/fast.png"><img src="images/fast_thumb.png" alt="fast"></a></div>
 
 ### Coherence is Fault Tolerant
 
@@ -39,7 +41,7 @@ Coherence is both fault tolerant and highly available. That is to say that the l
 
 It is worth emphasizing that this is one of the most powerful features of the product. Coherence will efficiently detect node loss and deal with it. It also deals with the addition of new nodes in the same seamless manor.
 
-[![Backups](images/Backups_thumb.png "Backups")](images/Backups.png)
+<div style="text-align: center;"><a href="images/Backups.png"><img src="images/Backups_thumb.png" alt="Backups"></a></div>
 
 ### Coherence is Scalable
 
@@ -47,7 +49,11 @@ Coherence holds data on only one machine (two if you include the backup). Thus a
 
 So we can summarise why Coherence is faster than traditional data repositories.
 
-- Coherence works to a simpler contract. It is effic[![scalable-chart](images/scalablechart_thumb.png "scalable-chart")](images/scalablechart.png)ient only for simple data access. As such it can do this one job quickly and scalably.
+- Coherence works to a simpler contract. It is effic
+
+<div style="text-align: center;"><a href="images/scalablechart.png"><img src="images/scalablechart_thumb.png" alt="scalable-chart"></a></div>
+
+ient only for simple data access. As such it can do this one job quickly and scalably.
 - Databases are constrained by the wealth of features they must implement. Most notably (from a latency perspective) ACID.
 - High performance users are often happy to sacrifice ACID transactions for speed and scalability.
 
@@ -55,11 +61,11 @@ So we can summarise why Coherence is faster than traditional data repositories.
 
 Most importantly, Coherence is just a map. All data is stored as key value pairs. It offers ‘some’ functionality that goes beyond this but it is still the fundamental structure of the product and hash based access to the key/value pairs it contains is fundamental to the way it works at the lowest level.
 
-[![map](images/map_thumb.png "map")](images/map.png)
+<div style="text-align: center;"><a href="images/map.png"><img src="images/map_thumb.png" alt="map"></a></div>
 
 In a typical installation Coherence will be prepopulated with data so that the cluster become the primary data source rather than just a caching layer sitting above it (Coherence offers both modes of operation, it just so happens that almost everyone I know does it this way). The main reason that ‘read through’ is not often used is that (i) it adds latency to early client transactions and (ii) the map contains in indeterminate quantity of data meaning that searches (queries) against the cache will return indeterminate results.
 
-[![not read through](images/notreadthrough_thumb.png "not read through")](images/notreadthrough.png)
+<div style="text-align: center;"><a href="images/notreadthrough.png"><img src="images/notreadthrough_thumb.png" alt="not read through"></a></div>
 
 Coherence is not a database. It is a much lighter-weight product designed for fast data retrieval operations. Databases provide a variety of additional functionality which Coherence does not support including ACID (Atomic, Consistent, Isolated and Durable), the joining of data in different caches (or tables) and all the features of the SQL language.
 
@@ -67,7 +73,7 @@ Coherence is not a database. It is a much lighter-weight product designed for fa
 
 Coherence does however support an object based query language which is not dissimilar to SQL. There is now even an SQL-like declarative language you can use too. However Coherence is not suited to complex data operations or long transactions. It is designed for fast data access via lookups based on simple attributes e.g. retrieving a trade by its trade ID, writing a new trade, retrieving trades in a date range etc as well as executing data-centric custom functions (more to come on this later)
 
-[![not a db](images/notadb_thumb.png "not a db")](images/notadb.png)
+<div style="text-align: center;"><a href="images/notadb.png"><img src="images/notadb_thumb.png" alt="not a db"></a></div>
 
 Coherence does not support:
 
@@ -85,7 +91,9 @@ Now lets compare Coherence with some other prominent products in the Oracle suit
 
 RAC is a clustered database technology. Being clustering it, like Coherence, is fault tolerant and highly available - that is to say that loss of a single machine will not significantly effect the running of the application. However, unlike Coherence, RAC is durable to almost any failure as data is persisted to (potentially several different) disks. However Coherence’s lack of disk access makes it significantly faster and thus the choice for many highly performant applications. Finally RAC supports SQL and thus can handle complex data processing. RAC however is limited by the fact that it is a Shared Disk Architecture, whereas Coherence is Shared Nothing (This difference is beyond the scope of this article but is discussed in full [here](/2009/11/24/understanding-the-shared-nothing-architecture/)).
 
-[![rac](images/rac_thumb.png "rac")](images/rac.png)TimesTen is a totally different Oracle technology. It is a completely in-memory implementation of an Oracle database supporting most standard database functionality, but at much lower latency.
+<div style="text-align: center;"><a href="images/rac.png"><img src="images/rac_thumb.png" alt="rac"></a></div>
+
+TimesTen is a totally different Oracle technology. It is a completely in-memory implementation of an Oracle database supporting most standard database functionality, but at much lower latency.
 
 The support for in memory storage is clearly a feature of both TimesTen and Coherence thus making them both suitable for low latency applications.
 
@@ -99,7 +107,9 @@ However TimesTen offers most of the support that a database offers including:
 
 This makes it the obvious choice if complex data processing is required or there is an existing dependence on SQL.
 
-[![x10](images/x10_thumb.png "x10")](images/x10.png)The other comparable technological space is the Shared Nothing database. These are databases that share the same architectural style where each node has sole ownership of the data it holds. Such systems are currently used for a rather different use case; data warehousing as apposed to [OLTP](http://en.wikipedia.org/wiki/Online_transaction_processing) applications. However this is likely to change in the near future. You can find more discussion of Shared Nothing databases [here](../2009/11/24/understanding-the-shared-nothing-architecture/). My SNDB of choice is [ParAccel](http://www.paraccel.com/).
+<div style="text-align: center;"><a href="images/x10.png"><img src="images/x10_thumb.png" alt="x10"></a></div>
+
+The other comparable technological space is the Shared Nothing database. These are databases that share the same architectural style where each node has sole ownership of the data it holds. Such systems are currently used for a rather different use case; data warehousing as apposed to [OLTP](http://en.wikipedia.org/wiki/Online_transaction_processing) applications. However this is likely to change in the near future. You can find more discussion of Shared Nothing databases [here](../2009/11/24/understanding-the-shared-nothing-architecture/). My SNDB of choice is [ParAccel](http://www.paraccel.com/).
 
 Finally Coherence there are a number of other competitors out there which are pretty good. If you're reading this today (I'm updating this in 2013) you should be checking out some of the open source alternatives. [Hazlecast](http://www.hazelcast.com/) is the most obvious which now has a mature and well funded project that plays in the same product space. [Gemfire](http://www.vmware.com/products/application-platform/vfabric-gemfire), [Terracotta](http://terracotta.org/) and [Gigaspaces](http://www.gigaspaces.com/) are the direct competitors. If you are just looking for scalable caching layers with query semantics you might be better looking at a NoSQL disk based solution. These are **much cheaper to run** in the long term and keeping all your data in memory is often overkill if you are not operating on it directly. Check out [MongoDB](http://www.mongodb.org/) and [Couchbase](http://www.couchbase.com/) which are the two NoSQLs most closely related and both open source.
 

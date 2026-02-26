@@ -9,7 +9,9 @@ slug: "chained-cqcs-for-gui-sorting-and-pagination"
 
 This is a simple trick, useful for cleanly implementing GUIs where the memory availability varies across different layers.
 
-A common pattern is for there to be a Coherence Cache that contains a data and a GUI will require some subset of that data. Individual screens further require filtration. [![](images/gui-cqc-1024x483.png "gui-cqc")](images/gui-cqc.png)
+A common pattern is for there to be a Coherence Cache that contains a data and a GUI will require some subset of that data. Individual screens further require filtration. 
+
+<div style="text-align: center;"><a href="images/gui-cqc.png"><img src="images/gui-cqc-1024x483.png" alt=""></a></div>
 
 Chaining CQCs is a simple and elegant way of doing this as it lets you decide, through config, where each CQC will reside.
 

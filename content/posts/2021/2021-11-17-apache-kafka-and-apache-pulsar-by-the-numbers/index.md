@@ -17,7 +17,7 @@ Despite these limitations, I think this is the best measure of active usage and 
 
 Here is the data on Apache Kafka and Apache Pulsar from Sonatype:
 
-![](images/hiBghhHBEa32GEevVNFPePqXjA4ZJYIvTvRw8I1zOvq_gXwoZYdMIIpi8vwoeI25ow68cMTVasg72YchMAw74WYowU4aqZVfe_Mmnxu3ihqdJ0WnwhUSAnxSc6K4t3S79xFrHsYo)
+<div style="text-align: center;"><img src="images/hiBghhHBEa32GEevVNFPePqXjA4ZJYIvTvRw8I1zOvq_gXwoZYdMIIpi8vwoeI25ow68cMTVasg72YchMAw74WYowU4aqZVfe_Mmnxu3ihqdJ0WnwhUSAnxSc6K4t3S79xFrHsYo" alt=""></div>
 
 This seems inline with some of the data Redmonk produced which tended to show Kafka usage about 20x that of Pulsar for Google Trends and Stack Overflow. However, it also clarifies a trend that is visible but quite noisy in the Redmonk data: despite being larger in absolute terms, Kafka adoption is also growing much faster. Pulsar had a bump in early 2020 corresponding to some popular blog posts, and we spent some time looking into them then, but that usage hasn't sustained. Indeed, if we look at the data over the last year, Pulsar usage has shrunk slightly.
 

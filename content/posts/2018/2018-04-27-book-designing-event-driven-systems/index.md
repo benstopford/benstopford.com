@@ -16,4 +16,4 @@ I wrote a book: Designing Event Driven Systems
 
 [MOBI](/uploads/deds.mobi) (Kindle)
 
-[![](images/Designing-Event-Driven-Systems_Confluent_FINALCOVER-1.jpg)](https://www.confluent.io/designing-event-driven-systems)
+<div style="text-align: center;"><a href="https://www.confluent.io/designing-event-driven-systems"><img src="images/Designing-Event-Driven-Systems_Confluent_FINALCOVER-1.jpg" alt=""></a></div>

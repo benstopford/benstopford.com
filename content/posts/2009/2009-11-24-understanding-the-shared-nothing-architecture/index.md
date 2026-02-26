@@ -22,7 +22,7 @@ Shared nothing is a simple idea. Data data is partitioned in some manner and spr
 
 By comparison shared disk is essentially the opposite: all data is accessible from all cluster nodes. Any machine can read or write any portion of data it wishes. See the figures below.
 
-![](images/snsd2.jpg)
+<div style="text-align: center;"><img src="images/snsd2.jpg" alt=""></div>
 
 ### Understanding the Trade-offs for Writing
 
@@ -30,7 +30,9 @@ When persisting data in a shared disk architecture writes can be performed again
 
 To explain this a little further consider the case described by the diagram below. The clustered shared disk database contains a record with PK = 1 and data = foo. For efficiency both nodes have cached local copies of record 1 in memory. A client then tries to update record 1 so that ‘foo’ becomes ‘bar’. To do this in a consistent manner the DBMS must take a distributed lock on all nodes that may have cached record 1. Such distributed locks become slower and slower as you increase the number of machines in the cluster and as a result can impede the scalability of the writing process.
 
-The other mechanism, locking explicitly on disk, is rarely done in practice as caching is so fundamental to performance.![distributed lock](images/distributedlock_thumb.png "distributed lock")
+The other mechanism, locking explicitly on disk, is rarely done in practice as caching is so fundamental to performance.
+
+<div style="text-align: center;"><img src="images/distributedlock_thumb.png" alt="distributed lock"></div>
 
 However shared nothing does not suffer from the same distributed locking problem, assuming that the client is directed to the correct node (that is to say a client writing 'A', in the figure above, directs that write at Node 1) , the write can flow straight though to disk with any lock mediation performed in memory. This is because only one machine has ownership of any single piece of data, hence by definition there only ever needs to be one lock.
 

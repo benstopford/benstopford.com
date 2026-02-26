@@ -52,7 +52,7 @@ If you want to run this yourself it's available here: [howMuchSlowerIsPullingDat
 
 ```
 
-[![](images/Screen-Shot-2014-04-12-at-16.08.47-1024x737.png "Screen Shot 2014-04-12 at 16.08.47")](images/Screen-Shot-2014-04-12-at-16.08.47.png)
+<div style="text-align: center;"><a href="images/Screen-Shot-2014-04-12-at-16.08.47.png"><img src="images/Screen-Shot-2014-04-12-at-16.08.47-1024x737.png" alt=""></a></div>
 
 It's pretty clear (and not really surprising) that the navigation goes O(n). The bigger problem is that this can have an affect on your queries as your datasize grows.
 
@@ -62,7 +62,7 @@ Having 100 fields in a pof object is not unusual, but if you do, the core part o
 
 This is just a factor of the variable length encoding. The code has no context of the position of a particular field in the stream when it starts traversing it. It has no option but to traverse each value, find it's length and skip to the next one. Thus the 10th field is found by skipping the first 9 fields. This is in comparison to fixed length formats where extracting the nth field is always O(1).<!--more-->
 
-[![](images/pofskip-300x39.png "pofskip")](images/pofskip.png)
+<div style="text-align: center;"><a href="images/pofskip.png"><img src="images/pofskip-300x39.png" alt=""></a></div>
 
 **_2) It can be more efficient to deserialise the whole object, and makes your code simpler too_**
 

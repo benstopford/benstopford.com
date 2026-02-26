@@ -7,7 +7,7 @@ categories:
 slug: "test-oriented-languages-is-it-time-for-a-new-era"
 ---
 
-[![](images/Quilt.png)](images/Quilt.png)
+<div style="text-align: center;"><a href="images/Quilt.png"><img src="images/Quilt.png" alt=""></a></div>
 
 Writing tests has, sensibly, become a big part of writing software. Compilers provide a level of type, syntactic and semantic checks.
 

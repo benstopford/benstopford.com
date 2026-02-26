@@ -7,7 +7,11 @@ coverImage: "singleton2.png"
 slug: "coherence-the-singleton-service"
 ---
 
-_[![](images/singleton2-300x80.png "singleton2")](images/singleton2.png)_Being a data grid, Coherence is very good at doing things in a distributed way across all nodes in the cluster. However it doesn’t offer any functionality (currently) for running a service just the once, in a reliable manner. Most applications solve this problem by simply running another process, for example you might start a second process that reads data off some queue and keeps your cluster up to date. It’d be nice however if you could leverage Coherence’s fault tolerance to ensure that, if the cluster was running, your QueueListener was always running too. In fact this is fairly simple to do and can be used for a host of common applications including loading data, keeping it up to date, adding indexes and regulating a cluster wide time stamp (article to follow).
+_
+
+<div style="text-align: center;"><a href="images/singleton2.png"><img src="images/singleton2-300x80.png" alt=""></a></div>
+
+_Being a data grid, Coherence is very good at doing things in a distributed way across all nodes in the cluster. However it doesn’t offer any functionality (currently) for running a service just the once, in a reliable manner. Most applications solve this problem by simply running another process, for example you might start a second process that reads data off some queue and keeps your cluster up to date. It’d be nice however if you could leverage Coherence’s fault tolerance to ensure that, if the cluster was running, your QueueListener was always running too. In fact this is fairly simple to do and can be used for a host of common applications including loading data, keeping it up to date, adding indexes and regulating a cluster wide time stamp (article to follow).
 
 _What we want is a service that will always run on one of our Coherence nodes no matter what happens to the cluster._
 

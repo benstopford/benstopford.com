@@ -39,7 +39,9 @@ The simplest blank-canvas approach would be have a single all-singing-all-dancin
 
 But such an organisation would look more like a mainframe of days of old. I’ve joked about this before. Such a seemingly abhorrent analogy may be unwise, but it does force focus on the pros and cons of the situation we find ourselves in, so bear with me for a moment.
 
-[![](images/image004.jpg "image004")](images/image004.jpg)The mainframe’s benefits are (a) it stores state just the once, and in a single form and (b) it's easily accessible by all the services in the mainframe.
+<div style="text-align: center;"><a href="images/image004.jpg"><img src="images/image004.jpg" alt="image004"></a></div>
+
+The mainframe’s benefits are (a) it stores state just the once, and in a single form and (b) it's easily accessible by all the services in the mainframe.
 
 In most companies we, on the other hand, store state in many places, in many forms.
 
@@ -53,7 +55,9 @@ The difference is that, in these companies, making your data available to someon
 
 What we want is a world where originating sources can focus on data content, not on distribution. Infrastructure should make sharing state easy, both as a stream and as a historic query or mirror.
 
-![](images/image005.jpg "image005")Enterprises have, for some years, gone the other way. Messaging is used to shift data from system to system.  This promotes decoupling. It also provides a lingua franca if a central schema is imposed. This helps companies discuss the meaning of their data and relate concepts across systems.
+<div style="text-align: center;"><img src="images/image005.jpg" alt="image005"></div>
+
+Enterprises have, for some years, gone the other way. Messaging is used to shift data from system to system.  This promotes decoupling. It also provides a lingua franca if a central schema is imposed. This helps companies discuss the meaning of their data and relate concepts across systems.
 
 The cons are that the lingua franca generally only exists for that small time the data is on the wire. It is rarely written down this way.
 
@@ -73,7 +77,7 @@ Data Virtualisation has failings too though. The first is operational. Testing r
 
 The second problem is performance where data has to be joined across systems rather than performing a union. Use cases which work best have only one large dataset and queries focus on retrieval rather than aggregation (\*1).
 
-![](images/image006.jpg "image006")
+<div style="text-align: center;"><img src="images/image006.jpg" alt="image006"></div>
 
 The final problem is more ideological. It’s tempting to place Data Virtualisation on an architecture diagram and funnel everything through it. This is the 'Silver Bullet' syndrome.
 
@@ -89,7 +93,7 @@ So, whilst Data Virtualisation is well suited to many use cases, data will need 
 
 The advantage of mirroring is that data is materialised with the full history intact. Being a 'binary' replica this is analogous to having the golden source data directly on hand. Changes to the source dataset are communicated without translation. It’s an exact, and ongoing, clone.
 
-![](images/hall-of-mirrors-banner.jpg)
+<div style="text-align: center;"><img src="images/hall-of-mirrors-banner.jpg" alt="hall-of-mirrors-banner"></div>
 
 Cloning databases is not a new idea, people have been creating mirrors for literally decades and there is mature relational technology in this space. However there is less evidence of its use for large-scale data integration. Certainly the implications of following such an approach are not trivial, if an only because the result is more tightly coupled.
 
@@ -119,7 +123,7 @@ What I find inevitable is that both services will be provided by the same infras
 
 ### Looking to the Future
 
-[![](images/image008.jpg "image008")](images/image008.jpg)
+<div style="text-align: center;"><a href="images/image008.jpg"><img src="images/image008.jpg" alt="image008"></a></div>
 
 The enterprise of the future will look different. We won't think of many of these problems. A project might start with a self-service console that provisions a persistent environment with whatever data they need, magically kept up to date for them, or alternatively an equivalent stream. Snapshots and release windows will make coupling manageable. The whole thing will be a service that is provided by the infrastructure.
 

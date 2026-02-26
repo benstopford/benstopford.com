@@ -47,13 +47,13 @@ By only replicating data that is connected to the object graph we, in practice, 
 
 The context of the problem is any partitioned data store: one where data is spread across a number of machines. This approach was first suggested by [Dewitt et al](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.113.6798&rep=rep1&type=pdf) in the Gamma Database and popularised in the database community with the term [Sharding](http://en.wikipedia.org/wiki/Sharding). The Sharding approach has been extended in more recent technologies by partitioning both data and the responsibility for processing it in what is termed a [Shared Nothing Architecture](http://en.wikipedia.org/wiki/Shared_nothing_architecture). In Shared Nothing each node is self-sufficient, each having autonomy over the data it holds and processes. It is this autonomy that allows data-stores following this pattern to scale linearly for some common query loads.
 
-![](images/1-300x212.png "1")
+<div style="text-align: center;"><img src="images/1-300x212.png" alt=""></div>
 
 Shared Nothing Architectures however come at a price. The partitioning model breaks down when queries require intermediary results to be shipped between machines, particularly where those intermediary results do not form part of the final result. Examples include joins between ‘[Fact](http://en.wikipedia.org/wiki/Fact_table)’ tables (where the join keys must be moved from one machine to another), multidimensional aggregations such as multi-dimensional risk calculations (i.e. the [OLAP](http://en.wikipedia.org/wiki/Olap) domain) or transactional writes that span the partitioning strategy.
 
 Fortunately, many modern use-cases, particularly in the [OLTP](http://en.wikipedia.org/wiki/OLTP) space, have little requirement for complex joins that span large data sets. For these simpler use-cases queries can be compartmentalised on a single node via some common attribute that they all share (known as a partitioning key or [Data Affinity](http://wiki.tangosol.com/display/COH35UG/Data+Affinity) in Oracle Coherence). For example access to data in an online banking application might group data pertaining to a certain user. By choosing the UserId as a partitioning key user-centric joins can be executed entirely a single node and hence will scale.
 
-![](images/2-300x183.png "2")
+<div style="text-align: center;"><img src="images/2-300x183.png" alt=""></div>
 
 The counter-example is queries that require lots of joins that cross the partitioning strategy. Extending our banking example, listing the details of accounts that a user can make payments into would mean accessing data associated with a different user. As the UserID is the partitioning key, account information for different users will be located in a different partition. This typically requires key shipping: A two-stage query which first returns the users details then scans the cluster for the various account details for other users: the payees. This example is trivial but it alludes to a much larger problem when queries must include many different data items that cross partitioning (and hence machine) boundaries. It is these complex queries, those that need to join across a variety of crosscutting keys. The connected replication pattern addresses this problem.
 
@@ -61,7 +61,7 @@ The counter-example is queries that require lots of joins that cross the partiti
 
 ### **Compromising between Aggregate and Snowflake**
 
-![](images/3-300x212.png "3")
+<div style="text-align: center;"><img src="images/3-300x212.png" alt=""></div>
 
 There are three fundamental concepts that are used to optimise distributed data storage: Replication, Partitioning and Indexing. When it comes to data placement we have just the two: Replication and Partitioning – with our aim being to remove the need for cross-partition joins.
 
@@ -73,7 +73,7 @@ Take an object model such as that shown in Fig. 1. The dotted line represents th
 
 As an example let us consider a typical online shopping application, an Order would be a Fact whilst the Customer with which the Order is placed is a Dimension that provides the Order with ‘context’. This pattern is particularly applicable to distributed data storage as it provides a middle-ground between 3rd normal form, which presents too many joins for practical distributed applications and full denormalisation which presents a range of consistency issues when changes affect large numbers of denormalised entities (as well as proving problematic when objects need to be versioned).
 
-![](images/4-300x250.png "4")
+<div style="text-align: center;"><img src="images/4-300x250.png" alt=""></div>
 
 Snowflaking is important for tempering a version explosion (versioning of objects is important for [MVCC](http://en.wikipedia.org/wiki/Multiversion_concurrency_control), necessary in most non-trivial data stores).  By holding sub entities separately they can be versioned independently meaning that a change in a sub entity, for example cashflows in the model in Fig. 3, does not necessitate a version increase on the other related objects: Transaction, MTM and Legs in this case. The alternative to this would be to hold all the data as a single Fact but any change would necessitate a new version of the whole group. This is version explosion is prohibitive when using in-memory architectures.
 
@@ -81,7 +81,7 @@ So we have divided our data model into a Snowflake-Schema. However there is litt
 
 This problem is solved through the application of a Snowflake Schema so that Dimensions are replicated to the Query Layer that sits in front of the grid, whilst keeping the Facts partitioned in the grid itself (See Fig. 4). Queries still need to be sequential as described above, but importantly all the Dimension queries remain in process as the dimension data is replicated (there is no network call required) and hence the cost is minimised.
 
-![](images/5-300x202.png "5")
+<div style="text-align: center;"><img src="images/5-300x202.png" alt=""></div>
 
 As an example of this Fig. 3 shows a typical query in which the ‘where’ clause specifies a Cost Centre. Sequential queries must navigate their way down the object model until they reach the lowest dimension. In this case Source Book. Because these dimensions are replicated everywhere the calls are in-process and hence will be fast. The result is a set of IDs for this ‘lowest’ Dimension. These IDs are then used to query the Facts, which are held partitioned across the cluster. A distributed call is made to the grid to retrieve Facts. Fact and Sub-Fact joins are done, in-process, in the various partitions across the grid (as we know related Facts and Sub-Facts will be collocated in the same partition).
 
@@ -89,7 +89,7 @@ This concept is not novel, the commercial databases Vertica, Greenplumb and othe
 
 ### **Making the Replication of Dimensions Practical in a Distributed In-Memory Architecture using the Connected-Replication Pattern**
 
-![](images/6.2-300x165.png "6.2")
+<div style="text-align: center;"><img src="images/6.2-300x165.png" alt=""></div>
 
 A reality of most commercial databases is that a large proportion of the data remains unused. This problem is highlighted by the work done around archiving in the database community. One recent [study](http://www.networkworld.com/ngdc/MI4-070730_09_10_47.pdf) shows up to 80% of data in enterprise databases is no longer in use. The Connected Replication Pattern leverages this fact to reduce the amount of data that must be replicated by only replicating objects that are actively connected to Facts at any point in time.
 
@@ -97,7 +97,7 @@ The growth of Dimension data is a problem when applying a Snowflake-Schema to ac
 
 Connected Replication tracks the links between Dimensions and Facts as data is written to the store. This acts like a real time archiving process ensuring only the absolute minimum number of dimensions are replicated i.e. only those currently connected to Facts. Fig. 6 shows the size of dimensions after applying the Connected-Replication pattern using the same scale as Fig. 5. You can see there is more than an order of magnitude less data to replicate after Connected-Replication has been applied.
 
-![](images/6-300x152.png "6")
+<div style="text-align: center;"><img src="images/6-300x152.png" alt=""></div>
 
 Under Connected-Replication, as data is written, a recursive process examines the relations between Dimensions and ensures that they are replicated. This is shown in the Fig. 7: A trade is written. It has three relations to PartyAlias, SourceBook and Ccy. A message is passed to the storage layer for each of these entities (the white lines) and if the Dimensions are not already replicated they are pushed into replicated storage in the Query Layer (the blue/yellow lines). This process recurses through all the arcs in the domain model until the Query Layer contains all “Connected-Dimensions”.
 

@@ -12,9 +12,13 @@ slug: "coherence-the-falacy-of-linear-scalability"
 
 The underpinning of Shared Nothing data stores is that adding a machine to a cluster proportionally increases the amount of CPU, network bandwidth and storage available. This is, of course, a fact, however the statement is only really of value if the mechanism used for reading and writing data also scales linearly, with respect to each of these physical resources.
 
-A typical Key-Value access pattern works well:  store.put(key, val),  store.get(key) scale linearly as the number of nodes in the cluster is increased. This scaling leverages the fact that data is sharded (spread) across the available machines. Any single read or write operation is simply routed to the machine that owns the partition i.e. only one machine is ever asked to service a single 'get'.[![get](images/get_thumb2.png "get")](images/get2.png)
+A typical Key-Value access pattern works well:  store.put(key, val),  store.get(key) scale linearly as the number of nodes in the cluster is increased. This scaling leverages the fact that data is sharded (spread) across the available machines. Any single read or write operation is simply routed to the machine that owns the partition i.e. only one machine is ever asked to service a single 'get'.
 
-The problem is that, in real world use cases, 'get' and 'put' are often not enough and data stores offer richer query interfaces. This leads users to inevitably more complex access patterns that necessitate the use of queries that do not access data via the primary key. The rub is that these queries don't scale in the same way.[![query](images/query_thumb2.png "query")](images/query2.png)
+<div style="text-align: center;"><a href="images/get2.png"><img src="images/get_thumb2.png" alt="get"></a></div>
+
+The problem is that, in real world use cases, 'get' and 'put' are often not enough and data stores offer richer query interfaces. This leads users to inevitably more complex access patterns that necessitate the use of queries that do not access data via the primary key. The rub is that these queries don't scale in the same way.
+
+<div style="text-align: center;"><a href="images/query2.png"><img src="images/query_thumb2.png" alt="query"></a></div>
 
 The efficiency of a K-V lookups comes from the hashing algorithm determining which machine the required value resides on. However when we query via an index there is no such optimisation to be made. Thus the query must be broadcast to **_all_** nodes in the cluster. This puts an upper bound on scalability in that:
 

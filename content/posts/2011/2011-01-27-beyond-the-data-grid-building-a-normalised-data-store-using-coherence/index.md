@@ -8,7 +8,9 @@ coverImage: "Click-to-View1.png"
 slug: "beyond-the-data-grid-building-a-normalised-data-store-using-coherence"
 ---
 
-[![](images/Click-to-View1-1024x640.png "Click to View")](http://www.infoq.com/presentations/ODC-Beyond-The-Data-Grid)Normalisation is, in many ways, the antithesis of typical cache design. We tend to denormalise for speed. Building a data _store_ (rather than a cache) is a little different: Manageability, versioning, bi-temporal reconstitution become more important factors. Normalisation helps solve these problems but normalisation in distributed architectures suffers from problems of distributed joins, requiring iterative network calls.
+<div style="text-align: center;"><a href="http://www.infoq.com/presentations/ODC-Beyond-The-Data-Grid"><img src="images/Click-to-View1-1024x640.png" alt=""></a></div>
+
+Normalisation is, in many ways, the antithesis of typical cache design. We tend to denormalise for speed. Building a data _store_ (rather than a cache) is a little different: Manageability, versioning, bi-temporal reconstitution become more important factors. Normalisation helps solve these problems but normalisation in distributed architectures suffers from problems of distributed joins, requiring iterative network calls.
 
 We’ve developed a mechanism for managing normalisation based on a variant of the Star Schema model used in data warehousing. In our implementation Facts are held distributed (partitioned) in the data nodes and Dimensions are replicated throughout the query-processing nodes. To save space we track ‘used’, or as we term them ‘connected’ data, to ensure only useful objects are replicated.
 

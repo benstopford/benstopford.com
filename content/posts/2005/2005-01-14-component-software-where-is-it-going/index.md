@@ -193,7 +193,7 @@ In fact the dynamics of a software market fundamentally changes when components 
 
 The important balance to consider is one between the flexibility, nimbleness and competitive edge provided by regular programming and the cost efficiencies provided by reusing prefabricated components. This relationship is shown in fig 2.
 
-[![image](images/image_thumb.png "image")](images/image.png)
+<div style="text-align: center;"><a href="images/image.png"><img src="images/image_thumb.png" alt="image"></a></div>
 
 This concept of development by assembly was in fact one of the important changes promulgated by the industrial resolution. The advent of assembly lines marked the transition from craftsmanship to industrialisation. The analogy is useful when considering software development to also be in a period of craftsmanship and hence inferring that taking the same steps will bring industrialisation to the software industry. However a number of subtle differences have manifested themselves that have resulted in little of the predicted revolution in component utilisation actually taking place.
 

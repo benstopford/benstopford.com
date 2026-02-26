@@ -10,7 +10,7 @@ slug: "a-brief-summary-of-the-nosql-world"
 
 James Phillips (co-founder of Couchbase) did a nice [talk](http://www.infoq.com/presentations/NoSQL-Survey-Comparison) on NoSQL Databases at QCon:
 
-[![](images/Screen-Shot-2012-08-11-at-09.40.04.png "Screen Shot 2012-08-11 at 09.40.04")](images/Screen-Shot-2012-08-11-at-09.40.04.png)
+<div style="text-align: center;"><a href="images/Screen-Shot-2012-08-11-at-09.40.04.png"><img src="images/Screen-Shot-2012-08-11-at-09.40.04.png" alt=""></a></div>
 
 **Memcached** - the simplest and original. Pure key value store. Memory focussed
 
@@ -26,7 +26,7 @@ James Phillips (co-founder of Couchbase) did a nice [talk](http://www.infoq.com/
 
 **Neo4J** - Graph oriented database. Much more niche. Not distributed.
 
-[![](images/Screen-Shot-2012-08-11-at-10.03.341.png "Screen Shot 2012-08-11 at 10.03.34")](images/Screen-Shot-2012-08-11-at-10.03.341.png)
+<div style="text-align: center;"><a href="images/Screen-Shot-2012-08-11-at-10.03.341.png"><img src="images/Screen-Shot-2012-08-11-at-10.03.341.png" alt=""></a></div>
 
 There are obviously a few more that could have been covered (Voldemort, Dynamo etc but a good summary from James none the less)
 

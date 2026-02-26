@@ -52,7 +52,7 @@ The more complex case arises when the two sub sections of the query still return
 
 Implementing such a join efficiently involves using [affinity](http://wiki.tangosol.com/display/COH35UG/Data+Affinity) to bind together related data from the two caches.
 
-![](images/Key-Associated-Joins1-300x161.png "Key-Associated-Joins")
+<div style="text-align: center;"><img src="images/Key-Associated-Joins1-300x161.png" alt=""></div>
 
 I discussed this in some detail, along with the problems it brings up, in an associated article ([here](../2009/08/22/the-trials-of-merging-data-and-processing-in-coherence-why-it-doesnt-quite-just-work/)), in particular the problems that arise from the Coherence threading model. However if you read this post you’ll probably guess how performing a join naturally follows on from the idea of collocated processing.
 
@@ -78,7 +78,9 @@ orderDetails.entrySet(
 );
 ```
 
-[![](images/joins2-300x161.png "joins2")](images/joins2.png)With the inefficiency that all the orderIds for today will be returned to the client before the order details are queried. Fortunately we can do this all in one go on the server. To do this we need the following tools:
+<div style="text-align: center;"><a href="images/joins2.png"><img src="images/joins2-300x161.png" alt=""></a></div>
+
+With the inefficiency that all the orderIds for today will be returned to the client before the order details are queried. Fortunately we can do this all in one go on the server. To do this we need the following tools:
 
 - An [Aggregator](http://download.oracle.com/otn_hosted_doc/coherence/350/com/tangosol/util/InvocableMap.ParallelAwareAggregator.html) – this is the best way to run some custom code on the server that is based off a query.
 - [Affinity](http://wiki.tangosol.com/display/COH35UG/Data+Affinity) to bind the market and trades caches together so that corresponding entries are collocated (so when we find an order there is no network hop to get the corresponding OrderDetails record).

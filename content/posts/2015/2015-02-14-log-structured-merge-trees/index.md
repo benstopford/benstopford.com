@@ -21,7 +21,9 @@ What makes LSM trees interesting is their departure from binary tree style fil
 
 In a nutshell LSM trees are designed to provide better write throughput than traditional B+ tree or [ISAM](http://en.wikipedia.org/wiki/ISAM) approaches. They do this by removing the need to perform dispersed, update-in-place operations.
 
-![ChartGo](images/ChartGo-300x267.png)So why is this a good idea? At its core it's the old problem of disks being slow for random operations, but fast when accessed sequentially. A gulf exists between these two types of access, regardless of whether the disk is magnetic or solid state or even, although to a lesser extent, main memory.
+<div style="text-align: center;"><img src="images/ChartGo-300x267.png" alt="ChartGo"></div>
+
+So why is this a good idea? At its core it's the old problem of disks being slow for random operations, but fast when accessed sequentially. A gulf exists between these two types of access, regardless of whether the disk is magnetic or solid state or even, although to a lesser extent, main memory.
 
 The figures in this ACM report [here](http://queue.acm.org/detail.cfm?id=1563874)/[here](http://deliveryimages.acm.org/10.1145/1570000/1563874/jacobs3.jpg) make the point well. They show that, somewhat counter intuitively, sequential disk access is faster than randomly accessing main memory. More relevantly they also show sequential access to disk, be it magnetic or SSD, to be at least three orders of magnitude faster than random IO. This means random operations are to be avoided. Sequential access is well worth designing for.
 
@@ -40,7 +42,7 @@ So we need more than just a journal to efficiently perform more complex read wo
 
 All these approaches improve read performance significantly ( n->O(log(n)) in most). Alas these structures add order and that order impedes write performance, so our high speed journal file is lost along the way. You can't have your cake and eat it I guess.
 
-![tree (2)](images/tree-2-1024x293.jpg)
+<div style="text-align: center;"><img src="images/tree-2-1024x293.jpg" alt="tree (2)"></div>
 
 An insight that is worth making is that all four of the above options impose some form of overarching structure on the data.
 
@@ -60,7 +62,7 @@ In essence they do everything they can to make disk access sequential. No scatt
 
 \*A number of tree structures exist which do not require update-in-place. Most popular is the [append-only Btree](http://www.bzero.se/ldapd/btree.html), also know as the copy-on-write tree. These work by overwriting the tree structure, sequentially, at the end of the file each time a write occurs. Relevant parts of the old tree structure, including the top level node, are orphaned. Through this method update-in-place is avoided as the tree sequentially redefines itself over time. This method does however come at the cost: rewriting the structure on every write is verbose. It creates a significant amount of write amplification which is a downside unto itself.
 
-[![](images/Journal6-1024x503.png)](images/Journal6.png)
+<div style="text-align: center;"><a href="images/Journal6.png"><img src="images/Journal6-1024x503.png" alt=""></a></div>
 
 ### The Base LSM Algorithm
 
@@ -84,7 +86,7 @@ Even with compaction reads will still need to visit many files. Most implementat
 
 So from a 'write' perspective; all writes are batched up and written _**only**_ in sequential chunks. There is an additional, periodic IO penalty from compaction rounds. Reads however have the potential to touch a large number of files when looking up a single row (i.e. scatter-gun on read). This is simply the way the algorithm works. We're trading random IO on write for random IO on read. This trade off is sensible if we can use software tricks like bloom filters or hardware tricks like large file caches to optimise read performance.
 
-[![Journal3](images/Journal31-1024x629.png)](images/Journal2.51.png)
+<div style="text-align: center;"><a href="images/Journal2.51.png"><img src="images/Journal31-1024x629.png" alt="Journal3"></a></div>
 
 ### Basic Compaction
 
@@ -98,7 +100,7 @@ Eventually there are five 50 row files. At this point the five 50 row files are
 
 The aforementioned issue with this general approach is the large number of files that are created: all must be searched, individually, to read a result (at least in the worst case).
 
-![Journal2.5](images/Journal2.51-1024x514.png)
+<div style="text-align: center;"><img src="images/Journal2.51-1024x514.png" alt="Journal2.5"></div>
 
 ### Levelled Compaction
 

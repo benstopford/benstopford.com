@@ -49,7 +49,7 @@ If your users don’t mind being a few seconds out from one another, or reads co
 
 There were some other similarities with the Linked In approach: the use of immutable, versioned state, events as the system of record and tertiary views. It looked a bit like this:
 
-![](images/kappa1.png)
+<div style="text-align: center;"><img src="images/kappa1.png" alt=""></div>
 
 _**The front end scaled by adding shards. The back end scaled by adding replicas.**_
 
@@ -121,7 +121,7 @@ So if I were to make one addition, and it's a slightly odd one, it would be that
 
 In the kappa style it might look something like this:
 
-![](images/kappa2.png)
+<div style="text-align: center;"><img src="images/kappa2.png" alt=""></div>
 
 This is probably a bit out there though, but there is something really elegant about the idea or simple, organisational singleton state.
 
