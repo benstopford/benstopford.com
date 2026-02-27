@@ -11,6 +11,8 @@ slug: "log-structured-merge-trees"
 description: "A detailed look at the interesting LSM file organisation seen in BigTable, Cassandra and most recently MongoDB."
 ---
 
+(Also see comments on [Hacker News](https://news.ycombinator.com/item?id=12161569))
+
 It's nearly a decade since Google released its 'Big Table' paper. One of the many cool aspects of that paper was the file organisation it uses. The approach is more generally known as the Log Structured Merge Tree, after [this](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.44.2782&rep=rep1&type=pdf) 1996 paper, although the algorithm described there differs quite significantly from most real-world implementations.
 
 LSM is now used in a number of products as the main file organisation strategy. HBase, Cassandra, LevelDB, SQLite, even MongoDB 3.0 comes with an optional LSM engine, after it's acquisition of Wired Tiger.
